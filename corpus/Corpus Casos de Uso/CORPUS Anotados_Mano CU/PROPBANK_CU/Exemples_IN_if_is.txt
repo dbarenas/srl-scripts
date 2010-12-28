@@ -1,0 +1,14 @@
+1. the Administrator indicates if the client is direct or an agency
+
+antes:
+[NP-SUJ-A0-Indicator DT_the NNP_Administrator] [VP VBZ_indicates] [NP-OBJ-A1 IN_if [NP-OBJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-OBJ-A2 JJ_direct CC_or DT_an NN_agency]]
+
+
+2. SAV asks to the Employee if the client is direct or if he is an agency.
+
+antes:
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJ-A1 TO_to DT_the NN_employee] [NP-OBJ-A2 IN_if DT_the NN_client AUX_is JJ_direct CC_or IN_if PRP_he AUX_is DT_an NN_agency]
+
+
+ahora:
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [PP-OBJIND-A1 TO_to DT_the NN_employee] [SBAR-OBJ-AM-ADV IN_if [NP-OBJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-OBJIND-A2 JJ_direct] CC_or IN_if [NP-OBJ-A1 PRP_he] [VP VBZ_is] [NP-OBJIND-A2 DT_an NN_agency]]

@@ -1,0 +1,8 @@
+CCG:
+SAV enables the option Repair.
+SAV enables the option Assure_Vehicle.
+
+ADESSE:(+Freeling)
+
+ [NP1- SUJ- AGTE  SAV] [VERBO  activa] [NP10– ODIR- AFEC  la opción “Reparación”]
+ [NP1- SUJ- AGTE  SAV] [VERBO  activa] [NP10 – ODIR - AFEC  la opción “Asegurar Vehículo”]

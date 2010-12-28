@@ -1,0 +1,2 @@
+curl -d "text=$1" http://cogcomp.cs.illinois.edu/demo/srl/results.php | grep Output | sed 's\ \\g' | sed "s\ \#\g"| html2text | grep -rv 16px | grep -rv spacing | sed 's\[^a-zA-Z0-9.,:()$-]\ \g' | sed 's\(this.href, srlframe , width 400,height 400,scrollbars yes,resizable yes ) returnfalse  \ \g' | sed 's\class\ \g' | sed 's\charniak[0-9]\\g' | sed 's\srl-frame.php verb sit onclick  window.open\ \g' | grep -rv onclick | grep -rv SRL | grep -rv overflow | sed 's\inspan\ \g' | sed 's\rowspan\elements :\g' | sed 's\Output:\\g' | grep -rv "title  Charniak" 
+

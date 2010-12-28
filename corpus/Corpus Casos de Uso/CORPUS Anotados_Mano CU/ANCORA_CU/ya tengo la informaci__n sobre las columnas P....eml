@@ -1,0 +1,66 @@
+From moreda@dlsi.ua.es dc mar 04 14:10:06 2009
+Return-Path: <moreda@dlsi.ua.es>
+X-Original-To: lmoreno@dsic.upv.es
+Delivered-To: lmoreno@dsic.upv.es
+Received: from pop.upv.es (deneb.cc.upv.es [158.42.3.51])
+	by batman.dsic.upv.es (Postfix) with ESMTP id E6FDE177FE;
+	Wed,  4 Mar 2009 16:36:43 +0100 (CET)
+Received: from mx.upv.es (mx4.cc.upv.es [158.42.250.194])
+	by pop.upv.es (8.11.3/8.11.3) with ESMTP id n24FahF26630;;
+	Wed, 4 Mar 2009 16:36:43 +0100 (MET)
+Received: from aitana.cpd.ua.es (aitana.cpd.ua.es [193.145.233.5])
+	by mx.upv.es (8.14.3/8.14.3) with ESMTP id n24FX7GX022954;
+	Wed, 4 Mar 2009 16:34:20 +0100
+Received: from aitana.cpd.ua.es (aitana.cpd.ua.es [193.145.233.5])
+	by aitana.cpd.ua.es (8.12.11.20060614/8.12.11) with ESMTP id n24DAIJ0000564;
+	Wed, 4 Mar 2009 14:10:18 +0100
+Received: from altea.dlsi.ua.es ([172.25.240.66])
+	by aitana.cpd.ua.es (8.12.11.20060614/8.12.11) with ESMTP id n24DAIdD000560;
+	Wed, 4 Mar 2009 14:10:18 +0100
+Received: from [172.16.242.71] (paloma.dlsi.ua.es [172.16.242.71])
+	by altea.dlsi.ua.es (8.13.8/8.13.8/Debian-3) with ESMTP id n24DAHfs014489;
+	Wed, 4 Mar 2009 14:10:18 +0100
+Message-ID: <49AE7DAE.5070603@dlsi.ua.es>
+Date: Wed, 04 Mar 2009 14:10:06 +0100
+From: Paloma Moreda <moreda@dlsi.ua.es>
+User-Agent: Thunderbird 2.0.0.19 (Windows/20081209)
+MIME-Version: 1.0
+To: Lidia Moreno <lmoreno@dsic.upv.es>, natividad prieto <nprieto@dsic.upv.es>,
+   amolina@dsic.upv.es
+Subject: ya tengo la =?ISO-8859-1?Q?informaci=F3n_sobre_las_columna?=
+ =?ISO-8859-1?Q?s_P=2E=2E=2E?=
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+X-Virus-Scanned: ClamAV version 0.94.2, clamav-milter version 0.94.2 on localhost
+X-Virus-Status: Clean
+X-Greylist: Delayed for 01:11:13 by milter-greylist-4.0.1 (mx.upv.es [158.42.250.194]); Wed, 04 Mar 2009 16:36:42 +0100 (CET)
+Status: RO
+X-UID: 105887
+Content-Length: 873
+X-Keywords:                                                                                                   
+
+Hola,
+
+Os paso lo que me han comentado. Con esta información  igual Antonio ves 
+claro lo de los constituyentes. Bueno, ya me direis.
+
+* PLEMMA, PPOS, PFEAT are generated with the FreeLing Open source
+  suite of Language Analyzers (http://www.lsi.upc.es/~nlp/freeling/).
+  The accuracy in PLEMMA and PPOS columns is around 95%. Thanks to
+  Lluís Padró (UPC) for helping with the annotation of the
+  morphosyntactic information.
+
+* PHEAD and PDEPREL are generated using MaltParser
+  (http://w3.msi.vxu.se/~jha/maltparser/). Parsing accuracy (LAS) is
+  around 86.5%. Thanks to Xavier Lluís (UPC) for helping with the
+  annotation of this part.
+
+
+-- 
+=================================================
+Paloma Moreda Pozo
+Departamento de Lenguajes y Sistemas Informáticos
+Universidad de Alicante
+Tlf: (+34) 965903400 Ext: 2340
+=================================================
+

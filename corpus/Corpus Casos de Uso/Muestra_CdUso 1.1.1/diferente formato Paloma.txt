@@ -1,0 +1,135 @@
+Hola Paloma,
+
+¿Cómo llevas la preparación de la presentación?. Supongo que bien, se te ha quedado una tesis muy chula, me gusta. Bueno otra cosa, queremos sacar algunas estadísticas sobre patrones semánticos de los verbos que aparecen en el corpus pero no tengo clara cual es la salida de tu herramienta: el fichero con el etiquetado de ARG para el corpus completo sigue el formato B) aunque previamente me pasaste un trozo etiquetado que seguía el formato A). Ya me dirás.
+
+Un besazo, ya nos veremos el 21.....Lidia
+
+
+
+A) Ejemplo semrol
+
+The|DT|B-NP|(S*||-|-|(S1(S(NP*|-|(A0*|
+system|NN|I-NP|*||-|-|*)|-|*A0)|
+verifies|VBZ|B-VP|*||01|-|(VP*|verify|(V*V)|
+the|DT|B-NP|*||-|-|(NP(NP*|-|(A1*|
+deadline|NN|I-NP|*||-|-|*)|-|*|
+of|IN|B-PP|*||-|-|(PP*|-|*|
+the|DT|B-NP|*||-|-|(NP(NP*|-|*|
+rental|JJ|I-NP|*||-|-|*|-|*|
+contract|NN|I-NP|*||-|-|*)|-|*|
+of|IN|B-PP|*||-|-|(PP*|-|*|
+each|DT|B-NP|*||-|-|(NP(NP*|-|*|
+lessee|NN|I-NP|*||-|-|*)|-|*|
+of|IN|B-PP|*||-|-|(PP*|-|*|
+the|DT|B-NP|*||-|-|(NP*|-|*|
+real|JJ|I-NP|*||-|-|*|-|*|
+estate|NN|I-NP|*||-|-|*|-|*|
+agency|NN|I-NP|*||-|-|*))))))))|-|*A1)|
+.|.|O|*S)||-|-|*))|-|*|
+
+The|DT|B-NP|(S*||-|-|(S1(S(NP*|-|(A0*|
+system|NN|I-NP|*||-|-|*)|-|*A0)|
+registers|VBZ|B-VP|*||01|-|(VP*|register|(V*V)|
+the|DT|B-NP|*||-|-|(NP(NP*|-|(A1*|
+personal|JJ|I-NP|*||-|-|*|-|*|
+details|NNS|I-NP|*||-|-|*)|-|*|
+of|IN|B-PP|*||-|-|(PP*|-|*|
+the|DT|B-NP|*||-|-|(NP(NP*|-|*|
+lessee|NN|I-NP|*||-|-|*)|-|*|
+and|CC|O|*||-|-|*|-|*|
+the|DT|B-NP|*||-|-|(NP(NP*|-|*|
+address|NN|I-NP|*||-|-|*)|-|*|
+of|IN|B-PP|*||-|-|(PP*|-|*|
+the|DT|B-NP|*||-|-|(NP(NP*|-|*|
+property|NN|I-NP|*||-|-|*)|-|*|
+in|IN|B-PP|*||-|-|(PP*|-|*|
+the|DT|B-NP|*||-|-|(NP*|-|*|
+rental|JJ|I-NP|*||-|-|*|-|*|
+contract|NN|I-NP|*||-|-|*)))))))))|-|*A1)|
+.|.|O|*S)||-|-|*))|-|*|
+
+The|DT|B-NP|(S*||-|-|(S1(S(NP*|-|(A0*|
+system|NN|I-NP|*||-|-|*)|-|*A0)|
+registers|VBZ|B-VP|*||01|-|(VP*|register|(V*V)|
+the|DT|B-NP|*||-|-|(NP*|-|(A1*|
+buyer|NN|I-NP|*||-|-|*)|-|*A1)|
+personal|JJ|B-NP|*||-|-|(NP(NP*|-|(AM-TMP*|
+details|NNS|I-NP|*||-|-|*)|-|*|
+,|,|O|*||-|-|*|-|*|
+the|DT|B-NP|*||-|-|(NP*|-|*|
+salesman|NN|I-NP|*||-|-|*|-|*|
+commission|NN|I-NP|*||-|-|*)|-|*|
+and|CC|O|*||-|-|*|-|*|
+the|DT|B-NP|*||-|-|(NP*|-|*|
+purchase|NN|I-NP|*||-|-|*|-|*|
+deadline|NN|I-NP|*||-|-|*)))|-|*AM-TMP)|
+.|.|O|*S)||-|-|*))|-|*|
+
+B) Ejemplo dameroles
+-                   (A0*               *               *
+-                      *)              *               *
+verify               (V*V)             *               *
+-                   (A1*               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *)              *               *
+-                      *               *               *
+
+-                   (A0*               *               *
+-                      *)              *               *
+register             (V*V)             *               *
+-                   (A1*               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *)              *               *
+-                      *               *               *
+
+-                   (A0*               *               *
+-                      *)              *               *
+register             (V*V)             *               *
+-                   (A1*               *               *
+-                      *)              *               *
+-                   (A3*               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *               *               *
+-                      *)              *               *
+-                      *               *               *
+
+
+
+
+
+
+C) Corresponde
+
+(A0 The system) (V verifies V) (A1 the deadline of the rental contract of each lessee of the real estate agency).
+(A0 The system) (V registers V)  (A1 the personal details of the lessee and the address of the property in the rental contract).
+(A0 The system) (V registers V)  (A1 the buyer) (A3 personal details, the salesman commission and the purchase deadline).

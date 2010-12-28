@@ -1,0 +1,37 @@
+SAV requests the Administrator the registration number of the vehicle.
+SAV requests the identification of the responsible for the purchase of the vehicle.
+The Administrator requests the identification of the responsible for the purchase of the vehicle.
+SAV requests the purchase date and the cost of the vehicle.
+SAV requests the identification of the buyer of the vehicle.
+SAV requests the observations of the sale.
+SAV requests the place of refund of the vehicle.
+SAV requests the amount of the bail of the lease.
+SAV requests the identification of the borrower.
+SAV requests the data of the request of maintenance of the vehicle.
+SAV requests the mileage of the vehicle.
+SAV requests the cost of the repair of the vehicle.
+SAV requests the data of the external garage.
+SAV requests the Administrator the registration number of the vehicle.
+SAV requests the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+SAV requests the model, year of production and number of doors of the vehicle.
+SAV requests the name and the description of the new class of vehicle.
+SAV requests the name and the description of the group of the class of vehicle.
+SAV requests the model, year of production and number of doors of the vehicle.
+SAV requests to the Employee the registration number of the vehicle.
+SAV requests the data of the insurance policy.
+SAV requests to the Administrator the data of the Insurance Company.
+SAV requests the bank details of the direct client.
+SAV requests to the Administrator the data of the extra.
+SAV requests the quantity of days of contracting of the extra.
+SAV requests the quantity of days of contracting of the service.
+SAV updates the available quantity of the extra.
+SAV requests the identity card of the employee.
+SAV requests the start date, duration and conditions of the labor contract.
+SAV requests the identity card of the employee.
+SAV updates the state of the labor contract.
+SAV requests the identity card of the employee.
+SAV requests the identity card of the new employee.
+SAV requests the data of the employee.
+SAV requests the identity card of the employee.
+
+

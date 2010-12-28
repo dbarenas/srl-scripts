@@ -1,0 +1,6 @@
+grep Actor -A 1 EN-Guía_CasosDeUso.txt | grep -rv Principal | grep -rv Manager | grep -rv Employee | grep -rv Operator | grep -rv Technical 
+
+Manager
+Employee
+Operator
+Technical

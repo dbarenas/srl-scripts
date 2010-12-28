@@ -1,0 +1,7 @@
+CU 2.1.2:frase 12.5.1
+<NIL>IF</NIL>
+*** the insurance expiration date is greater one month than current date, and total rate is greater than 0, and mileage vehicle is less than 150000
+*** [NP-SUJ-A1-Patient DT_the NN_insurance NN_expiration NN_date] [VP  AUX_is] [NP-OBJIND-A2 JJ_greater CD_one NN_month  IN_than JJ_current NN_date FC_,] CC_and [NP-SUJ-A1 JJ_total NN_rate]  [VP AUX_is] [NP-OBJIND-A2 JJR_greater IN_than  CC_0 FC_,]  CC_and [NP-SUJ-A1 NN_mileage NN_vehicle] [VP AUX_is] [NP-OBJIND-A2 JJR_less IN_than CD_150000]
+
+
+

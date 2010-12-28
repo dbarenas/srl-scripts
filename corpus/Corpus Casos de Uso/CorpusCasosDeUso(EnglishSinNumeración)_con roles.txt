@@ -1,0 +1,940 @@
+
+(A0 The system) (V verifies V) (A1 the deadline of the rental contract of each lessee of the real estate agency).
+(A0 The system) (V registers V)  (A1 the personal details of the lessee and the address of the property in the rental contract).
+(A0 The system) (V registers V)  (A1 the buyer) (A3 personal details, the salesman commission and the purchase deadline).
+
+
+Caso de Uso 1.1.1.  – EXCEL 58-
+(V BUY V)  (A1 A VEHICLE )
+
+(A0 INITIATES ) (AM (R-AM-TMP WHEN ) (A0 the Administrator )) (V selects V)   the option (V Buy V)  (A1 a Vehicle ).
+SAV requests the Administrator the registration number of the vehicle.
+(A0 The Administrator) (V introduces V) (A1 the registration number of the vehicle ).
+(A0 SAV ) (V validates V)  (A1 the registration number of the vehicle ).
+(A0 SAV ) (V determines V) (A1 the existence of the registration number of the vehicle ).
+SAV requests the identification of the responsible for the purchase of the vehicle.
+The Administrator requests the identification of the responsible for the purchase of the vehicle.
+SAV requests the purchase date and the cost of the vehicle.
+(A0 The Administrator ) (V introduces V)  (A1 the purchase date and the cost of the vehicle ).
+(A0 SAV ) (V enables V)  (A1 the option Register Purchase ).
+
+If (A1 (A0 the Administrator ) (V selects V) (A1 the option )) (A0 Register ) (V Purchase V)  (AM-TMP then ):
+(A1 SAV ) (V registers V)  (A3 the purchase date and the cost of the vehicle ).
+(A1 SAV ) (V registers V)  (A3 the date and hour of the registration of the purchase of the vehicle ).
+(A1 SAV ) (V registers V)  (A3 the responsible for the purchase of the vehicle ).
+(A1 SAV ) (V assigns V)  (A2 to the vehicle ) the state "disabled".
+(A0 SAV ) (V enables V)  (A1 the option Maintenance ).
+(A0 SAV ) (V enables V)  (A1 the option Repair ).
+(A0 SAV ) (V enables V) (A1(AM-MOD the option) (V Assure V)) (A1 Vehicle).
+
+Invalid registration number.
+(A0 SAV ) (V shows V) (A1 the Administrator) (A1 the message) (AM-TMP Invalid or (V Existing V) (A1 Registration) Number).
+
+EXCEL-289
+
+Existing registration number.
+SAV shows the Administrator the message Invalid or Existing Registration Number.
+
+
+Caso de Uso 1.1.2.  
+MODIFY A PURCHASE
+
+EXCEL-299
+INITIATES WHEN the Administrator selects the option Modify Purchase.
+SAV shows the registration number of the vehicles.
+The Administrator chooses the registration number of the vehicle.
+SAV obtains the purchase data of the vehicle.
+SAV shows the purchase data of the vehicle. 
+SAV enables the date, responsible and price of the purchase of the vehicle. 
+The Administrator introduces the new data of the purchase of the vehicle.
+SAV enables the option Modify Vehicle. 
+SAV enables the option Modify.
+
+If the Administrator chooses the option Modify then:
+SAV registers the purchase data of the vehicle.
+
+
+SELL A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Sell a Vehicle.
+SAV shows the registration numbers of the vehicles that do not have the state "sold".
+The Administrator chooses a registration number.
+SAV shows the sale date of the vehicle.
+SAV requests the date agreed of delivery and the sale price of the vehicle.
+The Administrator introduces the date agreed of delivery and the sale price of the vehicle.
+SAV requests the identification of the buyer of the vehicle.
+The Administrator introduces the identification of the buyer of the vehicle.
+SAV shows the name of the responsible for the sale.
+SAV requests the observations of the sale.
+The Administrator writes the observations of the sale.
+SAV enables the option Register Sale.
+
+If the Administrator selects the option Register Sale then:
+SAV keeps the date, the head, the observations, the identification of the buyer, the date agreed of delivery and the sale price of the vehicle.
+
+If the vehicle does not have the state "paymaster" or "for sale" then:
+SAV assigns to the vehicle the state "sold".
+SAV enables the option Deliver Vehicle.
+
+
+DELIVER A VEHICLE SOLD
+
+INITIATES WHEN the Administrator selects the option Deliver a Vehicle Sold.
+SAV shows the registration numbers of the vehicles sold.
+The Administrator selects the registration number of the vehicle sold.
+SAV validates the date agreed of delivery of the vehicle.
+SAV obtains the identification of the buyer of the vehicle.
+SAV shows the identification of the buyer of the vehicle.
+SAV requests the identification of the authorized person to collect the vehicle.
+The Administrator introduces the identification of the authorized person to collect the vehicle.
+SAV enables the option Confirm Delivery.
+
+If the Administrator selects the option Confirm Delivery then:
+SAV registers the real date of delivery of the vehicle sold.
+SAV registers the identification of the authorized person to collect the vehicle.
+
+Current date is smaller that the delivery date.
+SAV shows the Administrator the message Error in Delivery Date.
+
+
+RENT A VEHICLE
+
+INITIATES WHEN the Employee selects the option Rent a Vehicle.
+SAV shows the registration numbers of the enabled vehicles.
+The Employee chooses the registration number of the vehicle that desires to rent.
+SAV obtains the vehicle data.
+SAV shows the vehicle data.
+SAV requests the place of refund of the vehicle.
+The Employee introduces the place of refund of the vehicle.
+SAV enables the option Elect Extras.
+SAV enables the option Bill.
+SAV enables the option Register Lease.
+
+If the Employee selects the option Register Lease then:
+SAV disables the option Register Lease.
+SAV disables the option Elect Extras.
+SAV disables the option Bill.
+SAV obtains the subtotal by concept of rent, the subtotal by concept of extras and the total amount of the lease.
+SAV requests the amount of the bail of the lease.
+The Employee introduces the amount of the bail of the lease.
+SAV obtains the identification of the Employee.
+SAV registers the data of the lease.
+
+For each extra of type accessory registered in the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the quantity of units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+SAV assigns to the vehicle the state "rented". 
+
+
+CLOSE A LEASE
+
+INITIATES WHEN the Employee selects the option Close a Contract.
+SAV obtains the registration numbers of the vehicles rented.
+SAV shows the registration numbers of the vehicles rented.
+The Employee chooses the registration number of the vehicle.
+SAV recovers the data of the lease of the vehicle.
+SAV shows the data of the lease of the vehicle.
+SAV enables the option Modify Contract.
+SAV enables the option Bill.
+SAV enables the option Close.
+
+If the Employee chooses the option Close then:
+SAV disables the option Modify Contract.
+SAV disables the option Bill.
+SAV registers the data of closing of the lease.
+
+For each extra of type accessory registered in the closing of the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the quantity of units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+
+
+MODIFY A LEASE
+
+INITIATES WHEN the Employee selects the option Modify a Contract.
+SAV shows the registration numbers of the vehicles rented.
+The Employee chooses the registration number of a vehicle rented.
+SAV obtains the data of the lease of the vehicle.
+SAV shows the data of the lease of the vehicle.
+SAV enables the option Modify a Client.
+SAV enables the option Eliminate Extras.
+SAV enables the option Elect Extras.
+The Employee introduces the new data of the lease of the vehicle.
+SAV enables the option Register Changes.
+
+If the Employee selects the option Register Changes then:
+SAV disables the option Modify Client.
+SAV disables the option Eliminate Extras. 
+SAV disables the option Elect Extras.
+SAV obtains the identification of the Employee.
+SAV obtains the date and hour of modification of the lease.
+SAV registers the identification of the Employee, the date and hour of modification and the data of the lease.  
+
+For each new extra of registered accessory type in the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+
+INVOICE THE RENT OF A VEHICLE
+
+INITIATES WHEN the Employee selects the option Bill.
+SAV obtains the registration number of the vehicle.
+SAV obtains the date of the lease.
+SAV obtains the duration of the lease. 
+SAV obtains the daily rate of the vehicle.
+SAV obtains the subtotal by concept of extras of the lease.
+SAV calculates the subtotal of the rent.
+
+If the client is direct then:
+SAV obtains the discount of the applicable rate to the client.
+SAV calculates the subtotal of the rent with discount.
+
+SAV calculates the total amount without tax of the lease.
+SAV calculates the tax corresponding to the total amount of the lease.
+SAV calculates the total amount with tax of the lease.
+
+If amount bail is greater than zero then:
+SAV calculates the total to pay for the client.
+
+SAV shows the subtotal by concept of rent without discount, the subtotal by concept of rent with discount, the subtotal by concept of extras, the total amount of the lease without tax and the total amount of the lease with tax.
+
+
+BORROW A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Borrow a Vehicle.
+SAV shows the registration numbers of the enabled vehicles.
+The Administrator selects the registration number of a vehicle.
+SAV requests the identification of the borrower. 
+The Administrator introduces the identification of the borrower. 
+SAV validates the identification of the borrower.
+SAV requests the motive of the loan and the estimated date of refund of the vehicle.
+The Administrator introduces the motive of the loan and the estimated date of refund of the vehicle.
+SAV enables the option Register.
+
+If the Administrator chooses the option Register then:
+SAV obtains the date and hour of the loan.
+SAV obtains the identification of the Administrator.
+SAV assigns the state "borrowed" to the vehicle.
+SAV registers the information of the loan.
+
+Identification of the invalid borrower.
+SAV shows the Administrator the message Nonexistent Borrower.
+
+
+RETURN A BORROWED VEHICLE
+
+INITIATES WHEN the Employee selects the option Return a Borrowed Vehicle.
+SAV shows the registration numbers of the borrowed vehicles.
+The Employee chooses the registration number of a vehicle.
+SAV obtains the information of the loan of the vehicle.
+SAV shows the information of the loan of the vehicle.
+SAV enables the option Return.
+
+If the Employee chooses the option Return then:
+SAV obtains the date and hour of the refund.
+SAV obtains the identification of the Employee.
+SAV assigns the state "disabled" to the vehicle.
+SAV registers the information of the refund of the vehicle.
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+
+
+REQUEST MAINTENANCE
+
+INITIATES WHEN the Operator selects the option Maintenance.
+SAV obtains the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+SAV shows the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+The Operator chooses the registration number of the vehicle.
+
+If the state of the vehicle is "pending maintenance" then:
+SAV obtains the data of the request of maintenance of the vehicle.
+SAV enables the data of the request of maintenance of the vehicle.
+
+If the state of the vehicle is "disabled" or "pending repair" then:
+SAV requests the data of the request of maintenance of the vehicle.
+
+SAV obtains the identification of the Operator.
+SAV shows the identification of the Operator.
+The Operator introduces the data of the request of maintenance.
+SAV enables the option Request.
+
+If the Operator chooses the option Request then:
+SAV obtains the date and hour of the request of maintenance.
+SAV assigns to the vehicle the state "pending maintenance".
+SAV registers the data of the request of maintenance.
+SAV enables the option Repair.
+
+
+REGISTER MAINTENANCE
+
+INITIATES WHEN the Employee selects the option Register Maintenance.
+SAV obtains the registration numbers of the vehicles with state "pending maintenance".
+SAV shows the registration numbers of the vehicles with state "pending maintenance".
+The Technician selects the registration of the vehicle.
+SAV obtains the data of the request of maintenance.
+SAV shows the data of the request of maintenance.
+SAV enables the option Repair.
+SAV requests the description of the maintenance carried out to the vehicle.
+The Technician introduces the description of the maintenance of the vehicle.
+SAV requests the mileage of the vehicle.
+The Technician introduces the mileage of the vehicle.
+SAV enables the option Register.
+
+If the Technician chooses the option Register then:
+SAV obtains the place, date and hour of the registration of maintenance of the vehicle.
+SAV obtains the identification of the Technician.
+SAV disables the option Repair.
+SAV registers the data of the maintenance.
+
+If the state of the vehicle is different to "pending repair" then:
+
+If (the insurance expiration date is greater than current date plus 1 month) and (total rate is greater than 0) and (mileage vehicle is less than 150000) then:
+SAV assigns to the vehicle the state "paymaster".
+
+If insurance expiration date is less than current date plus 1 month then:
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Renew Insurance.
+
+If total rate is equal to zero then:
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Assign Rate.
+
+If vehicle mileage is greater or equal than 150000 then:
+SAV assigns to the vehicle the state "for sale".
+
+
+REQUEST REPAIR
+
+INITIATES WHEN the Operator selects the option Request Repair.
+SAV obtains the registrations of the vehicles with the state "disabled" or "pending maintenance".
+SAV shows the registrations of the vehicles with the state "disabled" or "pending maintenance".
+The Operator chooses the registration of the vehicle.
+SAV obtains the date and hour of the request of repair.
+SAV obtains the identification of the Operator.
+SAV enables the option External Garage.
+
+If the Operator selects the option External Garage then:
+SAV obtains the identification of the external garages.
+SAV shows the identification of the external garages.
+The Operator chooses the external garage.
+
+SAV requests the description of the damage that is desired to repair.
+The Operator introduces the description of the damage that is desired to repair.
+SAV enables the option Request.
+
+If the Operator chooses the option Request then:
+SAV assigns to the vehicle the state "pending repair".
+SAV registers the data of the request of repair.
+
+
+REGISTER REPAIR
+
+INITIATES WHEN the Technician selects the option Register Repair.
+SAV obtains the registrations of the vehicles with the state "pending repair".
+SAV shows the registrations of the vehicles with the state "pending repair".
+The Technician selects the registration of the vehicle.
+SAV obtains the data of the request of repair.
+SAV shows the data of the request of repair.
+SAV obtains the place, date and hour of the registration of the request of repair of the vehicle.
+SAV obtains the identification of the Technician.
+SAV requests the description of the repair carried out to the vehicle.
+The Technician introduces the description of the repair carried out to the vehicle.
+SAV requests the cost of the repair of the vehicle.
+The Technician introduces the cost of the repair of the vehicle.
+SAV enables the option Register.
+
+If the Technician chooses the option Register then:
+SAV registers the data of the repair.
+
+
+REGISTER AN EXTERNAL GARAGE
+
+INITIATES WHEN the Employee selects the option Register an External Garage. 
+SAV requests the data of the external garage.
+The Employee introduces the data of the external garage.
+SAV enables the option Register.
+
+If the Employee chooses the option Register then:
+SAV registers the data of the external garage.
+
+External garage existing.
+SAV shows the Employee the message Registered External Garage.
+
+
+ERASE EXTERNAL GARAGE
+
+INITIATES WHEN the Administrator selects the option Erase External Garage. 
+SAV obtains the name and the identification of the external garages.
+SAV It shows the name and the identification of the external garages.
+The Employee selects the name of the external garage.
+SAV shows the data of the external garage.
+SAV enables the option Erase.
+
+If the Employee selects the option Erase then:
+SAV eliminates the external garage.
+
+MODIFY EXTERNAL GARAGE
+
+INITIATES WHEN the Employee selects the option Modify External Garage.
+SAV obtains the name and the identification of the external garages.
+SAV shows the name and the identification of the external garages.
+The Employee selects the name of the external garage.
+SAV shows the data of the external garage.
+The Employee introduces the data of the external garage.
+SAV enables the option Modify.
+
+If the Employee selects the option Modify then:
+SAV registers the data of the external garage.
+
+
+REGISTER A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Register Vehicle.
+SAV requests the Administrator the registration number of the vehicle.
+The Administrator introduces the registration number of the vehicle.
+SAV validates the registration number of the vehicle.
+SAV requests the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+SAV determines the existence of the class and the group of the type of vehicle.
+SAV obtains the class and the group of the type of vehicle.
+SAV shows the class and the group of the type of vehicle.
+SAV enables the option Register Vehicle. 
+
+If the Administrator selects the option Register Vehicle then:
+SAV obtains the date and hour of the registration of the vehicle.
+SAV registers the date and hour of the registration of the vehicle. 
+SAV registers the registration number, the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+
+Invalid registration number.
+SAV shows the Administrator the message Invalid Registration Number.
+
+Existing registration number.
+SAV shows the Administrator the message Existing Registration Number.
+
+
+MODIFY THE REGISTRATION OF A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Modify Vehicle.
+SAV shows the registration numbers of the vehicles.
+The Administrator selects the registration number of a vehicle.
+SAV shows the data of the vehicle.
+SAV enables the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+SAV determines the existence of the class and the group of the type of vehicle.
+SAV obtains the class and the group of the type of vehicle.
+SAV shows the class and the group of the type of vehicle.
+SAV enables the option Modifying Registration.   
+
+If the Administrator selects the option Modify Registration then:
+SAV obtains the date and hour of the registration of the vehicle.
+SAV registers the date and hour of the registration of the vehicle. 
+SAV registers the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+
+
+REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE
+ 
+INITIATES WHEN the Administrator selects the option Register of the Historic information of a Vehicle. 
+SAV shows the registration numbers of the vehicles sold.
+The Administrator chooses the registration number of a vehicle.
+SAV obtains the data of the registration of the vehicle.  
+SAV obtains the data of the registration of the purchase of the vehicle.
+SAV obtains the data of the registration of the sale of the vehicle.
+SAV enables the option Register Historic.  
+
+If the Administrator selects the option Register Historic then:
+SAV registers the data of the registration of the vehicle in the Historic of Vehicles.   
+SAV eliminates the registration of the vehicle.
+SAV registers the data of the registration of the purchase of the vehicle in the Historic of Vehicles.  
+SAV eliminates the registration of the purchase of the vehicle.
+SAV registers the data of the registration of the sale of the vehicle in the Historic of Vehicles.  
+SAV eliminates the registration of the sale of the vehicle.
+
+
+
+ASSIGN CLASS AND GROUP
+
+INITIATES WHEN the Administrator selects the option Assign Class and Group. 
+SAV requests the model, year of production and number of doors of the vehicle.
+The Administrator introduces the model, year of production and number of doors of the vehicle.
+SAV determines the existence of the class and group of the type of vehicle.
+SAV shows the name and the description of the classes of vehicle.
+SAV enables the option Create Class.
+
+If the Administrator selects the name and the description of a class of vehicle then:
+SAV disables the option Create Class.
+SAV shows the name, the description and the types of vehicle of the groups of the class of vehicle.
+
+If the Administrator selects a group of a class of vehicle then:
+SAV enables the option Register.
+
+If the Administrator selects the option Register then:
+SAV registers the type of vehicle in a group of a class.  
+
+Class and Group of the Type of Existing Vehicle.
+SAV shows the Administrator the message Class and Group of the Type of Existing Vehicle.  
+
+
+CREATING A CLASS
+
+INITIATES WHEN the Administrator selects the option Create Class.  
+SAV requests the name and the description of the new class of vehicle.
+The Administrator introduces the name and the description of the new class of vehicle.
+SAV determines the existence of the class.
+SAV enables the option Create Group.
+
+If the Administrator selects the option Create Group then:
+SAV requests the name and the description of the group of the class of vehicle.
+The Administrator introduces the name and the description of the group of the class of vehicle.
+SAV assigns the value of monetary units zero to the price of the class and the group of the vehicle types. 
+SAV enables the option Assign Price. 
+SAV enables the option Register.
+
+If the Administrator selects the option Register then
+SAV registers the data of the new class.
+
+Existing class.
+SAV shows the Administrator the message Existing Class.  
+
+
+ERASE TYPE OF VEHICLE
+
+INITIATES WHEN the Administrator selects the option Erase Type.  
+SAV requests the model, year of production and number of doors of the vehicle.
+The Administrator introduces the model, year of production and number of doors of the vehicle.
+SAV determines the existence of the class and group of the type of vehicle.
+SAV obtains the class and group of the type of vehicle.
+SAV shows the class and group of the type of vehicle.
+SAV enables the option Erase.
+
+If the Administrator selects the option Erase then:
+SAV eliminates the type of vehicle of the class and group.
+SAV enables the option Assign Class and Group.  
+SAV enables the option Create Class.
+
+Class and nonexistent group.
+SAV shows the Administrator the message the Type of Vehicle is not assigned to a Group. 
+
+
+ASSIGN PRICE
+
+INITIATES WHEN the Administrator selects the option Assign Price.
+SAV shows the classes of vehicles.
+The Administrator selects a class of vehicle.
+SAV shows the data of the class of vehicle.
+The Administrator selects a group of the class of vehicle.
+SAV shows the data of the group of the class of vehicle.
+SAV shows the price of the class and group of vehicle types. 
+SAV requests to introduce the daily price of the rent of a class and group of vehicle types.
+SAV requests to introduce the daily cost of the insurance of the types of vehicles of a class and group.
+The Administrator introduces the daily price of the rent of a class and group vehicles types.
+The Administrator introduces the daily cost of the insurance of the types of vehicles of a class and group.
+SAV enables the option Register Price.
+
+If the Administrator chooses the option Register Price then:
+SAV calculates the total price of the rent of a type of vehicle.
+SAV registers the daily price of the rent of a class and group vehicles types.
+SAV registers the daily cost of the insurance of the types of vehicles of a class and group.
+SAV registers the total price of the rent of a type of vehicle.
+
+
+INSURE A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Insure a Vehicle.
+SAV requests to the Employee the registration number of the vehicle.  
+The Employee introduces the registration number of the vehicle. 
+The Employee chooses the registration number of the vehicle.
+SAV determines the existence of an insurance policy of the vehicle.
+SAV enables the option Register Insurance Company.  
+SAV shows the insurance companies. 
+The Employee selects the insurance company.  
+SAV requests the data of the insurance policy.
+The Employee introduces the data of the insurance policy.
+SAV enables the option Register.
+
+If the Employee chooses the option Register then:
+SAV obtains the date and hour of registration of the insurance policy.  
+SAV obtains the identification of the Employee.
+SAV registers the data of the insurance policy. 
+SAV encloses to the insurance policy the date and hour of registration and the identification of the Employee that registered it.  
+
+Exists an insurance policy of the vehicle. 
+SAV shows to the Employee the message Exists Insurance Policy.   
+SAV enables the option Renew the Insurance Policy.
+
+
+RENEW THE INSURANCE POLICY
+
+INITIATES WHEN the Employee selects the option Renew the Insurance Policy. 
+SAV shows the registration numbers of the vehicles that have insurance policies. 
+The Employee chooses a registration number of a vehicle. 
+SAV obtains the data of the insurance policy. 
+SAV shows the data of the insurance policy.  
+SAV enables the option Register Insurance Company.
+The Employee introduces the new data of the insurance policy. 
+SAV enables the option Renew.
+
+If the Employee chooses the option Renew then:
+SAV obtains the date and hour of renewal of the insurance policy.
+SAV obtains the identification of the Employee that carried out the renewal.  
+SAV registers the new data of the insurance policy.  
+SAV enclosed to the insurance policy the date and hour of the renewal and the identification of the Employee that carried out the renewal.
+
+
+REGISTER A INSURANCE COMPANY
+ 
+INITIATES WHEN the Administrator selects the option Register a Insurance Company.
+SAV requests to the Administrator the data of the Insurance Company.
+The Administrator introduces the data of the Insurance Company. 
+SAV enables the option Register.  
+
+If the Administrator chooses the option Register then:
+SAV obtains the date and hour of registration of the data of the Insurance Company. 
+SAV obtains the identification of the Administrator that carried out the registration.  
+SAV registers the date and hour of registration of the data of the Insurance Company.
+SAV registers the identification of the Administrator that carried out the registration.
+SAV registers the data of the Insurance Company. 
+
+
+MODIFY AN INSURANCE COMPANY
+
+INITIATES WHEN the Administrator selects the option Modify an Insurance Company.
+SAV obtains the names of the Insurance Companies.
+SAV shows the names of the Insurance Companies. 
+The Administrator chooses an Insurance Company.
+SAV shows the data of the Insurance Company.
+SAV enables the data of the Insurance Company.
+The Administrator introduces the data of the Insurance Company.  
+SAV enables the option Modify.  
+
+If the Administrator chooses the option Modify then:
+SAV obtains the date and hour of modification of the data of the Insurance Company.
+SAV obtains the identification of the Administrator that carried out the modification.
+SAV registers the date and hour of modification of the data of the Insurance Company.
+SAV registers the identification of the Administrator carried out the modification.
+SAV registers the data of the Insurance Company.
+
+
+REGISTER A CLIENT
+
+INITIATES WHEN the Employee selects the option Register a Client.
+SAV asks to the Employee if the client is direct or if he is an agency.  
+The Employee tells if the client is direct or if he is an agency.  
+SAV requests the identifier of the client according to his type.
+SAV determines the existence of the client.
+SAV requests the data of the client according to his type. 
+The Employee introduces the data of the client.
+SAV enables the option Register.
+
+If the Employee chooses the option Register then:
+SAV obtains the date and hour of registration of the client.
+SAV obtains the identification of the Employee that carries out the registration of the client.
+SAV registers the data of the client.  
+
+If the client is direct then:
+SAV registers the bank details of the direct client.
+
+Existing client.
+SAV shows the Employee the message Existing Client. 
+SAV enables the option Modify Client.
+
+
+MODIFY THE DATA OF A CLIENT
+
+INITIATES WHEN the Employee selects the option Modify the Data of a Client.
+SAV asks to the Employee if the client is direct or is an agency.
+The Employee indicates if the client is direct or is an agency.
+SAV obtains the identifiers of the clients according to his type.
+SAV shows the identifiers of the clients according to his type.
+The Employee chooses the identifier of a client.  
+SAV obtains the data of the client.
+SAV shows the data of the client.
+The Employee introduces the new data of the client.
+
+If the client is direct then
+SAV enables the option Register Bank Details. 
+
+SAV enables the option Register.
+
+If the Employee chooses the option Register then:
+SAV obtains the date and hour of modification of the client.
+SAV obtains the identification of the Employee that carried out the modification of the client.
+SAV registers the data of the client.  
+
+If the client is direct then:
+SAV registers the bank details of the direct client.
+
+
+REGISTER THE BANK DETAILS OF A DIRECT CLIENT 
+
+INITIATES WHEN the Employee selects the option Register the Bank Details of a Direct Client. 
+SAV obtains the identifiers of the direct clients.  
+SAV shows the identifiers of the direct clients.  
+The Employee chooses the identifier of the direct client.
+SAV requests the bank details of the direct client.  
+The Employee introduces the bank details of the direct client.  
+SAV enables the option Register.
+
+If the Employee chooses the option Register then:
+SAV validates the bank details of the direct client.
+SAV registers the bank details of the direct client.
+
+Invalid bank details.
+SAV shows the Employee the message Invalid Bank Details. 
+SAV enables the option Register Bank Details.
+
+
+AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT
+
+INITIATES WHEN the Administrator selects the option Authorize Discount or Commission of a Client.  
+SAV asks the Administrator if the client is direct or is an agency.
+The Administrator indicates if the client is direct or is an agency.
+SAV obtains the identifiers of the clients according to its type.
+SAV shows the identifiers of the clients according to its type.
+The Administrator chooses the identifier of the client.
+SAV obtains the data of the client.
+SAV shows the data of the client.
+The Administrator introduces the percentage of discount or the commission of the client.
+SAV enables the option Register.
+
+If the Administrator chooses the option Register then:
+SAV registers the percentage of discount or the commission of the client.  
+
+
+REGISTER EXTRAS
+
+INITIATES WHEN the Administrator selects the option Register Extras.
+SAV requests to the Administrator the data of the extra.
+The Administrator introduces the data of the extra.
+SAV enables the option Register.
+
+If the Administrator chooses the option Register then:
+SAV assigns a code to the extra.
+SAV registers the data of the extra.
+SAV enables the option Register another Extra.
+
+
+MODIFY AN EXTRA
+
+INITIATES WHEN the Administrator selects the option Modify Extras.
+SAV obtains the codes and the generic names of the extras.
+SAV shows to the Administrator the codes and the generic names of the extras.
+The Administrator chooses the code of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+The Administrator introduces the new data of the extra.
+SAV enables the option Modify.
+
+If the Administrator chooses the option Modify then:
+SAV registers the new data of the extra.
+SAV enables the option Another Modification.
+
+
+ELECTION OF EXTRAS
+
+
+INITIATES WHEN the Employee selects the option Election of Extras.
+SAV obtains the generic name of the extras.
+SAV shows the generic name of the extras.
+The Employee chooses the generic name of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+
+If the extra is of type accessory then:
+SAV determines the available quantity of the accessory.
+SAV requests the quantity of units that are desired to hire.
+The Employee introduces the quantity of units that are desired to hire.
+
+If available quantity of the accessory is less than the quantity of units that are desired to hire then:
+SAV shows to the Employee the message Unavailable Accessory.
+
+SAV enables the option Elect.
+
+If the Employee chooses the option Elect then:
+
+SAV obtains the code, generic name, description, limitations, observations and price of the extra.
+
+If the extra is of type accessory then:
+SAV requests the quantity of days of contracting of the extra.
+The Employee introduces the quantity of days of contracting of the extra. 
+SAV requests the quantity of units of the accessory that were chosen.
+The Employee introduces the quantity of units of the accessory that were chosen.
+SAV calculates the total to pay for concept of accessories.
+SAV shows the total to pay for concept of accessories.
+
+If the extra is of type service then:
+SAV requests the quantity of days of contracting of the service.
+The Employee introduces the quantity of days of contracting of the service.
+SAV calculates the total to pay for concept of services.
+SAV shows the total to pay for concept of services.
+
+SAV calculates the subtotal by concept of extras.
+SAV shows the subtotal by concept of extras.
+SAV enables the option Another Extra.
+
+
+ELIMINATE AN EXTRA OF A LEASE
+
+INITIATES WHEN the Employee selects the option Eliminate an Extra of a Lease.
+SAV obtains of the lease the code of the extras hired.
+SAV shows the code and generic name of the extras hired.
+The Employee chooses the generic name of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+SAV enables the option Eliminate.
+
+If the Employee chooses the option Eliminate then:
+
+If the extra is of type accessory then:
+SAV obtains the quantity of days of contracting of the extra.
+SAV obtains the quantity of units of the extra that were rented.
+SAV updates the available quantity of the extra.
+SAV assigns the value of zero to the quantity of days of contracting of the extra.
+SAV calculates the total to discount for concept of accessories.
+SAV shows the total to discount for concept of accessories.
+
+If the extra is of type service then:
+SAV obtains the quantity of days of contracting of the extra.
+SAV calculates the total to discount for concept of services.
+SAV shows the total to discount for concept of services.
+
+SAV calculates the subtotal by concept of extras.
+SAV shows the subtotal by concept of extras.
+SAV enables the option Eliminate Another Extra.
+
+
+OPEN A LABOR CONTRACT
+
+INITIATES WHEN the Administrator selects the option Open a Labor Contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines if the data of the employee already are registered. 
+SAV determines if the employee maintains a labor contract in force or assets with the company. 
+
+If the employee already is registered then:
+SAV shows the data of the employee.
+SAV enables the option Modify the Data of an Employee.
+else:
+SAV shows the data of the employee.
+
+SAV requests the start date, duration and conditions of the labor contract.
+The Administrator introduces the start date, duration and conditions of the labor contract.  
+SAV enables the option Register Contract.
+
+If the Administrator chooses the option Register Contract then:
+SAV obtains the registration date of the labor contract and the identifier of the Administrator that carries out said registration.
+SAV assigns a code of identification to the labor contract.
+SAV registers the code and the registration date of the labor contract, the identifier of the Administrator that carries out said registration, the identity card of the employee, the start date, duration and conditions of the labor contract.
+
+If  registration date is less than start date then:
+SAV assigns to the labor contract the state "active".
+else:
+SAV assigns to the labor contract the state "in force".
+
+Labor Contract in force or active.
+SAV shows the message Existing Labor Contract. 
+
+
+MODIFY THE DATA OF A LABOR CONTRACT
+
+INITIATES WHEN the Administrator selects the option Modify the Data of a Labor Contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines the existence of the identity card of the employee.
+SAV determines if the employee maintains a labor contract in force or assets with the business.
+SAV obtains the code of the labor contracts in force and assets of the employee.
+SAV shows the code of the labor contracts in force and assets of the employee.
+The Administrator chooses the code of a labor contract.
+SAV obtains the data of the labor contract of the employee.
+SAV shows the data of the labor contract of the employee.  
+The Administrator introduces the new data of the labor contract of the employee.
+SAV enables the option Modify Contract.
+
+If the Administrator chooses the option Register Contract then:
+SAV obtains the modification date of the labor contract and the identifier of the Administrator that carries out said modification.
+SAV registers the data of the labor contract, the modification date and the identifier of the Administrator that carries out said modification.
+SAV updates the state of the labor contract.
+
+Nonexistent employee.
+SAV shows the message Employed Nonexistent. 
+
+Nonexistent labor contract or annulled or culminated.
+SAV shows the message Labor Contract without Conditions of Modification. 
+
+
+CANCEL A LABOR CONTRACT
+
+INITIATES WHEN the Administrator selects the option Cancel a Labor contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines the existence of the identity card of the employee.
+SAV determines if the employee maintains a labor contract in force with the company.
+SAV obtains the data of the labor contract in force that the employee maintains with the company.
+SAV shows the data of the labor contract of the employee.  
+SAV enables the option Cancel Contract.
+
+If the Administrator chooses the option Cancel Contract then:
+SAV asks the Administrator the reasons of the annulment of the labor contract.
+The Administrator introduces the reasons of the annulment of the labor contract.
+SAV obtains the annulment date of the labor contract and the identifier of the Administrator that carries out it.
+SAV registers the data of the labor contract, the annulment date and the identifier of the Administrator that carries out it.
+SAV assigns to the labor contract the state "annulled".
+
+Nonexistent employee.
+SAV shows the message Employed Nonexistent. 
+
+Nonexistent labor contract or without vigor.
+SAV shows the message Nonexistent Labor Contract or Labor Contract Without Vigor. 
+
+
+REGISTER A NEW EMPLOYEE
+
+INITIATES WHEN the Administrator selects the option Register a New Employee
+SAV requests the identity card of the new employee.
+SAV determines the existence of the employee.
+SAV requests the data of the employee.
+The Administrator introduces the data of the employee. 
+SAV enables the option Register.
+
+If the Administrator chooses the option Register then:
+SAV obtains the registration date of the employee and the identifier of the Administrator that carries out it.
+SAV registers the data of the employee, the registration date of the employee and the identifier of the Administrator that carries out it.
+
+Existing employee.
+SAV shows the message Employed Existing. 
+
+
+MODIFY THE DATA OF AN EMPLOYEE
+
+INITIATES WHEN the Administrator selects the option Modify the Data of an Employee.
+SAV requests the identity card of the employee.
+SAV determines the existence of the employee.
+SAV obtains the data of the employee.
+SAV shows the data of the employee.
+The Administrator introduces the new data of the employee. 
+SAV enables the option Register.
+
+If the Administrator chooses the option Register then:
+SAV obtains the modification date and the identifier of the Administrator that carries out it.
+SAV registers the employee data, the modification date and the identifier of the Administrator that carries out it.
+
+
+Nonexistent employee.
+SAV shows the message Employed Nonexistent. 
+
+
+
+
+
+
+
+

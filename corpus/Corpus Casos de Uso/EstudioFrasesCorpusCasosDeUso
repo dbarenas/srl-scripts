@@ -1,0 +1,1700 @@
+1... Analizando... The system verifies the deadline of the rental contract of each lessee of the real estate agency.
+(A0 The   system ) (V verifies V) (A1 the   deadline   of   the   rental   contract   of   each   lessee   of   the   real   estate   agency. ) 
+2... Analizando... The system registers the personal details of the lessee and the address of the property in the rental contract.
+(A0 The   system ) (V registers V) (A1 the   personal   details   of   the   lessee   and   the   address   of   the   property   in   the   rental   contract. ) 
+3... Analizando... The system registers the buyer personal details, the salesman commission and the purchase deadline.
+(A0 The   system ) (V registers V) (A1 the   buyer ) (A3 personal   details,   the   salesman   commission   and   the   purchase   deadline.  
+4... Analizando... BUY A VEHICLE
+(V BUY V) (A1 A   VEHICLE ) 
+5... Analizando... INITIATES WHEN the Administrator selects the option Buy a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Buy   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Buy V) (A1 a   Vehicle. ) 
+6... Analizando... SAV requests the Administrator the registration number of the vehicle.
+.... Se detecta frase sin verbo (6)
+7... Analizando... The Administrator introduces the registration number of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   registration   number   of   the   vehicle. ) 
+8... Analizando... SAV validates the registration number of the vehicle.
+(A0 SAV ) (V validates V) (A1 the   registration   number   of   the   vehicle. ) 
+9... Analizando... SAV determines the existence of the registration number of the vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   registration   number   of   the   vehicle. ) 
+10... Analizando... SAV requests the identification of the responsible for the purchase of the vehicle.
+.... Se detecta frase sin verbo (10)
+11... Analizando... The Administrator requests the identification of the responsible for the purchase of the vehicle.
+.... Se detecta frase sin verbo (11)
+12... Analizando... SAV requests the purchase date and the cost of the vehicle.
+.... Se detecta frase sin verbo (12)
+13... Analizando... The Administrator introduces the purchase date and the cost of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   purchase   date   and   the   cost   of   the   vehicle. ) 
+14... Analizando... SAV enables the option Register Purchase.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Purchase. ) 
+15... Analizando... If the Administrator selects the option Register Purchase then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   Purchase   then:  
+(A1 If   the   Administrator   selects   the   option ) (A0 Register ) (V Purchase V) (AM-TMP then: ) 
+16... Analizando... SAV registers the purchase date and the cost of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   purchase   date   and   the   cost   of   the   vehicle. ) 
+17... Analizando... SAV registers the date and hour of the registration of the purchase of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   the   registration   of   the   purchase   of   the   vehicle. ) 
+18... Analizando... SAV registers the responsible for the purchase of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   responsible   for   the   purchase   of   the   vehicle. ) 
+19... Analizando... SAV assigns to the vehicle the state "disabled".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "disabled".  
+20... Analizando... SAV enables the option Maintenance.
+(A0 SAV ) (V enables V) (A1 the   option   Maintenance. ) 
+21... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+22... Analizando... SAV enables the option Assure Vehicle.
+(A0 SAV ) (V enables V) (A1 the   option   Assure   Vehicle. ) 
+ SAV   enables  (AM-MOD the   option ) (V Assure V) (A1 Vehicle. ) 
+23... Analizando... Invalid registration number.
+.... Se detecta frase sin verbo (23)
+24... Analizando... SAV shows the Administrator the message Invalid or Existing Registration Number.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Invalid   or   Existing   Registration   Number. ) 
+ SAV   shows   the   Administrator   the   message   Invalid   or  (V Existing V) (A1 Registration )  Number.  
+25... Analizando... Existing registration number.
+(V Existing V) (A1 registration   number. ) 
+26... Analizando... SAV shows the Administrator the message Invalid or Existing Registration Number.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Invalid   or   Existing   Registration   Number. ) 
+ SAV   shows   the   Administrator   the   message   Invalid   or  (V Existing V) (A1 Registration )  Number.  
+27... Analizando... MODIFY A PURCHASE
+(V MODIFY V) (A1 A   PURCHASE ) 
+28... Analizando... INITIATES WHEN the Administrator selects the option Modify Purchase.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   Purchase.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 Purchase. ) 
+29... Analizando... SAV shows the registration number of the vehicles.
+(A0 SAV ) (V shows V) (A1 the   registration   number   of   the   vehicles. ) 
+30... Analizando... The Administrator chooses the registration number of the vehicle.
+(A0 The   Administrator ) (V chooses V) (A1 the   registration   number   of   the   vehicle. ) 
+31... Analizando... SAV obtains the purchase data of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   purchase   data   of   the   vehicle. ) 
+32... Analizando... SAV shows the purchase data of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   purchase   data   of   the   vehicle. ) 
+33... Analizando... SAV enables the date, responsible and price of the purchase of the vehicle.
+(A0 SAV ) (V enables V) (A1 the   date,   responsible   and   price   of   the   purchase   of   the   vehicle.  
+34... Analizando... The Administrator introduces the new data of the purchase of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   new   data   of   the   purchase   of   the   vehicle. ) 
+35... Analizando... SAV enables the option Modify Vehicle.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   Vehicle. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 Vehicle. ) 
+36... Analizando... SAV enables the option Modify.
+(A0 SAV ) (V enables V) (A1 the   option   Modify. ) 
+ SAV   enables  (A1 the   option ) (V Modify. V) 
+37... Analizando... If the Administrator chooses the option Modify then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Modify   then:  
+(A1 If   the   Administrator   chooses   the   option ) (V Modify V) (AM-TMP then: ) 
+38... Analizando... SAV registers the purchase data of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   purchase   data   of   the   vehicle. ) 
+39... Analizando... SELL A VEHICLE
+(V SELL V) (A1 A   VEHICLE ) 
+40... Analizando... INITIATES WHEN the Administrator selects the option Sell a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Sell   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Sell V) (A1 a   Vehicle. ) 
+41... Analizando... SAV shows the registration numbers of the vehicles that do not have the state "sold".
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   that   do   not   have   the   state   "sold".  
+ SAV   shows   the   registration   numbers   of   the   vehicles   that   do  (AM-NEG not ) (V have V) (A1 the   state   "sold".  
+42... Analizando... The Administrator chooses a registration number.
+(A0 The   Administrator ) (V chooses V) (A1 a   registration   number. ) 
+43... Analizando... SAV shows the sale date of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   sale   date   of   the   vehicle. ) 
+44... Analizando... SAV requests the date agreed of delivery and the sale price of the vehicle.
+ SAV   requests   the   date  (V agreed V) (A1 of   delivery   and   the   sale   price   of   the   vehicle. ) 
+45... Analizando... The Administrator introduces the date agreed of delivery and the sale price of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   date   agreed   of   delivery   and   the   sale   price   of   the   vehicle. ) 
+ The   Administrator   introduces   the   date  (V agreed V) (A1 of   delivery   and   the   sale   price   of   the   vehicle. ) 
+46... Analizando... SAV requests the identification of the buyer of the vehicle.
+.... Se detecta frase sin verbo (46)
+47... Analizando... The Administrator introduces the identification of the buyer of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   identification   of   the   buyer   of   the   vehicle. ) 
+48... Analizando... SAV shows the name of the responsible for the sale.
+(A0 SAV ) (V shows V) (A1 the   name   of   the   responsible   for   the   sale. ) 
+49... Analizando... SAV requests the observations of the sale.
+.... Se detecta frase sin verbo (49)
+50... Analizando... The Administrator writes the observations of the sale.
+(A0 The   Administrator ) (V writes V) (A1 the   observations   of   the   sale. ) 
+51... Analizando... SAV enables the option Register Sale.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Sale. ) 
+52... Analizando... If the Administrator selects the option Register Sale then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   Sale   then:  
+53... Analizando... SAV keeps the date, the head, the observations, the identification of the buyer, the date agreed of delivery and the sale price of the vehicle.
+(A0 SAV ) (V keeps V) (C-A1 the   date,   the   head,   the   observations,   the   identification   of   the   buyer,   the   date   agreed   of   delivery   and   the   sale   price   of   the   vehicle.  
+ SAV   keeps   the   date,   the   head,   the   observations,   the   identification   of   the   buyer,   the   date   agreed   of   delivery  (A0 and ) (V the V)  sale   price   of   the   vehicle.  
+54... Analizando... If the vehicle does not have the state "paymaster" or "for sale" then:
+ If  (A0 the   vehicle )  does  (AM-NEG not ) (V have V) (A1 the   state   "paymaster"   or   "for   sale"   then:  
+55... Analizando... SAV assigns to the vehicle the state "sold".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "sold".  
+56... Analizando... SAV enables the option Deliver Vehicle.
+(A0 SAV ) (V enables V) (A1 the   option   Deliver   Vehicle. ) 
+(A0 SAV )  enables   the   option  (V Deliver V) (A1 Vehicle. ) 
+57... Analizando... DELIVER A VEHICLE SOLD
+(V DELIVER V) (A1 A   VEHICLE   SOLD ) 
+ DELIVER  (A0 A   VEHICLE ) (V SOLD V) 
+58... Analizando... INITIATES WHEN the Administrator selects the option Deliver a Vehicle Sold.
+(V INITIATES V)  WHEN   the   Administrator   selects   the   option   Deliver   a   Vehicle   Sold.  
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Deliver   a   Vehicle   Sold. ) 
+ INITIATES  (R-AM-TMP WHEN )  the   Administrator   selects   the   option  (V Deliver V) (A1 a   Vehicle   Sold. ) 
+ INITIATES   WHEN   the   Administrator   selects   the   option   Deliver  (AM-MOD a   Vehicle ) (V Sold. V) 
+59... Analizando... SAV shows the registration numbers of the vehicles sold.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   sold. ) 
+ SAV   shows   the   registration   numbers   of  (A1 the   vehicles ) (V sold. V) 
+60... Analizando... The Administrator selects the registration number of the vehicle sold.
+(A0 The   Administrator ) (V selects V) (A1 the   registration   number   of   the   vehicle   sold. ) 
+ The   Administrator   selects   the   registration   number   of  (A1 the   vehicle ) (V sold. V) 
+61... Analizando... SAV validates the date agreed of delivery of the vehicle.
+(A0 SAV ) (V validates V) (A1 the   date   agreed   of   delivery   of   the   vehicle. ) 
+ SAV   validates   the   date  (V agreed V) (A1 of   delivery   of   the   vehicle. ) 
+62... Analizando... SAV obtains the identification of the buyer of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   buyer   of   the   vehicle. ) 
+63... Analizando... SAV shows the identification of the buyer of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   identification   of   the   buyer   of   the   vehicle. ) 
+64... Analizando... SAV requests the identification of the authorized person to collect the vehicle.
+ SAV   requests  (A0 the   identification   of   the   authorized   person )  to  (V collect V) (A1 the   vehicle. ) 
+65... Analizando... The Administrator introduces the identification of the authorized person to collect the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   identification   of   the   authorized   person ) (AM-ADV to   collect   the   vehicle. ) 
+ The   Administrator   introduces  (A0 the   identification   of   the   authorized   person )  to  (V collect V) (A1 the   vehicle. ) 
+66... Analizando... SAV enables the option Confirm Delivery.
+(A0 SAV ) (V enables V) (A1 the   option   Confirm   Delivery. ) 
+ SAV   enables  (A0 the   option ) (V Confirm V) (A1 Delivery. ) 
+67... Analizando... If the Administrator selects the option Confirm Delivery then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Confirm   Delivery   then:  
+(A1 If   the   Administrator   selects   the   option ) (V Confirm V) (A1 Delivery ) (AM-TMP then: ) 
+68... Analizando... SAV registers the real date of delivery of the vehicle sold.
+(A1 SAV ) (V registers V) (A3 the   real   date   of   delivery   of   the   vehicle   sold. ) 
+ SAV   registers   the   real   date   of   delivery   of  (A1 the   vehicle ) (V sold. V) 
+69... Analizando... SAV registers the identification of the authorized person to collect the vehicle.
+(A1 SAV ) (V registers V) (A1 the   identification   of   the   authorized   person ) (AM-ADV to   collect   the   vehicle. ) 
+ SAV   registers  (A0 the   identification   of   the   authorized   person )  to  (V collect V) (A1 the   vehicle. ) 
+70... Analizando... Current date is smaller that the delivery date.
+(A0 Current   date ) (V is V) (A1 smaller   that   the   delivery   date. ) 
+71... Analizando... SAV shows the Administrator the message Error in Delivery Date.
+(A0 SAV ) (V shows V) (A1 the   Administrator   the   message   Error   in   Delivery   Date. ) 
+72... Analizando... RENT A VEHICLE
+(V RENT V) (A1 A   VEHICLE ) 
+73... Analizando... INITIATES WHEN the Employee selects the option Rent a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Rent   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Rent V) (A1 a   Vehicle. ) 
+74... Analizando... SAV shows the registration numbers of the enabled vehicles.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   enabled   vehicles. ) 
+ SAV   shows   the   registration   numbers   of   the  (V enabled V) (A1 vehicles. ) 
+75... Analizando... The Employee chooses the registration number of the vehicle that desires to rent.
+(A0 The   Employee ) (V chooses V) (A1 the   registration   number   of   the   vehicle   that   desires   to   rent. ) 
+ The   Employee   chooses   the   registration   number   of  (A1 the   vehicle ) (R-A0 that ) (V desires V) (A1 to   rent. ) 
+ The   Employee   chooses   the   registration   number   of  (A1 the   vehicle ) (A0 that )  desires   to  (V rent. V) 
+76... Analizando... SAV obtains the vehicle data.
+(A0 SAV ) (V obtains V) (A1 the   vehicle   data. ) 
+77... Analizando... SAV shows the vehicle data.
+(A0 SAV ) (V shows V) (A1 the   vehicle   data. ) 
+78... Analizando... SAV requests the place of refund of the vehicle.
+.... Se detecta frase sin verbo (78)
+79... Analizando... The Employee introduces the place of refund of the vehicle.
+(A0 The   Employee ) (V introduces V) (A1 the   place   of   refund )  of   the   vehicle.  
+80... Analizando... SAV enables the option Elect Extras.
+(A0 SAV ) (V enables V) (A1 the   option   Elect   Extras. ) 
+ SAV   enables  (A0 the   option ) (V Elect V) (A2 Extras. ) 
+81... Analizando... SAV enables the option Bill.
+(A0 SAV ) (V enables V) (A1 the   option   Bill. ) 
+82... Analizando... SAV enables the option Register Lease.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Lease. ) 
+83... Analizando... If the Employee selects the option Register Lease then:
+ If  (A0 the   Employee ) (V selects V) (A1 the   option )  Register   Lease   then:  
+(A1 If   the   Employee   selects   the   option ) (AM-MOD Register ) (V Lease V) (AM-TMP then: ) 
+84... Analizando... SAV disables the option Register Lease.
+(A0 SAV ) (V disables V) (A1 the   option   Register   Lease. ) 
+85... Analizando... SAV disables the option Elect Extras.
+(A0 SAV ) (V disables V) (A1 the   option   Elect   Extras. ) 
+ SAV   disables  (A0 the   option ) (V Elect V) (A2 Extras. ) 
+86... Analizando... SAV disables the option Bill.
+(A0 SAV ) (V disables V) (A1 the   option   Bill. ) 
+87... Analizando... SAV obtains the subtotal by concept of rent, the subtotal by concept of extras and the total amount of the lease.
+(A0 SAV ) (V obtains V) (A1 the   subtotal   by   concept   of   rent,   the   subtotal   by   concept   of   extras   and   the   total   amount   of   the   lease.  
+88... Analizando... SAV requests the amount of the bail of the lease.
+.... Se detecta frase sin verbo (88)
+89... Analizando... The Employee introduces the amount of the bail of the lease.
+(A0 The   Employee ) (V introduces V) (A1 the   amount   of   the   bail   of   the   lease. ) 
+90... Analizando... SAV obtains the identification of the Employee.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee. ) 
+91... Analizando... SAV registers the data of the lease.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   lease. ) 
+92... Analizando... For each extra of type accessory registered in the lease do:
+ For   each   extra   of   type  (A1 accessory ) (V registered V) (AM-TMP in   the   lease )  do:  
+ For   each   extra   of   type  (A0 accessory   registered   in   the   lease ) (V do: V) 
+93... Analizando... SAV obtains the code of the accessory.
+(A0 SAV ) (V obtains V) (A1 the   code   of   the   accessory. ) 
+94... Analizando... SAV obtains the quantity of units of the accessory that were rented.
+(A0 SAV ) (V obtains V) (A1 the   quantity   of   units   of   the   accessory   that   were   rented. ) 
+ SAV   obtains  (A0 the   quantity   of   units   of   the   accessory ) (A0 that )  were  (V rented. V) 
+95... Analizando... SAV calculates the available quantity of units of the accessory.
+(A0 SAV ) (V calculates V) (A1 the   available   quantity   of   units   of   the   accessory. ) 
+96... Analizando... SAV registers the available quantity of units of the accessory.
+(A1 SAV ) (V registers V) (A3 the   available   quantity   of   units   of   the   accessory. ) 
+97... Analizando... SAV assigns to the vehicle the state "rented".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "rented".  
+98... Analizando... CLOSE A LEASE
+(V CLOSE V) (A1 A   LEASE ) 
+99... Analizando... INITIATES WHEN the Employee selects the option Close a Contract.
+(V INITIATES V) (A1 WHEN   the   Employee   selects   the   option   Close   a   Contract. ) 
+ INITIATES   WHEN  (A0 the   Employee ) (V selects V) (A1 the   option   Close   a   Contract. ) 
+100... Analizando... SAV obtains the registration numbers of the vehicles rented.
+(A0 SAV ) (V obtains V) (A1 the   registration   numbers   of   the   vehicles   rented. ) 
+ SAV   obtains   the   registration   numbers   of  (A1 the   vehicles ) (V rented. V) 
+101... Analizando... SAV shows the registration numbers of the vehicles rented.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   rented. ) 
+ SAV   shows   the   registration   numbers   of  (A1 the   vehicles ) (V rented. V) 
+102... Analizando... The Employee chooses the registration number of the vehicle.
+(A0 The   Employee ) (V chooses V) (A1 the   registration   number   of   the   vehicle. ) 
+103... Analizando... SAV recovers the data of the lease of the vehicle.
+(A1 SAV ) (V recovers V) (A1 the   data   of   the   lease   of   the   vehicle. ) 
+104... Analizando... SAV shows the data of the lease of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   lease   of   the   vehicle. ) 
+105... Analizando... SAV enables the option Modify Contract.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   Contract. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 Contract. ) 
+106... Analizando... SAV enables the option Bill.
+(A0 SAV ) (V enables V) (A1 the   option   Bill. ) 
+107... Analizando... SAV enables the option Close.
+(A0 SAV ) (V enables V) (A1 the   option   Close. ) 
+108... Analizando... If the Employee chooses the option Close then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option ) (A1 Close   then: ) 
+109... Analizando... SAV disables the option Modify Contract.
+(A0 SAV ) (V disables V) (A1 the   option   Modify   Contract. ) 
+ SAV   disables  (AM-MOD the   option ) (V Modify V) (A1 Contract. ) 
+110... Analizando... SAV disables the option Bill.
+(A0 SAV ) (V disables V) (A1 the   option   Bill. ) 
+111... Analizando... SAV registers the data of closing of the lease.
+(A1 SAV ) (V registers V) (A1 the   data   of   closing   of   the   lease. ) 
+ SAV   registers   the   data   of  (V closing V) (A1 of   the   lease. ) 
+112... Analizando... For each extra of type accessory registered in the closing of the lease do:
+(AM-TMP For   each   extra   of   type ) (A1 accessory ) (V registered V) (AM-LOC in   the   closing   of   the   lease   do: ) 
+(AM-TMP For   each   extra   of   type )  accessory   registered   in   the   closing   of   the  (A0 lease ) (V do: V) 
+113... Analizando... SAV obtains the code of the accessory.
+(A0 SAV ) (V obtains V) (A1 the   code   of   the   accessory. ) 
+114... Analizando... SAV obtains the quantity of units of the accessory that were rented.
+(A0 SAV ) (V obtains V) (A1 the   quantity   of   units   of   the   accessory   that   were   rented. ) 
+ SAV   obtains  (A0 the   quantity   of   units   of   the   accessory ) (A0 that )  were  (V rented. V) 
+115... Analizando... SAV calculates the available quantity of units of the accessory.
+(A0 SAV ) (V calculates V) (A1 the   available   quantity   of   units   of   the   accessory. ) 
+116... Analizando... SAV registers the available quantity of units of the accessory.
+(A1 SAV ) (V registers V) (A3 the   available   quantity   of   units   of   the   accessory. ) 
+117... Analizando... SAV assigns to the vehicle the state "disabled".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "disabled".  
+118... Analizando... SAV enables the option Maintenance.
+(A0 SAV ) (V enables V) (A1 the   option   Maintenance. ) 
+119... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+120... Analizando... MODIFY A LEASE
+(V MODIFY V) (A1 A   LEASE ) 
+121... Analizando... INITIATES WHEN the Employee selects the option Modify a Contract.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Modify   a   Contract.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Modify V) (A1 a   Contract. ) 
+122... Analizando... SAV shows the registration numbers of the vehicles rented.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   rented. ) 
+ SAV   shows   the   registration   numbers   of  (A1 the   vehicles ) (V rented. V) 
+123... Analizando... The Employee chooses the registration number of a vehicle rented.
+(A0 The   Employee ) (V chooses V) (A1 the   registration   number   of   a   vehicle   rented. ) 
+ The   Employee   chooses   the   registration   number   of  (AM-MOD a   vehicle ) (V rented. V) 
+124... Analizando... SAV obtains the data of the lease of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   lease   of   the   vehicle. ) 
+125... Analizando... SAV shows the data of the lease of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   lease   of   the   vehicle. ) 
+126... Analizando... SAV enables the option Modify a Client.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   a   Client. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 a   Client. ) 
+127... Analizando... SAV enables the option Eliminate Extras.
+(A0 SAV ) (V enables V) (A1 the   option   Eliminate   Extras. ) 
+ SAV   enables  (AM-MOD the   option ) (V Eliminate V) (A1 Extras. ) 
+128... Analizando... SAV enables the option Elect Extras.
+(A0 SAV ) (V enables V) (A1 the   option   Elect   Extras. ) 
+ SAV   enables  (A0 the   option ) (V Elect V) (A2 Extras. ) 
+129... Analizando... The Employee introduces the new data of the lease of the vehicle.
+(A0 The   Employee ) (V introduces V) (A1 the   new   data   of   the   lease   of   the   vehicle. ) 
+130... Analizando... SAV enables the option Register Changes.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Changes. ) 
+ SAV   enables  (A0 the   option ) (A1 Register ) (V Changes. V) 
+131... Analizando... If the Employee selects the option Register Changes then:
+ If  (A0 the   Employee ) (V selects V) (A1 the   option )  Register   Changes   then:  
+132... Analizando... SAV disables the option Modify Client.
+(A0 SAV ) (V disables V) (A1 the   option   Modify   Client. ) 
+ SAV   disables  (AM-MOD the   option ) (V Modify V) (A1 Client. ) 
+133... Analizando... SAV disables the option Eliminate Extras.
+(A0 SAV ) (V disables V) (A1 the   option   Eliminate   Extras. ) 
+ SAV   disables  (AM-MOD the   option ) (V Eliminate V) (A1 Extras. ) 
+134... Analizando... SAV disables the option Elect Extras.
+(A0 SAV ) (V disables V) (A1 the   option   Elect   Extras. ) 
+ SAV   disables  (A0 the   option ) (V Elect V) (A2 Extras. ) 
+135... Analizando... SAV obtains the identification of the Employee.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee. ) 
+136... Analizando... SAV obtains the date and hour of modification of the lease.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   modification   of   the   lease. ) 
+137... Analizando... SAV registers the identification of the Employee, the date and hour of modification and the data of the lease.
+(A1 SAV ) (V registers V) (A1 the   identification   of   the   Employee,   the   date   and   hour   of   modification   and   the   data   of   the   lease.  
+138... Analizando... For each new extra of registered accessory type in the lease do:
+ For   each   new   extra   of  (V registered V)  accessory   type   in   the   lease   do:  
+ For  (A0 each   new   extra   of   registered   accessory   type   in   the   lease ) (V do: V) 
+139... Analizando... SAV obtains the code of the accessory.
+(A0 SAV ) (V obtains V) (A1 the   code   of   the   accessory. ) 
+140... Analizando... SAV obtains the units of the accessory that were rented.
+(A0 SAV ) (V obtains V) (A1 the   units   of   the   accessory   that   were   rented. ) 
+ SAV   obtains  (A0 the   units   of   the   accessory ) (A0 that )  were  (V rented. V) 
+141... Analizando... SAV calculates the available quantity of units of the accessory.
+(A0 SAV ) (V calculates V) (A1 the   available   quantity   of   units   of   the   accessory. ) 
+142... Analizando... SAV registers the available quantity of units of the accessory.
+(A1 SAV ) (V registers V) (A3 the   available   quantity   of   units   of   the   accessory. ) 
+143... Analizando... INVOICE THE RENT OF A VEHICLE
+(V INVOICE V) (A1 THE   RENT   OF   A   VEHICLE ) 
+144... Analizando... INITIATES WHEN the Employee selects the option Bill.
+(V INITIATES V) (A1 WHEN   the   Employee   selects   the   option   Bill. ) 
+ INITIATES   WHEN  (A0 the   Employee ) (V selects V) (A1 the   option   Bill. ) 
+145... Analizando... SAV obtains the registration number of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   registration   number   of   the   vehicle. ) 
+146... Analizando... SAV obtains the date of the lease.
+(A0 SAV ) (V obtains V) (A1 the   date   of   the   lease. ) 
+147... Analizando... SAV obtains the duration of the lease.
+(A0 SAV ) (V obtains V) (A1 the   duration   of   the   lease. ) 
+148... Analizando... SAV obtains the daily rate of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   daily   rate   of   the   vehicle. ) 
+149... Analizando... SAV obtains the subtotal by concept of extras of the lease.
+(A0 SAV ) (V obtains V) (A1 the   subtotal   by   concept   of   extras   of   the   lease. ) 
+150... Analizando... SAV calculates the subtotal of the rent.
+(A0 SAV ) (V calculates V) (A1 the   subtotal   of   the   rent. ) 
+151... Analizando... If the client is direct then:
+ If  (A1 the   client ) (V is V) (AM-MNR direct ) (AM-TMP then: ) 
+152... Analizando... SAV obtains the discount of the applicable rate to the client.
+(A0 SAV ) (V obtains V) (A1 the   discount   of   the   applicable   rate ) (A4 to   the   client. ) 
+153... Analizando... SAV calculates the subtotal of the rent with discount.
+(A0 SAV ) (V calculates V) (A1 the   subtotal   of   the   rent )  with   discount.  
+154... Analizando... SAV calculates the total amount without tax of the lease.
+(A0 SAV ) (V calculates V) (A1 the   total   amount   without   tax   of   the   lease. ) 
+155... Analizando... SAV calculates the tax corresponding to the total amount of the lease.
+(A0 SAV ) (V calculates V) (A1 the   tax   corresponding   to   the   total   amount   of   the   lease. ) 
+156... Analizando... SAV calculates the total amount with tax of the lease.
+(A0 SAV ) (V calculates V) (A1 the   total   amount   with   tax   of   the   lease. ) 
+157... Analizando... If amount bail is greater than zero then:
+ If  (A0 amount ) (V bail V)  is   greater   than   zero   then:  
+(A0 If   amount   bail ) (V is V) (A1 greater   than   zero   then: ) 
+158... Analizando... SAV calculates the total to pay for the client.
+(A0 SAV ) (V calculates V) (A1 the   total   to   pay   for   the   client. ) 
+ SAV   calculates  (A0 the   total )  to  (V pay V) (A3 for   the   client. ) 
+159... Analizando... SAV shows the subtotal by concept of rent without discount, the subtotal by concept of rent with discount, the subtotal by concept of extras, the total amount of the lease without tax and the total amount of the lease with tax.
+(A0 SAV ) (V shows V) (A1 the   subtotal   by   concept   of   rent ) (AM-TMP without   discount,   the   subtotal   by   concept   of   rent   with   discount,   the   subtotal   by   concept   of   extras,   the   total   amount   of   the   lease   without   tax   and   the   total   amount   of   the   lease   with   tax.  
+160... Analizando... BORROW A VEHICLE
+(V BORROW V) (A1 A   VEHICLE ) 
+161... Analizando... INITIATES WHEN the Administrator selects the option Borrow a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Borrow   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Borrow V) (A1 a   Vehicle. ) 
+162... Analizando... SAV shows the registration numbers of the enabled vehicles.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   enabled   vehicles. ) 
+ SAV   shows   the   registration   numbers   of   the  (V enabled V) (A1 vehicles. ) 
+163... Analizando... The Administrator selects the registration number of a vehicle.
+(A0 The   Administrator ) (V selects V) (A1 the   registration   number   of   a   vehicle. ) 
+164... Analizando... SAV requests the identification of the borrower.
+.... Se detecta frase sin verbo (164)
+165... Analizando... The Administrator introduces the identification of the borrower.
+(A0 The   Administrator ) (V introduces V) (A1 the   identification   of   the   borrower. ) 
+166... Analizando... SAV validates the identification of the borrower.
+(A0 SAV ) (V validates V) (A1 the   identification   of   the   borrower. ) 
+167... Analizando... SAV requests the motive of the loan and the estimated date of refund of the vehicle.
+ SAV   requests   the   motive   of   the   loan   and   the  (V estimated V) (A1 date )  of   refund   of   the   vehicle.  
+168... Analizando... The Administrator introduces the motive of the loan and the estimated date of refund of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   motive   of   the   loan   and   the   estimated   date   of   refund ) (A2 of   the   vehicle. ) 
+ The   Administrator   introduces   the   motive   of   the   loan   and   the  (V estimated V) (A1 date )  of   refund   of   the   vehicle.  
+169... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+170... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+171... Analizando... SAV obtains the date and hour of the loan.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   the   loan. ) 
+172... Analizando... SAV obtains the identification of the Administrator.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Administrator. ) 
+173... Analizando... SAV assigns the state "borrowed" to the vehicle.
+(A1 SAV ) (V assigns V) (A2 the   state   "borrowed"   to   the   vehicle.  
+ SAV   assigns  (A0 the   state )  "borrowed"  (V to V)  the  (A2 vehicle.  
+174... Analizando... SAV registers the information of the loan.
+(A1 SAV ) (V registers V) (A1 the   information   of   the   loan. ) 
+175... Analizando... Identification of the invalid borrower.
+.... Se detecta frase sin verbo (175)
+176... Analizando... SAV shows the Administrator the message Nonexistent Borrower.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Nonexistent   Borrower. ) 
+177... Analizando... RETURN A BORROWED VEHICLE
+(V RETURN V) (A4 A   BORROWED   VEHICLE ) 
+ RETURN   A  (V BORROWED V) (A1 VEHICLE ) 
+178... Analizando... INITIATES WHEN the Employee selects the option Return a Borrowed Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Return   a   Borrowed   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Return V) (A4 a   Borrowed   Vehicle. ) 
+ INITIATES   WHEN   the   Employee   selects   the   option   Return   a  (V Borrowed V) (A1 Vehicle. ) 
+179... Analizando... SAV shows the registration numbers of the borrowed vehicles.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   borrowed   vehicles. ) 
+ SAV   shows   the   registration   numbers   of   the  (V borrowed V) (A1 vehicles. ) 
+180... Analizando... The Employee chooses the registration number of a vehicle.
+(A0 The   Employee ) (V chooses V) (A1 the   registration   number   of   a   vehicle. ) 
+181... Analizando... SAV obtains the information of the loan of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   information   of   the   loan   of   the   vehicle. ) 
+182... Analizando... SAV shows the information of the loan of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   information   of   the   loan   of   the   vehicle. ) 
+183... Analizando... SAV enables the option Return.
+(A0 SAV ) (V enables V) (A1 the   option   Return. ) 
+184... Analizando... If the Employee chooses the option Return then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option   Return   then: ) 
+ If   the   Employee   chooses  (A1 the   option ) (V Return V) (AM-TMP then: ) 
+185... Analizando... SAV obtains the date and hour of the refund.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   the   refund. ) 
+186... Analizando... SAV obtains the identification of the Employee.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee. ) 
+187... Analizando... SAV assigns the state "disabled" to the vehicle.
+(A1 SAV ) (V assigns V) (A2 the   state   "disabled"   to   the   vehicle.  
+188... Analizando... SAV registers the information of the refund of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   information   of   the   refund   of   the   vehicle. ) 
+189... Analizando... SAV enables the option Maintenance.
+(A0 SAV ) (V enables V) (A1 the   option   Maintenance. ) 
+190... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+191... Analizando... REQUEST MAINTENANCE
+.... Se detecta frase sin verbo (191)
+192... Analizando... INITIATES WHEN the Operator selects the option Maintenance.
+(V INITIATES V) (A1 WHEN   the   Operator   selects   the   option   Maintenance. ) 
+ INITIATES   WHEN  (A0 the   Operator ) (V selects V) (A1 the   option   Maintenance. ) 
+193... Analizando... SAV obtains the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+(A0 SAV ) (V obtains V)  the   registration   numbers   of   the   vehicles   in   state   "disabled"   or   "pending   maintenance".  
+194... Analizando... SAV shows the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   in   state   "disabled"   or   "pending   maintenance".  
+195... Analizando... The Operator chooses the registration number of the vehicle.
+(A0 The   Operator ) (V chooses V) (A1 the   registration   number   of   the   vehicle. ) 
+196... Analizando... If the state of the vehicle is "pending maintenance" then:
+ If  (A0 the   state   of   the   vehicle ) (V is V)  "pending   maintenance"   then:  
+197... Analizando... SAV obtains the data of the request of maintenance of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   request   of   maintenance   of   the   vehicle. ) 
+198... Analizando... SAV enables the data of the request of maintenance of the vehicle.
+(A0 SAV ) (V enables V) (A1 the   data   of   the   request   of   maintenance   of   the   vehicle. ) 
+199... Analizando... If the state of the vehicle is "disabled" or "pending repair" then:
+ If  (A0 the   state   of   the   vehicle ) (V is V)  "disabled"   or   "pending   repair"   then:  
+200... Analizando... SAV requests the data of the request of maintenance of the vehicle.
+.... Se detecta frase sin verbo (200)
+201... Analizando... SAV obtains the identification of the Operator.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Operator. ) 
+202... Analizando... SAV shows the identification of the Operator.
+(A0 SAV ) (V shows V) (A1 the   identification   of   the   Operator. ) 
+203... Analizando... The Operator introduces the data of the request of maintenance.
+(A0 The   Operator ) (V introduces V) (A3 the   data   of   the   request   of   maintenance. ) 
+204... Analizando... SAV enables the option Request.
+(A0 SAV ) (V enables V) (A1 the   option   Request. ) 
+205... Analizando... If the Operator chooses the option Request then:
+ If  (A0 the   Operator ) (V chooses V) (A1 the   option   Request ) (AM-TMP then: ) 
+206... Analizando... SAV obtains the date and hour of the request of maintenance.
+(A0 SAV ) (V obtains V) (A3 the   date   and   hour   of   the   request   of   maintenance. ) 
+207... Analizando... SAV assigns to the vehicle the state "pending maintenance".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "pending   maintenance".  
+208... Analizando... SAV registers the data of the request of maintenance.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   request   of   maintenance. ) 
+209... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+210... Analizando... REGISTER MAINTENANCE
+(V REGISTER V) (A3 MAINTENANCE ) 
+211... Analizando... INITIATES WHEN the Employee selects the option Register Maintenance.
+(V INITIATES V) (A1 WHEN   the   Employee   selects   the   option   Register   Maintenance. ) 
+ INITIATES   WHEN  (A0 the   Employee ) (V selects V) (A1 the   option   Register   Maintenance. ) 
+212... Analizando... SAV obtains the registration numbers of the vehicles with state "pending maintenance".
+(A0 SAV ) (V obtains V) (A1 the   registration   numbers   of   the   vehicles ) (A2 with   state   "pending   maintenance".  
+ SAV   obtains   the   registration   numbers   of   the   vehicles   with   state   "pending  (V maintenance". V) 
+213... Analizando... SAV shows the registration numbers of the vehicles with state "pending maintenance".
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   with   state   "pending   maintenance".  
+ SAV   shows   the   registration   numbers   of   the   vehicles   with   state   "pending  (V maintenance". V) 
+214... Analizando... The Technician selects the registration of the vehicle.
+(A0 The   Technician ) (V selects V) (A1 the   registration   of   the   vehicle. ) 
+215... Analizando... SAV obtains the data of the request of maintenance.
+(A0 SAV ) (V obtains V) (A3 the   data   of   the   request   of   maintenance. ) 
+216... Analizando... SAV shows the data of the request of maintenance.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   request   of   maintenance. ) 
+217... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+218... Analizando... SAV requests the description of the maintenance carried out to the vehicle.
+ SAV   requests   the   description   of  (A0 the   maintenance ) (V carried V)  out  (A2 to   the   vehicle. ) 
+219... Analizando... The Technician introduces the description of the maintenance of the vehicle.
+(A0 The   Technician ) (V introduces V) (A1 the   description   of   the   maintenance   of   the   vehicle. ) 
+220... Analizando... SAV requests the mileage of the vehicle.
+.... Se detecta frase sin verbo (220)
+221... Analizando... The Technician introduces the mileage of the vehicle.
+(A0 The   Technician ) (V introduces V) (A1 the   mileage   of   the   vehicle. ) 
+222... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+223... Analizando... If the Technician chooses the option Register then:
+ If  (A0 the   Technician ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Technician   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+224... Analizando... SAV obtains the place, date and hour of the registration of maintenance of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   place,   date   and   hour   of   the   registration   of   maintenance   of   the   vehicle.  
+225... Analizando... SAV obtains the identification of the Technician.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Technician. ) 
+226... Analizando... SAV disables the option Repair.
+(A0 SAV ) (V disables V) (A1 the   option   Repair. ) 
+227... Analizando... SAV registers the data of the maintenance.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   maintenance. ) 
+228... Analizando... If the state of the vehicle is different to "pending repair" then:
+ If  (A0 the   state   of   the   vehicle ) (V is V) (A1 different   to   "pending   repair"   then:  
+ If   the   state   of  (A0 the   vehicle )  is   different   to   "pending  (V repair" V) (A1 then: ) 
+229... Analizando... If (the insurance expiration date is greater than current date plus 1 month) and (total rate is greater than 0) and (mileage vehicle is less than 150000) then:
+ If   (the  (A1 insurance   expiration   date   is ) (V greater V) (A1 than   current   date   plus   1   month)   and )  (total   rate   is   greater   than   0)   and   (mileage   vehicle   is   less   than   150000)   then:  
+ If   (the   insurance   expiration   date   is   greater   than   current   date   plus   1   month)   and   (total   rate   is  (A0 greater   than ) (V 0) V) (A1 and   (mileage   vehicle )  is   less   than   150000)   then:  
+230... Analizando... SAV assigns to the vehicle the state "paymaster".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "paymaster".  
+231... Analizando... If insurance expiration date is less than current date plus 1 month then:
+ If  (A0 insurance   expiration   date ) (V is V) (A1 less   than   current   date   plus   1   month   then: ) 
+232... Analizando... SAV assigns to the vehicle the state "disabled".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "disabled".  
+233... Analizando... SAV enables the option Renew Insurance.
+(A0 SAV ) (V enables V) (A1 the   option   Renew   Insurance. ) 
+ SAV   enables  (A0 the   option ) (V Renew V) (A1 Insurance. ) 
+234... Analizando... If total rate is equal to zero then:
+ If  (A0 total   rate ) (V is V) (A1 equal   to   zero   then: ) 
+235... Analizando... SAV assigns to the vehicle the state "disabled".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "disabled".  
+236... Analizando... SAV enables the option Assign Rate.
+(A0 SAV ) (V enables V) (A1 the   option   Assign   Rate. ) 
+ SAV   enables  (A1 the   option ) (V Assign V) (A1 Rate. ) 
+237... Analizando... If vehicle mileage is greater or equal than 150000 then:
+ If  (A0 vehicle   mileage ) (V is V) (A1 greater   or   equal   than   150000   then: ) 
+238... Analizando... SAV assigns to the vehicle the state "for sale".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "for   sale".  
+239... Analizando... REQUEST REPAIR
+.... Se detecta frase sin verbo (239)
+240... Analizando... INITIATES WHEN the Operator selects the option Request Repair.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Operator ) (V selects V) (A1 the   option )  Request   Repair.  
+(AM-TMP INITIATES   WHEN   the   Operator   selects   the   option ) (V Request V) (A1 Repair. ) 
+241... Analizando... SAV obtains the registrations of the vehicles with the state "disabled" or "pending maintenance".
+(A0 SAV ) (V obtains V)  the   registrations   of   the   vehicles   with   the   state   "disabled"   or   "pending   maintenance".  
+242... Analizando... SAV shows the registrations of the vehicles with the state "disabled" or "pending maintenance".
+(A0 SAV ) (V shows V) (A1 the   registrations   of   the   vehicles   with   the   state   "disabled"   or   "pending   maintenance".  
+243... Analizando... The Operator chooses the registration of the vehicle.
+(A0 The   Operator ) (V chooses V) (A1 the   registration   of   the   vehicle. ) 
+244... Analizando... SAV obtains the date and hour of the request of repair.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   the   request   of   repair. ) 
+245... Analizando... SAV obtains the identification of the Operator.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Operator. ) 
+246... Analizando... SAV enables the option External Garage.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 External   Garage. ) 
+247... Analizando... If the Operator selects the option External Garage then:
+ If  (A0 the   Operator ) (V selects V) (A1 the   option   External   Garage ) (AM-TMP then: ) 
+248... Analizando... SAV obtains the identification of the external garages.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   external   garages. ) 
+249... Analizando... SAV shows the identification of the external garages.
+(A0 SAV ) (V shows V) (A1 the   identification   of   the   external   garages. ) 
+250... Analizando... The Operator chooses the external garage.
+(A0 The   Operator ) (V chooses V) (A1 the   external   garage. ) 
+251... Analizando... SAV requests the description of the damage that is desired to repair.
+ SAV   requests   the   description   of  (A0 the   damage ) (R-A0 that )  is  (V desired V) (A1 to   repair. ) 
+ SAV   requests   the   description   of  (A1 the   damage ) (R-A1 that )  is   desired   to  (V repair. V) 
+252... Analizando... The Operator introduces the description of the damage that is desired to repair.
+(A0 The   Operator ) (V introduces V) (A1 the   description   of   the   damage   that   is   desired   to   repair. ) 
+ The   Operator   introduces   the   description   of  (A0 the   damage ) (R-A0 that )  is  (V desired V) (A1 to   repair. ) 
+ The   Operator   introduces   the   description   of  (A1 the   damage ) (R-A1 that )  is   desired   to  (V repair. V) 
+253... Analizando... SAV enables the option Request.
+(A0 SAV ) (V enables V) (A1 the   option   Request. ) 
+254... Analizando... If the Operator chooses the option Request then:
+ If  (A0 the   Operator ) (V chooses V) (A1 the   option   Request ) (AM-TMP then: ) 
+255... Analizando... SAV assigns to the vehicle the state "pending repair".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "pending   repair".  
+256... Analizando... SAV registers the data of the request of repair.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   request   of   repair. ) 
+257... Analizando... REGISTER REPAIR
+(V REGISTER V) (A3 REPAIR ) 
+258... Analizando... INITIATES WHEN the Technician selects the option Register Repair.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Technician ) (V selects V) (A1 the   option )  Register   Repair.  
+(AM-TMP INITIATES   WHEN   the   Technician   selects   the   option ) (V Register V) (A3 Repair. ) 
+259... Analizando... SAV obtains the registrations of the vehicles with the state "pending repair".
+(A0 SAV ) (V obtains V) (A1 the   registrations   of   the   vehicles   with   the   state   "pending   repair".  
+ SAV   obtains   the   registrations   of   the   vehicles   with   the   state   "pending  (V repair". V) 
+260... Analizando... SAV shows the registrations of the vehicles with the state "pending repair".
+(A0 SAV ) (V shows V) (A1 the   registrations   of   the   vehicles   with   the   state   "pending   repair".  
+ SAV   shows   the   registrations   of   the   vehicles   with   the   state   "pending  (V repair". V) 
+261... Analizando... The Technician selects the registration of the vehicle.
+(A0 The   Technician ) (V selects V) (A1 the   registration   of   the   vehicle. ) 
+262... Analizando... SAV obtains the data of the request of repair.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   request   of   repair. ) 
+263... Analizando... SAV shows the data of the request of repair.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   request   of   repair. ) 
+264... Analizando... SAV obtains the place, date and hour of the registration of the request of repair of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   place,   date   and   hour   of   the   registration   of   the   request   of   repair   of   the   vehicle.  
+265... Analizando... SAV obtains the identification of the Technician.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Technician. ) 
+266... Analizando... SAV requests the description of the repair carried out to the vehicle.
+ SAV   requests   the   description   of  (A0 the   repair ) (V carried V)  out  (A2 to   the   vehicle. ) 
+267... Analizando... The Technician introduces the description of the repair carried out to the vehicle.
+(A0 The   Technician ) (V introduces V) (A1 the   description   of   the   repair   carried   out   to   the   vehicle. ) 
+ The   Technician   introduces   the   description   of  (A0 the   repair ) (V carried V)  out  (A2 to   the   vehicle. ) 
+268... Analizando... SAV requests the cost of the repair of the vehicle.
+.... Se detecta frase sin verbo (268)
+269... Analizando... The Technician introduces the cost of the repair of the vehicle.
+(A0 The   Technician ) (V introduces V) (A1 the   cost   of   the   repair   of   the   vehicle. ) 
+270... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+271... Analizando... If the Technician chooses the option Register then:
+ If  (A0 the   Technician ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Technician   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+272... Analizando... SAV registers the data of the repair.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   repair. ) 
+273... Analizando... REGISTER AN EXTERNAL GARAGE
+(V REGISTER V) (A3 AN   EXTERNAL   GARAGE ) 
+274... Analizando... INITIATES WHEN the Employee selects the option Register an External Garage.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Register   an   External   Garage.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Register V) (A3 an   External   Garage. ) 
+275... Analizando... SAV requests the data of the external garage.
+.... Se detecta frase sin verbo (275)
+276... Analizando... The Employee introduces the data of the external garage.
+(A0 The   Employee ) (V introduces V) (A1 the   data   of   the   external   garage. ) 
+277... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+278... Analizando... If the Employee chooses the option Register then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+279... Analizando... SAV registers the data of the external garage.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   external   garage. ) 
+280... Analizando... External garage existing.
+(A1 External   garage ) (V existing. V) 
+281... Analizando... SAV shows the Employee the message Registered External Garage.
+(A0 SAV ) (V shows V) (A1 the   Employee   the   message   Registered   External   Garage. ) 
+282... Analizando... ERASE EXTERNAL GARAGE
+(V ERASE V) (A1 EXTERNAL   GARAGE ) 
+283... Analizando... INITIATES WHEN the Administrator selects the option Erase External Garage.
+(V INITIATES V) (A1 WHEN   the   Administrator   selects   the   option   Erase   External   Garage. ) 
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Erase   External   Garage. ) 
+ INITIATES   WHEN   the   Administrator   selects  (A1 the   option ) (V Erase V) (A1 External   Garage. ) 
+284... Analizando... SAV obtains the name and the identification of the external garages.
+(A0 SAV ) (V obtains V) (A1 the   name   and   the   identification   of   the   external   garages. ) 
+285... Analizando... SAV It shows the name and the identification of the external garages.
+(A0 SAV ) (A0 It ) (V shows V) (A1 the   name   and   the   identification   of   the   external   garages. ) 
+286... Analizando... The Employee selects the name of the external garage.
+(A0 The   Employee ) (V selects V) (A1 the   name   of   the   external   garage. ) 
+287... Analizando... SAV shows the data of the external garage.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   external   garage. ) 
+288... Analizando... SAV enables the option Erase.
+(A0 SAV ) (V enables V) (A1 the   option   Erase. ) 
+ SAV   enables  (A1 the   option ) (V Erase. V) 
+289... Analizando... If the Employee selects the option Erase then:
+ If  (A0 the   Employee ) (V selects V) (A1 the   option   Erase   then: ) 
+ If   the   Employee   selects  (A1 the   option ) (V Erase V) (AM-TMP then: ) 
+290... Analizando... SAV eliminates the external garage.
+(AM-MOD SAV ) (V eliminates V) (A1 the   external   garage. ) 
+291... Analizando... MODIFY EXTERNAL GARAGE
+(V MODIFY V) (A1 EXTERNAL   GARAGE ) 
+292... Analizando... INITIATES WHEN the Employee selects the option Modify External Garage.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Modify   External   Garage.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Modify V) (A1 External   Garage. ) 
+293... Analizando... SAV obtains the name and the identification of the external garages.
+(A0 SAV ) (V obtains V) (A1 the   name   and   the   identification   of   the   external   garages. ) 
+294... Analizando... SAV shows the name and the identification of the external garages.
+(A0 SAV ) (V shows V) (A1 the   name   and   the   identification   of   the   external   garages. ) 
+295... Analizando... The Employee selects the name of the external garage.
+(A0 The   Employee ) (V selects V) (A1 the   name   of   the   external   garage. ) 
+296... Analizando... SAV shows the data of the external garage.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   external   garage. ) 
+297... Analizando... The Employee introduces the data of the external garage.
+(A0 The   Employee ) (V introduces V) (A1 the   data   of   the   external   garage. ) 
+298... Analizando... SAV enables the option Modify.
+(A0 SAV ) (V enables V) (A1 the   option   Modify. ) 
+ SAV   enables  (A1 the   option ) (V Modify. V) 
+299... Analizando... If the Employee selects the option Modify then:
+ If  (A0 the   Employee ) (V selects V) (A1 the   option )  Modify   then:  
+(A1 If   the   Employee   selects   the   option ) (V Modify V) (AM-TMP then: ) 
+300... Analizando... SAV registers the data of the external garage.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   external   garage. ) 
+301... Analizando... REGISTER A VEHICLE
+(V REGISTER V) (A3 A   VEHICLE ) 
+302... Analizando... INITIATES WHEN the Administrator selects the option Register Vehicle.
+(V INITIATES V) (A1 WHEN   the   Administrator   selects   the   option   Register   Vehicle. ) 
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   Vehicle. ) 
+303... Analizando... SAV requests the Administrator the registration number of the vehicle.
+.... Se detecta frase sin verbo (303)
+304... Analizando... The Administrator introduces the registration number of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   registration   number   of   the   vehicle. ) 
+305... Analizando... SAV validates the registration number of the vehicle.
+(A0 SAV ) (V validates V) (A1 the   registration   number   of   the   vehicle. ) 
+306... Analizando... SAV requests the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+.... Se detecta frase sin verbo (306)
+307... Analizando... The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   model,   the   brand,   the   year   of   production,   the   number   of   doors,   the   capacity   and   the   mileage   of   the   vehicle.  
+308... Analizando... SAV determines the existence of the class and the group of the type of vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   class   and   the   group   of   the   type   of   vehicle. ) 
+309... Analizando... SAV obtains the class and the group of the type of vehicle.
+(A0 SAV ) (V obtains V) (A1 the   class   and   the   group   of   the   type   of   vehicle. ) 
+310... Analizando... SAV shows the class and the group of the type of vehicle.
+(A0 SAV ) (V shows V) (A1 the   class   and   the   group   of   the   type   of   vehicle. ) 
+311... Analizando... SAV enables the option Register Vehicle.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Vehicle. ) 
+312... Analizando... If the Administrator selects the option Register Vehicle then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   Vehicle   then: ) 
+313... Analizando... SAV obtains the date and hour of the registration of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   the   registration   of   the   vehicle. ) 
+314... Analizando... SAV registers the date and hour of the registration of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   the   registration   of   the   vehicle. ) 
+315... Analizando... SAV registers the registration number, the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   registration   number,   the   model,   the   brand,   the   year   of   production,   the   number   of   doors,   the   capacity,   the   mileage,   the   class   and   the   group   of   the   vehicle.  
+316... Analizando... Invalid registration number.
+.... Se detecta frase sin verbo (316)
+317... Analizando... SAV shows the Administrator the message Invalid Registration Number.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Invalid   Registration   Number. ) 
+318... Analizando... Existing registration number.
+(V Existing V) (A1 registration   number. ) 
+319... Analizando... SAV shows the Administrator the message Existing Registration Number.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Existing   Registration   Number. ) 
+320... Analizando... MODIFY THE REGISTRATION OF A VEHICLE
+(V MODIFY V) (A1 THE   REGISTRATION   OF   A   VEHICLE ) 
+321... Analizando... INITIATES WHEN the Administrator selects the option Modify Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 Vehicle. ) 
+322... Analizando... SAV shows the registration numbers of the vehicles.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles. ) 
+323... Analizando... The Administrator selects the registration number of a vehicle.
+(A0 The   Administrator ) (V selects V) (A1 the   registration   number   of   a   vehicle. ) 
+324... Analizando... SAV shows the data of the vehicle.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   vehicle. ) 
+325... Analizando... SAV enables the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+(A0 SAV ) (V enables V) (A1 the   model,   the   brand,   the   year   of   production,   the   number   of   doors,   the   capacity   and   the   mileage   of   the   vehicle.  
+326... Analizando... The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   model,   the   brand,   the   year   of   production,   the   number   of   doors,   the   capacity   and   the   mileage   of   the   vehicle.  
+327... Analizando... SAV determines the existence of the class and the group of the type of vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   class   and   the   group   of   the   type   of   vehicle. ) 
+328... Analizando... SAV obtains the class and the group of the type of vehicle.
+(A0 SAV ) (V obtains V) (A1 the   class   and   the   group   of   the   type   of   vehicle. ) 
+329... Analizando... SAV shows the class and the group of the type of vehicle.
+(A0 SAV ) (V shows V) (A1 the   class   and   the   group   of   the   type   of   vehicle. ) 
+330... Analizando... SAV enables the option Modifying Registration.
+(A0 SAV ) (V enables V) (A1 the   option   Modifying   Registration. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modifying V) (A1 Registration. ) 
+331... Analizando... If the Administrator selects the option Modify Registration then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   Registration   then:  
+(A1 If   the   Administrator   selects   the   option ) (V Modify V) (A1 Registration ) (AM-TMP then: ) 
+332... Analizando... SAV obtains the date and hour of the registration of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   the   registration   of   the   vehicle. ) 
+333... Analizando... SAV registers the date and hour of the registration of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   the   registration   of   the   vehicle. ) 
+334... Analizando... SAV registers the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   model,   the   brand,   the   year   of   production,   the   number   of   doors,   the   capacity,   the   mileage,   the   class   and   the   group   of   the   vehicle.  
+335... Analizando... REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE
+(V REGISTER V) (A1 OF   THE   HISTORIC   INFORMATION ) (A1 OF   A   VEHICLE ) 
+336... Analizando... INITIATES WHEN the Administrator selects the option Register of the Historic information of a Vehicle.
+(V INITIATES V) (A1 WHEN   the   Administrator   selects   the   option   Register   of   the   Historic   information   of   a   Vehicle. ) 
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   of   the   Historic   information   of   a   Vehicle. ) 
+337... Analizando... SAV shows the registration numbers of the vehicles sold.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   sold. ) 
+ SAV   shows   the   registration   numbers   of  (A1 the   vehicles ) (V sold. V) 
+338... Analizando... The Administrator chooses the registration number of a vehicle.
+(A0 The   Administrator ) (V chooses V) (A1 the   registration   number   of   a   vehicle. ) 
+339... Analizando... SAV obtains the data of the registration of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   registration   of   the   vehicle. ) 
+340... Analizando... SAV obtains the data of the registration of the purchase of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   registration   of   the   purchase   of   the   vehicle. ) 
+341... Analizando... SAV obtains the data of the registration of the sale of the vehicle.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   registration   of   the   sale   of   the   vehicle. ) 
+342... Analizando... SAV enables the option Register Historic.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Historic. ) 
+343... Analizando... If the Administrator selects the option Register Historic then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   Historic ) (AM-TMP then: ) 
+344... Analizando... SAV registers the data of the registration of the vehicle in the Historic of Vehicles.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   registration   of   the   vehicle   in   the   Historic   of   Vehicles. ) 
+345... Analizando... SAV eliminates the registration of the vehicle.
+(AM-MOD SAV ) (V eliminates V) (A1 the   registration   of   the   vehicle. ) 
+346... Analizando... SAV registers the data of the registration of the purchase of the vehicle in the Historic of Vehicles.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   registration   of   the   purchase   of   the   vehicle   in   the   Historic   of   Vehicles. ) 
+347... Analizando... SAV eliminates the registration of the purchase of the vehicle.
+(AM-MOD SAV ) (V eliminates V) (A1 the   registration   of   the   purchase   of   the   vehicle. ) 
+348... Analizando... SAV registers the data of the registration of the sale of the vehicle in the Historic of Vehicles.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   registration   of   the   sale   of   the   vehicle   in   the   Historic   of   Vehicles. ) 
+349... Analizando... SAV eliminates the registration of the sale of the vehicle.
+(AM-MOD SAV ) (V eliminates V) (A1 the   registration   of   the   sale   of   the   vehicle. ) 
+350... Analizando... ASSIGN CLASS AND GROUP
+(V ASSIGN V) (A1 CLASS   AND   GROUP ) 
+351... Analizando... INITIATES WHEN the Administrator selects the option Assign Class and Group.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Assign   Class   and   Group.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Assign V) (A1 Class   and   Group. ) 
+352... Analizando... SAV requests the model, year of production and number of doors of the vehicle.
+.... Se detecta frase sin verbo (352)
+353... Analizando... The Administrator introduces the model, year of production and number of doors of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   model,   year   of   production   and   number   of   doors   of   the   vehicle.  
+354... Analizando... SAV determines the existence of the class and group of the type of vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   class   and   group   of   the   type   of   vehicle. ) 
+355... Analizando... SAV shows the name and the description of the classes of vehicle.
+(A0 SAV ) (V shows V) (A1 the   name   and   the   description   of   the   classes   of   vehicle. ) 
+356... Analizando... SAV enables the option Create Class.
+(A0 SAV ) (V enables V) (A1 the   option   Create   Class. ) 
+ SAV   enables  (A0 the   option ) (V Create V) (A1 Class. ) 
+357... Analizando... If the Administrator selects the name and the description of a class of vehicle then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   name   and   the   description   of   a   class   of   vehicle   then: ) 
+358... Analizando... SAV disables the option Create Class.
+(A0 SAV ) (V disables V) (A1 the   option   Create   Class. ) 
+(A0 SAV )  disables   the   option  (V Create V) (A1 Class. ) 
+359... Analizando... SAV shows the name, the description and the types of vehicle of the groups of the class of vehicle.
+(A0 SAV ) (V shows V) (A1 the   name,   the   description   and   the   types   of   vehicle   of   the   groups   of   the   class   of   vehicle.  
+360... Analizando... If the Administrator selects a group of a class of vehicle then:
+ If  (A0 the   Administrator ) (V selects V) (A1 a   group   of   a   class   of   vehicle   then: ) 
+361... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+362... Analizando... If the Administrator selects the option Register then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   selects   the   option ) (V Register V) (AM-TMP then: ) 
+363... Analizando... SAV registers the type of vehicle in a group of a class.
+(A1 SAV ) (V registers V) (A3 the   type   of   vehicle ) (AM-LOC in   a   group   of   a   class. ) 
+364... Analizando... Class and Group of the Type of Existing Vehicle.
+.... Se detecta frase sin verbo (364)
+365... Analizando... SAV shows the Administrator the message Class and Group of the Type of Existing Vehicle.
+(A0 SAV ) (V shows V) (A1 the   Administrator   the   message   Class   and   Group   of   the   Type   of   Existing   Vehicle. ) 
+366... Analizando... CREATING A CLASS
+(V CREATING V) (A1 A   CLASS ) 
+367... Analizando... INITIATES WHEN the Administrator selects the option Create Class.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Create   Class.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Create V) (A1 Class. ) 
+368... Analizando... SAV requests the name and the description of the new class of vehicle.
+.... Se detecta frase sin verbo (368)
+369... Analizando... The Administrator introduces the name and the description of the new class of vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   name   and   the   description   of   the   new   class   of   vehicle. ) 
+370... Analizando... SAV determines the existence of the class.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   class. ) 
+371... Analizando... SAV enables the option Create Group.
+(A0 SAV ) (V enables V) (A1 the   option   Create   Group. ) 
+ SAV   enables  (A0 the   option ) (V Create V) (A1 Group. ) 
+372... Analizando... If the Administrator selects the option Create Group then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Create   Group   then:  
+(A0 If   the   Administrator   selects   the   option ) (V Create V) (A1 Group ) (AM-DIS then: ) 
+373... Analizando... SAV requests the name and the description of the group of the class of vehicle.
+.... Se detecta frase sin verbo (373)
+374... Analizando... The Administrator introduces the name and the description of the group of the class of vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   name   and   the   description   of   the   group   of   the   class   of   vehicle. ) 
+375... Analizando... SAV assigns the value of monetary units zero to the price of the class and the group of the vehicle types.
+(A1 SAV ) (V assigns V) (A1 the   value   of   monetary   units ) (A1 zero   to   the   price   of   the   class   and   the   group   of   the   vehicle   types. ) 
+376... Analizando... SAV enables the option Assign Price.
+(A0 SAV ) (V enables V) (A1 the   option   Assign   Price. ) 
+ SAV   enables  (A1 the   option ) (V Assign V) (A1 Price. ) 
+377... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+378... Analizando... If the Administrator selects the option Register then
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   then  
+(A0 If   the   Administrator   selects   the   option ) (V Register V) (AM-TMP then ) 
+379... Analizando... SAV registers the data of the new class.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   new   class. ) 
+380... Analizando... Existing class.
+.... Se detecta frase sin verbo (380)
+381... Analizando... SAV shows the Administrator the message Existing Class.
+(A0 SAV ) (V shows V) (A1 the   Administrator   the   message   Existing   Class. ) 
+ SAV   shows   the   Administrator   the  (A1 message ) (V Existing V) (A1 Class. ) 
+382... Analizando... ERASE TYPE OF VEHICLE
+(V ERASE V) (A1 TYPE   OF   VEHICLE ) 
+383... Analizando... INITIATES WHEN the Administrator selects the option Erase Type.
+(V INITIATES V) (A1 WHEN   the   Administrator   selects   the   option   Erase   Type. ) 
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Erase   Type. ) 
+ INITIATES   WHEN   the   Administrator   selects  (A1 the   option ) (V Erase V) (A1 Type. ) 
+384... Analizando... SAV requests the model, year of production and number of doors of the vehicle.
+.... Se detecta frase sin verbo (384)
+385... Analizando... The Administrator introduces the model, year of production and number of doors of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   model,   year   of   production   and   number   of   doors   of   the   vehicle.  
+386... Analizando... SAV determines the existence of the class and group of the type of vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   class   and   group   of   the   type   of   vehicle. ) 
+387... Analizando... SAV obtains the class and group of the type of vehicle.
+(A0 SAV ) (V obtains V) (A1 the   class   and   group   of   the   type   of   vehicle. ) 
+388... Analizando... SAV shows the class and group of the type of vehicle.
+(A0 SAV ) (V shows V) (A1 the   class   and   group   of   the   type   of   vehicle. ) 
+389... Analizando... SAV enables the option Erase.
+(A0 SAV ) (V enables V) (A1 the   option   Erase. ) 
+ SAV   enables  (A1 the   option ) (V Erase. V) 
+390... Analizando... If the Administrator selects the option Erase then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option   Erase   then: ) 
+ If   the   Administrator   selects  (A1 the   option ) (V Erase V) (AM-TMP then: ) 
+391... Analizando... SAV eliminates the type of vehicle of the class and group.
+(AM-MOD SAV ) (V eliminates V) (A1 the   type   of   vehicle   of   the   class   and   group. ) 
+392... Analizando... SAV enables the option Assign Class and Group.
+(A0 SAV ) (V enables V) (A1 the   option   Assign   Class   and   Group. ) 
+ SAV   enables  (A1 the   option ) (V Assign V) (A1 Class   and   Group. ) 
+393... Analizando... SAV enables the option Create Class.
+(A0 SAV ) (V enables V) (A1 the   option   Create   Class. ) 
+ SAV   enables  (A0 the   option ) (V Create V) (A1 Class. ) 
+394... Analizando... Class and nonexistent group.
+.... Se detecta frase sin verbo (394)
+395... Analizando... SAV shows the Administrator the message the Type of Vehicle is not assigned to a Group.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message   the   Type   of   Vehicle   is   not   assigned   to   a   Group. ) 
+ SAV   shows   the   Administrator   the   message  (A1 the   Type   of   Vehicle )  is  (AM-NEG not ) (V assigned V) (A2 to   a   Group. ) 
+396... Analizando... ASSIGN PRICE
+(V ASSIGN V) (A1 PRICE ) 
+397... Analizando... INITIATES WHEN the Administrator selects the option Assign Price.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Assign   Price.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Assign V) (A1 Price. ) 
+398... Analizando... SAV shows the classes of vehicles.
+(A0 SAV ) (V shows V) (A1 the   classes   of   vehicles. ) 
+399... Analizando... The Administrator selects a class of vehicle.
+(A0 The   Administrator ) (V selects V) (A1 a   class   of   vehicle. ) 
+400... Analizando... SAV shows the data of the class of vehicle.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   class   of   vehicle. ) 
+401... Analizando... The Administrator selects a group of the class of vehicle.
+(A0 The   Administrator ) (V selects V) (A1 a   group   of   the   class   of   vehicle. ) 
+402... Analizando... SAV shows the data of the group of the class of vehicle.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   group   of   the   class   of   vehicle. ) 
+403... Analizando... SAV shows the price of the class and group of vehicle types.
+(A0 SAV ) (V shows V) (A1 the   price   of   the   class   and   group   of   vehicle   types. ) 
+404... Analizando... SAV requests to introduce the daily price of the rent of a class and group of vehicle types.
+(A0 SAV )  requests   to  (V introduce V) (A1 the   daily   price   of   the   rent   of   a   class   and   group   of   vehicle   types. ) 
+405... Analizando... SAV requests to introduce the daily cost of the insurance of the types of vehicles of a class and group.
+(A0 SAV )  requests   to  (V introduce V) (A1 the   daily   cost   of   the   insurance   of   the   types   of   vehicles   of   a   class   and   group. ) 
+406... Analizando... The Administrator introduces the daily price of the rent of a class and group vehicles types.
+(A0 The   Administrator ) (V introduces V) (A1 the   daily   price   of   the   rent   of   a   class   and   group   vehicles   types. ) 
+407... Analizando... The Administrator introduces the daily cost of the insurance of the types of vehicles of a class and group.
+(A0 The   Administrator ) (V introduces V) (A1 the   daily   cost   of   the   insurance   of   the   types   of   vehicles   of   a   class   and   group. ) 
+408... Analizando... SAV enables the option Register Price.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Price. ) 
+409... Analizando... If the Administrator chooses the option Register Price then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option   Register   Price   then: ) 
+410... Analizando... SAV calculates the total price of the rent of a type of vehicle.
+(A0 SAV ) (V calculates V) (A1 the   total   price   of   the   rent   of   a   type   of   vehicle. ) 
+411... Analizando... SAV registers the daily price of the rent of a class and group vehicles types.
+(A1 SAV ) (V registers V) (A3 the   daily   price   of   the   rent   of   a   class   and   group   vehicles   types. ) 
+412... Analizando... SAV registers the daily cost of the insurance of the types of vehicles of a class and group.
+(A1 SAV ) (V registers V) (A1 the   daily   cost   of   the   insurance   of   the   types   of   vehicles   of   a   class   and   group. ) 
+413... Analizando... SAV registers the total price of the rent of a type of vehicle.
+(A1 SAV ) (V registers V) (A3 the   total   price   of   the   rent   of   a   type   of   vehicle. ) 
+414... Analizando... INSURE A VEHICLE
+(V INSURE V) (A1 A   VEHICLE ) 
+415... Analizando... INITIATES WHEN the Administrator selects the option Insure a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Insure   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Insure V) (A1 a   Vehicle. ) 
+416... Analizando... SAV requests to the Employee the registration number of the vehicle.
+.... Se detecta frase sin verbo (416)
+417... Analizando... The Employee introduces the registration number of the vehicle.
+(A0 The   Employee ) (V introduces V) (A1 the   registration   number   of   the   vehicle. ) 
+418... Analizando... The Employee chooses the registration number of the vehicle.
+(A0 The   Employee ) (V chooses V) (A1 the   registration   number   of   the   vehicle. ) 
+419... Analizando... SAV determines the existence of an insurance policy of the vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   an   insurance   policy   of   the   vehicle. ) 
+420... Analizando... SAV enables the option Register Insurance Company.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Insurance   Company. ) 
+421... Analizando... SAV shows the insurance companies.
+(A0 SAV ) (V shows V) (A1 the   insurance   companies. ) 
+422... Analizando... The Employee selects the insurance company.
+(A0 The   Employee ) (V selects V) (A1 the   insurance   company. ) 
+423... Analizando... SAV requests the data of the insurance policy.
+.... Se detecta frase sin verbo (423)
+424... Analizando... The Employee introduces the data of the insurance policy.
+(A0 The   Employee ) (V introduces V) (A1 the   data   of   the   insurance   policy. ) 
+425... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+426... Analizando... If the Employee chooses the option Register then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+427... Analizando... SAV obtains the date and hour of registration of the insurance policy.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   registration   of   the   insurance   policy. ) 
+428... Analizando... SAV obtains the identification of the Employee.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee. ) 
+429... Analizando... SAV registers the data of the insurance policy.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   insurance   policy. ) 
+430... Analizando... SAV encloses to the insurance policy the date and hour of registration and the identification of the Employee that registered it.
+(A2 SAV ) (V encloses V) (A2 to   the   insurance   policy   the   date   and   hour   of   registration   and   the   identification   of   the   Employee   that   registered   it. ) 
+ SAV   encloses   to   the   insurance   policy   the   date   and   hour   of   registration   and   the   identification   of  (A1 the   Employee ) (R-A0 that ) (V registered V) (A1 it. ) 
+431... Analizando... Exists an insurance policy of the vehicle.
+(V Exists V) (A3 an   insurance   policy   of   the   vehicle. ) 
+432... Analizando... SAV shows to the Employee the message Exists Insurance Policy.
+(A0 SAV ) (V shows V) (A1 to   the   Employee   the   message   Exists   Insurance   Policy. ) 
+ SAV   shows   to  (R-A1 the   Employee )  the   message  (V Exists V) (A1 Insurance   Policy. ) 
+433... Analizando... SAV enables the option Renew the Insurance Policy.
+(A0 SAV ) (V enables V) (A1 the   option   Renew   the   Insurance   Policy. ) 
+ SAV   enables  (A0 the   option ) (V Renew V) (A1 the   Insurance   Policy. ) 
+434... Analizando... RENEW THE INSURANCE POLICY
+(V RENEW V) (A1 THE   INSURANCE   POLICY ) 
+435... Analizando... INITIATES WHEN the Employee selects the option Renew the Insurance Policy.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Renew   the   Insurance   Policy.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Renew V) (A1 the   Insurance   Policy. ) 
+436... Analizando... SAV shows the registration numbers of the vehicles that have insurance policies.
+(A0 SAV ) (V shows V) (A1 the   registration   numbers   of   the   vehicles   that   have   insurance   policies. ) 
+ SAV   shows   the   registration   numbers   of  (A0 the   vehicles ) (R-A0 that ) (V have V) (A1 insurance   policies. ) 
+437... Analizando... The Employee chooses a registration number of a vehicle.
+(A0 The   Employee ) (V chooses V) (A1 a   registration   number   of   a   vehicle. ) 
+438... Analizando... SAV obtains the data of the insurance policy.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   insurance   policy. ) 
+439... Analizando... SAV shows the data of the insurance policy.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   insurance   policy. ) 
+440... Analizando... SAV enables the option Register Insurance Company.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Insurance   Company. ) 
+441... Analizando... The Employee introduces the new data of the insurance policy.
+(A0 The   Employee ) (V introduces V) (A1 the   new   data   of   the   insurance   policy. ) 
+442... Analizando... SAV enables the option Renew.
+(A0 SAV ) (V enables V) (A1 the   option   Renew. ) 
+ SAV   enables  (A1 the   option ) (V Renew. V) 
+443... Analizando... If the Employee chooses the option Renew then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Renew   then:  
+(AM-MOD If   the   Employee   chooses   the   option ) (V Renew V) (AM-TMP then: ) 
+444... Analizando... SAV obtains the date and hour of renewal of the insurance policy.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   renewal   of   the   insurance   policy. ) 
+445... Analizando... SAV obtains the identification of the Employee that carried out the renewal.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee   that   carried   out   the   renewal. ) 
+ SAV   obtains   the   identification   of  (A0 the   Employee ) (R-A0 that ) (V carried V)  out  (A1 the   renewal. ) 
+446... Analizando... SAV registers the new data of the insurance policy.
+(A1 SAV ) (V registers V) (A1 the   new   data   of   the   insurance   policy. ) 
+447... Analizando... SAV enclosed to the insurance policy the date and hour of the renewal and the identification of the Employee that carried out the renewal.
+(A2 SAV ) (V enclosed V) (A1 to   the   insurance   policy   the   date   and   hour   of   the   renewal   and   the   identification   of   the   Employee   that   carried   out   the   renewal. ) 
+ SAV   enclosed   to   the   insurance   policy   the   date   and   hour   of   the   renewal   and   the   identification   of  (A0 the   Employee ) (R-A0 that ) (V carried V)  out  (A1 the   renewal. ) 
+448... Analizando... REGISTER A INSURANCE COMPANY
+(V REGISTER V) (A3 A   INSURANCE   COMPANY ) 
+449... Analizando... INITIATES WHEN the Administrator selects the option Register a Insurance Company.
+(V INITIATES V)  WHEN   the   Administrator   selects   the   option   Register   a   Insurance   Company.  
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   a   Insurance   Company. ) 
+450... Analizando... SAV requests to the Administrator the data of the Insurance Company.
+.... Se detecta frase sin verbo (450)
+451... Analizando... The Administrator introduces the data of the Insurance Company.
+(A0 The   Administrator ) (V introduces V) (A1 the   data   of   the   Insurance   Company. ) 
+452... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+453... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+454... Analizando... SAV obtains the date and hour of registration of the data of the Insurance Company.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   registration   of   the   data   of   the   Insurance   Company. ) 
+455... Analizando... SAV obtains the identification of the Administrator that carried out the registration.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Administrator   that   carried   out   the   registration. ) 
+ SAV   obtains   the   identification   of  (A0 the   Administrator ) (R-A0 that ) (V carried V)  out  (A1 the   registration. ) 
+456... Analizando... SAV registers the date and hour of registration of the data of the Insurance Company.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   registration   of   the   data   of   the   Insurance   Company. ) 
+457... Analizando... SAV registers the identification of the Administrator that carried out the registration.
+(A1 SAV ) (V registers V) (A3 the   identification   of   the   Administrator   that   carried   out   the   registration. ) 
+ SAV   registers   the   identification   of  (A0 the   Administrator ) (R-A0 that ) (V carried V)  out  (A1 the   registration. ) 
+458... Analizando... SAV registers the data of the Insurance Company.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   Insurance   Company. ) 
+459... Analizando... MODIFY AN INSURANCE COMPANY
+(V MODIFY V) (A1 AN   INSURANCE   COMPANY ) 
+460... Analizando... INITIATES WHEN the Administrator selects the option Modify an Insurance Company.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   an   Insurance   Company.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 an   Insurance   Company. ) 
+461... Analizando... SAV obtains the names of the Insurance Companies.
+(A0 SAV ) (V obtains V) (A1 the   names   of   the   Insurance   Companies. ) 
+462... Analizando... SAV shows the names of the Insurance Companies.
+(A0 SAV ) (V shows V) (A1 the   names   of   the   Insurance   Companies. ) 
+463... Analizando... The Administrator chooses an Insurance Company.
+(A0 The   Administrator ) (V chooses V) (A1 an   Insurance   Company. ) 
+464... Analizando... SAV shows the data of the Insurance Company.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   Insurance   Company. ) 
+465... Analizando... SAV enables the data of the Insurance Company.
+(A0 SAV ) (V enables V) (A1 the   data   of   the   Insurance   Company. ) 
+466... Analizando... The Administrator introduces the data of the Insurance Company.
+(A0 The   Administrator ) (V introduces V) (A1 the   data   of   the   Insurance   Company. ) 
+467... Analizando... SAV enables the option Modify.
+(A0 SAV ) (V enables V) (A1 the   option   Modify. ) 
+ SAV   enables  (A1 the   option ) (V Modify. V) 
+468... Analizando... If the Administrator chooses the option Modify then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Modify   then:  
+(A1 If   the   Administrator   chooses   the   option ) (V Modify V) (AM-TMP then: ) 
+469... Analizando... SAV obtains the date and hour of modification of the data of the Insurance Company.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   modification   of   the   data   of   the   Insurance   Company. ) 
+470... Analizando... SAV obtains the identification of the Administrator that carried out the modification.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Administrator   that   carried   out   the   modification. ) 
+ SAV   obtains   the   identification   of  (A0 the   Administrator ) (R-A0 that ) (V carried V)  out  (A1 the   modification. ) 
+471... Analizando... SAV registers the date and hour of modification of the data of the Insurance Company.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   modification   of   the   data   of   the   Insurance   Company. ) 
+472... Analizando... SAV registers the identification of the Administrator carried out the modification.
+(A1 SAV ) (V registers V) (A3 the   identification   of   the   Administrator   carried   out   the   modification. ) 
+ SAV   registers   the   identification   of  (A0 the   Administrator ) (V carried V)  out  (A1 the   modification. ) 
+473... Analizando... SAV registers the data of the Insurance Company.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   Insurance   Company. ) 
+474... Analizando... REGISTER A CLIENT
+(V REGISTER V) (A3 A   CLIENT ) 
+475... Analizando... INITIATES WHEN the Employee selects the option Register a Client.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Register   a   Client.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Register V) (A3 a   Client. ) 
+476... Analizando... SAV asks to the Employee if the client is direct or if he is an agency.
+(A1 SAV ) (V asks V) (A2 to   the   Employee ) (A2 if   the   client   is   direct   or   if   he   is   an   agency. ) 
+ SAV   asks   to   the   Employee   if  (A1 the   client ) (V is V) (A1 direct )  or   if   he   is   an   agency.  
+ SAV   asks   to   the   Employee   if   the   client   is   direct   or   if  (A0 he ) (V is V) (A1 an   agency. ) 
+477... Analizando... The Employee tells if the client is direct or if he is an agency.
+(A0 The   Employee ) (V tells V) (A2 if   the   client   is   direct   or   if   he   is   an   agency. ) 
+ The   Employee   tells   if  (A1 the   client ) (V is V) (A1 direct )  or   if   he   is   an   agency.  
+ The   Employee   tells   if   the   client   is   direct   or   if  (A0 he ) (V is V) (A1 an   agency. ) 
+478... Analizando... SAV requests the identifier of the client according to his type.
+ SAV   requests   the   identifier   of   the   client  (V according V) (A2 to   his   type. ) 
+479... Analizando... SAV determines the existence of the client.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   client. ) 
+480... Analizando... SAV requests the data of the client according to his type.
+ SAV   requests   the   data   of   the   client  (V according V) (A2 to   his   type. ) 
+481... Analizando... The Employee introduces the data of the client.
+(A0 The   Employee ) (V introduces V) (A1 the   data   of   the   client. ) 
+482... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+483... Analizando... If the Employee chooses the option Register then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+484... Analizando... SAV obtains the date and hour of registration of the client.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   registration   of   the   client. ) 
+485... Analizando... SAV obtains the identification of the Employee that carries out the registration of the client.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee   that   carries   out   the   registration   of   the   client. ) 
+ SAV   obtains   the   identification   of  (A0 the   Employee ) (R-A0 that ) (V carries V)  out  (A1 the   registration   of   the   client. ) 
+486... Analizando... SAV registers the data of the client.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   client. ) 
+487... Analizando... If the client is direct then:
+ If  (A1 the   client ) (V is V) (AM-MNR direct ) (AM-TMP then: ) 
+488... Analizando... SAV registers the bank details of the direct client.
+(A1 SAV ) (V registers V) (A1 the   bank   details   of   the   direct   client. ) 
+489... Analizando... Existing client.
+.... Se detecta frase sin verbo (489)
+490... Analizando... SAV shows the Employee the message Existing Client.
+(A0 SAV ) (V shows V) (A1 the   Employee   the   message   Existing   Client. ) 
+ SAV   shows   the   Employee   the  (A1 message ) (V Existing V) (A1 Client. ) 
+491... Analizando... SAV enables the option Modify Client.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   Client. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 Client. ) 
+492... Analizando... MODIFY THE DATA OF A CLIENT
+(V MODIFY V) (A1 THE   DATA   OF   A   CLIENT ) 
+493... Analizando... INITIATES WHEN the Employee selects the option Modify the Data of a Client.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Modify   the   Data   of   a   Client.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Modify V) (A1 the   Data   of   a   Client. ) 
+494... Analizando... SAV asks to the Employee if the client is direct or is an agency.
+(A1 SAV ) (V asks V) (A2 to   the   Employee ) (A2 if   the   client   is   direct )  or   is   an   agency.  
+ SAV   asks   to   the   Employee   if  (A1 the   client ) (V is V) (A1 direct )  or   is   an   agency.  
+(A0 SAV )  asks   to   the   Employee   if   the   client   is   direct   or  (V is V) (A1 an   agency. ) 
+495... Analizando... The Employee indicates if the client is direct or is an agency.
+(A0 The   Employee ) (V indicates V) (A1 if   the   client   is   direct   or   is   an   agency. ) 
+ The   Employee   indicates   if  (A1 the   client ) (V is V) (A1 direct )  or   is   an   agency.  
+ The   Employee   indicates   if  (A0 the   client )  is   direct   or  (V is V) (A1 an   agency. ) 
+496... Analizando... SAV obtains the identifiers of the clients according to his type.
+(A0 SAV ) (V obtains V) (A1 the   identifiers   of   the   clients )  according   to   his   type.  
+ SAV   obtains  (A1 the   identifiers   of   the   clients ) (V according V) (A2 to   his   type. ) 
+497... Analizando... SAV shows the identifiers of the clients according to his type.
+(A0 SAV ) (V shows V) (A1 the   identifiers   of   the   clients )  according   to   his   type.  
+ SAV   shows  (A1 the   identifiers   of   the   clients ) (V according V) (A2 to   his   type. ) 
+498... Analizando... The Employee chooses the identifier of a client.
+(A0 The   Employee ) (V chooses V) (A1 the   identifier   of   a   client. ) 
+499... Analizando... SAV obtains the data of the client.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   client. ) 
+500... Analizando... SAV shows the data of the client.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   client. ) 
+501... Analizando... The Employee introduces the new data of the client.
+(A0 The   Employee ) (V introduces V) (A1 the   new   data   of   the   client. ) 
+502... Analizando... If the client is direct then
+ If  (A1 the   client ) (V is V) (AM-MNR direct ) (AM-TMP then ) 
+503... Analizando... SAV enables the option Register Bank Details.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Bank   Details. ) 
+504... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+505... Analizando... If the Employee chooses the option Register then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+506... Analizando... SAV obtains the date and hour of modification of the client.
+(A0 SAV ) (V obtains V) (A1 the   date   and   hour   of   modification   of   the   client. ) 
+507... Analizando... SAV obtains the identification of the Employee that carried out the modification of the client.
+(A0 SAV ) (V obtains V) (A1 the   identification   of   the   Employee   that   carried   out   the   modification   of   the   client. ) 
+ SAV   obtains   the   identification   of  (A0 the   Employee ) (R-A0 that ) (V carried V)  out  (A1 the   modification   of   the   client. ) 
+508... Analizando... SAV registers the data of the client.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   client. ) 
+509... Analizando... If the client is direct then:
+ If  (A1 the   client ) (V is V) (AM-MNR direct ) (AM-TMP then: ) 
+510... Analizando... SAV registers the bank details of the direct client.
+(A1 SAV ) (V registers V) (A1 the   bank   details   of   the   direct   client. ) 
+511... Analizando... REGISTER THE BANK DETAILS OF A DIRECT CLIENT
+(V REGISTER V) (A3 THE   BANK   DETAILS   OF   A   DIRECT   CLIENT ) 
+512... Analizando... INITIATES WHEN the Employee selects the option Register the Bank Details of a Direct Client.
+(V INITIATES V) (A1 WHEN   the   Employee   selects   the   option   Register   the   Bank   Details   of   a   Direct   Client. ) 
+ INITIATES   WHEN  (A0 the   Employee ) (V selects V) (A1 the   option   Register   the   Bank   Details   of   a   Direct   Client. ) 
+513... Analizando... SAV obtains the identifiers of the direct clients.
+(A0 SAV ) (V obtains V) (A1 the   identifiers   of   the   direct   clients. ) 
+514... Analizando... SAV shows the identifiers of the direct clients.
+(A0 SAV ) (V shows V) (A1 the   identifiers   of   the   direct   clients. ) 
+515... Analizando... The Employee chooses the identifier of the direct client.
+(A0 The   Employee ) (V chooses V) (A1 the   identifier   of   the   direct   client. ) 
+516... Analizando... SAV requests the bank details of the direct client.
+.... Se detecta frase sin verbo (516)
+517... Analizando... The Employee introduces the bank details of the direct client.
+(A0 The   Employee ) (V introduces V) (A1 the   bank   details   of   the   direct   client. ) 
+518... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+519... Analizando... If the Employee chooses the option Register then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+520... Analizando... SAV validates the bank details of the direct client.
+(A0 SAV ) (V validates V) (A1 the   bank   details   of   the   direct   client. ) 
+521... Analizando... SAV registers the bank details of the direct client.
+(A1 SAV ) (V registers V) (A1 the   bank   details   of   the   direct   client. ) 
+522... Analizando... Invalid bank details.
+.... Se detecta frase sin verbo (522)
+523... Analizando... SAV shows the Employee the message Invalid Bank Details.
+(A0 SAV ) (V shows V) (A1 the   Employee ) (A1 the   message   Invalid   Bank   Details. ) 
+524... Analizando... SAV enables the option Register Bank Details.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Bank   Details. ) 
+525... Analizando... AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT
+(V AUTHORIZE V) (A1 DISCOUNT   OR   COMMISSION   OF   A   CLIENT ) 
+526... Analizando... INITIATES WHEN the Administrator selects the option Authorize Discount or Commission of a Client.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Authorize   Discount   or   Commission   of   a   Client.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Authorize V) (A1 Discount   or   Commission   of   a   Client. ) 
+527... Analizando... SAV asks the Administrator if the client is direct or is an agency.
+(A1 SAV ) (V asks V) (A2 the   Administrator ) (A1 if   the   client   is   direct   or   is   an   agency. ) 
+ SAV   asks   the   Administrator   if  (A1 the   client ) (V is V) (A1 direct )  or   is   an   agency.  
+ SAV   asks   the   Administrator   if  (A0 the   client )  is   direct   or  (V is V) (A1 an   agency. ) 
+528... Analizando... The Administrator indicates if the client is direct or is an agency.
+(A0 The   Administrator ) (V indicates V) (A1 if   the   client   is   direct   or   is   an   agency. ) 
+ The   Administrator   indicates   if  (A1 the   client ) (V is V) (A1 direct )  or   is   an   agency.  
+ The   Administrator   indicates   if  (A0 the   client )  is   direct   or  (V is V) (A1 an   agency. ) 
+529... Analizando... SAV obtains the identifiers of the clients according to its type.
+(A0 SAV ) (V obtains V) (A1 the   identifiers   of   the   clients )  according   to   its   type.  
+ SAV   obtains  (A1 the   identifiers   of   the   clients ) (V according V) (A2 to   its   type. ) 
+530... Analizando... SAV shows the identifiers of the clients according to its type.
+(A0 SAV ) (V shows V) (A1 the   identifiers   of   the   clients )  according   to   its   type.  
+ SAV   shows  (A1 the   identifiers   of   the   clients ) (V according V) (A2 to   its   type. ) 
+531... Analizando... The Administrator chooses the identifier of the client.
+(A0 The   Administrator ) (V chooses V) (A1 the   identifier   of   the   client. ) 
+532... Analizando... SAV obtains the data of the client.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   client. ) 
+533... Analizando... SAV shows the data of the client.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   client. ) 
+534... Analizando... The Administrator introduces the percentage of discount or the commission of the client.
+(A0 The   Administrator ) (V introduces V) (A1 the   percentage   of   discount   or   the   commission   of   the   client. ) 
+535... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+536... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+537... Analizando... SAV registers the percentage of discount or the commission of the client.
+(A1 SAV ) (V registers V) (A1 the   percentage   of   discount   or   the   commission   of   the   client. ) 
+538... Analizando... REGISTER EXTRAS
+(V REGISTER V) (A3 EXTRAS ) 
+539... Analizando... INITIATES WHEN the Administrator selects the option Register Extras.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   Extras.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Register V) (A3 Extras. ) 
+540... Analizando... SAV requests to the Administrator the data of the extra.
+.... Se detecta frase sin verbo (540)
+541... Analizando... The Administrator introduces the data of the extra.
+(A0 The   Administrator ) (V introduces V) (A1 the   data ) (A2 of   the   extra. ) 
+542... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+543... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+544... Analizando... SAV assigns a code to the extra.
+(A1 SAV ) (V assigns V) (A1 a   code ) (A2 to   the   extra. ) 
+545... Analizando... SAV registers the data of the extra.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   extra. ) 
+546... Analizando... SAV enables the option Register another Extra.
+(A0 SAV ) (V enables V) (A1 the   option   Register   another   Extra. ) 
+547... Analizando... MODIFY AN EXTRA
+(V MODIFY V) (A1 AN   EXTRA ) 
+548... Analizando... INITIATES WHEN the Administrator selects the option Modify Extras.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   Extras.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 Extras. ) 
+549... Analizando... SAV obtains the codes and the generic names of the extras.
+(A0 SAV ) (V obtains V) (A1 the   codes   and   the   generic   names   of   the   extras. ) 
+550... Analizando... SAV shows to the Administrator the codes and the generic names of the extras.
+(A0 SAV ) (V shows V) (A2 to   the   Administrator ) (AM-TMP the   codes   and   the   generic   names   of   the   extras. ) 
+551... Analizando... The Administrator chooses the code of an extra.
+(A0 The   Administrator ) (V chooses V) (A1 the   code   of   an   extra. ) 
+552... Analizando... SAV obtains the data of the extra.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   extra. ) 
+553... Analizando... SAV shows the data of the extra.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   extra. ) 
+554... Analizando... The Administrator introduces the new data of the extra.
+(A0 The   Administrator ) (V introduces V) (A1 the   new   data   of   the   extra. ) 
+555... Analizando... SAV enables the option Modify.
+(A0 SAV ) (V enables V) (A1 the   option   Modify. ) 
+ SAV   enables  (A1 the   option ) (V Modify. V) 
+556... Analizando... If the Administrator chooses the option Modify then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Modify   then:  
+(A1 If   the   Administrator   chooses   the   option ) (V Modify V) (AM-TMP then: ) 
+557... Analizando... SAV registers the new data of the extra.
+(A1 SAV ) (V registers V) (A3 the   new   data   of   the   extra. ) 
+558... Analizando... SAV enables the option Another Modification.
+(A0 SAV ) (V enables V) (A1 the   option )  Another   Modification.  
+559... Analizando... ELECTION OF EXTRAS
+.... Se detecta frase sin verbo (559)
+560... Analizando... INITIATES WHEN the Employee selects the option Election of Extras.
+(V INITIATES V) (A1 WHEN   the   Employee   selects   the   option   Election   of   Extras. ) 
+ INITIATES   WHEN  (A0 the   Employee ) (V selects V) (A1 the   option   Election   of   Extras. ) 
+561... Analizando... SAV obtains the generic name of the extras.
+(A0 SAV ) (V obtains V) (A1 the   generic   name   of   the   extras. ) 
+562... Analizando... SAV shows the generic name of the extras.
+(A0 SAV ) (V shows V) (A1 the   generic   name   of   the   extras. ) 
+563... Analizando... The Employee chooses the generic name of an extra.
+(A0 The   Employee ) (V chooses V) (A1 the   generic   name   of   an   extra. ) 
+564... Analizando... SAV obtains the data of the extra.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   extra. ) 
+565... Analizando... SAV shows the data of the extra.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   extra. ) 
+566... Analizando... If the extra is of type accessory then:
+ If  (A0 the   extra ) (V is V) (A1 of   type   accessory   then: ) 
+567... Analizando... SAV determines the available quantity of the accessory.
+(A0 SAV ) (V determines V) (A1 the   available   quantity   of   the   accessory. ) 
+568... Analizando... SAV requests the quantity of units that are desired to hire.
+ SAV   requests   the   quantity   of  (A0 units ) (R-A0 that )  are  (V desired V) (A1 to   hire. ) 
+ SAV   requests   the   quantity   of  (A1 units ) (R-A1 that )  are   desired   to  (V hire. V) 
+569... Analizando... The Employee introduces the quantity of units that are desired to hire.
+(A0 The   Employee ) (V introduces V) (A1 the   quantity   of   units   that   are   desired   to   hire. ) 
+ The   Employee   introduces   the   quantity   of  (A0 units ) (R-A0 that )  are  (V desired V) (A1 to   hire. ) 
+ The   Employee   introduces   the   quantity   of  (A1 units ) (R-A1 that )  are   desired   to  (V hire. V) 
+570... Analizando... If available quantity of the accessory is less than the quantity of units that are desired to hire then:
+ If  (A0 available   quantity   of   the   accessory ) (V is V) (A1 less   than   the   quantity   of   units   that   are   desired   to   hire   then: ) 
+ If   available   quantity   of   the   accessory   is   less   than   the   quantity   of  (A0 units ) (R-A0 that )  are  (V desired V) (A1 to   hire   then: ) 
+ If   available   quantity   of   the   accessory   is   less   than   the   quantity   of  (A0 units ) (R-A0 that )  are   desired   to  (V hire V) (AM-TMP then: ) 
+571... Analizando... SAV shows to the Employee the message Unavailable Accessory.
+(A0 SAV ) (V shows V) (A2 to   the   Employee ) (AM-TMP the   message   Unavailable   Accessory. ) 
+572... Analizando... SAV enables the option Elect.
+(A0 SAV ) (V enables V) (A1 the   option   Elect. ) 
+ SAV   enables  (A1 the   option ) (V Elect. V) 
+573... Analizando... If the Employee chooses the option Elect then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option   Elect   then: ) 
+ If   the   Employee   chooses  (A0 the   option ) (V Elect V) (AM-TMP then: ) 
+574... Analizando... SAV obtains the code, generic name, description, limitations, observations and price of the extra.
+(A0 SAV ) (V obtains V) (A1 the   code,   generic   name,   description,   limitations,   observations   and   price   of   the   extra.  
+575... Analizando... If the extra is of type accessory then:
+ If  (A0 the   extra ) (V is V) (A1 of   type   accessory   then: ) 
+576... Analizando... SAV requests the quantity of days of contracting of the extra.
+.... Se detecta frase sin verbo (576)
+577... Analizando... The Employee introduces the quantity of days of contracting of the extra.
+(A0 The   Employee ) (V introduces V) (A1 the   quantity   of   days   of   contracting   of   the   extra. ) 
+578... Analizando... SAV requests the quantity of units of the accessory that were chosen.
+ SAV   requests   the   quantity   of  (A1 units   of   the   accessory ) (A0 that )  were  (V chosen. V) 
+579... Analizando... The Employee introduces the quantity of units of the accessory that were chosen.
+(A0 The   Employee ) (V introduces V) (A1 the   quantity   of   units   of   the   accessory   that   were   chosen. ) 
+ The   Employee   introduces   the   quantity   of  (A1 units   of   the   accessory ) (A0 that )  were  (V chosen. V) 
+580... Analizando... SAV calculates the total to pay for concept of accessories.
+(A0 SAV ) (V calculates V) (A1 the   total   to   pay   for   concept   of   accessories. ) 
+ SAV   calculates  (A0 the   total )  to  (V pay V) (A3 for   concept   of   accessories. ) 
+581... Analizando... SAV shows the total to pay for concept of accessories.
+(A0 SAV ) (V shows V) (A1 the   total   to   pay   for   concept   of   accessories. ) 
+(A0 SAV )  shows  (A1 the   total )  to  (V pay V) (A3 for   concept   of   accessories. ) 
+582... Analizando... If the extra is of type service then:
+ If  (A0 the   extra ) (V is V) (A1 of   type   service ) (AM-TMP then: ) 
+583... Analizando... SAV requests the quantity of days of contracting of the service.
+.... Se detecta frase sin verbo (583)
+584... Analizando... The Employee introduces the quantity of days of contracting of the service.
+(A0 The   Employee ) (V introduces V) (A1 the   quantity   of   days   of   contracting   of   the   service. ) 
+585... Analizando... SAV calculates the total to pay for concept of services.
+(A0 SAV ) (V calculates V) (A1 the   total   to   pay   for   concept   of   services. ) 
+ SAV   calculates  (A0 the   total )  to  (V pay V) (A3 for   concept   of   services. ) 
+586... Analizando... SAV shows the total to pay for concept of services.
+(A0 SAV ) (V shows V) (A1 the   total   to   pay   for   concept   of   services. ) 
+(A0 SAV )  shows  (A1 the   total )  to  (V pay V) (A3 for   concept   of   services. ) 
+587... Analizando... SAV calculates the subtotal by concept of extras.
+(A0 SAV ) (V calculates V) (A1 the   subtotal   by   concept   of   extras. ) 
+588... Analizando... SAV shows the subtotal by concept of extras.
+(A0 SAV ) (V shows V) (A1 the   subtotal   by   concept   of   extras. ) 
+589... Analizando... SAV enables the option Another Extra.
+(A0 SAV ) (V enables V) (A1 the   option   Another   Extra. ) 
+590... Analizando... ELIMINATE AN EXTRA OF A LEASE
+(V ELIMINATE V) (A1 AN   EXTRA   OF   A   LEASE ) 
+591... Analizando... INITIATES WHEN the Employee selects the option Eliminate an Extra of a Lease.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Employee ) (V selects V) (A1 the   option )  Eliminate   an   Extra   of   a   Lease.  
+(AM-TMP INITIATES   WHEN   the   Employee   selects   the   option ) (V Eliminate V) (A1 an   Extra   of   a   Lease. ) 
+592... Analizando... SAV obtains of the lease the code of the extras hired.
+(AM-DIS SAV   obtains   of   the   lease ) (A0 the   code   of   the   extras ) (V hired. V) 
+593... Analizando... SAV shows the code and generic name of the extras hired.
+(A0 SAV ) (V shows V) (A1 the   code   and   generic   name   of   the   extras   hired. ) 
+ SAV   shows   the   code   and   generic   name   of  (A0 the   extras ) (V hired. V) 
+594... Analizando... The Employee chooses the generic name of an extra.
+(A0 The   Employee ) (V chooses V) (A1 the   generic   name   of   an   extra. ) 
+595... Analizando... SAV obtains the data of the extra.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   extra. ) 
+596... Analizando... SAV shows the data of the extra.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   extra. ) 
+597... Analizando... SAV enables the option Eliminate.
+(A0 SAV ) (V enables V) (A1 the   option   Eliminate. ) 
+ SAV   enables  (A1 the   option ) (V Eliminate. V) 
+598... Analizando... If the Employee chooses the option Eliminate then:
+ If  (A0 the   Employee ) (V chooses V) (A1 the   option )  Eliminate   then:  
+(A0 If   the   Employee   chooses   the   option ) (V Eliminate V) (AM-TMP then: ) 
+599... Analizando... If the extra is of type accessory then:
+ If  (A0 the   extra ) (V is V) (A1 of   type   accessory   then: ) 
+600... Analizando... SAV obtains the quantity of days of contracting of the extra.
+(A0 SAV ) (V obtains V) (A1 the   quantity   of   days   of   contracting   of   the   extra. ) 
+601... Analizando... SAV obtains the quantity of units of the extra that were rented.
+(A0 SAV ) (V obtains V) (A1 the   quantity   of   units   of   the   extra   that   were   rented. ) 
+ SAV   obtains   the   quantity   of   units   of  (A1 the   extra ) (A0 that )  were  (V rented. V) 
+602... Analizando... SAV updates the available quantity of the extra.
+.... Se detecta frase sin verbo (602)
+603... Analizando... SAV assigns the value of zero to the quantity of days of contracting of the extra.
+(A1 SAV ) (V assigns V) (A1 the   value   of   zero ) (A2 to   the   quantity   of   days   of   contracting   of   the   extra. ) 
+604... Analizando... SAV calculates the total to discount for concept of accessories.
+(A0 SAV ) (V calculates V) (A1 the   total   to   discount   for   concept   of   accessories. ) 
+ SAV   calculates  (A0 the   total )  to  (V discount V) (A1 for   concept   of   accessories. ) 
+605... Analizando... SAV shows the total to discount for concept of accessories.
+(A0 SAV ) (V shows V) (A1 the   total   to   discount   for   concept   of   accessories. ) 
+ SAV   shows  (A1 the   total )  to  (V discount V) (A1 for   concept   of   accessories. ) 
+606... Analizando... If the extra is of type service then:
+ If  (A0 the   extra ) (V is V) (A1 of   type   service ) (AM-TMP then: ) 
+607... Analizando... SAV obtains the quantity of days of contracting of the extra.
+(A0 SAV ) (V obtains V) (A1 the   quantity   of   days   of   contracting   of   the   extra. ) 
+608... Analizando... SAV calculates the total to discount for concept of services.
+(A0 SAV ) (V calculates V) (A1 the   total   to   discount   for   concept   of   services. ) 
+ SAV   calculates  (A0 the   total )  to  (V discount V) (A1 for   concept   of   services. ) 
+609... Analizando... SAV shows the total to discount for concept of services.
+(A0 SAV ) (V shows V) (A1 the   total   to   discount   for   concept   of   services. ) 
+ SAV   shows  (A1 the   total )  to  (V discount V) (A1 for   concept   of   services. ) 
+610... Analizando... SAV calculates the subtotal by concept of extras.
+(A0 SAV ) (V calculates V) (A1 the   subtotal   by   concept   of   extras. ) 
+611... Analizando... SAV shows the subtotal by concept of extras.
+(A0 SAV ) (V shows V) (A1 the   subtotal   by   concept   of   extras. ) 
+612... Analizando... SAV enables the option Eliminate Another Extra.
+(A0 SAV ) (V enables V) (A1 the   option   Eliminate   Another   Extra. ) 
+ SAV   enables  (AM-MOD the   option ) (V Eliminate V) (A1 Another   Extra. ) 
+613... Analizando... OPEN A LABOR CONTRACT
+(V OPEN V) (A1 A   LABOR   CONTRACT ) 
+614... Analizando... INITIATES WHEN the Administrator selects the option Open a Labor Contract.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Open   a   Labor   Contract.  
+615... Analizando... SAV requests the identity card of the employee.
+.... Se detecta frase sin verbo (615)
+616... Analizando... The Administrator introduces the identity card of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   identity   card   of   the   employee. ) 
+617... Analizando... SAV determines if the data of the employee already are registered.
+(A0 SAV ) (V determines V) (A1 if   the   data   of   the   employee   already   are   registered. ) 
+618... Analizando... SAV determines if the employee maintains a labor contract in force or assets with the company.
+(A0 SAV ) (V determines V) (A1 if   the   employee   maintains   a   labor   contract   in   force   or   assets   with   the   company. ) 
+ SAV   determines   if  (A0 the   employee ) (V maintains V) (A1 a   labor   contract   in   force   or   assets   with   the   company. ) 
+619... Analizando... If the employee already is registered then:
+ If  (A1 the   employee ) (AM-TMP already )  is  (V registered V) (AM-TMP then: ) 
+620... Analizando... SAV shows the data of the employee.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   employee. ) 
+621... Analizando... SAV enables the option Modify the Data of an Employee.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   the   Data   of   an   Employee. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 the   Data   of   an   Employee. ) 
+622... Analizando... else:
+.... Se detecta frase sin verbo (622)
+623... Analizando... SAV shows the data of the employee.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   employee. ) 
+624... Analizando... SAV requests the start date, duration and conditions of the labor contract.
+.... Se detecta frase sin verbo (624)
+625... Analizando... The Administrator introduces the start date, duration and conditions of the labor contract.
+(A0 The   Administrator ) (V introduces V) (A1 the   start   date,   duration   and   conditions   of   the   labor   contract.  
+626... Analizando... SAV enables the option Register Contract.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Contract. ) 
+627... Analizando... If the Administrator chooses the option Register Contract then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option   Register   Contract   then: ) 
+628... Analizando... SAV obtains the registration date of the labor contract and the identifier of the Administrator that carries out said registration.
+(A0 SAV ) (V obtains V) (A1 the   registration   date   of   the   labor   contract   and   the   identifier   of   the   Administrator   that   carries   out   said   registration. ) 
+ SAV   obtains   the   registration   date   of   the   labor   contract   and   the   identifier   of  (A0 the   Administrator ) (R-A0 that ) (V carries V)  out  (A1 said   registration. ) 
+ SAV   obtains   the   registration   date   of   the   labor   contract   and   the   identifier   of   the   Administrator   that   carries   out  (V said V) (C-A1 registration. ) 
+629... Analizando... SAV assigns a code of identification to the labor contract.
+(A1 SAV ) (V assigns V) (A1 a   code   of   identification ) (A2 to   the   labor   contract. ) 
+630... Analizando... SAV registers the code and the registration date of the labor contract, the identifier of the Administrator that carries out said registration, the identity card of the employee, the start date, duration and conditions of the labor contract.
+(A1 SAV ) (V registers V) (A1 the   code   and   the   registration   date   of   the   labor   contract, )  the   identifier   of   the   Administrator   that   carries   out   said   registration,   the   identity   card   of   the   employee,   the   start   date,   duration   and   conditions   of   the   labor   contract.  
+ SAV   registers   the   code   and   the   registration   date   of   the   labor   contract,   the   identifier   of   the  (A1 Administrator   that ) (R-A0 carries ) (V out V)  said   registration,   the   identity   card   of   the   employee,   the   start   date,   duration   and   conditions   of   the   labor   contract.  
+(A1 SAV   registers   the   code   and   the   registration   date   of   the   labor   contract, )  the  (A0 identifier   of   the   Administrator   that   carries   out   said ) (V registration, V)  the   identity   card   of   the   employee,   the   start   date,   duration   and   conditions   of   the   labor   contract.  
+631... Analizando... If  registration date is less than start date then:
+ If  (A0 registration   date ) (V is V) (A1 less   than   start )  date   then:  
+(A1 If   registration   date   is   less   than   start ) (V date V) (AM-TMP then: ) 
+632... Analizando... SAV assigns to the labor contract the state "active".
+(A1 SAV ) (V assigns V) (A2 to   the   labor   contract )  the   state   "active".  
+633... Analizando... else:
+.... Se detecta frase sin verbo (633)
+634... Analizando... SAV assigns to the labor contract the state "in force".
+(A1 SAV ) (V assigns V) (A2 to   the   labor   contract ) (A1 the   state   "in   force".  
+635... Analizando... Labor Contract in force or active.
+.... Se detecta frase sin verbo (635)
+636... Analizando... SAV shows the message Existing Labor Contract.
+(A0 SAV ) (V shows V) (A1 the   message   Existing   Labor   Contract. ) 
+ SAV   shows   the   message  (V Existing V) (A1 Labor   Contract. ) 
+637... Analizando... MODIFY THE DATA OF A LABOR CONTRACT
+(V MODIFY V) (A1 THE   DATA   OF   A   LABOR   CONTRACT ) 
+638... Analizando... INITIATES WHEN the Administrator selects the option Modify the Data of a Labor Contract.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   the   Data   of   a   Labor   Contract.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 the   Data   of   a   Labor   Contract. ) 
+639... Analizando... SAV requests the identity card of the employee.
+.... Se detecta frase sin verbo (639)
+640... Analizando... The Administrator introduces the identity card of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   identity   card   of   the   employee. ) 
+641... Analizando... SAV determines the existence of the identity card of the employee.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   identity   card   of   the   employee. ) 
+642... Analizando... SAV determines if the employee maintains a labor contract in force or assets with the business.
+(A0 SAV ) (V determines V) (A1 if   the   employee   maintains   a   labor   contract   in   force   or   assets   with   the   business. ) 
+ SAV   determines   if  (A0 the   employee ) (V maintains V) (A1 a   labor   contract   in   force   or   assets   with   the   business. ) 
+643... Analizando... SAV obtains the code of the labor contracts in force and assets of the employee.
+(A0 SAV ) (V obtains V) (A1 the   code   of   the   labor   contracts   in   force   and   assets   of   the   employee. ) 
+644... Analizando... SAV shows the code of the labor contracts in force and assets of the employee.
+(A0 SAV ) (V shows V) (A1 the   code   of   the   labor   contracts   in   force   and   assets   of   the   employee. ) 
+645... Analizando... The Administrator chooses the code of a labor contract.
+(A0 The   Administrator ) (V chooses V) (A1 the   code   of   a   labor   contract. ) 
+646... Analizando... SAV obtains the data of the labor contract of the employee.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   labor   contract   of   the   employee. ) 
+647... Analizando... SAV shows the data of the labor contract of the employee.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   labor   contract   of   the   employee. ) 
+648... Analizando... The Administrator introduces the new data of the labor contract of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   new   data   of   the   labor   contract   of   the   employee. ) 
+649... Analizando... SAV enables the option Modify Contract.
+(A0 SAV ) (V enables V) (A1 the   option   Modify   Contract. ) 
+ SAV   enables  (AM-MOD the   option ) (V Modify V) (A1 Contract. ) 
+650... Analizando... If the Administrator chooses the option Register Contract then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option   Register   Contract   then: ) 
+651... Analizando... SAV obtains the modification date of the labor contract and the identifier of the Administrator that carries out said modification.
+(A0 SAV ) (V obtains V) (A1 the   modification   date   of   the   labor   contract   and   the   identifier   of   the   Administrator   that   carries   out   said   modification. ) 
+ SAV   obtains   the   modification   date   of   the   labor   contract   and   the   identifier   of  (A0 the   Administrator ) (R-A0 that ) (V carries V)  out  (A1 said   modification. ) 
+ SAV   obtains   the   modification   date   of   the   labor   contract   and   the   identifier   of   the   Administrator   that   carries   out  (V said V) (C-A1 modification. ) 
+652... Analizando... SAV registers the data of the labor contract, the modification date and the identifier of the Administrator that carries out said modification.
+(A1 SAV ) (V registers V) (A3 the   data   of   the   labor   contract,   the   modification   date   and   the   identifier   of   the   Administrator   that   carries   out   said   modification.  
+ SAV   registers   the   data   of   the   labor   contract,   the   modification   date   and   the   identifier   of   the   Administrator   that  (R-A0 carries ) (V out V)  said  (A1 modification.  
+ SAV   registers   the   data   of   the   labor   contract,   the   modification   date   and   the   identifier   of   the   Administrator   that   carries   out   said  (V modification. V) 
+653... Analizando... SAV updates the state of the labor contract.
+.... Se detecta frase sin verbo (653)
+654... Analizando... Nonexistent employee.
+.... Se detecta frase sin verbo (654)
+655... Analizando... SAV shows the message Employed Nonexistent.
+(A0 SAV ) (V shows V) (A1 the   message   Employed   Nonexistent. ) 
+ SAV   shows  (A1 the   message ) (V Employed V) (A1 Nonexistent. ) 
+656... Analizando... Nonexistent labor contract or annulled or culminated.
+(A0 Nonexistent   labor   contract )  or  (V annulled V)  or   culminated.  
+(A1 Nonexistent   labor   contract )  or   annulled   or  (V culminated. V) 
+657... Analizando... SAV shows the message Labor Contract without Conditions of Modification.
+(A0 SAV ) (V shows V) (A1 the   message   Labor   Contract   without   Conditions   of   Modification. ) 
+658... Analizando... CANCEL A LABOR CONTRACT
+(V CANCEL V) (A1 A   LABOR   CONTRACT ) 
+659... Analizando... INITIATES WHEN the Administrator selects the option Cancel a Labor contract.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Cancel   a   Labor   contract.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Cancel V) (A1 a   Labor   contract. ) 
+660... Analizando... SAV requests the identity card of the employee.
+.... Se detecta frase sin verbo (660)
+661... Analizando... The Administrator introduces the identity card of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   identity   card   of   the   employee. ) 
+662... Analizando... SAV determines the existence of the identity card of the employee.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   identity   card   of   the   employee. ) 
+663... Analizando... SAV determines if the employee maintains a labor contract in force with the company.
+(A0 SAV ) (V determines V) (A1 if   the   employee   maintains   a   labor   contract   in   force   with   the   company. ) 
+ SAV   determines   if  (A0 the   employee ) (V maintains V) (A1 a   labor   contract   in   force   with   the   company. ) 
+664... Analizando... SAV obtains the data of the labor contract in force that the employee maintains with the company.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   labor   contract ) (AM-LOC in   force )  that   the   employee   maintains   with   the   company.  
+ SAV   obtains   the   data   of   the   labor   contract   in   force   that  (A0 the   employee ) (V maintains V) (A1 with   the   company. ) 
+665... Analizando... SAV shows the data of the labor contract of the employee.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   labor   contract   of   the   employee. ) 
+666... Analizando... SAV enables the option Cancel Contract.
+(A0 SAV ) (V enables V) (A1 the   option   Cancel   Contract. ) 
+ SAV   enables  (A0 the   option ) (V Cancel V) (A1 Contract. ) 
+667... Analizando... If the Administrator chooses the option Cancel Contract then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Cancel   Contract   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Cancel V) (A1 Contract ) (AM-TMP then: ) 
+668... Analizando... SAV asks the Administrator the reasons of the annulment of the labor contract.
+(A1 SAV ) (V asks V) (A2 the   Administrator ) (A1 the   reasons   of   the   annulment   of   the   labor   contract. ) 
+669... Analizando... The Administrator introduces the reasons of the annulment of the labor contract.
+(A0 The   Administrator ) (V introduces V) (A1 the   reasons   of   the   annulment   of   the   labor   contract. ) 
+670... Analizando... SAV obtains the annulment date of the labor contract and the identifier of the Administrator that carries out it.
+(A0 SAV ) (V obtains V) (A1 the   annulment   date   of   the   labor   contract   and   the   identifier   of   the   Administrator   that   carries   out   it. ) 
+ SAV   obtains   the   annulment   date   of   the   labor   contract   and   the   identifier   of  (A0 the   Administrator ) (R-A0 that ) (V carries V)  out  (A1 it. ) 
+671... Analizando... SAV registers the data of the labor contract, the annulment date and the identifier of the Administrator that carries out it.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   labor   contract,   the   annulment   date   and   the   identifier   of   the   Administrator   that   carries   out   it.  
+ SAV   registers   the   data   of   the   labor   contract,   the   annulment   date   and   the   identifier   of   the   Administrator   that  (R-A0 carries ) (V out V)  it.  
+672... Analizando... SAV assigns to the labor contract the state "annulled".
+(A1 SAV ) (V assigns V) (A2 to   the   labor   contract )  the   state   "annulled".  
+673... Analizando... Nonexistent employee.
+.... Se detecta frase sin verbo (673)
+674... Analizando... SAV shows the message Employed Nonexistent.
+(A0 SAV ) (V shows V) (A1 the   message   Employed   Nonexistent. ) 
+ SAV   shows  (A1 the   message ) (V Employed V) (A1 Nonexistent. ) 
+675... Analizando... Nonexistent labor contract or without vigor.
+.... Se detecta frase sin verbo (675)
+676... Analizando... SAV shows the message Nonexistent Labor Contract or Labor Contract Without Vigor.
+(A0 SAV ) (V shows V) (A1 the   message   Nonexistent   Labor   Contract   or   Labor   Contract   Without   Vigor. ) 
+677... Analizando... REGISTER A NEW EMPLOYEE
+(V REGISTER V) (A3 A   NEW   EMPLOYEE ) 
+678... Analizando... INITIATES WHEN the Administrator selects the option Register a New Employee
+(V INITIATES V)  WHEN   the   Administrator   selects   the   option   Register   a   New   Employee  
+ INITIATES   WHEN  (A0 the   Administrator ) (V selects V) (A1 the   option   Register   a   New   Employee ) 
+679... Analizando... SAV requests the identity card of the new employee.
+.... Se detecta frase sin verbo (679)
+680... Analizando... SAV determines the existence of the employee.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   employee. ) 
+681... Analizando... SAV requests the data of the employee.
+.... Se detecta frase sin verbo (681)
+682... Analizando... The Administrator introduces the data of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   data   of   the   employee. ) 
+683... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+684... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+685... Analizando... SAV obtains the registration date of the employee and the identifier of the Administrator that carries out it.
+(A0 SAV ) (V obtains V) (A1 the   registration   date   of   the   employee   and   the   identifier   of   the   Administrator   that   carries   out   it. ) 
+ SAV   obtains   the   registration   date   of   the   employee   and   the   identifier   of  (A0 the   Administrator ) (R-A0 that ) (V carries V)  out  (A1 it. ) 
+686... Analizando... SAV registers the data of the employee, the registration date of the employee and the identifier of the Administrator that carries out it.
+(A1 SAV ) (V registers V) (A1 the   data   of   the   employee,   the   registration   date   of   the   employee   and   the   identifier   of   the   Administrator   that   carries   out   it.  
+ SAV   registers   the   data   of   the   employee,   the   registration   date   of   the   employee   and   the   identifier   of   the  (A0 Administrator   that ) (R-A0 carries ) (V out V)  it.  
+687... Analizando... Existing employee.
+.... Se detecta frase sin verbo (687)
+688... Analizando... SAV shows the message Employed Existing.
+(A0 SAV ) (V shows V) (A1 the   message   Employed   Existing. ) 
+ SAV   shows  (A1 the   message ) (V Employed V) (A1 Existing. ) 
+689... Analizando... MODIFY THE DATA OF AN EMPLOYEE
+(V MODIFY V) (A1 THE   DATA   OF   AN   EMPLOYEE ) 
+690... Analizando... INITIATES WHEN the Administrator selects the option Modify the Data of an Employee.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Modify   the   Data   of   an   Employee.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Modify V) (A1 the   Data   of   an   Employee. ) 
+691... Analizando... SAV requests the identity card of the employee.
+.... Se detecta frase sin verbo (691)
+692... Analizando... SAV determines the existence of the employee.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   employee. ) 
+693... Analizando... SAV obtains the data of the employee.
+(A0 SAV ) (V obtains V) (A1 the   data   of   the   employee. ) 
+694... Analizando... SAV shows the data of the employee.
+(A0 SAV ) (V shows V) (A1 the   data   of   the   employee. ) 
+695... Analizando... The Administrator introduces the new data of the employee.
+(A0 The   Administrator ) (V introduces V) (A1 the   new   data   of   the   employee. ) 
+696... Analizando... SAV enables the option Register.
+(A0 SAV ) (V enables V) (A1 the   option ) (A1 Register. ) 
+697... Analizando... If the Administrator chooses the option Register then:
+ If  (A0 the   Administrator ) (V chooses V) (A1 the   option )  Register   then:  
+(A0 If   the   Administrator   chooses   the   option ) (V Register V) (AM-TMP then: ) 
+698... Analizando... SAV obtains the modification date and the identifier of the Administrator that carries out it.
+(A0 SAV ) (V obtains V) (A1 the   modification   date   and   the   identifier   of   the   Administrator   that   carries   out   it. ) 
+ SAV   obtains   the   modification   date   and   the   identifier   of  (A0 the   Administrator ) (R-A0 that ) (V carries V)  out  (A1 it. ) 
+699... Analizando... SAV registers the employee data, the modification date and the identifier of the Administrator that carries out it.
+(A1 SAV ) (V registers V) (A1 the   employee   data,   the   modification   date   and   the   identifier   of   the   Administrator   that   carries   out   it.  
+ SAV   registers   the   employee   data,   the   modification   date   and   the   identifier   of   the  (A0 Administrator   that ) (R-A0 carries ) (V out V)  it.  
+700... Analizando... Nonexistent employee.
+.... Se detecta frase sin verbo (700)
+701... Analizando... SAV shows the message Employed Nonexistent.
+(A0 SAV ) (V shows V) (A1 the   message   Employed   Nonexistent. ) 
+ SAV   shows  (A1 the   message ) (V Employed V)  Nonexistent.  
+---54 frases sin verbo
+accord : [V A2  | 2, A1 V A2  | 4]
+agree : [V A1  | 3, A0 V  | 1]
+annul : [A0 V  | 1]
+ask : [A1 V A2 A2  | 2, A1 V A2 A1  | 2]
+assign : [A1 V A2  | 14, A1 V A1  | 3, V A1  | 2, AM-TMP V A1  | 2, A1 V A1 A1  | 1, A1 AM-NEG V A2  | 1, A1 V A1 A2  | 3, A1 V A2 A1  | 1]
+assure : [AM-MOD V A1  | 1]
+authorize : [V A1  | 1, AM-TMP V A1  | 1]
+bail : [A0 V  | 1]
+be : [A0 V A1  | 18, A1 V AM-MNR AM-TMP  | 4, A0 V  | 2, A1 V A1  | 7, A0 V A1 AM-TMP  | 2]
+borrow : [V A1  | 4, AM-TMP V A1  | 1, A0 V A2  | 1]
+buy : [V A1  | 1, AM-TMP V A1  | 1]
+calculate : [A0 V A1  | 16]
+cancel : [V A1  | 1, AM-TMP V A1  | 1, A0 V A1  | 1, A0 V A1 AM-TMP  | 1]
+carry : [A0 V A2  | 3, A0 R-A0 V A1  | 12, A0 V A1  | 1, A1 R-A0 V  | 1, R-A0 V A1  | 1, R-A0 V  | 1, A0 R-A0 V  | 2]
+change : [A0 A1 V  | 1]
+choose : [A0 V A1  | 44, A0 V A1 A1  | 1, A0 V A1 AM-TMP  | 2, A1 A0 V  | 2]
+close : [V A1  | 2]
+collect : [A0 V A1  | 3]
+confirm : [A0 V A1  | 1, A1 V A1 AM-TMP  | 1]
+create : [A0 V A1  | 4, V A1  | 1, AM-TMP V A1  | 1, A0 V A1 AM-DIS  | 1]
+culminate : [A1 V  | 1]
+date : [A1 V AM-TMP  | 1]
+deliver : [A0 V A1  | 1, V A1  | 1, R-AM-TMP V A1  | 1]
+desire : [A1 R-A0 V A1  | 1, A0 R-A0 V A1  | 5]
+determine : [A0 V A1  | 17]
+disable : [A0 V A1  | 10]
+discount : [A0 V A1  | 2, A1 V A1  | 2]
+do : [A0 V  | 2, AM-TMP A0 V  | 1]
+elect : [A0 V A2  | 4, A1 V  | 1, A0 V AM-TMP  | 1]
+eliminate : [AM-MOD V A1  | 8, V A1  | 1, AM-TMP V A1  | 1, A1 V  | 1, A0 V AM-TMP  | 1]
+employ : [A1 V A1  | 3, A1 V  | 1]
+enable : [A0 V A1  | 65, V A1  | 2, A0 V A1 A1  | 16]
+enclose : [A2 V A2  | 1, A2 V A1  | 1]
+erase : [V A1  | 2, A1 V A1  | 2, A1 V  | 2, A1 V AM-TMP  | 2]
+estimate : [V A1  | 2]
+exist : [V A1  | 5, A1 V  | 1, A1 V A1  | 2, V A3  | 1, R-A1 V A1  | 1]
+have : [AM-NEG V A1  | 1, A0 AM-NEG V A1  | 1, A0 R-A0 V A1  | 1]
+hire : [A1 R-A1 V  | 2, A0 R-A0 V AM-TMP  | 1, AM-DIS A0 V  | 1, A0 V  | 1]
+indicate : [A0 V A1  | 2]
+initiate : [V  | 3, V A1  | 10]
+insure : [V A1  | 1, AM-TMP V A1  | 1]
+introduce : [A0 V A1  | 49, A0 V A1 AM-ADV  | 1, A0 V A1 A2  | 2, A0 V A3  | 1]
+invoice : [V A1  | 1]
+keep : [A0 V C-A1  | 1]
+lease : [A1 AM-MOD V AM-TMP  | 1]
+maintain : [A0 V A1  | 4]
+modify : [V A1  | 9, AM-TMP V A1  | 9, AM-MOD V A1  | 9, A1 V  | 4, A1 V AM-TMP  | 4, A1 V A1 AM-TMP  | 1]
+obtain : [A0 V A1  | 82, A0 V A1 A4  | 1, A0 V  | 2, A0 V A3  | 2, A0 V A1 A2  | 1, A0 V A1 AM-LOC  | 1]
+open : [V A1  | 1]
+pay : [A0 V A3  | 3, A0 A1 V A3  | 2]
+pend : [V  | 4, A0 V A1  | 1]
+purchase : [A1 A0 V AM-TMP  | 1]
+recover : [A1 V A1  | 1]
+register : [A0 V A1  | 1, A0 V A1 A3  | 1, A1 V A3  | 31, A1 V A1 AM-ADV  | 1, A1 V A1  | 20, A1 V AM-TMP  | 1, AM-TMP A1 V AM-LOC  | 1, V  | 1, A0 V AM-TMP  | 15, V A3  | 9, AM-TMP V A3  | 4, V A1 A1  | 1, A1 V A3 AM-LOC  | 1, A1 R-A0 V A1  | 1, A1 AM-TMP V AM-TMP  | 1]
+renew : [A0 V A1  | 2, V A1  | 1, AM-TMP V A1  | 1, A1 V  | 1, AM-MOD V AM-TMP  | 1]
+rent : [V A1  | 1, AM-TMP V A1  | 1, A1 A0 V  | 2, A0 A0 V  | 3, A1 V  | 3, AM-MOD V  | 1]
+repair : [A1 R-A1 V  | 2]
+request : [AM-TMP V A1  | 1]
+return : [V A4  | 1, AM-TMP V A4  | 1, A1 V AM-TMP  | 1]
+say : [V C-A1  | 2, A1 A0 V  | 1, V  | 1]
+select : [A0 R-AM-TMP A0 V A1  | 28, A0 V A1  | 38, A0 V A1 AM-TMP  | 2]
+sell : [V A1  | 1, AM-TMP V A1  | 1, A0 V  | 1, AM-MOD V  | 1, A1 V  | 4]
+show : [A0 V A1 A1 AM-TMP  | 5, A0 V A1  | 79, A0 V A1 AM-TMP  | 1, A0 A0 V A1  | 1, A0 V A1 A1  | 2, A0 V A2 AM-TMP  | 2]
+tell : [A0 V A2  | 1]
+validate : [A0 V A1  | 5]
+verify : [A0 V A1  | 1]
+write : [A0 V A1  | 1]

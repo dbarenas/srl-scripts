@@ -1,0 +1,1061 @@
+﻿<NIL>1.1.1.BUY A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+1 the Administrator selects the option OPT001
+2 SAV requests the Administrator the registration number of the vehicle.
+3 The Administrator introduces the registration number of the vehicle.
+4 SAV validates the registration number of the vehicle
+5 SAV determines the existence of the registration number of the vehicle
+6 SAV requests the identification of the responsible for the purchase of the vehicle.
+7 The Administrator requests the identification of the responsible for the purchase of the vehicle.
+8 SAV requests the purchase date and the cost of the vehicle.
+9 The Administrator introduces the purchase date and the cost of the vehicle
+10 SAV enables the option OPT002.
+<NIL>IF</NIL> 
+11 the Administrator selects the option OPT002
+<NIL>THEN</NIL>
+12 SAV registers the purchase date and the cost of the vehicle
+13 SAV registers the date and hour of the registration of the purchase of the vehicle
+14 SAV registers the responsible for the purchase of the vehicle
+15 SAV assigns to the vehicle the state STA001
+16 SAV enables the option OPT003.
+17 SAV enables the option OPT004
+18 SAV enables the option OPT005
+<NIL>END IF</NIL>
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+19 The registration number is invalid.
+20 SAV shows the Administrator the message MSG001
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL> AP2 </NIL>
+21 The registration number exists.
+22 SAV shows the Administrator the message MSG001
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL>1.1.2.MODIFY A PURCHASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+23 the Administrator selects the option OPT006
+24 SAV shows the registration number of the vehicles.
+25 The Administrator chooses the registration number of the vehicle
+26 SAV obtains the purchase data of the vehicle.
+27 SAV shows the purchase data of the vehicle.
+28 SAV enables the date, the responsible and the price of the purchase of the vehicle.
+29 The Administrator introduces the new data of the purchase of the vehicle
+30 SAV enables the option OPT007.
+31 SAV enables the option OPT008
+<NIL>IF</NIL> 
+32 the Administrator chooses the option OPT008
+<NIL>THEN</NIL>
+33 SAV registers the purchase data of the vehicle.
+<NIL>END IF</NIL> 
+<NIL>USE CASE END Modify a Purchase.</NIL>  
+<NIL>1.2.1.SELL A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+34 The Administrator selects the option OPT009.
+35 SAV shows the registration numbers of the vehicles that do not have the state STA002
+36 The Administrator chooses a registration number.
+37 SAV shows the sale date of the vehicle
+38 SAV requests the agreed date of delivery and the sale price of the vehicle.
+39 The Administrator introduces the agreed date of delivery and the sale price of the vehicle.
+40 SAV requests the identification of the buyer of the vehicle
+41 The Administrator introduces the identification of the buyer of the vehicle
+42 SAV shows the name of the responsible for the sale
+43 SAV requests the observations of the sale.
+44 The Administrator writes the observations of the sale
+45 SAV enables the option OPT010.
+<NIL>IF</NIL> 
+46 the Administrator selects the option OPT010
+<NIL>THEN</NIL>
+47 SAV keeps the date, the head, the observations, the identification of the buyer, the agreed date of delivery and the sale price of the vehicle
+<NIL>IF</NIL> 
+48 the vehicle does not have the state STA003 or STA004
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 12.2.</NIL>
+<NIL>END IF</NIL> 
+49 SAV assigns to the vehicle the state STA002.
+50 SAV enables the option OPT011.
+<NIL>END IF</NIL> 
+<NIL>USE CASE END Sell a Vehicle.</NIL> 
+<NIL>1.2.2.DELIVER A VEHICLE SOLD</NIL>
+<NIL>INITIATES WHEN</NIL>
+51 the Administrator selects the option OPT012.
+52 SAV shows the registration numbers of the vehicles sold.
+53 The Administrator selects the registration number of the vehicle sold.
+54 SAV validates the agreed date of delivery of the vehicle.
+55 SAV obtains the identification of the buyer of the vehicle.
+56 SAV shows the identification of the buyer of the vehicle.
+57 SAV requests the identification of the authorized person to collect the vehicle.
+58 The Administrator introduces the identification of the authorized person to collect the vehicle.
+59 SAV enables the option OPT013.
+<NIL>IF</NIL>  
+60 the Administrator selects the option OPT013
+<NIL>THEN</NIL>
+61 SAV registers the real date of delivery of the vehicle sold.
+62 SAV registers the identification of the authorized person to collect the vehicle.
+<NIL>INCLUDE Register Historic Information of a Vehicle.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Deliver a Vehicle Sold.</NIL> 
+<NIL> AP1 </NIL>
+63 Current date is smaller than the delivery date.
+64 SAV shows the Administrator the message MSG002.
+<NIL>1.3.1. RENT A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+65 the Employee selects the option OPT014
+66 SAV shows the registration numbers of the enabled vehicles.
+67 The Employee chooses the registration number of the vehicle that desires to rent
+68 SAV obtains the vehicle data.
+69 SAV shows the vehicle data.
+70 SAV requests the place of refund of the vehicle.
+71 The Employee introduces the place of refund of the vehicle.
+72 SAV enables the option OPT015
+73 SAV enables the option OPT016.
+74 SAV enables the option OPT017.
+<NIL>IF</NIL> 
+75 the Employee selects the option OPT017
+<NIL>THEN</NIL>
+76 SAV disables the option OPT017
+77 SAV disables the option OPT015.
+78 SAV disables the option OPT016.
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+79 SAV obtains the subtotal by concept of rent, the subtotal by concept of extras and the total amount of the lease.
+80 SAV requests the amount of the bail of the lease.
+81 The Employee introduces the amount of the bail of the lease.
+82 SAV obtains the identification of the Employee.
+83 SAV registers the data of the lease.
+<NIL>FOR EACH</NIL> extra of type accessory registered in the lease 
+<NIL>DO</NIL>
+84 extra of type accessory registered in the lease
+85 SAV obtains the code of the accessory.
+86 SAV obtains the quantity of units of the accessory that were rented.
+87 SAV calculates the available quantity of units of the accessory.
+88 SAV registers the available quantity of units of the accessory.
+<NIL>END FOR</NIL>
+89 SAV assigns to the vehicle the state STA005.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Rent a Vehicle.</NIL>
+<NIL>1.3.2. CLOSE A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+90 the Employee selects the option OPT018.
+91 SAV obtains the registration numbers of the vehicles rented.
+92 SAV shows the registration numbers of the vehicles rented.
+93 The Employee chooses the registration number of the vehicle.
+94 SAV recovers the data of the lease of the vehicle.
+95 SAV shows the data of the lease of the vehicle.
+96 SAV enables the option OPT019.
+97 SAV enables the option OPT016.
+98 SAV enables the option OPT020.
+<NIL>IF</NIL>
+99 the Employee chooses the option OPT020
+<NIL>THEN</NIL>
+100 SAV disables the option OPT019.
+101 SAV disables the option OPT016
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+102 SAV registers the closing data of the lease.
+<NIL>FOR EACH</NIL> extra of type accessory registered in the closing of the lease 
+<NIL>DO</NIL>
+103  extra of type accessory registered in the closing of the lease
+104 SAV obtains the code of the accessory.
+105 SAV obtains the quantity of units of the accessory that were rented.
+106 SAV calculates the available quantity of units of the accessory.
+107 SAV registers the available quantity of units of the accessory.
+<NIL>END FOR</NIL>
+108 SAV assigns to the vehicle the state STA001.
+109 SAV enables the option OPT0003.
+110 SAV enables the option OPT0004.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Close a Lease.</NIL>
+<NIL>1.3.3. MODIFY A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+111  the Employee selects the option OPT019.
+112 SAV shows the registration numbers of the vehicles rented.
+113 The Employee chooses the registration number of a vehicle rented.
+114 SAV obtains the data of the lease of the vehicle.
+115 SAV shows the data of the lease of the vehicle.
+116 SAV enables the option OPT021.
+117 SAV enables the option OPT022.
+118 SAV enables the option OPT015.
+119 The Employee introduces the new data of the lease of the vehicle.
+120 SAV enables the option OPT023.
+<NIL>IF</NIL> 
+121 the Employee selects the option OPT023
+<NIL>THEN</NIL>
+122 SAV disables the option OPT024.
+123 SAV disables the option OPT022.
+124 SAV disables the option OPT015.
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+125 SAV obtains the identification of the Employee.
+126 SAV obtains the date and hour of modification of the lease.
+127 SAV registers the identification of the Employee, the date and hour of modification and the data of the lease
+<NIL>FOR EACH</NIL> new extra of registered accessory type in the lease 
+<NIL>DO</NIL>
+128 new extra of registered accessory type in the lease
+129 SAV obtains the code of the accessory.
+130 SAV obtains the units of the accessory that were rented.
+131 SAV calculates the available quantity of units of the accessory.
+132 SAV registers the available quantity of units of the accessory.
+<NIL>END FOR</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify a Lease.</NIL>
+<NIL>1.3.4.INVOICE THE RENT OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+133 the Employee selects the option OPT016.
+134 SAV obtains the registration number of the vehicle.
+135 SAV obtains the date of the lease.
+136 SAV obtains the duration of the lease.
+137 SAV obtains the daily rate of the vehicle
+138 SAV obtains the subtotal by concept of extras of the lease.
+139 SAV calculates the subtotal of the rent.
+<NIL>IF</NIL>
+140 the client is direct
+<NIL>THEN</NIL>
+141 SAV obtains the discount of the applicable rate to the client.
+142 SAV calculates the subtotal of the rent with discount.
+<NIL>END IF</NIL>
+143 SAV calculates the total amount without tax of the lease.
+144 SAV calculates the tax corresponding to the total amount of the lease.
+145 SAV calculates the total amount with tax of the lease.
+<NIL>IF</NIL>
+146 bail amount is greater than zero
+<NIL>THEN</NIL>
+147 SAV calculates the total to pay for the client.
+<NIL>END IF</NIL>
+148 SAV shows the subtotal by concept of rent without discount, the subtotal by concept of rent with discount, the subtotal by concept of extras, the total amount of the lease without tax and the total amount of the lease with tax.
+<NIL>USE CASE END Invoice the Rent of a Vehicle.</NIL>
+<NIL>1.4.1.BORROW A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+149 the Administrator selects the option OPT025.
+150 SAV shows the registration numbers of the enabled vehicles.
+151 The Administrator selects the registration number of a vehicle.
+152 SAV requests the identification of the borrower.
+153 The Administrator introduces the identification of the borrower.
+154 SAV validates the identification of the borrower.
+155 SAV requests the motive of the loan and the estimated date of refund of the vehicle.
+156 The Administrator introduces the motive of the loan and the estimated date of refund of the vehicle.
+157 SAV enables the option OPT026.
+<NIL>IF</NIL>  
+158 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+159 SAV obtains the date and hour of the loan.
+160 SAV obtains the identification of the Administrator.
+161 SAV assigns the state STA006 to the vehicle.
+162 SAV registers the information of the loan.
+NIL>END IF</NIL>
+<NIL>USE CASE END Borrow a Vehicle</NIL>
+<NIL> AP1 </NIL>
+163 Identification of the borrower is invalid.
+164 SAV shows the Administrator the message MSG003.
+<NIL>USE CASE END Borrow a Vehicle.</NIL>
+<NIL>1.4.2.RETURN A BORROWED VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+165 the Employee selects the option OPT027.
+166 SAV shows the registration numbers of the borrowed vehicles.
+167 The Employee chooses the registration number of a vehicle.
+168 SAV obtains the information of the loan of the vehicle.
+169 SAV shows the information of the loan of the vehicle.
+170 SAV enables the option OPT028.
+<NIL>IF</NIL>  
+171 the Employee chooses the option OPT028
+<NIL>THEN</NIL>
+172 SAV obtains the date and hour of the refund.
+173 SAV obtains the identification of the Employee
+174 SAV assigns the state STA001 to the vehicle.
+175 SAV registers the information of the refund of the vehicle.
+176 SAV enables the option OPT003.
+177 SAV enables the option OPT004.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Return a Borrowed Vehicle.</NIL>
+<NIL>2.1.1. REQUEST MAINTENANCE</NIL>
+<NIL>INITIATES WHEN</NIL>
+178 the Operator selects the option OPT003.
+179 SAV obtains the registration numbers of the vehicles in state STA001 or STA007.
+180 SAV shows the registration numbers of the vehicles in state STA001 or STA007.
+181 The Operator chooses the registration number of the vehicle.
+<NIL>IF</NIL> 
+182 the state of the vehicle is STA007
+<NIL>THEN</NIL>
+183 SAV obtains the data of the request of maintenance of the vehicle.
+184 SAV enables the data of the request of maintenance of the vehicle.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+185 the state of the vehicle is STA001 or STA008
+<NIL>THEN</NIL>
+186 SAV requests the data of the request of maintenance of the vehicle.
+<NIL>END IF</NIL>
+187 SAV obtains the identification of the Operator.
+188 SAV shows the identification of the Operator.
+189 The Operator introduces the data of the request of maintenance.
+190 SAV enables the option OPT029.
+<NIL>IF</NIL> 
+191 the Operator chooses the option OPT029
+<NIL>THEN</NIL>
+192 SAV obtains the date and hour of the request of maintenance.
+193 SAV assigns to the vehicle the state STA007.
+194  SAV registers the data of the request of maintenance.
+195 SAV enables the option OPT004.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Request Maintenance.</NIL>
+<NIL>2.1.2.REGISTER MAINTENANCE</NIL>
+<NIL>INITIATES WHEN</NIL>
+196 the Employee selects the option OPT030.
+197 SAV obtains the registration numbers of the vehicles with state STA007.
+198 SAV shows the registration numbers of the vehicles with state STA007.
+199 The Technician selects the registration of the vehicle.
+200 SAV obtains the data of the request of maintenance.
+201 SAV shows the data of the request of maintenance.
+202 SAV enables the option OPT004.
+203 SAV requests the description of the maintenance carried out to the vehicle.
+204 The Technician introduces the description of the maintenance of the vehicle.
+205 SAV requests the mileage of the vehicle.
+206 The Technician introduces the mileage of the vehicle.
+207 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+208 the Technician chooses the option OPT026
+<NIL>THEN</NIL>
+209 SAV obtains the place, date and hour of the registration of maintenance of the vehicle.
+210 SAV obtains the identification of the Technician.
+211 SAV disables the option OPT004.
+212 SAV registers the data of the maintenance.
+<NIL>IF</NIL>
+213 the state of the vehicle is different to STA008
+<NIL>THEN</NIL>
+<NIL>IF</NIL>
+214 the insurance expiration date is one month greater than current date, and total rate is greater than 0, and mileage vehicle is less than 150000
+<NIL>THEN</NIL>
+215 SAV assigns to the vehicle the state STA003.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> insurance expiration date is less than current date plus 1 month 
+<NIL>THEN</NIL>
+216 insurance expiration date is less than current date plus 1 month
+217 SAV assigns to the vehicle the state STA001
+218 SAV enables the option OPT031.
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+219 total rate is equal to zero
+<NIL>THEN</NIL>
+220 SAV assigns to the vehicle the state STA001
+221 SAV enables the option OPT032.
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+222  vehicle mileage is greater or equal than 150000
+<NIL>THEN</NIL>
+223 SAV assigns to the vehicle the state STA004.
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Maintenance.</NIL>
+<NIL>2.2.1. REQUEST REPAIR</NIL>
+<NIL>INITIATES WHEN</NIL>
+224 the Operator selects the option OPT033.
+225 SAV obtains the registrations of the vehicles with the state STA001 or STA007.
+226 SAV shows the registrations of the vehicles with the STA001 or STA007.
+227 The Operator chooses the registration of the vehicle.
+228 SAV obtains the date and hour of the request of repair.
+229 SAV obtains the identification of the Operator.
+230 SAV enables the option OPT034.
+<NIL>IF</NIL> 
+231 the Operator selects the option OPT034-
+<NIL>THEN</NIL>
+232 SAV obtains the identification of the external garages.
+233 SAV shows the identification of the external garages.
+234 The Operator chooses the external garage.
+<NIL>END IF</NIL>
+235 SAV requests the description of the damage that must be repaired.
+236 The Operator introduces the description of the damage that must be repaired.
+237 SAV enables the option OPT029.
+<NIL>IF</NIL>
+238 the Operator chooses the option OPT029
+<NIL>THEN</NIL>
+239 SAV assigns to the vehicle the state STA008.
+240 SAV registers the data of the request of repair.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Request Repair.</NIL>
+<NIL>2.2.2.REGISTER REPAIR</NIL>
+<NIL>INITIATES WHEN</NIL>
+241 the Technician selects the option OPT035.
+242 SAV obtains the registrations of the vehicles with the state STA008.
+243 SAV shows the registrations of the vehicles with the state STA008.
+244 The Technician selects the registration of the vehicle.
+245 SAV obtains the data of the request of repair.
+246 SAV shows the data of the request of repair.
+247 SAV obtains the place, date and hour of the registration of the request of repair of the vehicle.
+248 SAV obtains the identification of the Technician.
+249 SAV requests the description of the repair carried out to the vehicle.
+250 The Technician introduces the description of the repair carried out to the vehicle.
+251 SAV requests the cost of the repair of the vehicle.
+252 The Technician introduces the cost of the repair of the vehicle.
+253 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+254 the Technician chooses the option OPT026
+<NIL>THEN</NIL>
+255 SAV registers the data of the repair.
+<NIL>INCLUDE Request Maintenance.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Repair.</NIL>
+<NIL>2.3.1.REGISTER AN EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+256 the Employee selects the option OPT036.
+257 SAV requests the data of the external garage.
+258 The Employee introduces the data of the external garage.
+259 SAV enables the option OPT026.
+<NIL>IF</NIL>  
+260 the Employee chooses the option OPT026
+<NIL>THEN</NIL>
+261 SAV registers the data of the external garage.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register an External garage.</NIL>
+<NIL> AP1 </NIL>
+262 The external garage exists.
+263 SAV shows the Employee the message MSG003.
+<NIL>USE CASE END Register an External garage.</NIL>
+<NIL>2.3.2.ERASE EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+264 the Administrator selects the option OPT037.
+265 SAV obtains the name and the identification of the external garages.
+266 SAV It shows the name and the identification of the external garages.
+267 The Employee selects the name of the external garage.
+268 SAV shows the data of the external garage.
+269 SAV enables the option OPT038.
+<NIL>IF</NIL> 
+270 the Employee selects the option OPT038
+<NIL>THEN</NIL>
+271 SAV eliminates the external garage.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Erase External Garage.</NIL>
+<NIL>2.3.3.MODIFY EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+272 the Employee selects the option OPT039.
+273 SAV obtains the name and the identification of the external garages.
+274 SAV shows the name and the identification of the external garages.
+275 The Employee selects the name of the external garage.
+276 SAV shows the data of the external garage.
+277 The Employee introduces the data of the external garage.
+278 SAV enables the option OPT008.
+<NIL>IF</NIL> 
+279 the Employee selects the option OPT008.
+<NIL>THEN</NIL>
+280 SAV registers the data of the external garage.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify External Garage.</NIL>
+<NIL>3.1. REGISTER A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+281 the Administrator selects the option OPT040.
+282 SAV requests the Administrator the registration number of the vehicle.
+283 The Administrator introduces the registration number of the vehicle.
+284 SAV validates the registration number of the vehicle.
+285 SAV requests the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+286 The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+287 SAV determines the existence of the class and the group of the type of vehicle.
+288 SAV obtains the class and the group of the type of vehicle.
+289 SAV shows the class and the group of the type of vehicle.
+290 SAV enables the option OPT040.
+<NIL>IF</NIL> 
+291 the Administrator selects the option OPT040
+<NIL>THEN</NIL>
+292 SAV obtains the date and hour of the registration of the vehicle.
+293 SAV registers the date an hour of the registration of the vehicle.
+294 SAV registers the registration number, the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+295 The registration number is invalid.
+296 SAV shows the Administrator the message MSG001
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP2 </NIL>
+297 The registration number exists.
+298 SAV shows the Administrator the message MSG006.
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL>3.2. MODIFY THE REGISTRATION OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+299 the Administrator selects the option OPT007.
+300 SAV shows the registration numbers of the vehicles.
+301 The Administrator selects the registration number of a vehicle.
+302 SAV shows the data of the vehicle.
+303 SAV enables the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+304 The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+305 SAV determines the existence of the class and the group of the type of vehicle.
+306 SAV obtains the class and the group of the type of vehicle.
+307 SAV shows the class and the group of the type of vehicle.
+308 SAV enables the option OPT041. 
+<NIL>IF</NIL> 
+309 the Administrator selects the option OPT042
+<NIL>THEN</NIL>
+310 SAV obtains the date and hour of the registration of the vehicle.
+311 SAV registers the date and hour of the registration of the vehicle.
+312 SAV registers the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Registration of a Vehicle.</NIL>
+<NIL>3.3.REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+313 the Administrator selects the option OPT043 of a Vehicle.
+314 SAV shows the registration numbers of the vehicles sold.
+315 The Administrator chooses the registration number of a vehicle.
+316 SAV obtains the data of the registration of the vehicle.
+317 SAV obtains the data of the registration of the purchase of the vehicle.
+318 SAV obtains the data of the registration of the sale of the vehicle.
+319 SAV enables the option OPT044. 
+<NIL>IF</NIL> 
+320 the Administrator selects the option OPT044
+<NIL>THEN</NIL>
+321 SAV registers the data of the registration of the vehicle in the Historic of Vehicles. 
+322 SAV eliminates the registration of the vehicle.
+323 SAV registers the data of the registration of the purchase of the vehicle in the Historic of Vehicles. 
+324 SAV eliminates the registration of the purchase of the vehicle.
+325 SAV registers the data of the registration of the sale of the vehicle in the Historic of Vehicles. 
+326 SAV eliminates the registration of the sale of the vehicle. 
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register of the Historic Information of a Vehicle.</NIL>
+<NIL>3.4. ASSIGN CLASS AND GROUP</NIL>
+<NIL>INITIATES WHEN</NIL>
+327 the Administrator selects the option OPT045
+328 SAV requests the model, year of production and number of doors of the vehicle.
+329 The Administrator introduces the model, year of production and number of doors of the vehicle.
+330 SAV determines the existence of the class and group of the type of vehicle.
+331 SAV shows the name and the description of the classes of vehicle.
+332 SAV enables the option OPT046.
+<NIL>IF</NIL> 
+333 the Administrator selects the name and the description of a class of vehicle
+<NIL>THEN</NIL>
+334 SAV disables the option OPT046.
+335 SAV shows the name, the description and the types of vehicle of the groups of the class of vehicle.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+336 the Administrator selects a group of a class of vehicle
+<NIL>THEN</NIL>
+337 SAV enables the option OPT026.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+338 the Administrator selects the option OPT026
+<NIL>THEN</NIL>
+339 SAV registers the type of vehicle in a group of a class. 
+<NIL>END IF</NIL>
+<NIL>USE CASE END Assign Class and Group.</NIL>
+<NIL> AP1 </NIL>
+340 Class and group of the type of vehicle exists.
+341 SAV shows the Administrator the message MSG007.
+<NIL>USE CASE END Assign Class and Group.</NIL>
+<NIL>3.5.CREATING A CLASS</NIL>
+<NIL>INITIATES WHEN</NIL>
+342 the Administrator selects the option OPT046. 
+343 SAV requests the name and the description of the new class of vehicle.
+344 The Administrator introduces the name and the description of the new class of vehicle.
+345 SAV determines the existence of the class.
+346 SAV enables the option OPT047.
+<NIL>IF</NIL> 
+347 the Administrator selects the option OPT047
+<NIL>THEN</NIL>
+348 SAV requests the name and the description of the group of the class of vehicle.
+349 The Administrator introduces the name and the description of the group of the class of vehicle.
+350 SAV assigns the value of monetary units zero to the price of the class and the group of the vehicle types.
+351 SAV enables the option OPT048.
+352 SAV enables the option OPT026.
+<NIL>RETURN TO THE STEP 3.</NIL>
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+353 the Administrator selects the option OPT026
+<NIL>THEN</NIL>
+354 SAV registers the data of the new class.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Creating a Class.</NIL>
+<NIL> AP1 </NIL>
+355 The class exists.
+356 SAV shows the Administrator the message MSG008. 
+<NIL>USE CASE END Creating a Class.</NIL>
+<NIL>3.6.ERASE TYPE OF VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+357 the Administrator selects the option OPT049. 
+358 SAV requests the model, year of production and number of doors of the vehicle.
+359 The Administrator introduces the model, year of production and number of doors of the vehicle.
+360 SAV determines the existence of the class and group of the type of vehicle.
+361 SAV obtains the class and group of the type of vehicle.
+362 SAV shows the class and group of the type of vehicle.
+363 SAV enables the option OPT038.
+<NIL>IF</NIL> 
+364 the Administrator selects the option OPT038
+<NIL>THEN</NIL>
+365 SAV eliminates the type of vehicle of the class and group.
+366 SAV enables the option OPT045.
+367 SAV enables the option OPT046.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+<NIL> AP1 </NIL>
+368 The class and group do not exist.
+369 SAV shows the Administrator the message MSG009.
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+<NIL>3.7.ASSIGN PRICE</NIL>
+<NIL>INITIATES WHEN</NIL>
+370 the Administrator selects the option OPT048.
+371 SAV shows the classes of vehicles.
+372 The Administrator selects a class of vehicle.
+373 SAV shows the data of the class of vehicle.
+374 The Administrator selects a group of the class of vehicle.
+375 SAV shows the data of the group of the class of vehicle.
+376 SAV shows the price of the class and group of vehicle types.
+377 SAV requests to introduce the daily price of the rent of a class and group of vehicle types.
+378 SAV requests to introduce the daily cost of the insurance of the types of vehicles of a class and group.
+379 The Administrator introduces the daily price of the rent of a class and group vehicles types.
+380 Administrator introduces the daily cost of the insurance of the types of vehicles of a class and group.
+381 SAV enables the option OPT050.
+<NIL>IF</NIL> 
+382 the Administrator chooses the option OPT050.
+<NIL>THEN</NIL>
+383 SAV calculates the total price of the rent of a type of vehicle.
+384 SAV registers the daily price of the rent of a class and group vehicles types.
+385 SAV registers the daily cost of the insurance of the types of vehicles of a class and group.
+386 SAV registers the total price of the rent of a type of vehicle.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Assign Price.</NIL>
+<NIL>4.1.1. INSURE A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+387 the Administrator selects the option OPT051.
+388 SAV requests to the Employee the registration number of the vehicle.
+389 The Employee introduces the registration number of the vehicle.
+390 The Employee chooses the registration number of the vehicle.
+391 SAV determines the existence of an insurance policy of the vehicle.
+392 SAV enables the option OPT052. 
+393 SAV shows the insurance companies.
+394 The Employee selects the insurance company. 
+395 SAV requests the data of the insurance policy.
+396 The Employee introduces the data of the insurance policy.
+397 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+398 the Employee chooses the option OPT026
+<NIL>THEN</NIL>
+399 SAV obtains the date and hour of registration of the insurance policy. 
+400 SAV obtains the identification of the Employee.
+401 SAV registers the data of the insurance policy.
+402 SAV encloses to the insurance policy the date and hour of registration and the identification of the Employee that registered it. 
+<NIL>END IF</NIL>
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+403 Exists an insurance policy of the vehicle.
+404 SAV shows to the Employee the message MSG010. 
+405 SAV enables the option OPT053.
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+<NIL>4.1.2.RENEW THE INSURANCE POLICY</NIL>
+<NIL>INITIATES WHEN</NIL>
+406 the Employee selects the option OPT053.
+407 SAV shows the registration numbers of the vehicles that have insurance policies.
+408 The Employee chooses a registration number of a vehicle.
+409 SAV obtains the data of the insurance policy.
+410 SAV shows the data of the insurance policy.
+411 SAV enables the option OPT052. 
+412 The Employee introduces the new data of the insurance policy.
+413 SAV enables the option OPT054.
+<NIL>IF</NIL> 
+414 the Employee chooses the option OPT054
+<NIL>THEN</NIL>
+415 SAV obtains the date and hour of renewal of the insurance policy.
+416 SAV obtains the identification of the Employee that carried out the renewal.
+417 SAV registers the new data of the insurance policy. 
+418 SAV enclosed to the insurance policy the date and hour of the renewal and the identification of the Employee that carried out the renewal.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Renew the Insurance Policy.</NIL>
+<NIL>4.2.1. REGISTER AN INSURANCE COMPANY</NIL>
+<NIL>INITIATES WHEN</NIL>
+419 the Administrator selects the option OPT052.
+420 SAV requests to the Administrator the data of the Insurance Company.
+421 The Administrator introduces the data of the Insurance Company.
+422 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+423 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+424 SAV obtains the date and hour of registration of the data of the Insurance Company.
+425 SAV obtains the identification of the Administrator that carried out the registration. 
+426 SAV registers the date and hour of registration of the data of the Insurance Company.
+427 SAV registers the identification of the Administrator that carried out the registration.
+428 SAV registers the data of the Insurance Company.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register an Insurance Company.</NIL>
+<NIL>4.2.2.MODIFY AN INSURANCE COMPANY</NIL>
+<NIL>INITIATES WHEN</NIL>
+429 the Administrator selects the option OPT055.
+430 SAV obtains the names of the Insurance Companies.
+431 SAV shows the names of the Insurance Companies.
+432 The Administrator chooses an Insurance Company
+433 SAV shows the data of the Insurance Company.
+434 SAV enables the data of the Insurance Company.
+435 The Administrator introduces the data of the Insurance Company.
+436 SAV enables the option OPT008.
+<NIL>IF</NIL> 
+437 the Administrator chooses the option OPT008
+<NIL>THEN</NIL>
+438 SAV obtains the date and hour of modification of the data of the Insurance Company.
+439 SAV obtains the identification of the Administrator that carried out the modification.
+440 SAV registers the date and hour of modification of the data of the Insurance Company.
+441 SAV registers the identification of the Administrator carried out the modification.
+442 SAV registers the data of the Insurance Company.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify an Insurance Company.</NIL>
+<NIL>5.1.REGISTER A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+443 the Employee selects the option OPT056.
+444 SAV asks to the Employee if the client is direct or if he is an agency. 
+445 The Employee tells if the client is direct or if he is an agency. 
+446 SAV requests the identifier of the client according to his type.
+447 SAV determines the existence of the client.
+448 SAV requests the data of the client according to his type.
+449 The Employee introduces the data of the client.
+<NIL>IF</NIL>
+450 the client is direct 
+<NIL>THEN</NIL>
+<NIL>INCLUDE Register the Bank Details of a Direct Client.</NIL>
+<NIL>END IF</NIL> 
+451 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+452 the Employee chooses the option OPT026
+<NIL>THEN</NIL>
+453 SAV obtains the date and hour of registration of the client.
+454 SAV obtains the identification of the Employee that carries out the registration of the client.
+455 SAV registers the data of the client. 
+<NIL>IF</NIL> 
+456 the client is direct 
+<NIL>THEN</NIL>
+457 SAV registers the bank details of the direct client.
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a Client.</NIL>
+<NIL> AP1 </NIL>
+458 The client exists.
+<NIL>Existing client.</NIL>
+459 SAV shows the Employee the message MSG011. 
+460 SAV enables the option OPT057.
+<NIL>USE CASE END Register a Client.</NIL>
+<NIL>5.2.MODIFY THE DATA OF A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+461 the Employee selects the option OPT058.
+462 SAV asks to the Employee if the client is direct or if he is an agency.
+463 The Employee indicates if the client is direct or if he is an agency.
+464 SAV obtains the identifiers of the client according to his type.
+465 SAV shows the identifiers of the clients according to his type.
+466 The Employee chooses the identifier of a client. 
+467 SAV obtains the data of the client.
+468 SAV shows the data of the client.
+469 The Employee introduces the new data of the client.
+<NIL>IF</NIL> 
+470 the client is direct 
+<NIL>THEN</NIL>
+471 SAV enables the option OPT059.
+<NIL>END IF</NIL>
+472 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+473 the Employee chooses the option OPT026
+<NIL>THEN</NIL>
+474 SAV obtains the date and hour of modification of the client.
+475 SAV obtains the identification of the Employee that carried out the modification of the client.
+476 SAV registers the data of the client. 
+<NIL>IF</NIL> 
+477 the client is direct
+<NIL>THEN</NIL>
+478 SAV registers the bank details of the direct client.
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of a Client.</NIL>
+<NIL>5.3.REGISTER THE BANK DETAILS OF A DIRECT CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+479 the Employee selects the option OPT060.
+480 SAV obtains the identifiers of the direct clients. 
+481 SAV shows the identifiers of the direct clients.
+482 The Employee chooses the identifier of the direct client.
+483 SAV requests the bank details of the direct client.
+484 The Employee introduces the bank details of the direct client. 
+485 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+486 the Employee chooses the option OPT026
+<NIL>THEN</NIL>
+487 SAV validates the bank details of the direct client.
+488 AV registers the bank details of the direct client.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+<NIL> AP1 </NIL>
+489 The bank details are invalid.
+490 SAV shows the Employee the message MSG012.
+491 SAV enables the option OPT059.
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+<NIL>5.4.AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+492 the Administrator selects the option OPT061. 
+493 SAV asks the Administrator if the client is direct or an agency.
+494 The Administrator indicates if the client is direct or an agency.
+495 SAV obtains the identifiers of the clients according to its type.
+496 SAV shows the identifiers of the clients according to its type.
+497 The Administrator chooses the identifier of the client.
+498 SAV obtains the data of the client.
+499 SAV shows the data of the client.
+500 The Administrator introduces the percentage of discount or the commission of the client.
+501 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+502 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+503 SAV registers the percentage of discount or the commission of the client. 
+<NIL>END IF</NIL>
+<NIL>USE CASE END Authorize Discount or Commission of a Client. </NIL>
+<NIL>6.1.REGISTER EXTRAS</NIL>
+<NIL>INITIATES WHEN</NIL>
+504 the Administrator selects the option OPT062.
+505 SAV requests to the Administrator the data of the extra.
+506 The Administrator introduces the data of the extra.
+507 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+508 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+509 SAV assigns a code to the extra.
+510 SAV registers the data of the extra.
+511 SAV enables the option OPT063.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+512 the Administrator chooses the option OPT063
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Extras.</NIL>
+<NIL>6.2.MODIFY AN EXTRA</NIL>
+<NIL>INITIATES WHEN</NIL>
+513 the Administrator selects the option OPT064.
+514 SAV obtains the codes and the generic names of the extras.
+515 SAV shows to the Administrator the codes and the generic names of the extras.
+516 The Administrator chooses the code of an extra.
+517 SAV obtains the data of the extra.
+518 SAV shows the data of the extra.
+519 The Administrator introduces the new data of the extra.
+520 SAV enables the option OPT008
+<NIL>IF</NIL>  
+521 the Administrator chooses the option OPT008
+<NIL>THEN</NIL>
+522 SAV registers the new data of the extra.
+523 SAV enables the option OPT065.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+524 the Administrator chooses the option OPT065
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify Extras.</NIL>
+<NIL>6.3.ELECTION OF EXTRAS</NIL>
+<NIL>INITIATES WHEN</NIL>
+525 the Employee selects the option OPT066.
+526 SAV obtains the generic name of the extras.
+527 SAV shows the generic name of the extras.
+528 The Employee chooses the generic name of an extra.
+529 SAV obtains the data of the extra.
+530 SAV shows the data of the extra.
+<NIL>IF</NIL>
+531 the extra is accessory type
+<NIL>THEN</NIL>
+532 SAV determines the available quantity of the accessory.
+533 SAV requests the quantity of units that are desired to hire.
+534 The Employee introduces the quantity of units that are desired to hire.
+<NIL>IF</NIL> 
+535 available quantity of the accessory is less than the quantity of units to be hired
+<NIL>THEN</NIL>
+536 SAV shows to the Employee the message MSG013
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+537 SAV enables the option OPT067.
+<NIL>IF</NIL> 
+538 the Employee chooses the option OPT067
+<NIL>THEN</NIL>
+539 SAV obtains the code, generic name, description, limitations, observations and price of the extra.
+<NIL>IF</NIL> 
+540 the extra is accessory type
+<NIL>THEN</NIL>
+541 SAV requests the quantity of days of contracting of the extra.
+542 The Employee introduces the quantity of days of contracting of the extra.
+543 SAV requests the quantity of units of the accessory that were chosen.
+544 The Employee introduces the quantity of units of the accessory that were chosen.
+545 The Employee introduces the quantity of days of contracting of the extra.
+546 SAV requests the quantity of units of the accessory that were chosen.
+547 The Employee introduces the quantity of units of the accessory that were chosen.
+548 SAV calculates the total to pay for concept of accessories.
+549 SAV shows the total to pay for concept of accessories.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+550 the extra is service type
+<NIL>THEN</NIL>
+551 SAV requests the quantity of days of contracting of the service.
+552 The Employee introduces the quantity of days of contracting of the service.
+553 SAV calculates the total to pay for concept of services.
+554 SAV shows the total to pay for concept of services.
+<NIL>END IF</NIL> 
+555 SAV calculates the subtotal by concept of extras.
+556 SAV shows the subtotal by concept of extras.
+557 SAV enables the option OPT068.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+558 the Employee chooses the option OPT068
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Election of Extras.</NIL>
+<NIL>6.4.ELIMINATE AN EXTRA OF A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+559 the Employee selects the option OPT069
+560 SAV obtains of the lease the code of the extras hired.
+561 SAV shows the code and generic name of the extras hired.
+562 The Employee chooses the generic name of an extra.
+563 SAV obtains the data of the extra.
+564 SAV shows the data of the extra.
+565 SAV enables the option OPT070.
+<NIL>IF</NIL> 
+566 the Employee chooses the option OPT070
+<NIL>THEN</NIL>
+<NIL>IF</NIL> 
+567 the extra is accessory type
+<NIL>THEN</NIL>
+568 SAV obtains the quantity of days of contracting of the extra.
+569 SAV obtains the quantity of units of the extra that were rented.
+570 SAV updates the available quantity of the extra
+571 SAV assigns the value of zero to the quantity of days of contracting of the extra.
+572 SAV calculates the total to discount for concept of accessories.
+573 SAV shows the total to discount for concept of accessories.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+574 the extra is service type
+<NIL>THEN</NIL>
+575 SAV obtains the quantity of days of contracting of the extra.
+576 SAV calculates the total to discount for concept of services.
+577 SAV shows the total to discount for concept of services.
+<NIL>END IF</NIL>
+578 SAV calculates the subtotal by concept of extras.
+579 SAV shows the subtotal by concept of extras.
+580 SAV enables the option OPT071.
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+581 the Employee chooses the option OPT071
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Eliminate an Extra of a Lease.</NIL>
+<NIL>7.1.OPEN A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+582 the Administrator selects the option OPT072.
+583 SAV requests the identity card of the employee.
+584 The Administrator introduces the identity card of the employee.
+585 SAV determines if the data of the employee are already registered.
+586 SAV determines if the employee maintains a labor contract in force or assets with the company.
+<NIL>IF</NIL> 
+587 the employee is already registered
+<NIL>THEN</NIL>
+588 SAV shows the data of the employee.
+589 SAV enables the option OPT073.
+<NIL>ELSE</NIL>
+<NIL>INCLUDE Register Employee.</NIL>
+590 SAV shows the data of the employee.
+<NIL>END IF</NIL>
+591 SAV requests the start date, duration and conditions of the labor contract.
+592 The Administrator introduces the start date, duration and conditions of the labor contract.
+593 SAV enables the option OPT074.
+<NIL>IF</NIL>  
+594 the Administrator chooses the option OPT074
+<NIL>THEN</NIL>
+595 SAV obtains the registration date of the labor contract and the identifier of the Administrator that carries out the above mentioned registration.
+596 SAV assigns a code of identification to the labor contract.
+597 SAV registers the code and the registration date of the labor contract, the identifier of the Administrator that carries out the registration, the identity card of the employee, the start date, duration and conditions of the labor contract.
+<NIL>IF</NIL>  
+598 Registration date is less than start date
+<NIL>THEN</NIL>
+599 SAV assigns to the labor contract the state STA009.
+<NIL>ELSE</NIL>
+600 SAV assigns to the labor contract the state STA010.
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+601 The labor contract is in force or active.
+602 SAV shows the message MSG014. 
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+<NIL>7.2.MODIFY THE DATA OF A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+603 the Administrator selects the option OPT075.
+604 SAV requests the identity card of the employee.
+605 The Administrator introduces the identity card of the employee.
+606 SAV determines the existence of the identity card of the employee.
+607 SAV determines if the employee maintains a labor contract in force or assets with the business.
+608 SAV obtains the code of the labor contracts in force and assets of the employee.
+609  SAV shows the code of the labor contracts in force and assets of the employee.
+610 The Administrator chooses the code of a labor contract.
+611 SAV obtains the data of the labor contract of the employee.
+612 SAV shows the data of the labor contract of the employee.
+613 The Administrator introduces the new data of the labor contract of the employee.
+614 SAV enables the option OPT019.
+<NIL>IF</NIL> 
+615 the Administrator chooses the option OPT074
+<NIL>THEN</NIL>
+616 SAV obtains the modification date of the labor contract and the identifier of the Administrator that carries out this modification.
+617 SAV registers the data of the labor contract, the modification date and the identifier of the Administrator that carries out said modification.
+618 SAV updates the state of the labor contract.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+619 The employee does not exist.
+620 SAV shows the message MSG015.
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL> AP2 </NIL>
+621 The labor contract does not exist or it is annulled or it is culminated.
+622 SAV shows the message MSG016.
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL>7.3.CANCEL A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+623 the Administrator selects the option OPT076.
+624 SAV requests the identity card of the employee.
+625 The Administrator introduces the identity card of the employee.
+626 SAV determines the existence of the identity card of the employee.
+627 SAV determines if the employee maintains a labor contract in force with the company.
+628 SAV obtains the data of the labor contract in force that the employee maintains with the company.
+629 SAV shows the data of the labor contract of the employee.
+630 SAV enables the option OPT077.
+<NIL>IF</nil> 
+631 the Administrator chooses the option OPT077
+<NIL>THEN</NIL>
+632 SAV asks the Administrator the reasons of the annulment of the labor contract.
+633 The Administrator introduces the reasons of the annulment of the labor contract.
+634 SAV obtains the annulment date of the labor contract and the identifier of the Administrator that carries out it.
+635 SAV registers the data of the labor contract, the annulment date and the identifier of the Administrator that carries out it.
+636 SAV assigns to the labor contract the state STA011.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+637 The employee does not exist.
+638 SAV shows the message MSG015.
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL> AP2 </NIL>
+639 The labor contract does not exist or it is without vigor.
+<NIL>Nonexistent labor contract or without vigor.</NIL>
+640 SAV shows the message MSG017.
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL>7.4.REGISTER A NEW EMPLOYEE</NIL>
+<NIL>INITIATES WHEN</NIL>
+641 the Administrator selects the option OPT078.
+642 SAV requests the identity card of the new employee.
+643 SAV determines the existence of the employee.
+644 SAV requests the data of the employee.
+645 The Administrator introduces the data of the employee.
+646 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+647 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+648 SAV obtains the registration date of the employee and the identifier of the Administrator that carries out it.
+649 SAV registers the data of the employee, the registration date of the employee and the identifier of the Administrator that carries out it.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a New Employee. </NIL>
+<NIL> AP1 </NIL>
+650 The employee exists.
+651 SAV shows the message MSG018.
+<NIL>USE CASE END Register a New Employee. </NIL>
+<NIL>7.5.MODIFY THE DATA OF AN EMPLOYEE</NIL>
+<NIL>INITIATES WHEN</NIL>
+652 the Administrator selects the option OPT079.
+653 SAV requests the identity card of the employee.
+654 SAV determines the existence of the employee.
+655 SAV obtains the data of the employee.
+656 SAV shows the data of the employee.
+657 The Administrator introduces the new data of the employee.
+658 SAV enables the option OPT026.
+<NIL>IF</NIL> 
+659 the Administrator chooses the option OPT026
+<NIL>THEN</NIL>
+660 SAV obtains the modification date and the identifier of the Administrator that carries out it.
+661 SAV registers the employee data, the modification date and the identifier of the Administrator that carries out it.
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>
+<NIL> AP1 </NIL>
+662 The employee does not exist.
+663 SAV shows the message MSG015.
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>

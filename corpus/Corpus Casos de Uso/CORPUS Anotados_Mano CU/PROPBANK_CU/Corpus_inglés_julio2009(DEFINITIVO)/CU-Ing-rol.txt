@@ -1,0 +1,1061 @@
+﻿<NIL>1.1.1.BUY A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+1 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT001]
+2 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_Administrator DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+3 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+4 [NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+5 [NP-SUJ-A0 NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+6 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_responsible IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+7 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_responsible IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+8 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+9 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+10 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT002]
+<NIL>IF</NIL> 
+11 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT002]
+<NIL>THEN</NIL>
+12 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+13 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+14 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_responsible] [NP-OBJ-A3 IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+15 [NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+16 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+17 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+18 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT005]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+19 [NP-SUJ-A1 DT_the NN_registration NN_number] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+20 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL> AP2 </NIL>
+21 [NP-OBJ-A1 DT_the NN_registration NN_number] [VP VBZ_exists]
+22 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+<NIL>1.1.2.MODIFY A PURCHASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+23 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT006]
+24 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NNS_vehicles]
+25 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NNS_vehicle]
+26 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+27 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+28 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_date Fc_, DT_the JJ_responsible CC_and DT_the NN_price IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+29 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+30 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT007]
+31 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>IF</NIL> 
+32 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+33 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+<NIL>END IF</NIL> 
+<NIL>USE CASE END Modify a Purchase.</NIL>  
+<NIL>1.2.1.SELL A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+34 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT009]
+35 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles [SBAR-SUJ-R_A0 WDT_that] VBP_do [ADVP-MOD-AM_NEG RB_not] [VP VB_have] [NP-OBJ-A1 DT_the NN_state NN_STA002]]
+36 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_a NN_registration NN_number] 
+37 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_sale NN_date IN_of DT_the NN_vehicle]
+38 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+39 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+40 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+41 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+42 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_responsible IN_for DT_the NN_sale]
+43 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NNS_observations IN_of DT_the NN_sale]
+44 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_writes] [NP-OBJ-A1 DT_the NNS_observations IN_of DT_the NN_sale]
+45 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT010]
+<NIL>IF</NIL> 
+46 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT010]
+<NIL>THEN</NIL>
+47 [NP-SUJ-A0 NNP_SAV] [VP VBZ_keeps] [NP-OBJ-A1 DT_the NN_date Fc_, DT_the NN_head Fc_, DT_the NNS_observations Fc_, DT_the NN_identification IN_of DT_the NN_buyer Fc_, DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+<NIL>IF</NIL> 
+48 [NP-SUJ-A0 DT_the NNP_vehicle] VBP_does [ADVP-MOD-AM_NEG RB_not] [VP VB_have] [NP-OBJ-A1 DT_the NN_State NN_STA003 CC_or NN_STA004]
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 12.2.</NIL>
+<NIL>END IF</NIL> 
+49 [NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA002]
+50 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT011]
+<NIL>END IF</NIL> 
+<NIL>USE CASE END Sell a Vehicle.</NIL> 
+<NIL>1.2.2.DELIVER A VEHICLE SOLD</NIL>
+<NIL>INITIATES WHEN</NIL>
+51 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT012]
+52 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+53 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+54 [NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery IN_of DT_the NN_vehicle]
+55 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+56 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+57 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+58 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+59 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT013]
+<NIL>IF</NIL>  
+60 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT013]
+<NIL>THEN</NIL>
+61 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_real NN_date IN_of NN_delivery IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+62 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+<NIL>INCLUDE Register Historic Information of a Vehicle.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Deliver a Vehicle Sold.</NIL> 
+<NIL> AP1 </NIL>
+63 [NP-SUJ-A1 JJ_Current NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_smaller IN_than DT_the NN_delivery NN_date]
+64 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_administrator DT_the NN_message NN_MSG002]
+<NIL>1.3.1. RENT A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+65 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT014]
+66 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the [VP VBN_enabled] [NP-OBJ-A1 NNS_vehicles]]
+67 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NN_vehicle [SBAR-OBJ-R_A1 WDT_that] [VP VBZ_desires TO_to VB_rent]]
+68 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_vehicle NNS_data]
+69 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_vehicle NNS_data]
+70 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_place IN_of  NN_refund IN_of DT_the NN_vehicle]
+71 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_place IN_of NN_refund IN_of DT_the NN_vehicle]
+72 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+73 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+74 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+<NIL>IF</NIL> 
+75 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+<NIL>THEN</NIL>
+76 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+77 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+78 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+79 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NN_rent DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras CC_and DT_the JJ_total NN_amount IN_of DT_the NN_lease]
+80 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_amount IN_of DT_the NN_bail IN_of DT_the NN_lease]
+81 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_amount IN_of DT_the NN_bail IN_of DT_the NN_lease]
+82 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NNP_employee]
+83 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_lease]
+<NIL>FOR EACH</NIL> extra of type accessory registered in the lease 
+<NIL>DO</NIL>
+84 [NP-OBJ-A1 JJ_extra IN_of NN_type JJ_accessory] [VP VBZ_registered] [NP-OBJIND-A2 IN_in DT_the NN_lease]
+85 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of DT_the JJ_accessory]
+86 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+87 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+88 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+<NIL>END FOR</NIL>
+89 [NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJIND-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_state NN_STA005]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Rent a Vehicle.</NIL>
+<NIL>1.3.2. CLOSE A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+90 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT018]
+91 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NNS_vehicles] [VP VBN_rented]]
+92 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of  [NP-OBJ-A1 DT_the NNS_vehicles] [VP VBN_rented]]
+93 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of  DT_the NN_vehicle]
+94 [NP-SUJ-A0 NNP_SAV] [VP VBZ_recovers] [NP-OBJ-A1 DT_the NNS_data IN_of  DT_the NN_lease IN_of  DT_the NN_vehicle]
+95 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of  DT_the NN_lease IN_of  DT_the NN_vehicle]
+96 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+97 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+98 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT020]
+<NIL>IF</NIL>
+99 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT020]
+<NIL>THEN</NIL>
+100 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+101 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+102 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_closing NNS_data IN_of DT_the NN_lease]
+<NIL>FOR EACH</NIL> extra of type accessory registered in the closing of the lease 
+<NIL>DO</NIL>
+103 [NP-OBJ-A1 JJ_extra IN_of  NN_type JJ_accessory] [VP VBZ_registered] [NP-OBJIND-A2 IN_in DT_the VBG_closing IN_of  DT_the NN_lease]
+104 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of  DT_the JJ_accessory]
+105 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+106  [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1DT_the  JJ_available NN_quantity IN_of NN_units IN_of DT_the JJ_accessory]
+107 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NN_units IN_of DT_the JJ_accessory]
+<NIL>END FOR</NIL>
+108 [NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJIND-A2 TO_to DT_the NN_vehicle DT_the NN_State NN_STA001]
+109 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT0003]
+110 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT0004]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Close a Lease.</NIL>
+<NIL>1.3.3. MODIFY A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+111 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+112 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-DT_the  NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the  NNS_vehicles] [VP VBN_rented]]
+113 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of  [NP-OBJ-A1 DT_a NN_vehicle] [VP VBN_rented]]
+114 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NNS_lease IN_of DT_the NNS_vehicle]
+115 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NNS_lease IN_of DT_the NNS_vehicle]
+116 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT021]
+117 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT022]
+118 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+119 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of  DT_the NNS_lease IN_of DT_the NNS_vehicle]
+120 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT023]
+<NIL>IF</NIL> 
+121 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT023]
+<NIL>THEN</NIL>
+122 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT024]
+123 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT022]
+124 [NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+125 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_employee]
+126 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_lease]
+127 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_employee DT_the NN_date CC_and NN_hour IN_of NN_modification CC_and DT_the NN_data IN_of DT_the  NN_lease]
+<NIL>FOR EACH</NIL> new extra of registered accessory type in the lease 
+<NIL>DO</NIL>
+128 [NP-OBJ-A1 JJ_new  JJ_extra IN_of] [VP VBZ_registered] [NP-OBJIND-A2 JJ_Accessory  NN_type IN_in DT_the NN_lease]
+129 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_code IN_of DT_the  JJ_accessory]
+130 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+131 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+132 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+<NIL>END FOR</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify a Lease.</NIL>
+<NIL>1.3.4.INVOICE THE RENT OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+133 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+134 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_registration NN_number IN_of DT_the NN_vehicle]
+135 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date IN_of DT_the NN_lease]
+136 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_duration IN_of DT_the NN_lease]
+137 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  JJ_daily NN_rate IN_of DT_the NN_vehicle]
+138 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_subtotal IN_by NN_concept IN_of NNS_extras IN_of DT_the NN_lease]
+139 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_subtotal IN_of DT_the NN_rent]
+<NIL>IF</NIL>
+140 [NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+141 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_discount IN_of DT_the JJ_applicable] [NP-OBJIND-A2 NN_rate TO_to    DT_the NN_client]
+142 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_subtotal IN_of DT_the NN_rent IN_with NN_discount]
+<NIL>END IF</NIL>
+143 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total NN_amount IN_without NN_tax IN_of DT_the NN_lease]
+144 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_tax JJ_corresponding TO_to DT_the JJ_total NN_amount IN_of DT_the NN_lease]
+145 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total NN_amount IN_with NN_tax IN_of DT_the NN_lease]
+<NIL>IF</NIL>
+146 [NP-SUJ-A1 NN_bail NN_amount] [VP VBZ_is] [ADJP-ATR-A2 JJR_greater IN_than CD_zero]
+<NIL>THEN</NIL>
+147 [NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total TO_to VB_pay IN_for DT_the NN_client]
+<NIL>END IF</NIL>
+148 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_subtotal IN_by NN_concept IN_of NN_rent] [AM-MNR IN_without  NN_discount Fc_, DT_the NN_subtotal IN_by NN_concept IN_of NN_rent IN_with NN_discount Fc_, DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras Fc_, DT_the JJ_total NN_amount IN_of DT_the NN_lease in_without NN_tax CC_and DT_the JJ_total NN_amount IN_of DT_the NN_lease in_without NN_tax]
+<NIL>USE CASE END Invoice the Rent of a Vehicle.</NIL>
+<NIL>1.4.1.BORROW A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+149 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT025]
+150 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_registration NNS_numbers IN_of DT_the [VP VBN_enabled] [NP-OBJ-A1 NNS_vehicles]]
+151 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_a NN_vehicle]
+152 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NN_identificationIN_of DT_the NN_borrower]
+153 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_borrower]
+154 [NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the  NN_identificationIN_of DT_the NN_borrower]
+155 [NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NN_motive IN_of DT_the NN_loan CC_and DT_the JJ_estimated NN_date IN_of NN_refund IN_of DT_the NN_vehicle]
+156 [NP-SUJ-A0 DT_the NNP_ADMNISTRATOR] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_motive IN_of DT_the NN_loan CC_and DT_the JJ_estimated NN_date IN_of NN_refund IN_of DT_the NN_vehicle]
+157 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL>  
+158 [NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+159 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_loan]
+160 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_Administrator]
+161 [NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_state NN_STA006] [NP-OBJIND-A2 TO_to DT_the NN_vehicle]
+162 [NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_information IN_of DT_the NN_loan]
+NIL>END IF</NIL>
+<NIL>USE CASE END Borrow a Vehicle</NIL>
+<NIL> AP1 </NIL>
+163 [NP-SUJ-A1 NN_identification IN_of DT_the NN_borrower] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+164 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_administrator DT_the NN_message NN_MSG003]
+<NIL>USE CASE END Borrow a Vehicle.</NIL>
+<NIL>1.4.2.RETURN A BORROWED VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+165 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT027]
+166 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_registration NNS_numbers IN_of DT_the JJ_borrowed NNS_vehicles]
+167 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_a NN_vehicle]
+168 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NN_loan IN_of DT_the NN_vehicle]
+169 [NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NN_loan IN_of DT_the NN_vehicle]
+170 [NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT028]
+<NIL>IF</NIL>  
+171 [NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT028]
+<NIL>THEN</NIL>
+172 [NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_refund]
+173 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NNP_employee]
+174 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_State NN_STA001] [NP-OBJIND-A2 TO_to DT_the NN_vehicle]
+175 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NNP_refund IN_of DT_the NN_vehicle]
+176 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+177 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Return a Borrowed Vehicle.</NIL>
+<NIL>2.1.1. REQUEST MAINTENANCE</NIL>
+<NIL>INITIATES WHEN</NIL>
+178 [NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+179 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles IN_in NN_STA001 CC_or NN_STA007]
+180 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles IN_in NN_STA001 CC_or NN_STA007]
+181 [NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+<NIL>IF</NIL> 
+182 [NP-SUJ-A1-Thingregistered DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [NP-ATR-A2 NN_STA007]
+<NIL>THEN</NIL>
+183 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+184 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+185 [NP-SUJ-A1 DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [NP-ATR-A2 NN_STA001 CC_or NN_STA008]
+<NIL>THEN</NIL>
+186 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+<NIL>END IF</NIL>
+187 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_operator]
+188 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_operator]
+189 [NP-SUJ-A0-Starter DT_the NNP_OPERATOR] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_maintenance] 
+190 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>IF</NIL> 
+191 [NP-SUJ-A0-Pickerd DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>THEN</NIL>
+192 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_request IN_of NN_maintenance]
+193 [NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_stateNN_STA007]
+194 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance]
+195 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Request Maintenance.</NIL>
+<NIL>2.1.2.REGISTER MAINTENANCE</NIL>
+<NIL>INITIATES WHEN</NIL>
+196 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT030]
+197 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles IN_with NN_state NN_STA007]
+198 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles IN_with NN_state NN_STA007]
+199 [NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+200 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_data IN_of DT_the NN_request IN_of NN_maintenance]
+201 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_data IN_of DT_the NN_request IN_of NN_maintenance]
+202 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+203 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_maintenance] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]]
+204 [NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_maintenance IN_of DT_the NN_vehicle] 
+205 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the  NN_mileage IN_of DT_the NN_vehicle]
+206 [NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_mileage IN_of DT_the NN_vehicle] 
+207 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+208 [NP-SUJ-A0-Picker DT_the NNP_TECHNICIAN] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026] 
+<NIL>THEN</NIL>
+209 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_place Fc_, NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of NN_maintenance IN_of DT_the NN_vehicle]
+210 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_technician]
+211 [NP-SUJ-A0-Disabler NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+212 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_maintenance]
+<NIL>IF</NIL>
+213 [NP-SUJ-A1 DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [ADJP-ATR-A2 JJ_different TO_to NN_STA008]
+<NIL>THEN</NIL>
+<NIL>IF</NIL>
+214 [NP-SUJ-A1 DT_the NN_insurance NN_expiration NN_date] [VP VBZ_is] [ADJP-ATR-A2 CD_one NN_month JJ_greater IN_than JJ_current NN_date Fc_,] CC_and [NP-SUJ-A1 JJ_total NN_rate] [VP VBZ_is] [ADJP-ATR-A2 JJR_greater IN_than CC_0 Fc_,] CC_and [NP-SUJ-A1 NN_mileage NN_vehicle] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than CD_150000]
+<NIL>THEN</NIL>
+215 [NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA003]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> insurance expiration date is less than current date plus 1 month 
+<NIL>THEN</NIL>
+216 [NP-SUJ-A1 NN_insurance NN_expiration NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than JJ_current NN_date IN_plus CD_1 NN_month]
+217 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+218 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT031]
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+219 [NP-SUJ-A1 JJ_total NN_rate] [VP VBZ_is] [ADJP-ATR-A2 JJ_equal TO_to CD_zero]
+<NIL>THEN</NIL>
+220 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+221 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT032]
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+222 [NP-SUJ-A1 NN_vehicle NN_mileage] [VP VBZ_is] [ADJP-ATR-A2 JJ_greater CC_or JJ_equal IN_than CD_150000]
+<NIL>THEN</NIL>
+223 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA004]
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Maintenance.</NIL>
+<NIL>2.2.1. REQUEST REPAIR</NIL>
+<NIL>INITIATES WHEN</NIL>
+224 [NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT033]
+225 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NNS_vehicles IN_with DT_the NN_STA001 CC_or NN_STA007]
+226 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NNS_vehicles IN_with DT_the NN_STA001 CC_or NN_STA007]
+227 [NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle]
+228 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_request IN_of NN_repair]
+229 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification of DT_the NN_operator]
+230 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT034]
+<NIL>IF</NIL> 
+231 [NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT034]
+<NIL>THEN</NIL>
+232 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification of DT_the JJ_external NNS_garages]
+233 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_identification of DT_the JJ_external NNS_garages]
+234 [NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_external NNS_garage]
+<NIL>END IF</NIL>
+235 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_damage [SBAR-SUJ-R_A1 WDT_that] [VP MD_must VB_be VBN_repaired]] 
+236 [NP-SUJ-A0-Starter DT_the NNP_OPERATOR] [VP VBZ_intoduces] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_damage [SBAR-SUJ-R_A1 WDT_that] [VP MD_must VB_be VBN_repaired]] 
+237 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>IF</NIL>
+238 [NP-SUJ-A0-Pickerd DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>THEN</NIL>
+239 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA008]
+240 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Request Repair.</NIL>
+<NIL>2.2.2.REGISTER REPAIR</NIL>
+<NIL>INITIATES WHEN</NIL>
+241 [NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT035]
+242 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registrations IN_of DT_the NNS_vehicles IN_with DT_the NN_State NN_STA008]
+243 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registrations IN_of DT_the NNS_vehicles IN_with DT_the NN_State NN_STA008]
+244 [NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+245 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+246 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+247 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_place Fc_, NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of NN_repair IN_of DT_the NN_vehicle]
+248 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_technician]
+249 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_repair] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]]
+250 [NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_repair] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]] 
+251 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_cost IN_of DT_the NN_repair IN_of DT_the NN_vehicle]
+252 [NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_cost IN_of DT_the NN_repair IN_of DT_the NN_vehicle] 
+253 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+254 [NP-SUJ-A0-Picker DT_the NNP_TECHNICIAN] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026] 
+<NIL>THEN</NIL>
+255 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_repair]
+<NIL>INCLUDE Request Maintenance.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Repair.</NIL>
+<NIL>2.3.1.REGISTER AN EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+256 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT036]
+257 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+258 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage] 
+259 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL>  
+260 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+261 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register an External garage.</NIL>
+<NIL> AP1 </NIL>
+262 [NP-OBJ-A1 DT_the NN_external NN_garage] [VP VBZ_exists]
+263 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_employee DT_the NN_message NN_MSG003]
+<NIL>USE CASE END Register an External garage.</NIL>
+<NIL>2.3.2.ERASE EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+264 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT037]
+265 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+266 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+267 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_external NN_garage] 
+268 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+269 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>IF</NIL> 
+270 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>THEN</NIL>
+271 [NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the JJ_external NN_garage]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Erase External Garage.</NIL>
+<NIL>2.3.3.MODIFY EXTERNAL GARAGE</NIL>
+<NIL>INITIATES WHEN</NIL>
+272 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT039]
+273 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+274 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+275 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_external NN_garage] 
+276 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+277 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage] 
+278 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>IF</NIL> 
+279 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+280 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify External Garage.</NIL>
+<NIL>3.1. REGISTER A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+281 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+282 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_Administrator DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+283 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+284 [NP-SUJ-A0-Causer NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+285 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+286 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+287 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+288 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+289 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+290 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+<NIL>IF</NIL> 
+291 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+<NIL>THEN</NIL>
+292 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+293 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+294 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_registration NN_number Fc_, DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity Fc_, DT_the NN_mileage Fc_, DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_vehicle]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+295 [NP-SUJ-A1 DT_the NN_registration NN_number] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+296 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP2 </NIL>
+297 [NP-OBJ-A1 DT_the NN_registration NN_number] [VP VBZ_exists]
+298 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG006]
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL>3.2. MODIFY THE REGISTRATION OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+299 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT007]
+300 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles]
+301 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_a NN_vehicle]
+302 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNS_vehicle]
+303 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+304 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+305 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+306 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+307 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+308 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT041]
+<NIL>IF</NIL> 
+309 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT042]
+<NIL>THEN</NIL>
+310 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+311 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+312 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity Fc_, DT_the NN_mileage Fc_, DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_vehicle]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Registration of a Vehicle.</NIL>
+<NIL>3.3.REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+313 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT043 IN_of DT_a NN_vehicle]
+314 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+315 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_a NN_vehicle]
+316 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NNS_vehicle]
+317 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+318  [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle]
+319 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT044]
+<NIL>IF</NIL> 
+320 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT044]
+<NIL>THEN</NIL>
+321 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles]
+322 [NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+323 [NP-SUJ-A0-Entity registering DT_the NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles] 
+324 [NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle] 
+325 [NP-SUJ-A0-Entity registering DT_the NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles]
+326 [NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle] 
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register of the Historic Information of a Vehicle.</NIL>
+<NIL>3.4. ASSIGN CLASS AND GROUP</NIL>
+<NIL>INITIATES WHEN</NIL>
+327 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT045]
+328 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+329 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+330 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existenceIN_of DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+331 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NNS_classes IN_of NN_vehicle]
+332 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+<NIL>IF</NIL> 
+333 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_a NN_class IN_of NN_vehicle]
+<NIL>THEN</NIL>
+334 [NP-SUJ-A0-Disabler NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+335 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name Fc_, DT_the NN_description CC_and DT_the NN_types IN_of NN_vehicle IN_of DT_the NNS_groups IN_of DT_the NN_class IN_of NN_vehicle]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+336 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_group IN_of DT_a NN_class IN_of NN_vehicle]
+<NIL>THEN</NIL>
+337 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+338 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+339 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_type IN_of NN_vehicle IN_in DT_a NN_group IN_of DT_a NN_class]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Assign Class and Group.</NIL>
+<NIL> AP1 </NIL>
+340 [NP-OBJ-A1 NN_Class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle] [VP VBZ_exists].
+341 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A2 DT_the NN_administrator DT_the NN_message NN_MSG007]
+<NIL>USE CASE END Assign Class and Group.</NIL>
+<NIL>3.5.CREATING A CLASS</NIL>
+<NIL>INITIATES WHEN</NIL>
+342 [NP-SUJ-A0-Selector DT_the NNP_ADMISNITRATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+343 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the JJ_new NN_class IN_of NN_vehicle]
+344 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the JJ_new NN_class IN_of NN_vehicle]
+345 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class]
+346 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT047]
+<NIL>IF</NIL> 
+347 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT047]
+<NIL>THEN</NIL>
+348 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+349 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+350 [NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_value IN_of JJ_monetary NNS_units] [NP-OBJIND-A2 CD_zero TO_to DT_the NN_price IN_of DT_the NN_class CC_and IN_of NN_vehicle DT_the NN_group IN_of DT_the NN_vehicle NNS_types]
+351 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT048]
+352 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>RETURN TO THE STEP 3.</NIL>
+<NIL>END IF</NIL>
+<NIL>IF</NIL>  
+353 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+354 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_new NN_class]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Creating a Class.</NIL>
+<NIL> AP1 </NIL>
+355 [NP-OBJ-A1 DT_the NN_class] [VP VBZ_exists].
+356 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG008]
+<NIL>USE CASE END Creating a Class.</NIL>
+<NIL>3.6.ERASE TYPE OF VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+357 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT049]
+358 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+359 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+360 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existenceIN_of DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+361 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+362 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+363 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>IF</NIL> 
+364 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>THEN</NIL>
+365 [NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_type IN_of NN_vehicle IN_of DT_the NN_class CC_and NN_group]
+366 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT045]
+367 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+<NIL> AP1 </NIL>
+368 [NP-OBJ-A1 DT_the NN_class CC_and NN_group] do_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+369 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG009]
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+<NIL>3.7.ASSIGN PRICE</NIL>
+<NIL>INITIATES WHEN</NIL>
+370 [NP-SUJ-A0- Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT048]
+371 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_classes IN_of NNS_vehicles]
+372 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_class IN_of NN_vehicle]
+373 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_class IN_of NN_vehicle]
+374 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+375 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+376 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_priceIN_of DT_the NN_class CC_and NN_group IN_of NN_vehicle NNS_types]
+377 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to VB_introduce DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of DT_a NN_class CC_and NN_group IN_of NN_vehicle NNS_types]
+378 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to VB_introduce DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+379 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of TO_a NN_class CC_and NN_group NNS_vehicles NNS_types]
+380 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+381 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT050]
+<NIL>IF</NIL> 
+382 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT050]
+<NIL>THEN</NIL>
+383 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total NN_price IN_of DT_the NN_rent IN_of DT_a NN_type IN_of NN_vehicle]
+384 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of TO_a NN_class CC_and NN_group NNS_vehicles NNS_types]
+385 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+386 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_total NN_price IN_of DT_the NN_rent IN_of DT_a NN_type IN_of NN_vehicle]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Assign Price.</NIL>
+<NIL>4.1.1. INSURE A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+387 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT051]
+388 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+389 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+390 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+391 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_an NN_insurance NN_policy IN_of DT_the NN_vehicle]
+392 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+393 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_insurance NNS_companies]
+394 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_insurance NN_company]
+395 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+396 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+397 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+398 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+399 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_insurance NN_policy]
+400 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NNP_employee]
+401 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+402 [NP-SUJ-A0-Causative agent NNP_SAV] [VP VBZ_encloses] [NP-OBJIND-A2 TO_to DT_the NN_insurance NN_policy] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration CC_and DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_registered] [NP-OBJ-A1 PRP_it]]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+403 [VP VBZ_exists][NP-OBJ-A1 DT_an NN_insurance NN_policy IN_of DT_the NN_vehicle]
+404 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG010]
+405 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT053]
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+<NIL>4.1.2.RENEW THE INSURANCE POLICY</NIL>
+<NIL>INITIATES WHEN</NIL>
+406 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT053]
+407 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles [SBAR-SUJ-R_A0 WDT_that] [VP VBP_have] [NP-OBJ-A1 NN_insurance NNS_policies]]
+408 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 TO_to NN_registration NN_number IN_of DT_a NN_vehicle]
+409 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+410 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+411 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+412 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_new NN_data IN_of DT_the NN_insurance NN_policy]
+413 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT054]
+<NIL>IF</NIL> 
+414 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT054]
+<NIL>THEN</NIL>
+415 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data CC_and NN_hour IN_of NN_renewal IN_of DT_the NN_insurance NN_policy]
+416 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_renewal]]
+417 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of NN_insurance NN_policy]
+418 [NP-OBJ- A1-Thing surrounding NNP_SAV] [VP VBZ_enclosed] [NP-OBJIND-A2 TO_to DT_the NN_insurance NN_policy DT_the NN_date CC_and NN_hour IN_of NN_renewal CC_and DT_the NN_identification IN_of NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_renewal]]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Renew the Insurance Policy.</NIL>
+<NIL>4.2.1. REGISTER AN INSURANCE COMPANY</NIL>
+<NIL>INITIATES WHEN</NIL>
+419 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+420 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to DT_the NN_administrator DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+421 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+422 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+423 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+424 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+425 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_registration]]
+426 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+427 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_registration]]
+428 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register an Insurance Company.</NIL>
+<NIL>4.2.2.MODIFY AN INSURANCE COMPANY</NIL>
+<NIL>INITIATES WHEN</NIL>
+429 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT055]
+430 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_names IN_of DT_the NNP_insurance NNPS_companies]
+431 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_names IN_of DT_the NNP_insurance NNPS_companies]
+432 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_an NNP_insurance NNP_company]
+433 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+434 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+435 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+436 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>IF</NIL> 
+437 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+438 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+439 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-SUJ-A1 DT_the NN_modification]]
+440 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+441 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-SUJ-A1 DT_the NN_modification]]
+442 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify an Insurance Company.</NIL>
+<NIL>5.1.REGISTER A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+443 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT056]
+444 [NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [PP-OBJIND-A2 TO_to DT_the NN_employee] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+445 [NP-SUJ-A0-Speaker DT_the NNP_Employee] [VP VBZ_tells] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+446 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the NN_client IN_according_to TO_to PRP_his NN_type]
+447 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_client]
+448 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+449 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+<NIL>IF</NIL>
+450 [NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+<NIL>INCLUDE Register the Bank Details of a Direct Client.</NIL>
+<NIL>END IF</NIL> 
+451 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+452 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+453 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_client]
+454 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_client]]
+455 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+<NIL>IF</NIL> 
+456 [NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+457 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a Client.</NIL>
+<NIL> AP1 </NIL>
+458 [NP-OBJ-A1 DT_the NN_client] [VP VBZ_exists]
+<NIL>Existing client.</NIL>
+459 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG011]
+460 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT057]
+<NIL>USE CASE END Register a Client.</NIL>
+<NIL>5.2.MODIFY THE DATA OF A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+461 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT058]
+462 [NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 TO_to DT_the NN_employee] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+463 [NP-SUJ-A0-Indicator DT_the NNP_Employee] [VP VBZ_indicates] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+464 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+465 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+466 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_a NN_client]
+467 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+468 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+469 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_client]
+<NIL>IF</NIL> 
+470 [NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+471 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT059]
+<NIL>END IF</NIL>
+472 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+473 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+474 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_client]
+475 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carried RP_out] [NP-OBJ-A1 DT_the NN_modification IN_of DT_the NN_client]]
+476 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+<NIL>IF</NIL> 
+477 [NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+478 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of a Client.</NIL>
+<NIL>5.3.REGISTER THE BANK DETAILS OF A DIRECT CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+479 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT060]
+480 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the JJ_direct NNS_clients]
+481 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the JJ_direct NNS_clients]
+482 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the JJ_direct NN_client]
+483 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+484 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+485 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+486 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+487 [NP-SUJ-A0-Causer NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+488 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+<NIL> AP1 </NIL>
+489 [NP-SUJ-A1 DT_the NN_bank NN_details] [VP VBZ_are] [ADJP-ATR-A2 JJ_invalid]
+490 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG012]
+491 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT059]
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+<NIL>5.4.AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL>
+492 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT061]
+493 [NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 DT_the NNP_administrator] [NP-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [UCP-ATR-A2 JJ_direct CC_or DT_an NN_agency]]
+494 [NP-SUJ-A0-Indicator DT_the NNP_Administrator] [VP VBZ_indicates] [NP-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [UCP-ATR-A2 JJ_direct CC_or DT_an NN_agency]]
+495 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to TO_to PRP_its NN_type]
+496 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 IN_of DT_the NNS_clients IN_according_to PRP_its NN_type]
+497 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the NN_client]
+498 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+499 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+500 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_percentage IN_of NN_discount CC_or DT_the NN_commission IN_of DT_the NN_client]
+501 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+502 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+503 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_percentage IN_of NN_discount CC_or DT_the NN_commission IN_of DT_the NN_client]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Authorize Discount or Commission of a Client. </NIL>
+<NIL>6.1.REGISTER EXTRAS</NIL>
+<NIL>INITIATES WHEN</NIL>
+504 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT062]
+505 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 TO_to DT_the NNP_administrator DT_the NN_data IN_of DT_the JJ_extra]
+506 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_extra]
+507 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+508 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+509 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_a NN_code] [NP-OBJ-A2 TO_to DT_the JJ_extra]
+510 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_extra]
+511 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT063]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+512 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT063]
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register Extras.</NIL>
+<NIL>6.2.MODIFY AN EXTRA</NIL>
+<NIL>INITIATES WHEN</NIL>
+513 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT064]
+514 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_codes CC_and DT_the JJ_generic NNS_names IN_of DT_the NNS_extras]
+515 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 TO_to DT_the NNP_administrator][NP-OBJ-A1 DT_the NNS_codes CC_and DT_the JJ_generic NNS_names IN_of DT_the NNS_extras]
+516 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_code IN_of DT_a JJ_extra]
+517 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+518 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+519 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of DT_the JJ_extra]
+520 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>IF</NIL>  
+521 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+522 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of DT_the JJ_extra]
+523 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT065]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+524 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT065]
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify Extras.</NIL>
+<NIL>6.3.ELECTION OF EXTRAS</NIL>
+<NIL>INITIATES WHEN</NIL>
+525 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT066]
+526 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_the NNS_extras]
+527 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_the NNS_extras]
+528 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_a JJ_extra]
+529 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+530 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+<NIL>IF</NIL>
+531 [NP-SUJ-A1 DT_the NNP_extra] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+532 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of DT_the JJ_accessory]
+533 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units [SBAR-SUJ-R_A1 WDT_that] [VP VBZ_are VBN_desired TO_to VB_hire]]
+534 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units [SBAR-SUJ-R_A1 WDT_that] [VP VBZ_are VBN_desired TO_to VB_hire]]
+<NIL>IF</NIL> 
+535 [NP-SUJ-A1 JJ_available NN_quantity IN_of DT_the JJ_accessory][VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than DT_the NN_quantity IN_of [NP-SUJ-A1 NNS_units] [VP TO_to VB_be VBN_hired]]
+<NIL>THEN</NIL>
+536 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG013]
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+537 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT067]
+<NIL>IF</NIL> 
+538 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT067]
+<NIL>THEN</NIL>
+539 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code Fc_, JJ_generic NN_name Fc_, NN_description Fc_, NNS_limitations Fc_, NNS_observations CC_and NN_price IN_of DT_the JJ_extra]
+<NIL>IF</NIL> 
+540 [NP-SUJ-A1 DT_the NNP_EXTRA] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+541 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+542 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+543 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+544 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+545 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+546 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+547 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+548 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_accessories]
+549 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_accessories]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+550 [NP-SUJ-A1 DT_the JJ_extra] [VP VBZ_is] [NP-ATR-A2 NN_service NN_type]
+<NIL>THEN</NIL>
+551 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the NN_service]
+552 [NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the NN_service]
+553 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_services]
+554 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_services]
+<NIL>END IF</NIL> 
+555 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+556 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+557 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT068]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+558 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT068]
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Election of Extras.</NIL>
+<NIL>6.4.ELIMINATE AN EXTRA OF A LEASE</NIL>
+<NIL>INITIATES WHEN</NIL>
+559 [NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT069]
+560 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 IN_of DT_the NN_lease DT_the NN_code IN_of DT_the NNS_extras VBN_hired]
+561 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_code CC_and JJ_generic NN_name IN_of DT_the NNS_extras VBN_hired]
+562 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_a JJ_extra]
+563 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+564 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+565 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT070]
+<NIL>IF</NIL> 
+566 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT070]
+<NIL>THEN</NIL>
+<NIL>IF</NIL> 
+567 [NP-SUJ-A1 DT_the NNP_extra] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+568 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+569 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_extra [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+570 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_updates] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of DT_the JJ_extra]
+571 [NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_value IN_of CD_zero] [NP-OBJ-A2 TO_to DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+572 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_accessories]
+573 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_accessories]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+574 [NP-SUJ-A1 DT_the JJ_extra] [VP VBZ_is] [NP-ATR-A2 NN_service NN_type]
+<NIL>THEN</NIL>
+575 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+576 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_services]
+577 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_services]
+<NIL>END IF</NIL>
+578 [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+579 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+580 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT071]
+<NIL>END IF</NIL>
+<NIL>IF</NIL> 
+581 [NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT071]
+<NIL>THEN</NIL>
+<NIL>RETURN TO THE STEP 1.</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Eliminate an Extra of a Lease.</NIL>
+<NIL>7.1.OPEN A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+582 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT072]
+583 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+584 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+585 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NNS_data IN_of DT_the NN_employee] [VP VBZ_are [ADVP-Termporal-AM_TMP RB_already] JJ_registered]]
+586 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [SBAR-OBJ-A1 IN_if [NP-SUJ-AO DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force CC_or NNS_assets IN_with DT_the NN_company]]
+<NIL>IF</NIL> 
+587 [NP-SUJ-A1 DT_the NN_Employee] [VP VBZ_is [ADVP-Termporal-AM_TMP RB_already] VBN_registered] 
+<NIL>THEN</NIL>
+588 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+589 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT073]
+<NIL>ELSE</NIL>
+<NIL>INCLUDE Register Employee.</NIL>
+590 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+<NIL>END IF</NIL>
+591 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_start NN_date Fc_, NN_duration CC_and NNS_conditions IN_of DT_the NN_labor NN_contract]
+592 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_start NN_date Fc_, NN_duration CC_and NNS_conditions IN_of DT_the NN_labor NN_contract]
+593 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+<NIL>IF</NIL>  
+594 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+<NIL>THEN</NIL>
+595 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the RB_above VBN_mentioned NN_registration]]
+596 [NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_a NN_code IN_of NN_identification] [NP-OBJIND-A2 TO_to DT_the NN_labor NN_contract]
+597 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_code CC_and DT_the NN_registration NN_date IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the NN_registration] Fc_, DT_the NN_identity NN_card IN_of DT_the NN_employee Fc_, DT_the NN_start NN_date Fc_, NN_duration CC_and NN_conditions IN_of DT_the NN_labor NN_contract]
+<NIL>IF</NIL>  
+598 [NP-SUJ-A1 NN_registration NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than NN_start NN_date]
+<NIL>THEN</NIL>
+599 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA009]
+<NIL>ELSE</NIL>
+600 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA010]
+<NIL>END IF</NIL>
+<NIL>END IF</NIL>
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+601 [NP-SUJ-A1 DT_the NN_labor NN_contract] [VP VBZ_is] [UCP-ATR-A2 IN_in NN_force CC_or NN_active]
+602 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG014]
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+<NIL>7.2.MODIFY THE DATA OF A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+603 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT075]
+604 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+605 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+606 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_identity NN_card IN_of DT_the NN_employee]
+607 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 IN_if [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force CC_or NNS_assets IN_with DT_the NN_business]]
+608 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of DT_the NN_labor NNS_contracts IN_in NN_force CC_and NNS_assets IN_of DT_the NN_employee]
+609 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_code IN_of DT_the NN_labor NNS_contracts IN_in NN_force CC_and NNS_assets IN_of DT_the NN_employee]
+610 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_code IN_of DT_a NN_labor NN_contract]
+611 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+612 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+613 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+614 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+<NIL>IF</NIL> 
+615 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+<NIL>THEN</NIL>
+616 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_modification NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_this NN_modification]]
+617 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] VBZ_carries RP_out VBN_said NN_modification]
+618 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_updates] [NP-OBJ-A1 DT_the NN_state IN_of DT_the NN_labor NN_contract]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+619 [NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+620 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL> AP2 </NIL>
+621 [NP-SUJ-A1 DT_the NN_labor NN_contract] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist] CC_or [NP-SUJ-A1 PRP_it] [VPZ_is VBN_annulled] CC_or [NP-SUJ-A1 PRP_it] [VP VBZ_is VBN_culminated].
+622 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG016]
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+<NIL>7.3.CANCEL A LABOR CONTRACT</NIL>
+<NIL>INITIATES WHEN</NIL>
+623 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT076]
+624 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+625 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+626 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_identity NN_card IN_of DT_the NN_employee]
+627 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 IN_if [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force IN_with DT_the NN_company]]
+628 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_in NN_force [SBAR-OBJ-R_A1 WDT_that] [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [PP-MOD-AM_MNR IN_with DT_the NN_company]]
+629 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+630 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT077]
+<NIL>IF</nil> 
+631 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT077]
+<NIL>THEN</NIL>
+632 [NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 DT_the NNP_administrator] [NP-OBJ-A1 DT_the NNS_reasons IN_of DT_the NN_annulment IN_of DT_the NN_labor NN_contract]
+633 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NNS_reasons IN_of DT_the NN_annulment IN_of DT_the NN_labor NN_contract]
+634 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_annulment NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+635 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_annulment NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+636 [NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA011]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL> AP1 </NIL>
+637 [NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+638 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL> AP2 </NIL>
+639 [NP-SUJ-A1 DT_the NN_labor NN_contract] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist] CC_or [NP-SUJ-A1 PRP_it] [VP VBZ_is][PP-MOD-AM_MNR IN_without NN_vigor] .
+<NIL>Nonexistent labor contract or without vigor.</NIL>
+640 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG017]
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+<NIL>7.4.REGISTER A NEW EMPLOYEE</NIL>
+<NIL>INITIATES WHEN</NIL>
+641 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT078]
+642 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the JJ _new NN_employee]
+643 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_employee]
+644 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_employee]
+645 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_employee]
+646 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+647 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+648 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_date IN_of DT_the NN_employee CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+649 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee Fc_, DT_the NN_registration NN_date IN_of DT_the NN_employee CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Register a New Employee. </NIL>
+<NIL> AP1 </NIL>
+650 [NP-OBJ-A1 DT_the NN_employee] [VP VBZ_exists].
+651 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG018]
+<NIL>USE CASE END Register a New Employee. </NIL>
+<NIL>7.5.MODIFY THE DATA OF AN EMPLOYEE</NIL>
+<NIL>INITIATES WHEN</NIL>
+652 [NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT079]
+653 [NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+654 [NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_employee]
+655 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+656 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+657 [NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_employee]
+658 [NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>IF</NIL> 
+659 [NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+660 [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+661 [NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_employee NNS_data Fc_, DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+<NIL>END IF</NIL>
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>
+<NIL> AP1 </NIL>
+662 [NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+663 [NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>

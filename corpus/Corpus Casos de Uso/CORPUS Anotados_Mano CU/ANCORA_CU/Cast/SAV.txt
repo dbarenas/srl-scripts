@@ -1,0 +1,1493 @@
+CASO DE USO:	1.1.1. Comprar un Vehículo
+REFERENCIA:	GF1. Gestión de Transacciones GF1.1. Adquisición 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar la información relativa a la adquisición de un vehículo. Para esto debe haberse registrado con anterioridad los datos del vehículo. Después que se ha registrado la compra, SAV asigna al vehículo el estado de deshabilitado hasta que se le efectúen las labores de mantenimiento y reparación que fuesen necesarias.
+PRECONDICIÓN:	Ninguna 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Compra.
+
+1.	SAV solicita al Administrador la matrícula del vehículo.
+2.	El Administrador introduce la matrícula del vehículo.
+3.	SAV valida la matrícula del vehículo.
+4.	SAV determina la existencia de la matrícula del vehículo.
+5.	INCLUIR Registrar un Vehículo.
+6.	SAV solicita la identificación del responsable de la compra del vehículo.
+7.	El Administrador solicita la identificación del responsable de la compra del vehículo.
+8.	SAV solicita la fecha de la compra y el costo del vehículo.
+9.	El Administrador introduce la fecha de la compra y el costo del vehículo.
+10.	SAV activa la opción Registrar Compra.
+11.	SI  el Administrador selecciona la opción Registrar Compra ENTONCES
+11.1.	SAV registra la fecha de la compra y el costo del vehículo.
+11.2.	SAV registra la fecha y hora de registro de la compra del vehículo.
+11.3.	SAV registra el responsable de la compra del vehículo.
+11.4.	SAV asigna al vehículo el estado "deshabilitado".
+11.5.	SAV activa la opción Mantenimiento.
+11.6.	SAV activa la opción Reparación.
+11.7.	SAV activa la opción Asegurar Vehículo.
+FIN SI
+FIN CASO DE USO Comprar un Vehículo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Matrícula inválida.
+1.1.	SAV muestra al Administrador el mensaje Matrícula Inválida o Existente.
+FIN CASO DE USO Comprar un Vehículo.
+
+AP2.	Matrícula existente.
+2.1.	SAV muestra al Administrador el mensaje Matrícula Inválida o Existente.
+FIN CASO DE USO Comprar un Vehículo.
+
+CASO DE USO:	1.1.2. Modificar una Compra 
+REFERENCIA:	GF1. Gestión de TransaccionesGF1.1. Adquisición 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite modificar los datos de la compra de un vehículo. Es posible cambiar la siguiente información: fecha de la compra, responsable de la misma y precio del vehículo. También permite acceder a la funcionalidad que posibilita la modificación de la información del vehículo comprado.
+PRECONDICIÓN:	·	SAV tiene registrada la compra de, al menos, un vehículo.
+EXTIENDE A:	Ninguno.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Modificar Compra.
+1.	SAV muestra las matrículas de los vehículos.
+2.	El Administrador elige la matrícula del vehículo.
+3.	SAV obtiene los datos de la compra del vehículo.
+4.	SAV muestra los datos de la compra del vehículo. 
+5.	SAV activa la fecha, responsable y precio de la compra del vehículo.
+6.	El Administrador introduce los nuevos datos de la compra del vehículo.
+7.	SAV activa la opción Modificar Vehículo. 
+8.	SAV activa la opción Modificar.
+9.	SI el Administrador elige la opción Modificar ENTONCES
+9.1.	SAV registra los datos de la compra del vehículo.
+FIN SI
+FIN CASO DE USO Modificar una Compra.
+
+
+POSTCONDICIÓN:	·	Se ha modificado el registro de la compra de un vehículo.
+OBSERVACIONES:	·	Los datos de la compra de un vehículo son: la matrícula, fecha de la compra, costo, fecha y hora del registro de la compra y la identificación del responsable de esta transacción.·	La identificación del responsable de la compra está formada por: el DNI o pasaporte, nombre completo y cargo de la persona en la empresa.
+
+
+CASO DE USO:	1.2.1. Vender un Vehículo
+REFERENCIA:	GF1. Gestión de Transacciones GF1.2. Venta 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar en el sistema la información relacionada con la venta de un vehículo. La venta queda registrada en SAV sólo si, para este momento, el vehículo está "habilitado" o "en venta". En este caso, SAV le asignará entonces el estado de "vendido". Siendo así el vehículo no puede ser alquilado ni prestado. La entrega del vehículo a su nuevo propietario sólo puede ser registrada en SAV después de que la venta haya sido consignada.
+PRECONDICIÓN:	·	Hay al menos un vehículo registrado cuyo estado no es "vendido". 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Vender Vehículo.
+
+1.	SAV muestra las matrículas de los vehículos que no tienen el estado "vendido".
+2.	El Administrador elige una matrícula.
+3.	SAV muestra la fecha de venta del vehículo.
+4.	SAV solicita la fecha acordada de entrega y el precio de venta del vehículo.
+5.	El Administrador introduce la fecha acordada de entrega y el precio de venta del vehículo.
+6.	SAV solicita la identificación del comprador del vehículo.
+7.	El Administrador introduce la identificación del comprador del vehículo.
+8.	SAV muestra el nombre del responsable de la venta.
+9.	SAV solicita las observaciones de la venta.
+10.	El Administrador escribe las observaciones de la venta.
+11.	SAV activa la opción Registrar Venta.
+12.	SI el Administrador selecciona la opción Registrar Venta ENTONCES
+12.1.	SAV guarda la fecha, el responsable, las observaciones, la identificación del comprador, la fecha acordada de entrega y el precio de venta del vehículo.
+12.2.	SI el vehículo no tiene el estado "habilitado" o "en venta" ENTONCES
+12.2.1. RETORNAR AL PASO 12.2.
+FIN SI
+12.3.	SAV asigna al vehículo el estado "vendido".
+12.4.	SAV activa la opción Entregar Vehículo.
+FIN SI
+
+FIN CASO DE USO Vender un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado la venta de un vehículo.·	El estado de un vehículo es "vendido".
+OBSERVACIONES:	·	Los datos del registro de una venta son: matrícula del vehículo, fecha y precio de venta, fecha acordada de entrega, fecha real de entrega, persona autorizada para la entrega, identificación del comprador y responsable de la venta (es el Administrador que realiza el registro de la venta).  ·	La identificación del comprador está formada por el número de su DNI o pasaporte y el nombre completo del mismo.·	Se ha decidido asignar el estado de "vendido" al vehículo que ha sido objeto de esta transacción a diferencia de "deshabilitado" como se indica en el documento inicial de especificación de requisitos. 
+
+CASO DE USO:	1.2.2. Entregar un Vehículo Vendido
+REFERENCIA:	GF1. Gestión de Transacciones GF1.2. Venta 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Una vez registrada en SAV la venta de un vehículo, éste podrá ser entregado a su nuevo propietario. Este acto es registrado en SAV en la fecha acordada para esto o bien en cualquier otra fecha, siempre que ésta sea posterior a la primera. La información del vehículo que ha sido vendido y entregado a su nuevo dueño es almacenada en un archivo histórico. El registro del vehículo es eliminado.
+PRECONDICIÓN:	·	Hay al menos un vehículo "vendido".
+EXTIENDE A:	Vender un Vehículo CUANDO el Administrador elige la opción Entregar Vehículo DESPUÉS DEL PASO 12.4.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Entregar Vehículo.
+
+1.	SAV muestra las matrículas de los vehículos vendidos.
+2.	El Administrador selecciona la matrícula del vehículo vendido.
+3.	SAV valida la fecha acordada de entrega del vehículo.
+4.	SAV obtiene la identificación del comprador del vehículo.
+5.	SAV muestra la identificación del comprador del vehículo.
+6.	SAV solicita la identificación de la persona autorizada para recoger el vehículo.
+7.	El Administrador introduce la identificación de la persona autorizada para recoger el vehículo.
+8.	SAV activa la opción Confirmar Entrega.
+9.	SI el Administrador selecciona la opción Confirmar Entrega ENTONCES
+9.1.	SAV registra la fecha real de entrega del vehículo vendido.
+9.2.	SAV registra la identificación de la persona autorizada para recoger el vehículo.
+9.3.	INCLUIR Registrar Información Histórica de un Vehículo.
+FIN SI
+
+FIN CASO DE USO Entregar un Vehículo Vendido.
+
+TRAYECTORIAS ALTERNAS
+
+AP1.	Fecha actual es menor que la fecha de entrega.
+1.1.	SAV muestra al Administrador el mensaje Error en Fecha de Entrega.
+FIN CASO DE USO Entregar un Vehículo Vendido.
+
+POSTCONDICIÓN:	·	Hay un nuevo registro en el archivo histórico de vehículos. ·	Se ha registrado la entrega de un vehículo vendido.·	Se ha eliminado un registro de vehículo en estado "vendido".
+OBSERVACIONES:	·	Los datos del registro de la entrega del vehículo son: matrícula del vehículo vendido, fecha real de entrega e identificación de la persona autorizada.·	La identificación de la persona autorizada para entregarle el vehículo vendido es su DNI o pasaporte y su nombre completo. Por defecto, estos datos son los del nuevo propietario.
+
+
+CASO DE USO:	1.3.1. Alquilar un Vehículo
+REFERENCIA:	GF1. Gestión de TransaccionesGF1.3. Alquiler 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar la información relativa al alquiler de un vehículo o, lo que es equivalente, posibilita la elaboración de un contrato de alquiler. Para que un vehículo pueda ser alquilado debe estar "habilitado". 
+PRECONDICIÓN:	·	Hay al menos un vehículo registrado con estado "habilitado". 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Alquilar Vehículo.
+
+1.	SAV muestra las matrículas de los vehículos habilitados.
+2.	El Empleado elige la matrícula del vehículo que desea alquilar.
+3.	SAV obtiene los datos del vehículo.
+4.	SAV muestra los datos del vehículo.
+5.	INCLUIR Registrar un Cliente.
+6.	SAV solicita el lugar de devolución del vehículo.
+7.	El Empleado introduce el lugar de devolución del vehículo.
+8.	SAV activa la opción Elegir Extras.
+9.	SAV activa la opción Facturación.
+10.	SAV activa la opción Registrar Contrato de Alquiler.
+11.	SI el Empleado selecciona la opción Registrar Contrato de Alquiler ENTONCES
+11.1.	SAV desactiva la opción Registrar Contrato de Alquiler.
+11.2.	SAV desactiva la opción Elegir Extras.
+11.3.	SAV desactiva la opción Facturación.
+11.4.	INCLUIR Facturar el Alquiler de un Vehículo.
+11.5.	SAV obtiene el subtotal por concepto de alquiler, el subtotal por concepto de extras y el importe total del contrato de alquiler.
+11.6.	SAV solicita el importe de la fianza.
+11.7.	El Empleado introduce el importe de la fianza .
+11.8.	SAV obtiene la identificación del Empleado.
+11.9.	SAV registra los datos del contrato de alquiler.
+11.10.	PARA CADA extra de tipo accesorio registrado en el contrato de alquiler ENTONCES
+11.10.1.	SAV obtiene el código del accesorio.
+11.10.2.	SAV obtiene la cantidad de unidades del accesorio que fueron alquiladas.
+11.10.3.	SAV calcula la cantidad disponible de unidades del accesorio. (FÓRMULA 1)
+11.10.4.	SAV registra la cantidad disponible de unidades del accesorio.
+FIN PARA
+11.11.	SAV asigna al vehículo el estado "alquilado". 
+FIN SI
+FIN CASO DE USO Alquilar un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado un nuevo contrato de alquiler.·	Hay, al menos, un vehículo con estado "alquilado".
+FÓRMULA(S):	
+FÓRMULA 1: Unidades_Disponibles_Accesorio = Unidades_Disponibles - Unidades_Alquiladas 
+OBSERVACIONES:	·	El tipo de cliente es: directo (persona que solicita el alquiler de un vehículo) o indirecto (agencia que sirve de intermediaria para el alquiler).·	El número de identificación de un cliente depende de su tipo. Si es un cliente directo, su identificación es el número de su DNI o pasaporte. Si es un cliente indirecto, su identificación es un código asignado para tal fin. ·	Los datos de un cliente dependen de su tipo. Si es un cliente directo los datos son: número de identificación, nombre completo, dirección, teléfono, carnet de conducir y descuento aplicable. Si es un cliente indirecto, los datos son: código, nombre, dirección, teléfono, NIF, descuento aplicable, persona de contacto y comisión. ·	Los datos del vehículo son: matrícula, modelo, marca, capacidad, número de puertas, año de fabricación, grupo, clase y tarifa.·	La información de un contrato de alquiler está conformada por: los datos del cliente (incluyendo descuento o comisión), los datos del vehículo (incluyendo tarifa) y los datos propios de la transacción: fecha y hora de apertura del contrato, oficina donde se realizó, identificación del empleado que lo registró, duración del contrato de alquiler, fecha estimada de finalización del contrato, datos de los extras alquilados, unidades de cada tipo de extra alquilado (sólo en caso de accesorios), cantidad de días de contratación del extra, lugar de devolución del vehículo, fianza abonada, subtotal del alquiler, subtotal por concepto de extras e importe total (con y sin IVA). 
+
+CASO DE USO:	1.3.2. Cerrar un Contrato de Alquiler
+REFERENCIA:	GF1. Gestión de Transacciones GF1.3. Alquiler 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar el cierre de un contrato de alquiler de un vehículo. Esto implica la devolución del vehículo, la actualización del inventario de los extras, el recalculo de la factura de alquiler y la cancelación del monto total por parte del cliente. Después de registrar el cierre del contrato de alquiler, el vehículo es deshabilitado para que se le efectúen las operaciones de mantenimiento y/o reparación que se consideren necesarias.
+PRECONDICIÓN:	·	Hay, al menos, un vehículo "alquilado".
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Cerrar Contrato.
+
+1.	SAV obtiene las matrículas de los vehículos alquilados.
+2.	SAV muestra las matrículas de los vehículos alquilados.
+3.	El Empleado elige la matrícula del vehículo.
+4.	SAV recupera los datos del contrato de alquiler del vehículo.
+5.	SAV muestra los datos del contrato de alquiler del vehículo.
+6.	SAV activa la opción Modificar Contrato.
+7.	SAV activa la opción Facturación.
+8.	SAV activa la opción Cierre.
+9.	SI el Empleado elige la opción Cierre ENTONCES
+9.1.	SAV desactiva la opción Modificar Contrato.
+9.2.	SAV desactiva la opción Facturación.
+9.3.	INCLUIR Facturar el Alquiler de un Vehículo.
+9.4.	SAV registra los datos de cierre del contrato de alquiler.
+9.5.	PARA CADA extra de tipo accesorio registrado en el cierre del contrato de alquiler ENTONCES
+9.5.1.	SAV obtiene el código del accesorio.
+9.5.2.	SAV obtiene la cantidad de unidades del accesorio que fueron alquiladas.
+9.5.3.	SAV calcula la cantidad disponible de unidades del accesorio. (FÓRMULA 1)
+9.5.4.	SAV registra la cantidad disponible de unidades del accesorio.
+FIN PARA
+9.6.	SAV asigna al vehículo el estado "deshabilitado".
+9.7.	SAV activa la opción Mantenimiento.
+9.8.	SAV activa la opción Reparación.
+FIN SI
+
+FIN CASO DE USO Cerrar un Contrato de Alquiler.
+
+POSTCONDICIÓN:	·	Se ha registrado el cierre de un contrato de alquiler.·	Hay un vehículo en estado "deshabilitado".
+FÓRMULA(S):	·	
+FÓRMULA 1: Unidades_Disponibles_Accesorio = Unidades_Disponibles + Unidades_Alquiladas
+OBSERVACIONES:	·	Los datos del cierre de un contrato de alquiler incluye: los datos del contrato de alquiler y los datos del cierre (fecha y hora del cierre, identificación del empleado que lo registra, lugar de devolución del vehículo, oficina donde se realizó, duración real del contrato de alquiler, subtotal del alquiler, subtotal por concepto de extras, IVA, importe total y forma de pago).
+
+CASO DE USO:	1.3.3. Modificar un Contrato de Alquiler
+REFERENCIA:	GF1. Gestión de Transacciones GF1.3. Alquiler 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite modificar la siguiente información de un contrato de alquiler: fecha y lugar de devolución del vehículo así como añadir o cambiar extras. También es posible modificar el descuento (en el caso de un cliente directo) o la comisión (si se trata de un cliente indirecto) a aplicar únicamente sobre el importe total de un contrato de alquiler del cliente. 
+PRECONDICIÓN:	·	Hay al menos un vehículo alquilado.
+EXTIENDE A:	·	Cerrar un Contrato de Alquiler CUANDO el Empleado elige la opción Modificar Contrato DESPUES DEL PASO 6.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Modificar Contrato.
+
+1.	SAV muestra las matrículas de los vehículos alquilados.
+2.	El Empleado elige la matrícula de un vehículo alquilado.
+3.	SAV obtiene los datos del contrato de alquiler del vehículo.
+4.	SAV muestra los datos del contrato de alquiler del vehículo.
+5.	SAV activa la opción Modificar Cliente.
+6.	SAV activa la opción Eliminar Extras.
+7.	SAV activa la opción Elegir Extras.
+8.	El Empleado introduce los nuevos datos del contrato de alquiler del vehículo.
+9.	SAV activa la opción Registrar Cambios.
+10.	SI el Empleado selecciona la opción Registrar Cambios ENTONCES
+10.1.	SAV desactiva la opción Modificar Cliente.
+10.2.	SAV desactiva la opción Eliminar Extras. 
+10.3.	SAV desactiva la opción Elegir Extras.
+10.4.	INCLUIR Facturar el Alquiler de un Vehículo.
+10.5.	SAV obtiene la identificación del Empleado.
+10.6.	SAV obtiene la fecha y hora de modificación del contrato de alquiler.
+10.7.	SAV registra la identificación del Empleado, la fecha y hora de modificación y los datos del contrato de alquiler.  
+10.8.	PARA CADA nuevo extra de tipo accesorio registrado en el contrato de alquiler ENTONCES
+10.8.1.	SAV obtiene el código del accesorio.
+10.8.2.	SAV obtiene las unidades del accesorio que fueron alquiladas.
+10.8.3.	SAV calcula la cantidad disponible de unidades del accesorio. (FÓRMULA 1)
+10.8.4.	SAV registra la cantidad disponible de unidades del accesorio.
+FIN PARA
+FIN SI
+FIN CASO DE USO Modificar Contrato de Alquiler.
+
+POSTCONDICIÓN:	·	Se ha registrado la modificación de los datos de un contrato de alquiler.
+FÓRMULA(S):	·	
+FÓRMULA 1: Unidades_Disponibles_Accesorio = Unidades_Disponibles - Unidades_Alquiladas
+OBSERVACIONES:	·	La información de un contrato de alquiler está conformada por: los datos del cliente (incluyendo descuento o comisión), los datos del vehículo (incluyendo tarifa) y los datos propios de la transacción (fecha y hora de apertura del contrato, oficina donde se realizó, identificación del empleado que lo registró, duración del contrato de alquiler, fecha estimada de finalización del contrato, datos de los extras alquilados, lugar de devolución del vehículo, fianza abonada, subtotal del alquiler, subtotal de los complementos e importe total con IVA).
+
+CASO DE USO:	1.3.3. Modificar un Contrato de Alquiler
+REFERENCIA:	GF1. Gestión de Transacciones GF1.3. Alquiler 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite modificar la siguiente información de un contrato de alquiler: fecha y lugar de devolución del vehículo así como añadir o cambiar extras. También es posible modificar el descuento (en el caso de un cliente directo) o la comisión (si se trata de un cliente indirecto) a aplicar únicamente sobre el importe total de un contrato de alquiler del cliente. 
+PRECONDICIÓN:	·	Hay al menos un vehículo alquilado.
+EXTIENDE A:	·	Cerrar un Contrato de Alquiler CUANDO el Empleado elige la opción Modificar Contrato DESPUES DEL PASO 6.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Modificar Contrato.
+
+1.	SAV muestra las matrículas de los vehículos alquilados.
+2.	El Empleado elige la matrícula de un vehículo alquilado.
+3.	SAV obtiene los datos del contrato de alquiler del vehículo.
+4.	SAV muestra los datos del contrato de alquiler del vehículo.
+5.	SAV activa la opción Modificar Cliente.
+6.	SAV activa la opción Eliminar Extras.
+7.	SAV activa la opción Elegir Extras.
+8.	El Empleado introduce los nuevos datos del contrato de alquiler del vehículo.
+9.	SAV activa la opción Registrar Cambios.
+10.	SI el Empleado selecciona la opción Registrar Cambios ENTONCES
+10.1.	SAV desactiva la opción Modificar Cliente.
+10.2.	SAV desactiva la opción Eliminar Extras. 
+10.3.	SAV desactiva la opción Elegir Extras.
+10.4.	INCLUIR Facturar el Alquiler de un Vehículo.
+10.5.	SAV obtiene la identificación del Empleado.
+10.6.	SAV obtiene la fecha y hora de modificación del contrato de alquiler.
+10.7.	SAV registra la identificación del Empleado, la fecha y hora de modificación y los datos del contrato de alquiler.  
+10.8.	PARA CADA nuevo extra de tipo accesorio registrado en el contrato de alquiler ENTONCES
+10.8.1.	SAV obtiene el código del accesorio.
+10.8.2.	SAV obtiene las unidades del accesorio que fueron alquiladas.
+10.8.3.	SAV calcula la cantidad disponible de unidades del accesorio. (FÓRMULA 1)
+10.8.4.	SAV registra la cantidad disponible de unidades del accesorio.
+FIN PARA
+FIN SI
+FIN CASO DE USO Modificar Contrato de Alquiler.
+
+POSTCONDICIÓN:	·	Se ha registrado la modificación de los datos de un contrato de alquiler.
+FÓRMULA(S):	·	
+FÓRMULA 1: Unidades_Disponibles_Accesorio = Unidades_Disponibles - Unidades_Alquiladas
+OBSERVACIONES:	·	La información de un contrato de alquiler está conformada por: los datos del cliente (incluyendo descuento o comisión), los datos del vehículo (incluyendo tarifa) y los datos propios de la transacción (fecha y hora de apertura del contrato, oficina donde se realizó, identificación del empleado que lo registró, duración del contrato de alquiler, fecha estimada de finalización del contrato, datos de los extras alquilados, lugar de devolución del vehículo, fianza abonada, subtotal del alquiler, subtotal de los complementos e importe total con IVA).
+
+CASO DE USO:	1.4.1. Prestar un Vehículo
+REFERENCIA:	GF1. Gestión de Transacciones GF1.4. Préstamo 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar los datos el préstamo de un vehículo. Un vehículo puede ser prestado sólo al personal de la empresa. 
+PRECONDICIÓN:	·	Hay al menos un vehículo "habilitado".
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Prestar Vehículo.
+1.	SAV muestra las matrículas de los vehículos habilitados.
+2.	El Administrador selecciona la matrícula de un vehículo.
+3.	SAV solicita la identificación del prestatario. 
+4.	El Administrador introduce la identificación del prestatario. 
+5.	SAV valida la identificación del prestatario.
+6.	SAV solicita el motivo del préstamo y la fecha estimada de devolución del vehículo.
+7.	El Administrador introduce el motivo del préstamo y la fecha estimada de devolución del vehículo.
+8.	SAV activa la opción Registrar.
+9.	SI el Administrador elige la opción Registrar ENTONCES
+9.1.	SAV obtiene la fecha y hora del préstamo.
+9.2.	SAV obtiene la identificación del Administrador.
+9.3.	SAV asigna el estado "prestado" al vehículo.
+9.4.	SAV registra la información del préstamo.
+FIN SI
+FIN CASO DE USO Prestar un Vehículo
+
+TRAYECTORIA(S) ALTERNA(S)
+AP1.	Identificación del prestatario inválida.
+1.1.	SAV muestra al Administrador el mensaje "Prestatario Inexistente".
+FIN CASO DE USO Prestar un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado el préstamo de un vehículo.·	Hay al menos un vehículo en estado "prestado".
+OBSERVACIONES:	·	La información del préstamo de un vehículo está conformada por los siguientes datos: matrícula del vehículo, fecha y hora del registro del préstamo, identificación del prestatario (DNI y nombre), fecha estimada de devolución del vehículo, motivo del préstamo e identificación (DNI y nombre) del Administrador que registró el préstamo.
+
+CASO DE USO:	1.4.2. Devolver un Vehículo Prestado
+REFERENCIA:	GF1. Gestión de Transacciones GF1.4. Préstamo 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar la devolución de un vehículo prestado. El vehículo es entonces deshabilitado para que se le realicen las operaciones de mantenimiento y reparación que requiera.
+PRECONDICIÓN:	·	Hay, al menos un vehículo "prestado".
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Devolver Vehículo.
+
+1.	SAV muestra las matrículas de los vehículos prestados.
+2.	El Empleado elige la matrícula de un vehículo.
+3.	SAV obtiene la información del préstamo del vehículo.
+4.	SAV muestra la información del préstamo del vehículo.
+5.	SAV activa la opción Devolver.
+6.	SI el Empleado elige la opción Devolver ENTONCES
+6.1.	SAV obtiene la fecha y hora de la devolución.
+6.2.	SAV obtiene la identificación del Empleado.
+6.3.	SAV asigna el estado "deshabilitado" al vehículo.
+6.4.	SAV registra la información de la devolución del vehículo.
+6.5.	SAV activa la opción Mantenimiento.
+6.6.	SAV activa la opción Reparación.
+FIN SI
+
+FIN CASO DE USO Devolver un Vehículo Prestado.
+POSTCONDICIÓN:	·	Se ha registrado la devolución de un vehículo prestado.·	Hay al menos un vehículo registrado en estado "deshabilitado".
+OBSERVACIONES:	·	La información del préstamo de un vehículo está conformada por los siguientes datos: matrícula del vehículo, fecha y hora del registro del préstamo, identificación del prestatario (DNI y nombre), fecha estimada de devolución del vehículo, motivo del préstamo e identificación (DNI y nombre) del Administrador que registró el préstamo.·	La información de la devolución del vehículo prestado está conformada por los siguientes datos: matrícula del vehículo, fecha y hora de la devolución e identificación (DNI y nombre) del Empleado que hizo el registro.
+
+CASO DE USO:	2.1.1. Solicitar Mantenimiento
+REFERENCIA:	GF2. Gestión de Operaciones GF2.1. Mantenimiento 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Operario 
+RESUMEN:	Permite solicitar el mantenimiento de un vehículo (limpieza, puesta a punto, identificación de averías o desperfectos, etc.) a fin de que éste sea preparado para su posterior alquiler o venta. Esta solicitud puede realizarse al finalizar un contrato de alquiler o un préstamo, cuando se adquiere o vende un vehículo o bien después de que éste haya sido objeto de alguna reparación. En caso de existir una solicitud previa de mantenimiento para el vehículo, SAV permite modificar la descripción de los trabajos que se desean realizar.
+PRECONDICIÓN:	·	Hay al menos un vehículo "deshabilitado" o hay al menos un vehículo "pendiente mantenimiento".
+EXTIENDE A:	·	Comprar un Vehículo CUANDO el Administrador elige la opción Mantenimiento DESPUÉS DEL PASO 14.6.·	Cerrar un Contrato de Alquiler CUANDO el Empleado elige la opción Mantenimiento DESPUÉS DEL PASO 27.5.·	Devolver un Vehículo Prestado CUANDO el Administrador elige la opción Mantenimiento DESPUÉS DEL PASO 6.5.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Operario selecciona la opción Mantenimiento.
+
+1.	SAV obtiene las matrículas de los vehículos con el estado "deshabilitado" o "pendiente mantenimiento".
+2.	SAV muestra las matrículas de los vehículos en estado "deshabilitado" o "pendiente mantenimiento".
+3.	El Operario elige la matrícula del vehículo.
+4.	SI el estado del vehículo es "pendiente mantenimiento" ENTONCES
+4.1.	SAV obtiene los datos de la solicitud de mantenimiento del vehículo.
+4.2.	SAV activa los datos de la solicitud de mantenimiento del vehículo.
+FIN SI
+5.	SI el estado del vehículo es "deshabilitado" o "pendiente reparación" ENTONCES
+5.1.	SAV solicita los datos de la solicitud de mantenimiento del vehículo.
+FIN SI
+6.	SAV obtiene la identificación del Operario.
+7.	SAV muestra la identificación del Operario.
+8.	El Operario introduce los datos de la solicitud de mantenimiento.
+9.	SAV activa la opción Solicitar.
+10.	SI el Operario elige la opción Solicitar ENTONCES
+10.1.	SAV obtiene la fecha y hora de la solicitud de mantenimiento.
+10.2.	SAV asigna al vehículo el estado "Pendiente Mantenimiento".
+10.3.	SAV registra los datos de la solicitud de mantenimiento.
+10.4.	SAV activa la opción Reparación.
+FIN SI
+
+FIN CASO DE USO Solicitar Mantenimiento.
+
+POSTCONDICIÓN:	·	Hay al menos un vehículo con el estado "pendiente mantenimiento".·	Se ha registrado una solicitud de mantenimiento. 
+OBSERVACIONES:	·	Los datos de la solicitud de mantenimiento son: matrícula, fecha y hora de la solicitud, identificación del operario (empleado o técnico) que la solicitó y descripción del mantenimiento que se debe realizar.
+
+CASO DE USO:	2.1.2. Registrar Mantenimiento
+REFERENCIA:	GF2. Gestión de Operaciones GF2.1. Mantenimiento 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Técnico
+RESUMEN:	Permite registrar la información sobre los trabajos de mantenimiento realizados a un vehículo. Cuando este registro se realiza, siempre que el vehículo no tenga pendientes labores de reparación, SAV le asigna el estado "habilitado". 
+PRECONDICIÓN:	·	Hay al menos un vehículo con estado "pendiente mantenimiento".
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Registrar Mantenimiento.
+
+1.	SAV obtiene las matrículas de los vehículos con el estado "pendiente mantenimiento".
+2.	SAV muestra las matrículas de los vehículos con el estado "pendiente mantenimiento".
+3.	El Técnico selecciona la matrícula del vehículo.
+4.	SAV obtiene los datos de la solicitud de mantenimiento.
+5.	SAV muestra los datos de la solicitud de mantenimiento.
+6.	SAV activa la opción Reparación.
+7.	SAV solicita la descripción del mantenimiento realizado al vehículo.
+8.	El Técnico introduce la descripción del mantenimiento del vehículo.
+9.	SAV solicita el kilometraje del vehículo.
+10.	El Técnico introduce el kilometraje del vehículo.
+11.	SAV activa la opción Registrar.
+12.	SI el Técnico elige la opción Registrar ENTONCES
+12.1.	SAV obtiene el lugar, fecha y hora del registro de mantenimiento del vehículo.
+12.2.	SAV obtiene la identificación del Técnico.
+12.3.	SAV desactiva la opción Reparación.
+12.4.	SAV registra los datos del mantenimiento.
+12.5.	SI el estado del vehículo es distinto a "pendiente reparación" ENTONCES
+12.5.1.	SI (fecha_vencimiento_seguro > fecha_actual + 1 mes) y (tarifa_total > 0) y (kilometraje_vehículo < 150000)   ENTONCES
+12.5.1.1. SAV asigna al vehículo el estado "habilitado".
+FIN SI
+12.5.2.	SI (fecha_vencimiento_seguro < fecha_actual + 1 mes) ENTONCES
+12.5.2.1. SAV asigna al vehículo el estado "deshabilitado".
+12.5.2.2. SAV activa la opción Renovar Seguro.
+FIN SI
+12.5.3.	SI (tarifa_total = 0) ENTONCES
+12.5.3.1. SAV asigna al vehículo el estado "deshabilitado".
+12.5.3.2. SAV activa la opción Asignar Tarifa.
+FIN SI
+12.5.4.	SI (kilometraje_vehículo >= 150000) ENTONCES
+12.5.4.1. SAV asigna al vehículo el estado "en venta".
+FIN SI
+FIN SI
+FIN SI
+FIN CASO DE USO Registrar Mantenimiento.
+
+POSTCONDICIÓN:	·	Hay al menos un vehículo "habilitado" o hay al menos un vehículo en estado "pendiente reparación" o hay al menos un vehículo "deshabilitado.·	Se ha registrado la información del mantenimiento de un vehículo.
+OBSERVACIONES:	·	Los datos del mantenimiento de un vehículo son: matrícula, lugar, fecha y hora del registro, identificación del mecánico que lo hizo y descripción de los trabajos de mantenimiento que se realizaron.
+
+CASO DE USO:	2.2.1. Solicitar Reparación
+REFERENCIA:	GF2. Gestión de Operaciones GF2.2. Reparación 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Operario
+RESUMEN:	Permite solicitar la reparación de las averías de un vehículo. Las reparaciones podrán llevarse a cabo en un taller externo o en el taller de la empresa. 
+PRECONDICIÓN:	·	Hay al menos un vehículo "deshabilitado" o hay al menos un vehículo "pendiente mantenimiento".
+EXTIENDE A:	·	Comprar un Vehículo CUANDO el Administrador elige la opción Reparación DESPUÉS DEL PASO 10.6.·	Cerrar un Contrato de Alquiler CUANDO el Empleado elige la opción Reparación DESPUÉS DEL PASO 27.6.·	Devolver un Vehículo Prestado CUANDO el Empleado elige la opción Reparación DESPUÉS DEL PASO 6.6.·	Registrar Mantenimiento CUANDO el Técnico elige la opción Reparación DESPUÉS DEL PASO 6.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Operario selecciona la opción Reparación.
+
+1.	SAV obtiene las matrículas de los vehículos con el estado "deshabilitado" o "pendiente mantenimiento".
+2.	SAV muestra las matrículas de los vehículos con el estado "deshabilitado" o "pendiente mantenimiento".
+3.	El Operario elige la matrícula del vehículo.
+4.	SAV obtiene la fecha y hora de la solicitud de reparación.
+5.	SAV obtiene la identificación del Operario.
+6.	SAV activa la opción Taller Externo.
+7.	SI el Operario selecciona la opción Taller Externo ENTONCES
+7.1.	SAV obtiene la identificación de los talleres externos.
+7.2.	SAV muestra la identificación de los talleres externos.
+7.3.	El Operario elige el taller externo.
+FIN SI
+8.	SAV solicita la descripción de la avería que se desea reparar.
+9.	El Operario introduce la descripción de la avería que se desea reparar.
+10.	SAV activa la opción Solicitar.
+11.	SI el Operario elige la opción Solicitar ENTONCES
+11.1.	SAV asigna al vehículo el estado "pendiente reparación".
+11.2.	SAV registra los datos de la solicitud de reparación.
+FIN SI
+
+FIN CASO DE USO Solicitar Reparación.
+
+POSTCONDICIÓN:	·	Se ha registrado una solicitud de reparación de un vehículo.·	Hay al menos un vehículo con el estado "pendiente reparación".
+OBSERVACIONES:	·	Los datos de una solicitud de reparación son: matrícula, fecha y hora de la solicitud, identificación del operario que la solicitó, identificación del taller externo donde se reparará la avería y descripción de la misma.·	La identificación del taller externo está conformada por: un número que lo distingue de los otros talleres (NIF), nombre, dirección, teléfono y persona contacto.
+
+CASO DE USO:	2.2.2. Registrar Reparación
+REFERENCIA:	GF2. Gestión de OperacionesGF2.2. Reparación 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Técnico
+RESUMEN:	Permite registrar la información relativa a la reparación de un vehículo. Después de registrar esta información, el Técnico debe hacer una solicitud de mantenimiento del vehículo con el fin de que éste sea preparado para su posterior alquiler o venta. 
+PRECONDICIÓN:	·	Hay al menos un vehículo en estado "pendiente reparación".
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Técnico selecciona la opción Reparación.
+
+1.	SAV obtiene las matrículas de los vehículos con el estado "pendiente reparación".
+2.	SAV muestra las matrículas de los vehículos con el estado "pendiente reparación".
+3.	El Técnico selecciona la matrícula del vehículo.
+4.	SAV obtiene los datos de la solicitud de reparación.
+5.	SAV muestra los datos de la solicitud de reparación.
+6.	SAV obtiene el lugar, fecha y hora de registro de la solicitud de reparación del vehículo.
+7.	SAV obtiene la identificación del Técnico.
+8.	SAV solicita la descripción de la reparación realizada al vehículo.
+9.	El Técnico introduce la descripción de la reparación realizada al vehículo.
+10.	SAV solicita el costo de la reparación del vehículo.
+11.	El Técnico introduce el costo de la reparación del vehículo.
+12.	SAV activa la opción Registrar.
+13.	SI el Técnico elige la opción Registrar ENTONCES
+13.1.	SAV registra los datos de la reparación.
+13.2.	INCLUIR Solicitar Mantenimiento.
+FIN SI
+
+FIN CASO DE USO Registrar Reparación.
+
+POSTCONDICIÓN:	·	Se ha registrado la información sobre la reparación de un vehículo.
+OBSERVACIONES:	·	Los datos de la reparación de un vehículo son: matrícula y estado del vehículo, fecha y hora de la solicitud de reparación, identificación del operario que la solicitó, fecha y hora del registro de la reparación, identificación del técnico que lo hizo, costo y descripción de los trabajos de reparación que se realizaron.·	Los datos de una solicitud de reparación son: matrícula, fecha y hora de la solicitud, identificación del operario que la solicitó, identificación del taller externo donde se reparará la avería (si es el caso) y descripción de la misma.·	La identificación del taller externo está conformada por: un número que lo distingue de los otros talleres, nombre, dirección y teléfono.
+
+CASO DE USO:	2.3.1. Registrar un Taller Externo
+REFERENCIA:	GF2. Gestión de Operaciones GF2.3. Talleres Externos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar los datos de un taller externo. En estos talleres se podrán reparar las averías de los vehículos cuando así se solicite.
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Registrar Taller. 
+
+1.	SAV solicita los datos del taller externo.
+2.	El Empleado introduce los datos del taller externo.
+3.	SAV activa la opción Registrar.
+4.	SI el Empleado elige la opción Registrar ENTONCES
+4.1.	SAV registra los datos del taller externo.
+FIN SI
+
+FIN CASO DE USO Registrar un Taller Externo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	NIF existente.
+1.1.	SAV muestra al Empleado el mensaje Taller Registrado.
+FIN CASO DE USO Comprar un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado la información de un taller externo.
+OBSERVACIONES:	·	Los datos de un taller externo son los siguientes: un número que lo distingue de otros talleres (NIF), nombre, dirección, teléfono y persona contacto.
+ 
+CASO DE USO:	2.3.2. Borrar un Taller Externo
+REFERENCIA:	GF2. Gestión de Operaciones GF2.3. Talleres Externos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite eliminar un taller externo previamente registrado. 
+PRECONDICIÓN:	·	Hay al menos un taller externo registrado.
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Borrar Taller. 
+
+1.	SAV obtiene el nombre y el NIF de los talleres externos.
+2.	SAV muestra el nombre y el NIF de los talleres externos.
+3.	El Empleado selecciona el nombre del taller externo.
+4.	SAV muestra los datos del taller externo.
+5.	SAV activa la opción Borrar.
+6.	SI el Empleado selecciona la opción Borrar ENTONCES
+6.1.	SAV elimina el taller externo.
+FIN SI
+
+FIN CASO DE USO Borrar Taller Externo.
+
+POSTCONDICIÓN:	·	La información de un taller externo ha sido eliminada.
+OBSERVACIONES:	·	Los datos de un taller externo son los siguientes: un número que lo distingue de otros talleres (NIF), nombre, dirección, teléfono y persona contacto.
+
+CASO DE USO:	2.3.3. Modificar un Taller Externo
+REFERENCIA:	GF2. Gestión de Operaciones GF2.3. Talleres Externos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite modificar los datos de un taller externo previamente registrado. 
+PRECONDICIÓN:	·	Hay al menos un taller externo registrado.
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Modificar Taller.
+
+1.	SAV obtiene el nombre y el NIF de los talleres externos.
+2.	SAV muestra el nombre y el NIF de los talleres externos.
+3.	El Empleado selecciona el nombre del taller externo.
+4.	SAV muestra los datos del taller externo.
+5.	El Empleado introduce los datos del taller externo.
+6.	SAV activa la opción Modificar.
+7.	SI el Empleado selecciona la opción Modificar ENTONCES
+7.1.	SAV registra los datos del taller externo.
+FIN SI
+
+FIN CASO DE USO Modificar Taller Externo.
+
+POSTCONDICIÓN:	·	Se ha registrado la modificación de los datos de un taller externo.
+OBSERVACIONES:	·	Los datos de un taller externo son los siguientes: un número que lo distingue de otros talleres (NIF), nombre, dirección, teléfono y persona contacto.
+
+CASO DE USO:	3.1. Registrar un Vehículo
+REFERENCIA:	GF3. Gestión de Vehículos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar los datos de un vehículo que ha sido comprado.
+PRECONDICIÓN:	Ninguna 
+EXTIENDE A:	·	Comprar un Vehículo CUANDO el Administrador activa la opción Registrar Vehículo DESPUÉS DEL PASO 4.1.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Registrar Vehículo.
+1.	SAV solicita al Administrador la matrícula del vehículo.
+2.	El Administrador introduce la matrícula del vehículo.
+3.	SAV valida la matrícula del vehículo.
+4.	SAV solicita el modelo, la marca, el año de fabricación, el número de puertas, la capacidad y el kilometraje del vehículo.
+5.	El Administrador introduce el modelo, la marca, el año de fabricación, el número de puertas, la capacidad y el kilometraje del vehículo.
+6.	SAV determina la existencia de la clase grupo del tipo de vehículo.
+7.	SAV obtiene la clase y el grupo del tipo de vehículo.
+8.	SAV muestra la clase y el grupo del tipo de vehículo.
+9.	SAV activa la opción Registrar Vehículo. 
+10.	SI  el Administrador selecciona la opción Registrar Vehículo ENTONCES
+10.1.	SAV obtiene la fecha y hora de registro del vehículo.
+10.2.	SAV registra la fecha y hora de registro del vehículo. 
+10.3.	SAV registra la matrícula, el modelo, la marca, el año de fabricación, el número de puertas, la capacidad, el kilometraje, la clase y el grupo del vehículo.
+FIN SI
+FIN CASO DE USO Registrar un Vehículo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Matrícula inválida.
+1.1.	SAV muestra al Administrador el mensaje Matrícula Inválida.
+FIN CASO DE USO Registrar un Vehículo.
+
+AP2.	Matrícula existente.
+2.1.	SAV muestra al Administrador el mensaje Matrícula Existente.
+FIN CASO DE USO Registrar un Vehículo.
+
+POSTCONDICIÓN:	·	Se han registrado los datos de un vehículo.
+OBSERVACIONES:	·	Los datos de un vehículo son: la matrícula, el modelo, la marca, el año de fabricación, el número de puertas, la capacidad, el kilometraje, la clase y el grupo del vehículo.·	El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas.
+
+
+CASO DE USO:	3.2. Modificar el Registro de un Vehículo
+REFERENCIA:	GF3. Gestión de Vehículos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite modificar la información de un vehículo que ha sido previamente registrado. Es posible cambiar todos sus datos excepto el número de la matrícula. 
+PRECONDICIÓN:	Ninguna 
+EXTIENDE A:	·	Modificar una Compra CUANDO el Administrador activa la opción Modificar Vehículo DESPUÉS DEL PASO 7.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Modifica Vehículo.
+1.	SAV muestra las matrículas de los vehículos.
+2.	El Administrador selecciona la matrícula de un vehículo.
+3.	SAV muestra los datos del vehículo.
+4.	SAV activa el modelo, la marca, el año de fabricación, el número de puertas, la capacidad y el kilometraje del vehículo.
+5.	El Administrador introduce el modelo, la marca, el año de fabricación, el número de puertas, la capacidad y el kilometraje del vehículo.
+6.	SAV determina la existencia de la clase grupo del tipo de vehículo.
+7.	SAV obtiene la clase y el grupo del tipo de vehículo.
+8.	SAV muestra la clase y el grupo del tipo de vehículo.
+9.	SAV activa la opción Modificar Registro. 
+10.	SI  el Administrador selecciona la opción Modificar Registro ENTONCES
+10.1.	SAV obtiene la fecha y hora de registro del vehículo.
+10.2.	SAV registra la fecha y hora de registro del vehículo. 
+10.3.	SAV registra el modelo, la marca, el año de fabricación, el número de puertas, la capacidad, el kilometraje, la clase y el grupo del vehículo.
+FIN SI
+FIN CASO DE USO Modificar el Registro de un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha modificado el registro de un vehículo.
+OBSERVACIONES:	·	Los datos de un vehículo son: la matrícula, el modelo, la marca, el año de fabricación, el número de puertas, la capacidad, el kilometraje, la clase y el grupo del vehículo.·	El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas.
+
+CASO DE USO:	3.3. Registrar Información Histórica de un Vehículo
+REFERENCIA:	GF3. Gestión de Vehículos 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar información del ciclo de vida de un vehículo de la empresa. El registro se realiza cuando, una vez vendido, es entregado a su nuevo propietario. Esta información incluye datos tanto del vehículo como de su compra y posterior venta.
+PRECONDICIÓN:	Ninguna 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Registrar Información Histórica de un Vehículo.
+1.	SAV muestra las matrículas de los vehículos vendidos.
+2.	El Administrador elige la matrícula de un vehículo.
+3.	SAV obtiene los datos del registro del vehículo.
+4.	SAV obtiene los datos del registro de la compra del vehículo.
+5.	SAV obtiene los datos del registro de la venta del vehículo.
+6.	SAV activa la opción Registrar Histórico. 
+7.	SI  el Administrador selecciona la opción Registrar Histórico ENTONCES
+7.1.	SAV registra los datos del registro del vehículo en el Histórico de Vehículos. 
+7.2.	SAV elimina el registro del vehículo.
+7.3.	SAV registra los datos del registro de la compra del vehículo en el Histórico de Vehículos.
+7.4.	SAV elimina el registro de la compra del vehículo.
+7.5.	SAV registra los datos del registro de la venta del vehículo en el Histórico de Vehículos.
+7.6.	SAV elimina el registro de la venta del vehículo.
+FIN SI
+FIN CASO DE USO Registrar Información Histórica de un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado los datos del registro de un vehículo, del registro de su compra y del registro de su venta en el Archivo Histórico de Vehículos.
+OBSERVACIONES:	·	Los datos del registro de un vehículo son: la matrícula, el modelo, la marca, el año de fabricación, el número de puertas, la capacidad, el kilometraje, la clase y el grupo del vehículo.·	Los datos de la compra de un vehículo son: la matrícula del vehículo, fecha de la compra, costo, fecha y hora del registro de la compra y la identificación del responsable de esta transacción.·	Los datos del registro de una venta son: matrícula del vehículo, fecha y precio de venta, fecha acordada de entrega, fecha real de entrega, persona autorizada para la entrega, identificación del comprador y responsable de la venta.
+
+CASO DE USO:	3.4. Asignar Clase y Grupo 
+REFERENCIA:	GF3. Gestión de Vehículos
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite asignar una clase y un grupo ya existentes a un tipo de vehículo que no ha sido registrado previamente en el sistema.  
+PRECONDICIÓN:	·	Hay al menos una clase de vehículos registrada en SAV.
+EXTIENDE A:	·	Registrar un Vehículo CUANDO clase y grupo del tipo de vehículo no existen DESPUÉS DEL PASO 6.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Asignar Clase y Grupo. 
+
+1.	SAV solicita el modelo, año de fabricación y número de puertas del vehículo.
+2.	El Administrador introduce el modelo, año de fabricación y número de puertas del vehículo.
+3.	SAV determina la existencia de la clase grupo del tipo de vehículo.
+4.	SAV muestra el nombre y la descripción de las clases de vehículo.
+5.	SAV activa la opción Crear Clase.
+6.	SI el Administrador selecciona el nombre y la descripción de una clase de vehículo  ENTONCES
+6.1.	SAV desactiva la opción Crear Clase.
+6.2.	SAV muestra el nombre, la descripción y los tipos de vehículo de los grupos de la clase de vehículo.
+FIN SI
+7.	SI el Administrador selecciona un grupo de una clase de vehículo ENTONCES
+7.1.	SAV activa la opción Registrar.
+FIN SI
+8.	SI el Administrador selecciona la opción Registrar ENTONCES
+8.1.	SAV registra el tipo de vehículo en un grupo de una clase.
+FIN SI
+FIN CASO DE USO Asignar Clase y Grupo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Clase y Grupo del Tipo de Vehículo existente.
+1.1.	SAV muestra al Administrador el mensaje Clase y Grupo del Tipo de Vehículo existente.
+FIN CASO DE USO Asignar Clase y Grupo.
+
+POSTCONDICIÓN:	·	Se ha asignado una clase y un grupo a un tipo de vehículo.
+OBSERVACIONES:	·	La clase de un vehículo tiene un nombre, una descripción y uno o más grupos.·	Un grupo de una clase de un vehículo tiene un nombre, una descripción, uno o más tipos de vehículo y una tarifa (precio del alquiler diario más costo por día del seguro).·	El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas.·	Por defecto, la tarifa de una clase y grupo de tipos de vehículos es de           0 unidades monetarias. 
+
+CASO DE USO:	3.5. Crear una Clase
+REFERENCIA:	GF3. Gestión de Vehículos
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite crear una clase de vehículo así como los grupos de tipos de vehículo de esta clase. Una clase debe tener al menos un grupo. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Asignar Clase y Grupo CUANDO el Administrador selecciona la opción Crear Clase DESPUÉS DEL PASO 5.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Crear Clase. 
+
+1.	SAV solicita el nombre y la descripción de la nueva clase de vehículo.
+2.	El Administrador introduce el nombre y la descripción de la nueva clase de vehículo.
+3.	SAV determina la existencia de la clase.
+4.	SAV activa la opción Crear Grupo.
+5.	SI el Administrador selecciona la opción Crear Grupo  ENTONCES
+5.1.	SAV solicita el nombre y la descripción del grupo de la clase de vehículo.
+5.2.	El Administrador introduce el nombre y la descripción del grupo de la clase de vehículo.
+5.3.	SAV asigna el valor de cero unidades monetarias a la tarifa de la clase y grupo del vehículo. 
+5.4.	SAV activa la opción Asignar Tarifa. 
+5.5.	SAV activa la opción Registrar.
+5.6.	RETORNAR AL PASO 3.
+FIN SI
+6.	SI el Administrador selecciona la opción Registrar ENTONCES
+6.1.	SAV registra los datos de la nueva clase.
+FIN SI
+FIN CASO DE USO Crear una Clase.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Clase existente.
+1.1.	SAV muestra al Administrador el mensaje Clase Existente.
+FIN CASO DE USO Crear una Clase.
+
+POSTCONDICIÓN:	·	Se ha creado una clase de vehículo con, al menos, un grupo de tipos de vehículo.
+OBSERVACIONES:	·	La clase de un vehículo tiene un nombre, una descripción y uno o más grupos.·	Un grupo de una clase de un vehículo tiene un nombre, una descripción, uno o más tipos de vehículo y una tarifa (precio del alquiler diario más costo por día del seguro). ·	El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas.·	Por defecto, la tarifa de una clase y grupo de tipos de vehículos es de           0 unidades monetarias.
+
+CASO DE USO:	3.6. Borrar Tipo de Vehículo 
+REFERENCIA:	GF3. Gestión de Vehículos
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite borrar un tipo de vehículo de un grupo y clase. El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas. Un tipo de vehículo pertenece a un grupo de una clase de vehículos.
+PRECONDICIÓN:	·	Hay, al menos, un tipo de vehículo perteneciente a una clase y a un grupo. 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Borrar Tipo. 
+
+1.	SAV solicita el modelo, año de fabricación y número de puertas del vehículo.
+2.	El Administrador introduce el modelo, año de fabricación y número de puertas del vehículo.
+3.	SAV determina la existencia de la clase grupo del tipo de vehículo.
+4.	SAV obtiene la clase y grupo del tipo de vehículo.
+5.	SAV muestra la clase y grupo del tipo de vehículo.
+6.	SAV activa la opción Borrar.
+7.	SI el Administrador selecciona la opción Borrar  ENTONCES
+7.1.	SAV elimina el tipo de vehículo de la clase y grupo.
+7.2.	SAV activa la opción Asignar Clase y Grupo.
+7.3.	SAV activa la opción Crear Clase.
+FIN SI
+
+FIN CASO DE USO Borrar Tipo de Vehículo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Clase y grupo inexistente.
+1.1.	SAV muestra al Administrador el mensaje el Tipo de Vehículo no está asignado a una y a un Grupo. 
+FIN CASO DE USO Borrar Tipo de Vehículo.
+
+POSTCONDICIÓN:	·	Se ha borrado un tipo de vehículo del grupo de una clase de vehículos.
+OBSERVACIONES:	·	La clase de un vehículo tiene un nombre, una descripción y uno o más grupos.·	Un grupo de una clase de un vehículo tiene un nombre, una descripción, uno o más tipos de vehículo y una tarifa (precio del alquiler diario más costo por día del seguro).·	El tipo de un vehículo queda determinado por su modelo, año de fabricación y número de puertas.
+
+
+CASO DE USO:	3.7. Asignar Tarifa
+REFERENCIA:	GF3. Gestión de Vehículos
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite asignar una tarifa a una clase y grupo de tipos de vehículo. Cuando se crea una nueva clase y grupo de tipos de vehículo, se asigna una tarifa por defecto de 0 unidades monetarias. Mediante esta funcionalidad, SAV permite modificar esta cantidad u otra previamente asignada. La tarifa es el monto total (en unidades monetarias) que se cobra por el alquiler diario de un vehículo (sin la aplicación de impuestos). Se obtiene sumando la cantidad correspondiente al costo diario del seguro del vehículo y una cantidad destinada a la renta del mismo por día. 
+PRECONDICIÓN:	·	Hay al menos una clase y un grupo registrados en SAV. 
+EXTIENDE A:	·	Crear una Clase CUANDO el Administrador elige la opción Asignar Tarifa DESPUÉS DEL PASO 5.3.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Asignar Tarifa.
+
+1.	SAV muestra las clases de vehículos.
+2.	El Administrador selecciona una clase de vehículo.
+3.	SAV muestra los datos de la clase de vehículo.
+4.	El Administrador selecciona un grupo de la clase de vehículo.
+5.	SAV muestra los datos del grupo de la clase de vehículo.
+6.	SAV muestra la tarifa de la clase y grupo de tipos de vehículo. 
+7.	SAV solicita introducir el precio diario del alquiler de una clase y grupo de tipos de vehículo.
+8.	SAV solicita introducir el costo diario del seguro de los tipos de vehículos de una clase y grupo.
+9.	El Administrador introduce el precio diario del alquiler de una clase y grupo de tipos de vehículos.
+10.	El Administrador introduce el costo diario del seguro de los tipos de vehículos de una clase y grupo.
+11.	SAV activa la opción Registrar Tarifa.
+12.	SI el Administrador elige la opción Registrar Tarifa ENTONCES
+12.1.	SAV calcula la tarifa total del alquiler de un tipo de vehículo. (FÓRMULA 7)
+12.2.	SAV registra el precio diario del alquiler de una clase y grupo de los tipos de vehículos.
+12.3.	SAV registra el costo diario del seguro de los tipos de vehículos de una clase y grupo.
+12.4.	SAV registra la tarifa total del alquiler de un tipo de vehículo.
+FIN SI
+  
+FIN CASO DE USO Asignar Tarifa.
+
+POSTCONDICIÓN:	·	Se ha asignado una tarifa a una clase y grupo de tipos de vehículos.
+FÓRMULA(S):	·	FORMULA 7:  Tarifa _Total = Costo_Diario_Seguro + Precio_Diario_Alquiler
+OBSERVACIONES:	·	Cada clase y grupo de tipos de vehículo tiene una tarifa total asignada.·	La asignación de tarifa también permite la modificación de ésta, en caso de haberse registrado con anterioridad.·	La clase de un vehículo tiene un nombre, una descripción y uno o más grupos. Un grupo de una clase de un vehículo tiene un nombre, una descripción, uno o más tipos de vehículo y una tarifa (precio del alquiler diario más costo por día del seguro).
+
+CASO DE USO:	4.1.1. Asegurar un Vehículo
+REFERENCIA:	GF4. Gestión de SegurosGF4.1. Pólizas 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar la información más relevante de la póliza de seguro de un vehículo como, por ejemplo: datos de la compañía de seguros, fecha de inicio y de caducidad de la póliza de seguro y el precio de ésta. Todos los vehículos de la empresa deben estar amparados por una póliza de seguro. Un vehículo sólo puede tener una póliza de seguro vigente.  
+PRECONDICIÓN:	·	Hay al menos un vehículo deshabilitado.
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Asegurar Vehículo.
+
+1.	SAV solicita al Administrador la matrícula del vehículo.
+2.	El Administrador introduce la matrícula del vehículo.
+3.	El Administrador elige la matrícula del vehículo.
+4.	SAV determina la existencia de una póliza de seguro del vehículo.
+5.	SAV activa la opción Registrar Aseguradora. 
+6.	SAV muestra las compañías de seguro.
+7.	El Administrador selecciona la compañía de seguro.
+8.	SAV solicita los datos de la póliza de seguro.
+9.	El Administrador introduce los datos de la póliza de seguro.
+10.	SAV activa la opción Registrar.
+11.	SI el Administrador elige la opción Registrar ENTONCES
+11.1.	SAV obtiene la fecha y hora de registro de la póliza de seguro.
+11.2.	SAV obtiene la identificación del Empleado.
+11.3.	SAV registra los datos de la póliza de seguro.
+11.4.	SAV adjunta a la póliza de seguro la fecha y hora de registro del vehículo y la identificación del Administrador que la registró.
+FIN SI
+
+FIN CASO DE USO Asegurar un Vehículo.
+
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Existe póliza de seguro del vehículo.
+1.1.	SAV muestra al Administrador el mensaje Póliza de Seguro Existente. 
+1.2.	SAV activa la opción Renovar Póliza.
+
+FIN CASO DE USO Asegurar un Vehículo.
+
+POSTCONDICIÓN:	·	Se ha registrado los datos de la póliza de seguro de un vehículo.
+OBSERVACIONES:	·	Los datos del registro de la póliza de seguro de un vehículo son: la matrícula del vehículo, la Compañía de Seguros, la fecha de inicio, la fecha de caducidad, el costo y la cobertura del seguro.
+
+CASO DE USO:	4.1.2. Renovar una Póliza de Seguro
+REFERENCIA:	GF4. Gestión de SegurosGF4.1. Pólizas 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar los datos de la renovación de la póliza de seguro de un vehículo. La renovación permite modificar el costo, lapso de duración, cobertura de la póliza de seguro de un vehículo así como la información de la Compañía de Seguros que la emitió. 
+PRECONDICIÓN:	·	Hay al menos una póliza de vehículos registrada.
+EXTIENDE A:	·	Asegurar un Vehículo CUANDO el Empleado selecciona la opción Renovar Póliza DESPUÉS DEL PASO AP1.1.2.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Renovar Póliza.
+
+1.	SAV muestra las matrículas de los vehículos que tienen póliza de seguro.
+2.	El Administrador elige una matrícula de un vehículo.
+3.	SAV obtiene los datos de la póliza de seguro.
+4.	SAV muestra los datos de la póliza de seguro.
+5.	SAV activa la opción Registrar Aseguradora.
+6.	El Administrador introduce los nuevos datos de la póliza de seguro.
+7.	SAV activa la opción Renovar.
+8.	SI el Administrador elige la opción Renovar ENTONCES
+8.1.	SAV obtiene la fecha y hora de renovación de la póliza de seguro.
+8.2.	SAV obtiene la identificación del Empleado que realizó la renovación.
+8.3.	SAV registra los nuevos datos de la póliza de seguro.
+8.4.	SAV adjunta a la póliza de seguro la fecha y hora de la renovación y la identificación del Administrador que realizó la renovación.
+FIN SI
+
+FIN CASO DE USO Renovar una Póliza de Seguro.
+
+
+POSTCONDICIÓN:	·	Se han registrado los nuevos datos de la póliza de seguro de un vehículo.
+OBSERVACIONES:	·	Los datos del registro de la póliza de seguro de un vehículo son: la matrícula del vehículo, la Compañía de Seguros, la fecha de inicio, la fecha de caducidad, el costo y la cobertura del seguro, la fecha y hora del registro del seguro y la identificación del Administrador.
+
+CASO DE USO:	4.2.1. Registrar una Compañía de Seguros
+REFERENCIA:	GF4. Gestión de SegurosGF4.2. Aseguradoras 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar la información de las Compañías de Seguros con las que la empresa asegura los vehículos de su flota.
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Asegurar un Vehículo CUANDO el Administrador selecciona la opción Registrar Aseguradora DESPUÉS DEL PASO 5.·	Renovar una Póliza de Seguro CUANDO el Administrador selecciona la opción Registrar Aseguradora DESPUÉS DEL PASO 5.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Registrar Aseguradora.
+
+1.	SAV solicita al Administrador los datos de la Compañía de Seguros.
+2.	El Administrador introduce los datos de la Compañía de Seguros.
+3.	SAV activa la opción Registrar.
+4.	SI el Administrador elige la opción Registrar ENTONCES
+4.1.	SAV obtiene la fecha y hora de registro de los datos de la Compañía de Seguros.
+4.2.	SAV obtiene la identificación del Administrador que realizó el registro.
+4.3.	SAV registra la fecha y hora de registro de los datos de la Compañía de Seguros.
+4.4.	SAV registra la identificación del Administrador que realizó el registro
+4.5.	SAV registra los datos de la Compañía de Seguros.
+FIN SI
+
+FIN CASO DE USO Registrar Compañía de Seguros.
+
+
+POSTCONDICIÓN:	·	Se ha registrado los datos de una Compañía de Seguros.
+OBSERVACIONES:	·	Los datos de una Compañía de Seguros son: nombre, NIF, dirección, teléfonos y nombre de la persona de contacto.
+
+CASO DE USO:	4.2.2. Modificar una Compañía de Seguros
+REFERENCIA:	GF4. Gestión de SegurosGF4.2. Aseguradoras 
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite modificar los datos de una Compañía de Seguros que han sido registrados previamente en el sistema.
+PRECONDICIÓN:	·	Hay al menos una Compañía de Seguros registrada.
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Modificar Aseguradora.
+
+1.	SAV obtiene los nombres de las Compañías de Seguro.
+2.	SAV muestra los nombres de las Compañías de Seguro.
+3.	El Administrador elige una Compañía de Seguros.
+4.	SAV muestra los datos de la Compañía de Seguros.
+5.	SAV activa los datos de la Compañía de Seguros.
+6.	El Administrador introduce los datos de la Compañía de Seguros.
+7.	SAV activa la opción Modificar.
+8.	SI el Administrador elige la opción Modificar ENTONCES
+8.1.	SAV obtiene la fecha y hora de modificación de los datos de la Compañía de Seguros.
+8.2.	SAV obtiene la identificación del Administrador que realizó la modificación.
+8.3.	SAV registra la fecha y hora de modificación de los datos de la Compañía de Seguros.
+8.4.	SAV registra la identificación del Administrador que realizó la modificación.
+8.5.	SAV registra los datos de la Compañía de Seguros.
+FIN SI
+
+FIN CASO DE USO Modificar una Compañía de Seguros.
+
+POSTCONDICIÓN:	·	Se ha registrado los nuevos datos de una Compañía de Seguros.
+OBSERVACIONES:	·	Los datos de una Compañía de Seguros son: nombre, NIF, dirección, teléfonos y nombre de la persona de contacto.
+
+CASO DE USO:	5.1. Registrar un Cliente
+REFERENCIA:	GF5. Gestión de Clientes
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar los datos de un cliente que desea alquilar un vehículo de la empresa. Los clientes pueden ser de dos tipos: directo o agencia. Es directo aquel cliente fijo u ocasional al que se le aplica la tarifa de acuerdo al contrato de alquiler, aunque también puede gozar de algún descuento especial previamente autorizado por el Administrador. El cliente de tipo agencia es una empresa que funciona como intermediaria para el alquiler de los vehículos. En este caso, se considera la posibilidad de acordar una comisión para la agencia por cada contrato de alquiler que efectúe. La información sobre la comisión de la agencia sólo puede ser registrada por el Administrador. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Registrar Cliente.
+
+1.	SAV pregunta al Empleado si el cliente es directo o es una agencia.
+2.	El Empleado indica si el cliente es directo o es una agencia.
+3.	SAV solicita el identificador del cliente según su tipo.
+4.	SAV determina la existencia del cliente.
+5.	SAV solicita los datos del cliente según su tipo.
+6.	El Empleado introduce los datos del cliente.
+7.	SI el cliente es directo ENTONCES
+7.1.	INCLUIR Registrar los Datos Bancarios de un Cliente Directo.
+FIN SI
+8.	SAV activa la opción Registrar.
+9.	SI el Empleado elige la opción Registrar ENTONCES
+9.1.	SAV obtiene la fecha y hora de registro del cliente.
+9.2.	SAV obtiene identificación del Empleado que realiza el registro del cliente.
+9.3.	SAV registra los datos del cliente.
+9.4.	SI el cliente es directo ENTONCES
+9.4.1. SAV registra los datos bancarios del cliente directo.
+FIN SI
+FIN SI
+FIN CASO DE USO Registrar un Cliente.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Identificador del cliente existente.
+1.1.	SAV muestra al Empleado el mensaje Cliente Existente. 
+1.2.	SAV activa la opción Modificar Cliente.
+FIN CASO DE USO Registrar un Cliente.
+
+POSTCONDICIÓN:	·	Se ha registrado los datos de un cliente de la empresa.
+OBSERVACIONES:	·	Los datos de un cliente directo son: identificador (DNI o pasaporte), nacionalidad, nombre completo, dirección de habitación, teléfono(s), identificación del Carnet de Conducir, fecha y hora de registro de los datos y Empleado que los registró. El descuento aplicable al cliente directo es, por defecto, de cero por ciento. Sólo el Administrador está autorizado a cambiar este valor.  ·	Los datos bancarios de un cliente directo son: denominación de la tarjeta de crédito (VISA, MasterCard, etc.), número, fecha de emisión y de vencimiento y nombre del titular (tal y como aparece en la tarjeta de crédito). ·	Los datos de un cliente de tipo agencia son: identificador (NIF), nombre, dirección, teléfono(s), persona de contacto, comisión, fecha y hora de registro de los datos y Empleado que los registró. La comisión de ganancia de una agencia es, por defecto, de cero por ciento. Sólo el Administrador está autorizado a cambiar este valor.  
+
+
+CASO DE USO:	5.2. Modificar los Datos de un Cliente
+REFERENCIA:	GF5. Gestión de Clientes
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite hacer cambios de la información previamente registrada de un cliente de la empresa. El Empleado puede modificar cualquiera de datos, excepto el descuento especial asignado a clientes directos y las comisiones de las agencias. Esto sólo puede ser realizado por el Administrador.
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Registrar un Cliente CUANDO el Empleado selecciona la opción Modificar Cliente DESPUÉS DEL PASO 5.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Modificar Cliente.
+
+1.	SAV pregunta al Empleado si el cliente es directo o es una agencia.
+2.	El Empleado indica si el cliente es directo o es una agencia.
+3.	SAV obtiene los identificadores de los clientes según su tipo.
+4.	SAV muestra los identificadores de los clientes según su tipo.
+5.	El Empleado elige el identificador del cliente.
+6.	SAV obtiene los datos del cliente.
+7.	SAV muestra los datos del cliente.
+8.	El Empleado introduce los nuevos datos del cliente.
+9.	SI el cliente es directo ENTONCES
+9.1.	SAV activa la opción Registrar Datos Bancarios.
+FIN SI
+10.	SAV activa la opción Registrar.
+11.	SI el Empleado elige la opción Registrar ENTONCES
+11.1.	SAV obtiene la fecha y hora de modificación del cliente.
+11.2.	SAV obtiene identificación del Empleado que realiza la modificación del cliente.
+11.3.	SAV registra los datos del cliente.
+11.4.	SI el cliente es directo ENTONCES
+11.4.1. SAV registra los datos bancarios del cliente directo.
+FIN SI
+FIN SI
+FIN CASO DE USO Modificar los Datos de un Cliente.
+
+POSTCONDICIÓN:	·	Se ha registrado los cambios de los datos de un cliente de la empresa.
+OBSERVACIONES:	·	Los datos de un cliente directo son: identificador (DNI o pasaporte), nacionalidad, nombre completo, dirección de habitación, teléfono(s), identificación del Carnet de Conducir, fecha y hora de registro de los datos y Empleado que los registró. El descuento aplicable al cliente directo es, por defecto, de 0%. Sólo el Administrador está autorizado a cambiar este valor. ·	Los datos bancarios de un cliente directo son: denominación de la tarjeta de crédito (VISA, MasterCard, etc.), número, fecha de emisión y de vencimiento y nombre del titular (como aparece en la tarjeta de crédito). ·	Los datos de un cliente de tipo agencia son: identificador (NIF), nombre, dirección, teléfono(s), persona de contacto, comisión, fecha y hora de registro de los datos y Empleado que los registró. La comisión de ganancia de una agencia es, por defecto, de 0%. Sólo el Administrador está autorizado a cambiar este valor.  
+
+CASO DE USO:	5.3. Registrar los Datos Bancarios de un Cliente Directo
+REFERENCIA:	GF5. Gestión de Clientes
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite registrar y validar la información relativa a la tarjeta de crédito con la cual el cliente directo realizará el pago del alquiler de un vehículo. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Modificar los Datos de un Cliente CUANDO el Empleado selecciona la opción Registrar Datos Bancarios DESPUÉS DEL PASO 9.1. 
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Registrar Datos Bancarios.
+
+1.	SAV obtiene los identificadores de los clientes directos.
+2.	SAV muestra los identificadores de los clientes directos.
+3.	El Empleado elige el identificador del cliente directo.
+4.	SAV solicita los datos bancarios del cliente directo.
+5.	El Empleado introduce los datos bancarios del cliente directo.
+6.	SAV activa la opción Registrar.
+7.	SI el Empleado elige la opción Registrar ENTONCES
+7.1.	SAV valida los datos bancarios del cliente directo.
+7.2.    SAV registra los datos bancarios del cliente directo.
+FIN SI
+FIN CASO DE USO Registrar Datos Bancarios de un Cliente Directo.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Datos bancarios inválidos.
+1.1.	SAV muestra al Empleado el mensaje Datos Bancarios Inválidos. 
+1.2.	SAV activa la opción Registrar Datos Bancarios.
+FIN CASO DE USO Registrar Datos Bancarios de un Cliente Directo.
+
+
+POSTCONDICIÓN:	·	Se ha registrado los datos bancarios de un cliente directo de la empresa.
+OBSERVACIONES:	·	Los datos de un cliente directo son: identificador (DNI o pasaporte), nacionalidad, nombre completo, dirección de habitación, teléfono(s), identificación del Carnet de Conducir, fecha y hora de registro de los datos y Empleado que los registró. El descuento aplicable al cliente directo es, por defecto, de cero por ciento. Sólo el Administrador está autorizado a cambiar este valor.  ·	Los datos bancarios de un cliente directo son: denominación de la tarjeta de crédito (VISA, MasterCard, etc.), número, fecha de emisión y de vencimiento y nombre del titular (como aparece en la tarjeta de crédito). 
+
+
+CASO DE USO:	5.4. Autorizar Descuento o Comisión de un Cliente
+REFERENCIA:	GF5. Gestión de Clientes
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite al Administrador fijar el descuento especial aplicable al monto total que deberá pagar un cliente directo al momento del cierre del contrato de alquiler de un vehículo. También es posible establecer el porcentaje de ganancia (comisión) de una agencia sobre el monto total de un contrato de alquiler que haya sido gestionado por ésta. 
+PRECONDICIÓN:	·	Hay al menos un cliente registrado. 
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Autorizar Descuento o Comisión.
+
+1.	SAV pregunta al Administrador si el cliente es directo o es una agencia.
+2.	El Administrador indica si el cliente es directo o es una agencia.
+3.	SAV obtiene los identificadores de los clientes según su tipo.
+4.	SAV muestra los identificadores de los clientes según su tipo.
+5.	El Administrador elige el identificador del cliente.
+6.	SAV obtiene los datos del cliente.
+7.	SAV muestra los datos del cliente.
+8.	El Administrador introduce el porcentaje de descuento o la comisión del cliente.
+9.	SAV activa la opción Registrar.
+10.	SI el Administrador elige la opción Registrar ENTONCES
+10.1.	SAV registra el porcentaje de descuento o la comisión del cliente.
+FIN SI
+FIN CASO DE USO Autorizar Descuento o Comisión de un Cliente.
+
+
+POSTCONDICIÓN:	·	Se ha registrado el porcentaje de descuento o la comisión de un cliente.
+OBSERVACIONES:	·	Los datos de un cliente directo son: identificador (DNI o pasaporte), nacionalidad, nombre completo, dirección de habitación, teléfono(s), identificación del Carnet de Conducir, fecha y hora de registro de los datos y Empleado que los registró. El descuento aplicable al cliente directo es, por defecto, de cero por ciento. Sólo el Administrador está autorizado a cambiar este valor.  ·	Los datos de un cliente de tipo agencia son: identificador (NIF), nombre, dirección, teléfono(s), persona de contacto, comisión, fecha y hora de registro de los datos y Empleado que los registró. La comisión de ganancia de una agencia es, por defecto, de cero por ciento. Sólo el Administrador está autorizado a cambiar este valor.
+
+
+CASO DE USO:	6.1. Registrar Extras 
+REFERENCIA:	GF6. Gestión de Servicios Complementarios
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar en SAV las características de los extras que estarán disponibles a los clientes que desean alquilar un vehículo en la empresa. Cuando un cliente alquila un vehículo puede contratar otros servicios adicionales denominados "extras" como, por ejemplo: entrega o recogida del vehículo en el aeropuerto, dotación de combustible, préstamo de accesorios (baca, teléfono, etc.). Cada servicio complementario tiene una tarifa que es considerada cuando se calcula el monto total por concepto del alquiler del vehículo. El costo del extra es independiente de las características del vehículo o del cliente. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Registrar Extras.
+
+1.	SAV solicita al Administrador los datos del extra.
+2.	El Administrador introduce los datos del extra.
+3.	SAV activa la opción Registrar.
+4.	SI el Administrador elige la opción Registrar ENTONCES
+4.1.	SAV asigna un código al extra.
+4.2.	SAV registra los datos del extra.
+4.3.	SAV activa la opción Registrar Otro Extra.
+FIN SI
+5.	SI el Administrador elige la opción Registrar Otro Extra ENTONCES 
+5.1.	RETORNAR AL PASO 1.
+FIN SI
+
+FIN CASO DE USO Registrar Extras.
+
+
+POSTCONDICIÓN:	·	Se ha registrado uno o más servicios o accesorios extras.
+OBSERVACIONES:	·	Los datos de un extra son los siguientes: código (asignado por SAV), tipo (servicio o accesorio), descripción del extra, cantidad en existencia (para el caso de los accesorios), cantidad disponible (para el caso de los accesorios), limitaciones, observaciones y tarifa (en el caso de los accesorios se especifica el precio diario por unidad). La cantidad disponible de accesorios indica el número de éstos que no están alquilados. 
+
+CASO DE USO:	6.2. Modificar un Extra 
+REFERENCIA:	GF6. Gestión de Servicios Complementarios
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite hacer cambios en los datos de los extras. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Modificar Extras.
+
+1.	SAV obtiene los códigos y los nombres genéricos de los extras.
+2.	SAV muestra al Administrador los códigos y los nombres genéricos de los extras.
+3.	El Administrador elige el código de un extra.
+4.	SAV obtiene los datos del extra.
+5.	SAV muestra los datos del extra.
+6.	El Administrador introduce los nuevos datos del extra.
+7.	SAV activa la opción Modificar.
+8.	SI el Administrador elige la opción Modificar ENTONCES
+8.1.	SAV registra los nuevos datos del extra.
+8.2.	SAV activa la opción Otra Modificación.
+FIN SI
+9.	SI el Administrador elige la opción Otra Modificación ENTONCES
+9.1.	RETORNAR AL PASO 1.
+FIN SI
+
+FIN CASO DE USO Modificar un Extra.
+
+
+POSTCONDICIÓN:	·	Se ha registrado los cambios de un servicio o accesorio extra.
+OBSERVACIONES:	·	Los datos de un extra son los siguientes: código (asignado por SAV), tipo (servicio o accesorio), nombre genérico, descripción, cantidad en existencia (para el caso de los accesorios), cantidad disponible (para el caso de los accesorios), limitaciones, observaciones y tarifa (en el caso de los accesorios se especifica el precio diario por unidad). La cantidad disponible de accesorios indica el número de éstos que no están alquilados.
+
+
+CASO DE USO:	6.3. Elección de Extras 
+REFERENCIA:	GF6. Gestión de Servicios Complementarios
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite al Empleado seleccionar uno o más extras para un vehículo que desea alquilar un cliente. La información sobre los extras seleccionados es mostrada como parte del contrato del alquiler del vehículo y su tarifa contabilizada al momento de calcular el monto total del mismo. Cuando el contrato de alquiler del vehículo es registrado o es cerrado, la cantidad disponible del extra es actualizada (en caso de que éste sea un accesorio). 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Alquilar un Vehículo CUANDO el Empleado selecciona la opción Elegir Extras DESPUÉS DEL PASO 8. ·	Modificar un Contrato de Alquiler CUANDO el Empleado selecciona la opción Elegir Extras DESPUÉS DEL PASO 7.
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Elegir Extras.
+
+1.	SAV obtiene el nombre genérico de los extras.
+2.	SAV muestra el nombre genérico de los extras.
+3.	El Empleado elige el nombre genérico de un extra.
+4.	SAV obtiene los datos del extra.
+5.	SAV muestra los datos del extra.
+6.	SI el extra es de tipo accesorio ENTONCES
+6.1.	SAV determina la cantidad disponible del accesorio.
+6.2.	SAV solicita la cantidad de unidades que se desean contratar.
+6.3.	El Empleado introduce la cantidad de unidades que se desean contratar.
+6.4.	SI  cantidad disponible del accesorio < cantidad de unidades a contratar  ENTONCES
+6.4.1.	SAV muestra al Empleado el mensaje "Accesorio No Disponible".
+6.4.2.	RETORNAR AL PASO 1.
+FIN SI
+FIN SI
+7.	SAV activa la opción Elegir.
+8.	SI el Empleado elige la opción Elegir ENTONCES
+8.1.	SAV obtiene el código, nombre genérico, descripción, limitaciones, observaciones y tarifa del extra.
+8.2.	SI el extra es de tipo accesorio ENTONCES
+8.2.1.	SAV solicita la cantidad de días de contratación del extra.
+8.2.2.	EL Empleado introduce la cantidad de días de contratación del extra. 
+8.2.3.	SAV solicita la cantidad de unidades del accesorio que fueron elegidas.
+8.2.4.	El Empleado introduce la cantidad de unidades del accesorio que fueron elegidas.
+8.2.5.	SAV calcula el monto a pagar por concepto de accesorios. (FÓRMULA 1)
+8.2.6.	SAV muestra el monto a pagar por concepto de accesorios.
+FIN SI
+8.3.	SI el extra es de tipo servicio ENTONCES
+8.3.1.	SAV solicita la cantidad de días de contratación del servicio.
+8.3.2.	El Empleado introduce la cantidad de días de contratación del servicio.
+8.3.3.	SAV calcula el monto a pagar por concepto de servicios. (FÓRMULA 2)
+8.3.4.	SAV muestra el monto a pagar por concepto de servicios.
+FIN SI
+8.4.	SAV calcula el subtotal por concepto de extras. (FÓRMULA 3)
+8.5.	SAV muestra el subtotal por concepto de extras.
+8.6.	SAV activa la opción Otro Extra.
+FIN SI
+9.	SI el Empleado elige la opción Otro Extra ENTONCES
+9.1.	RETORNAR AL PASO 1.
+FIN SI
+FIN CASO DE USO Elección de Extras.
+
+POSTCONDICIÓN:	·	Se ha obtenido la información de uno o más extras.
+FÓRMULA(S):	·	
+FÓRMULA 1: Monto_Accesorio = Duración_Contrato_Accesorio x Tarifa_Extra x Unidades_Alquiladas·	
+FÓRMULA 2: Monto_Servicio = Duración_Contrato_Servicio x Tarifa_Extra ·	FÓRMULA 3: Subtotal_Extras = Subtotal_Extras + Monto_Accesorio + Monto_Servicio
+OBSERVACIONES:	·	Los datos de un extra son los siguientes: código (asignado por SAV), tipo (servicio o accesorio), descripción del extra, cantidad en existencia (para el caso de los accesorios), cantidad disponible (para el caso de los accesorios), limitaciones, observaciones y tarifa (en el caso de los accesorios se especifica el precio diario por unidad). La cantidad disponible de accesorios indica el número de éstos que no están alquilados.·	El monto a pagar por concepto de accesorios o servicios y el subtotal por concepto de extras es, por defecto, 0.
+
+
+CASO DE USO:	6.4. Suprimir un Extra de un Contrato de Alquiler
+REFERENCIA:	GF6. Gestión de Servicios Complementarios
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Empleado
+RESUMEN:	Permite al Empleado suprimir uno o más extras contratados para el alquiler de un vehículo. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	·	Modificar un Contrato de Alquiler CUANDO el Empleado selecciona la opción Eliminar Extras DESPUÉS DEL PASO 6. 
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Empleado selecciona la opción Eliminar Extras.
+
+1.	SAV obtiene del contrato de alquiler el código de los extras contratados.
+2.	SAV muestra el código y nombre genérico de los extras contratados.
+3.	El Empleado elige el nombre genérico de un extra.
+4.	SAV obtiene los datos del extra.
+5.	SAV muestra los datos del extra.
+6.	SAV activa la opción Eliminar.
+7.	SI el Empleado elige la opción Eliminar ENTONCES
+7.1.	SI el extra es de tipo accesorio ENTONCES
+7.1.1.	SAV obtiene la cantidad de días de contratación del extra.
+7.1.2.	SAV obtiene la cantidad de unidades del extra que se alquilaron.
+7.1.3.	SAV actualiza la cantidad disponible del extra. (FÓRMULA 1)
+7.1.4.	SAV asigna el valor de cero a la cantidad de días de contratación del extra.
+7.1.5.	SAV calcula el monto a descontar por concepto de accesorios. (FÓRMULA 2)
+7.1.6.	SAV muestra el monto a descontar por concepto de accesorios.
+FIN SI
+7.2.	SI el extra es de tipo servicio ENTONCES
+7.2.1.	SAV obtiene la cantidad de días de contratación del extra.
+7.2.2.	SAV calcula el monto a descontar por concepto de servicios. (FÓRMULA 3)
+7.2.3.	SAV muestra el monto a descontar por concepto de servicios.
+FIN SI
+7.3.	SAV calcula el subtotal por concepto de extras. (FÓRMULA 4)
+7.4.	SAV muestra el subtotal por concepto de extras.
+7.5.	SAV activa la opción Eliminar Otro Extra.
+FIN SI
+8.	SI el Empleado elige la opción Eliminar Otro Extra ENTONCES
+8.1.	RETORNAR AL PASO 1.
+FIN SI
+FIN CASO DE USO Suprimir un Extra de un Contrato de Alquiler.
+
+POSTCONDICIÓN: Se ha obtenido la información de uno o más extras.
+FÓRMULA(S): 
+FÓRMULA 1: Unidades_Disponibles_Accesorio= Unidades_Disponibles_Accesorio + unidades_Alquiladas·	
+FÓRMULA 2: Monto_Descontar_Accesorio = Duración_Contrato_Accesorio x Tarifa_Extra·	
+FÓRMULA 3: Monto_Descontar_Servicio = Duración_Contrato_Servicio x Tarifa_Extra ·	
+FÓRMULA 4: Subtotal_Extras = Subtotal_Extras + (Monto_Accesorio - Monto_Descontar_Accesorio) +                               (Monto_Servicio - Monto_Descontar_Servicio)
+
+OBSERVACIONES:	·	Los datos de un extra son los siguientes: código (asignado por SAV), tipo (servicio o accesorio), descripción del extra, cantidad en existencia (para el caso de los accesorios), cantidad disponible (para el caso de los accesorios), limitaciones, observaciones y tarifa (en el caso de los accesorios se especifica el precio diario por unidad). La cantidad disponible de accesorios indica el número de éstos que no están alquilados.·	El monto a pagar por concepto de accesorios o servicios y el subtotal por concepto de extras es, por defecto, 0.
+
+CASO DE USO:	7.1. Apertura de un Contrato Laboral
+REFERENCIA:	GF7. Gestión de Empleados
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar la información de un contrato laboral establecido entre la empresa y empleado. Esta información incluye los datos y condiciones de dicho contrato. Además, en caso de que el Administrador los solicite, también hace posible el registro de los datos personales del empleado. Un empleado sólo puede tener vigente o activo un contrato laboral con la empresa.
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Apertura Contrato Laboral.
+
+1.	SAV solicita el DNI del empleado.
+2.	El Administrador introduce el DNI del empleado.
+3.	SAV determina si los datos del empleado ya están registrados. 
+4.	SAV determina si el empleado mantiene un contrato laboral vigente o activo con la empresa. 
+5.	SI el empleado ya está registrado ENTONCES
+5.1.	SAV muestra los datos del empleado.
+5.2.	SAV activa la opción Modificar Datos Empleado.
+SINO
+5.3.	INCLUIR Registrar Empleado.
+5.4.	SAV muestra los datos del empleado.
+FIN SI
+6.	SAV solicita la fecha de inicio, duración y condiciones del contrato laboral.
+7.	El Administrador introduce la fecha de inicio, duración y condiciones del contrato laboral.  
+8.	SAV activa la opción Registrar Contrato.
+9.	SI el Administrador elige la opción Registrar Contrato ENTONCES
+9.1.	SAV obtiene la fecha de registro del contrato laboral y el identificador del Administrador que realiza dicho registro.
+9.2.	SAV asigna un código de identificación al contrato laboral.
+9.3.	SAV registra el código y la fecha de registro del contrato laboral,  el DNI del empleado, la fecha de inicio,la duración, las condiciones del contrato laboral y el identificador del Administrador que realiza dicho registro.
+9.4.	SI  fecha de registro < fecha de inicio ENTONCES
+9.4.1.	SAV asigna al contrato laboral el estado "activo".
+SINO
+9.4.2.	SAV asigna al contrato laboral el estado "vigente".
+FIN SI
+FIN SI
+FIN CASO DE USO Apertura de un Contrato Laboral.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Contrato laboral vigente o activo.
+1.1.	SAV muestra el mensaje "Contrato Laboral Existente". 
+
+FIN CASO DE USO Apertura de un Contrato Laboral.
+POSTCONDICIÓN:	·	Hay un contrato laboral vigente o activo de un empleado.
+OBSERVACIONES:	·	Los datos de un contrato laboral son: código de identificación, estado, fecha de registro, identificador del Administrador que realizó dicho registro, DNI del empleado a quien se elabora el contrato, fecha de inicio, duración y condiciones del contrato laboral.·	Un contrato laboral tiene uno de los siguientes estados: "vigente" si la fecha de inicio es anterior a la actual y la fecha de culminación es posterior a la actual; "activo" si la fecha de registro es anterior a la fecha de inicio; "culminado" si la fecha de culminación es anterior a la actual; "anulado" cuando el administrador rescinde el contrato laboral.
+
+
+CASO DE USO:	7.2. Modificar los Datos de un Contrato Laboral
+REFERENCIA:	GF7. Gestión de Empleados
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite modificar la información de un contrato laboral entre la empresa y uno de sus empleados. Tal modificación sólo se hará efectiva si el contrato laboral está vigente o activo. 
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Modificar Contrato Laboral.
+
+1.	SAV solicita el DNI del empleado.
+2.	El Administrador introduce el DNI del empleado.
+3.	SAV determina la existencia del DNI del empleado.
+4.	SAV determina si el empleado mantiene un contrato laboral vigente o activo con la empresa.
+5.	SAV obtiene el código de los contratos laborales vigentes activos del empleado.
+6.	SAV muestra el código de los contratos laborales vigentes y activos del empleado.
+7.	El Administrador elige el código de un contrato laboral.
+8.	SAV obtiene los datos del contrato laboral del empleado.
+9.	SAV muestra los datos del contrato laboral del empleado.  
+10.	El Administrador introduce los nuevos datos del contrato laboral del empleado.
+11.	SAV activa la opción Modificar Contrato.
+12.	SI el Administrador elige la opción Registrar Contrato ENTONCES
+12.1.	SAV obtiene la fecha de modificación del contrato laboral y el identificador del Administrador que realiza dicha modificación.
+12.2.	SAV registra los datos del contrato laboral, la fecha de modificación y el identificador del Administrador que realiza dicha modificación.
+12.3.	SAV actualiza el estado del contrato laboral.
+FIN SI
+FIN CASO DE USO Modificar los Datos de un Contrato Laboral.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Empleado inexistente.
+1.1.	SAV muestra el mensaje "Empleado Inexistente". 
+FIN CASO DE USO Modificar los Datos de un Contrato Laboral.
+
+AP2.	Contrato laboral inexistente o anulado o culminado.
+2.1.	SAV muestra el mensaje "Contrato Laboral Sin Condiciones de Modificación". 
+FIN CASO DE USO Modificar los Datos de un Contrato Laboral.
+
+POSTCONDICIÓN:	·	Se ha modificado los datos del contrato laboral de un empleado.
+OBSERVACIONES:	·	Los datos de un contrato laboral son: código de identificación, estado, fecha de registro, identificador del Administrador que realizó dicho registro, DNI del empleado a quien se elabora el contrato, fecha de inicio, duración y condiciones del contrato laboral.·	Un contrato laboral tiene uno de los siguientes estados: "vigente" si la fecha de inicio es anterior a la actual y la fecha de culminación es posterior a la actual; "activo" si la fecha de registro es anterior a la fecha de inicio; "culminado" si la fecha de culminación es anterior a la actual; "anulado" cuando el administrador rescinde el contrato laboral.
+
+
+CASO DE USO:	7.3. Rescindir un Contrato Laboral
+REFERENCIA:	GF7. Gestión de Empleados
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar la disolución del vínculo contractual establecido entre un empleado y la empresa.  
+PRECONDICIÓN:	·	Hay al menos un contrato laboral vigente.
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA
+INICIA CUANDO el Administrador selecciona la opción Rescindir un Contrato Laboral.
+
+1.	SAV solicita el DNI del empleado.
+2.	El Administrador introduce el DNI del empleado.
+3.	SAV determina la existencia del DNI del empleado.
+4.	SAV determina si el empleado mantiene un contrato laboral vigente con la empresa.
+5.	SAV obtiene los datos del contrato laboral vigente que el empleado mantiene con la empresa.
+6.	SAV muestra los datos del contrato laboral del empleado.  
+7.	SAV activa la opción Anular Contrato.
+8.	SI el Administrador elige la opción Anular Contrato ENTONCES
+8.1.	SAV pregunta al Administrador las razones de la anulación del contrato laboral.
+8.2.	El Administrador introduce las razones de la anulación del contrato laboral.
+8.3.	SAV obtiene la fecha de anulación del contrato laboral y el identificador del Administrador que la realiza.
+8.4.	SAV registra los datos del contrato laboral, la fecha de anulación y el identificador del Administrador que la realiza.
+8.5.	SAV asigna al contrato laboral el estado "anulado".
+FIN SI
+FIN CASO DE USO Rescindir un Contrato Laboral.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Empleado inexistente.
+1.1.	SAV muestra el mensaje "Empleado Inexistente". 
+FIN CASO DE USO Rescindir un Contrato Laboral.
+
+AP2.	Contrato laboral inexistente o sin vigor.
+2.1.	SAV muestra el mensaje "Contrato Laboral Inexistente" o "Contrato Laboral Sin Vigor". 
+FIN CASO DE USO Rescindir un Contrato Laboral.
+
+POSTCONDICIÓN:	·	Se ha rescindido un contrato laboral.
+OBSERVACIONES:	·	Los datos de un contrato laboral son: código de identificación, estado, fecha de registro, identificador del Administrador que realizó dicho registro, DNI del empleado a quien se elabora el contrato, fecha de inicio, duración y condiciones del contrato laboral.·	Un contrato laboral tiene uno de los siguientes estados: "vigente" si la fecha de inicio es anterior a la actual y la fecha de culminación es posterior a la actual; "activo" si la fecha de registro es anterior a la fecha de inicio; "culminado" si la fecha de culminación es anterior a la actual; "anulado" cuando el administrador rescinde el contrato laboral.
+
+
+CASO DE USO:	7.4. Registrar un Nuevo Empleado
+REFERENCIA:	GF7. Gestión de Empleados
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite registrar los datos de un empleado de la empresa. Una persona sólo se considerará empleado durante el lapso en el que dicha persona y la empresa mantengan vigente un contrato laboral.
+PRECONDICIÓN:	Ninguna
+EXTIENDE A:	Ninguno
+
+TRAYECTORIA BÁSICA 
+INICIA CUANDO el Administrador selecciona la opción Registrar Empleado
+
+1.	SAV solicita el DNI del nuevo empleado.
+2.	SAV determina la existencia del empleado.
+3.	SAV solicita los datos del empleado.
+4.	El Administrador introduce los datos del empleado. 
+5.	SAV activa la opción Registrar.
+6.	SI el Administrador elige la opción Registrar ENTONCES
+6.1.	SAV obtiene la fecha de registro del empleado y el identificador del Administrador que la realiza.
+6.2.	SAV registra los datos del empleado, fecha de registro del empleado y el identificador del Administrador que la realiza.
+FIN SI
+FIN CASO DE USO Registrar un Nuevo Empleado.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Empleado existente.
+1.1.	SAV muestra el mensaje "Empleado Existente". 
+FIN CASO DE USO Registrar un Nuevo Empleado.
+
+POSTCONDICIÓN:	·	Se ha registrado los datos de un empleado.
+OBSERVACIONES:	·	Los datos de un empleado son: DNI (o pasaporte), nombre completo, dirección de habitación, teléfono(s), fecha de ingreso, observaciones, fecha de registro e identificador del Administrador que realizó dicho registro.
+
+
+CASO DE USO:	7.5. Modificar los Datos de un Empleado
+REFERENCIA:	GF7. Gestión de Empleados
+ENTIDAD:	SAV
+ACTOR PRINCIPAL:	Administrador
+RESUMEN:	Permite cambiar los datos registrados de un empleado de la empresa.
+PRECONDICIÓN:	·	Hay al menos un empleado registrado.
+EXTIENDE A:	·	Apertura de un Contrato Laboral CUANDO el Administrador selecciona la opción Modificar Datos Empleado DESPUÉS DEL PASO 5.2.
+
+TRAYECTORIA BÁSICA 
+INICIA CUANDO el Administrador selecciona la opción Modificar Datos Empleado.
+
+1.	SAV solicita el DNI del empleado.
+2.	SAV determina la existencia del empleado.
+3.	SAV obtiene los datos del empleado.
+4.	SAV muestra los datos del empleado.
+5.	El Administrador introduce los nuevos datos del empleado. 
+6.	SAV activa la opción Registrar.
+7.	SI el Administrador elige la opción Registrar ENTONCES
+7.1.	SAV obtiene la fecha de modificación y el identificador del Administrador que la realiza.
+7.2.	SAV registra los datos del empleado, fecha de modificación y el identificador del Administrador que la realiza.
+FIN SI
+FIN CASO DE USO Modificar los Datos de un Empleado.
+
+TRAYECTORIA(S) ALTERNA(S)
+
+AP1.	Empleado Inexistente.
+1.1.	SAV muestra el mensaje "Empleado Inexistente". 
+FIN CASO DE USO Modificar los Datos de un Empleado.
+
+POSTCONDICIÓN:	Se ha modificados los datos de un empleado.
+OBSERVACIONES:	Los datos de un empleado son: DNI (o pasaporte), nombre completo, dirección de habitación, teléfono(s), fecha de ingreso, observaciones, fecha de registro e identificador del Administrador que realizó dicho registro.
+

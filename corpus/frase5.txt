@@ -1,0 +1,1 @@
+660 SAV obtains the modification date and the identifier of the Administrator that carries out it.

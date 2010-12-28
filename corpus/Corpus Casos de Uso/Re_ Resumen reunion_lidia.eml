@@ -1,0 +1,199 @@
+From lmoreno@dsic.upv.es jue sep 25 12:35:37 2008
+Received: from helena2.dsic.upv.es (helena2.dsic.upv.es [158.42.185.128])
+	by webmail.dsic.upv.es (Horde Framework) with HTTP; Thu, 25 Sep 2008
+	12:35:37 +0200
+Message-ID: <20080925123537.70891lj7wypa8hog@webmail.dsic.upv.es>
+Date: Thu, 25 Sep 2008 12:35:37 +0200
+From: Lidia Moreno <lmoreno@dsic.upv.es>
+To: Paloma Moreda Pozo <moreda@dlsi.ua.es>
+Cc: Nati Prieto <nprieto@dsic.upv.es>
+Subject: Re: Resumen =?iso-8859-1?b?cmV1bmnzbg==?=
+References: <20080724011334.9341274jxqf9nk74@webmail.dsic.upv.es>
+	<48DA210F.7090801@dlsi.ua.es>
+In-Reply-To: <48DA210F.7090801@dlsi.ua.es>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset=ISO-8859-1;
+	DelSp="Yes";
+	format="flowed"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Bcc: idiaz@dsic.upv.es
+Status: RO
+Content-Length: 7181
+X-UID: 930
+X-Keywords:                                                                                                    
+
+Quoting Paloma Moreda Pozo <moreda@dlsi.ua.es>:
+
+> Lidia Moreno escribi=F3:
+>> Hola Paloma,
+>>
+>> nos hemos juntado las 3 para analizar los resultados de SemRol y te =20
+>> resumo los temas a tener en cuenta:
+>>
+>> - Formato para expresar oraciones o partes de =E9stas que no queremos =20
+>> que se analicen. Este es el caso de mensajes, literals, o palabras =20
+>> clave (como INITIATES WHEN:).
+> Opciones: o no se pasan en el fichero a anotar, o bien se marcan de
+
+> alguna manera  que convengamos para ser ignoradas, por ejemplo =20
+> podr=EDa ser <NIL> xxx </NIL>, aunque quiz=E1 la primera opci=F3n sea la =
+=20
+> m=E1s sencilla. Ya me dir=E9is algo sobre esto.
+
+MEJOR MARCAR LITERALES O LO QUE QUERAMOS IGNORAR  CON EL FORMATO MAS =20
+USUAL =BFCOMO LO MARCAN EN PROPBANK U OTROS CORPUS?
+
+>>
+>> - Poder extender el reconocedor de Entidades nombradas (NE)o =20
+>> expresar de alguna manera que un grupo de palabras forman una NE =20
+>> (como Register Purchase, podriamos ponerlo todo junto o unido =20
+>> Register_Purchase).
+> Esto no lo entiendo muy bien. El fichero que yo os devuelvo anotado =20
+> no lleva anotadas las entidades. Si lo queremos hacer y os apa=F1a =20
+> respetar el formato de cada palabra en una l=EDnea y su anotaci=F3n en =20
+> columnas, no hab=EDa m=E1s problema si se sigue anotaci=F3n BIO. Por =20
+> ejemplo:
+>
+> Register   B-XXX
+> Purchase  I-XXX
+>
+> donde XXX corresponder=EDa al tipo de la entidad
+
+EN EL CASO DE PONERLO TODO JUNTO COMO Register_Purchase CUAL SERIA LA =20
+ETIQUETA POS QUE LE ASIGNARIA A ESTO =BFNOMBRE?.
+
+
+>>
+>> - Ampliar la cobertura del l=E9xico (como el verbo request que no lo reco=
+noce)
+> Habr=EDa que coger unos cuantos ejemplos de oraciones con el verbo =20
+> request, anotarlas nosotros e incluirlas en el corpus de =20
+> entrenamiento.
+
+cUANTAS FRASES HARIAN FALTA ETIQUETAR?
+
+
+>> - Asignaci=F3n de roles incorrectos en las oraciones 3,16,17,18,19
+> La herramienta de anotaci=F3n no anota con 100% de precisi=F3n. Hacemos =
+=20
+> una revisi=F3n manual despu=E9s? No se muy bien como comerme esto. Puedo =
+=20
+> intentar darle otra pensadita a features nuevas, a ver si mejoramos =20
+> algo la herramienta, eso por supuesto. Otra cosa es que lo =20
+> consiga.....
+>>
+>> - Deber=EDa asignar de roles AM-LOC o algo as=ED cuando tenemos un CC =20
+>> introducido por la preposici=F3n ?in?, ?on?? como sucede en la =20
+>> oraci=F3n 2.
+> Yo creo que esto tiene que ver con lo mismo de los otros errores, no?
+
+iGUAL SI QUE SERIA NECESARIO HACER UNA REVISION MANUAL, CUANDO NOS =20
+PASES EL FICHERO CON EL CORPUS DE LAS FRASES QUE HAS ETIQUETADO =20
+VOLVEMOS A REVISARLO Y CORREGIMOS COSAS MANUALMENTE. PERO PARA PODER =20
+ENTRENAR CON ESTAS FRASES ANOTADAS Y CORREGIDAS MANUALMENTE DEBERIAMOS =20
+USAR EL MISMO FORMATO DEL PROPBANK O ANCORA, ESE QUE ESTA ENCOLUMNADO =20
+POR CADA PALABRA Y CON TODA LA INFORMACION COMPLETA =BFNO? SI ES ASI, =20
+CREO QUE DEBERIAS PASARNOS LA SALIDA DEL ETIQUETADOR CON TODA ESTA =20
+INFORMACI=D3N
+
+  >>
+>> - Tambi=E9n ser=EDa deseable conseguir una salida con informaci=F3n m=E1s=
+ =20
+>> completa como conseguir todas las palabras, categor=EDas de palabras, =20
+>> sintaxis...
+> Est=E1 claro que para anotar los roles antes se hacen unos cuantos =20
+> an=E1lisis. No es costoso devolverlo todo. El formato este de columnas =20
+> y palabras en l=EDneas os apa=F1a?
+>>
+DE FORMATOS ENTIENDES TU MAS, SIEMPRE ES BUENO SEGUIR LOS ESTANDARES. =20
+EN UN CORREO DE ROSA MORANTE ESTA ME PEDIA QUE LAS FRASES ESTUVIERAN =20
+CON ESTE FORMATO ENCOLUMNADO PARA PODER ANALIZARLAS. ADJUNTO EJEMPLO
+
+1=09El=09el=09d=09da=09gen=3Dm|num=3Ds=092=09ESP=09_
+2=09presidente=09presidente=09n=09nc=09gen=3Dm|num=3Ds=0910=09SUJ=09ARG1
+3=09del=09del=09s=09sp=09gen=3Dm|num=3Ds|for=3Dc=092=09CN=09_
+4=09=C3=B3rgano=09=C3=B3rgano=09n=09nc=09gen=3Dm|num=3Ds=093=09_=09_
+5=09regulador=09regulador=09a=09aq=09gen=3Dm|num=3Ds=094=09CN=09_
+6=09de=09de=09s=09sp=09for=3Ds=095=09CA=09_
+7=09las=09el=09d=09da=09gen=3Df|num=3Dp=098=09ESP=09_
+8=09Telecomunicaciones=09Telecomunicaciones=09n=09np=09_=096=09_=09_
+9=09se=09=C3(c)l=09p=09p0=09per=3D3=0910=09_=09_
+10=09mostr=C3=B3=09mostrar=09v=09vm=09num=3Ds|per=3D3|mod=3Di|tmp=3Ds=090=09=
+ROOT=09_
+11=09partidario=09partidario=09a=09aq=09gen=3Dm|num=3Ds=0910=09CPRED.SUJ=09A=
+RG_PRED
+12=09de=09de=09s=09sp=09for=3Ds=0911=09CA=09_
+13=09completar=09completar=09v=09vm=09mod=3Dn=0912=09_=09_
+14=09esta=09este=09d=09dd=09num=3Ds|gen=3Df=0915=09ESP=09_
+15=09liberalizaci=C3=B3n=09liberalizaci=C3=B3n=09n=09nc=09num=3Ds|gen=3Df=09=
+13=09CD=09ARG1
+16=09de=09de=09s=09sp=09for=3Ds=0915=09CN=09_
+17=09las=09el=09d=09da=09gen=3Df|num=3Dp=0918=09ESP=09_
+18=09telecomunicaciones=09telecomunicaci=C3=B3n=09n=09nc=09gen=3Df|num=3Dp=
+=0916=09_=09_
+19=09con=09con=09s=09sp=09for=3Ds=0913=09CREG=09ARG_INSTR
+20=09otras=09otro=09d=09di=09gen=3Df|num=3Dp=0921=09ESP=09_
+21=09medidas=09medida=09n=09nc=09gen=3Df|num=3Dp=0919=09_=09_
+22=09que=09que=09p=09pr=09gen=3Dc|num=3Dn=0923=09SUJ=09ARG_INSTR
+23=09incentiven=09incentivar=09v=09vm=09num=3Dp|per=3D3|mod=3Ds|tmp=3Dp=0921=
+=09CN=09_
+24=09la=09el=09d=09da=09num=3Ds|gen=3Df=0925=09ESP=09_
+25=09competencia=09competencia=09n=09nc=09num=3Ds|gen=3Df=0923=09CD=09ARG1
+26=09como_puede_ser=09como_puede_ser=09s=09sp=09for=3Ds=0921=09CN=09_
+27=09abrir=09abrir=09v=09vm=09mod=3Dn=0926=09_=09_
+28=09el=09el=09d=09da=09gen=3Dm|num=3Ds=0929=09ESP=09_
+29=09acceso=09acceso=09n=09nc=09gen=3Dm|num=3Ds=0927=09CD=09ARG1
+30=09a=09a=09s=09sp=09for=3Ds=0929=09CN=09_
+31=09la=09el=09d=09da=09num=3Ds|gen=3Df=0932=09ESP=09_
+32=09informaci=C3=B3n=09informaci=C3=B3n=09n=09nc=09num=3Ds|gen=3Df=0930=09_=
+=09_
+33=09de=09de=09s=09sp=09for=3Ds=0932=09CN=09_
+34=09los=09el=09d=09da=09gen=3Dm|num=3Dp=0935=09ESP=09_
+35=09clientes=09cliente=09n=09nc=09num=3Dp|gen=3Dc=0933=09_=09_
+36=09de=09de=09s=09sp=09for=3Ds=0935=09CN=09_
+37=09Telef=C3=B3nica=09Telef=C3=B3nica=09n=09np=09_=0936=09_=09_
+38=09a=09a=09s=09sp=09for=3Ds=0927=09CI=09ARG_BEN
+39=09otros=09otro=09d=09di=09gen=3Dm|num=3Dp=0940=09ESP=09_
+40=09operadores=09operador=09n=09nc=09gen=3Dm|num=3Dp=0938=09_=09_
+41=09.=09.=09F=09Fp=09_=0910=09PUNC=09_
+
+
+
+>>
+>> No se si algunas de estas cosas tienen soluci=F3n o no, =BFque opinas Pal=
+oma?.
+>>
+>> Bueno, les he contado lo de hacer un paper para el RANLP'09 y aqu=ED =20
+>> estamos animadas. Nos hemos repartido algunas faenas:
+>> - Nati con sus programas para extraer los frames de roles y otras =20
+>> informaciones que hemos considerdo,
+>> - Isabel con mapeos frames roles con patrones modelado
+>> - Lidia con Nombank, y
+>> - Paloma con intentar mejorar la salida del SEmRol
+>>
+>> A=FAn vamos a estar operativas unos d=EDas por la universidad as=ED que =
+=20
+>> si os parece, si alguna avanza en alguno de los temas y quiere =20
+>> compartirlo, que env=EDe un email al resto del grupo y, en cualquier =20
+>> caso intentaremos juntarnos en Septiembre.
+>>
+>> Besets,
+>>
+>> Lidia
+>>
+>>
+>>
+>>
+>>
+>> ----------------------------------------------------------------
+>> This message was sent using IMP, the Internet Messaging Program.
+>>
+>
+>
+
+
+
+----------------------------------------------------------------
+This message was sent using IMP, the Internet Messaging Program.

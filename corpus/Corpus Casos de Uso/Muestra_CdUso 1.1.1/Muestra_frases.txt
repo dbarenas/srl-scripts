@@ -1,0 +1,33 @@
+The system verifies the deadline of the rental contract of each lessee of the real estate agency.
+The system registers the personal details of the lessee and the address of the property in the rental contract.
+The system registers the buyer personal details, the salesman commission and the purchase deadline.
+
+
+
+BUY A VEHICLE
+
+INITIATES WHEN the Administrator selects the option Buy a Vehicle.
+SAV requests the Administrator the registration number of the vehicle.
+The Administrator introduces the registration number of the vehicle.
+SAV validates the registration number of the vehicle.
+SAV determines the existence of the registration number of the vehicle.
+SAV requests the identification of the responsible for the purchase of the vehicle.
+The Administrator requests the identification of the responsible for the purchase of the vehicle.
+SAV requests the purchase date and the cost of the vehicle.
+The Administrator introduces the purchase date and the cost of the vehicle.
+SAV enables the option Register Purchase.
+
+If the Administrator selects the option Register Purchase then:
+SAV registers the purchase date and the cost of the vehicle.
+SAV registers the date and hour of the registration of the purchase of the vehicle.
+SAV registers the responsible for the purchase of the vehicle.
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+SAV enables the option Assure Vehicle.
+
+Invalid registration number.
+SAV shows the Administrator the message Invalid or Existing Registration Number.
+
+Existing registration number.
+SAV shows the Administrator the message Invalid or Existing Registration Number.

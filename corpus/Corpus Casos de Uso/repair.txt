@@ -1,0 +1,8 @@
+SAV obtains the date and hour of the request of repair.
+SAV registers the data of the request of repair.
+SAV obtains the data of the request of repair.
+SAV obtains the place, date and hour of the registration of the request of repair of the vehicle.
+SAV obtains the date and hour of the repair requestr.
+SAV registers the data of the repair request.
+SAV obtains the data of the repair request.
+SAV obtains the place, date and hour of the registration of the repair request of the vehicle.

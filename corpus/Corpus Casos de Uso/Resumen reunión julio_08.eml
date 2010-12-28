@@ -1,0 +1,88 @@
+From lmoreno@dsic.upv.es dj jul 24 01:13:34 2008
+Return-Path: <lmoreno@dsic.upv.es>
+X-Original-To: lmoreno@dsic.upv.es
+Delivered-To: lmoreno@dsic.upv.es
+Received: from localhost (webmailx.dsic.upv.es [158.42.185.112])
+	by batman.dsic.upv.es (Postfix) with ESMTP id 44BB7177FE;
+	Thu, 24 Jul 2008 01:12:48 +0200 (CEST)
+Received: from 56.pool85-55-13.dynamic.orange.es
+	(56.pool85-55-13.dynamic.orange.es [85.55.13.56]) by webmail.dsic.upv.es
+	(Horde Framework) with HTTP; Thu, 24 Jul 2008 01:13:34 +0200
+Message-ID: <20080724011334.9341274jxqf9nk74@webmail.dsic.upv.es>
+Date: Thu, 24 Jul 2008 01:13:34 +0200
+From: Lidia Moreno <lmoreno@dsic.upv.es>
+To: Paloma Moreda Pozo <moreda@dlsi.ua.es>
+Cc: Nati Prieto <nprieto@dsic.upv.es>,
+	Isabel =?iso-8859-1?b?RO1heg==?= <idiaz@cantv.net>
+Subject: Resumen =?iso-8859-1?b?cmV1bmnzbg==?=
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset=ISO-8859-1;
+	DelSp="Yes";
+	format="flowed"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+User-Agent: Internet Messaging Program (IMP) H3 (4.2-RC1)
+Status: RO
+X-UID: 101281
+Content-Length: 1981
+X-Keywords:                                                                                                   
+
+Hola Paloma,
+
+nos hemos juntado las 3 para analizar los resultados de SemRol y te =20
+resumo los temas a tener en cuenta:
+
+- Formato para expresar oraciones o partes de =E9stas que no queremos =20
+que se analicen. Este es el caso de mensajes, literals, o palabras =20
+clave (como INITIATES WHEN:).
+
+- Poder extender el reconocedor de Entidades nombradas (NE)o expresar =20
+de alguna manera que un grupo de palabras forman una NE (como Register =20
+Purchase, podriamos ponerlo todo junto o unido Register_Purchase).
+
+- Ampliar la cobertura del l=E9xico (como el verbo request que no lo reconoc=
+e)
+
+- Buscar la soluci=F3n al problema que ocurre a partir de la linea 1756 =20
+aprox. Donde el etiquetador parece rayarse y ya no da roles.
+
+- Asignaci=F3n de roles incorrectos en las oraciones 3,16,17,18,19
+
+- Deber=EDa asignar de roles AM-LOC o algo as=ED cuando tenemos un CC =20
+introducido por la preposici=F3n ?in?, ?on?? como sucede en la oraci=F3n 2.
+
+- Tambi=E9n ser=EDa deseable conseguir una salida con informaci=F3n m=E1s =
+=20
+completa como conseguir todas las palabras, categor=EDas de palabras, =20
+sintaxis...
+
+
+No se si algunas de estas cosas tienen soluci=F3n o no, =BFque opinas Paloma=
+?.
+
+Bueno, les he contado lo de hacer un paper para el RANLP'09 y aqu=ED =20
+estamos animadas. Nos hemos repartido algunas faenas:
+- Nati con sus programas para extraer los frames de roles y otras =20
+informaciones que hemos considerdo,
+- Isabel con mapeos frames roles con patrones modelado
+- Lidia con Nombank, y
+- Paloma con intentar mejorar la salida del SEmRol
+
+A=FAn vamos a estar operativas unos d=EDas por la universidad as=ED que si =
+=20
+os parece, si alguna avanza en alguno de los temas y quiere =20
+compartirlo, que env=EDe un email al resto del grupo y, en cualquier =20
+caso intentaremos juntarnos en Septiembre.
+
+Besets,
+
+Lidia
+
+
+
+
+
+----------------------------------------------------------------
+This message was sent using IMP, the Internet Messaging Program.
+

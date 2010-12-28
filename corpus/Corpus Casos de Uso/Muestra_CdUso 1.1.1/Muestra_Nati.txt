@@ -1,0 +1,65 @@
+1... Analizando... The system verifies the deadline of the rental contract of each lessee of the real estate agency.
+(A0 The   system ) (V verifies V) (A1 the   deadline   of   the   rental   contract   of   each   lessee   of   the   real   estate   agency. ) 
+2... Analizando... The system registers the personal details of the lessee and the address of the property in the rental contract.
+(A0 The   system ) (V registers V) (A1 the   personal   details   of   the   lessee   and   the   address   of   the   property   in   the   rental   contract. ) 
+3... Analizando... The system registers the buyer personal details, the salesman commission and the purchase deadline.
+(A0 The   system ) (V registers V) (A1 the   buyer ) (A3 personal   details,   the   salesman   commission   and   the   purchase   deadline.  
+4... Analizando... BUY A VEHICLE
+(V BUY V) (A1 A   VEHICLE ) 
+5... Analizando... INITIATES WHEN the Administrator selects the option Buy a Vehicle.
+(A0 INITIATES ) (R-AM-TMP WHEN ) (A0 the   Administrator ) (V selects V) (A1 the   option )  Buy   a   Vehicle.  
+(AM-TMP INITIATES   WHEN   the   Administrator   selects   the   option ) (V Buy V) (A1 a   Vehicle. ) 
+6... Analizando... SAV requests the Administrator the registration number of the vehicle.
+.... Se detecta frase sin verbo (6)
+7... Analizando... The Administrator introduces the registration number of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   registration   number   of   the   vehicle. ) 
+8... Analizando... SAV validates the registration number of the vehicle.
+(A0 SAV ) (V validates V) (A1 the   registration   number   of   the   vehicle. ) 
+9... Analizando... SAV determines the existence of the registration number of the vehicle.
+(A0 SAV ) (V determines V) (A1 the   existence   of   the   registration   number   of   the   vehicle. ) 
+10... Analizando... SAV requests the identification of the responsible for the purchase of the vehicle.
+.... Se detecta frase sin verbo (10)
+11... Analizando... The Administrator requests the identification of the responsible for the purchase of the vehicle.
+.... Se detecta frase sin verbo (11)
+12... Analizando... SAV requests the purchase date and the cost of the vehicle.
+.... Se detecta frase sin verbo (12)
+13... Analizando... The Administrator introduces the purchase date and the cost of the vehicle.
+(A0 The   Administrator ) (V introduces V) (A1 the   purchase   date   and   the   cost   of   the   vehicle. ) 
+14... Analizando... SAV enables the option Register Purchase.
+(A0 SAV ) (V enables V) (A1 the   option   Register   Purchase. ) 
+15... Analizando... If the Administrator selects the option Register Purchase then:
+ If  (A0 the   Administrator ) (V selects V) (A1 the   option )  Register   Purchase   then:  
+(A1 If   the   Administrator   selects   the   option ) (A0 Register ) (V Purchase V) (AM-TMP then: ) 
+16... Analizando... SAV registers the purchase date and the cost of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   purchase   date   and   the   cost   of   the   vehicle. ) 
+17... Analizando... SAV registers the date and hour of the registration of the purchase of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   date   and   hour   of   the   registration   of   the   purchase   of   the   vehicle. ) 
+18... Analizando... SAV registers the responsible for the purchase of the vehicle.
+(A1 SAV ) (V registers V) (A3 the   responsible   for   the   purchase   of   the   vehicle. ) 
+19... Analizando... SAV assigns to the vehicle the state "disabled".
+(A1 SAV ) (V assigns V) (A2 to   the   vehicle )  the   state   "disabled".  
+20... Analizando... SAV enables the option Maintenance.
+(A0 SAV ) (V enables V) (A1 the   option   Maintenance. ) 
+21... Analizando... SAV enables the option Repair.
+(A0 SAV ) (V enables V) (A1 the   option   Repair. ) 
+22... Analizando... SAV enables the option Assure Vehicle.
+(A0 SAV ) (V enables V) (A1 the   option   Assure   Vehicle. ) 
+ SAV   enables  (AM-MOD the   option ) (V Assure V) (A1 Vehicle. ) 
+23... Analizando... Invalid registration number.
+.... Se detecta frase sin verbo (23)
+24... Analizando... SAV shows the Administrator the message Invalid or Existing Registration Number.
+(A0 SAV ) (V shows V) (A1 the   Administrator ) (A1 the   message ) (AM-TMP Invalid   or   Existing   Registration   Number. ) 
+ SAV   shows   the   Administrator   the   message   Invalid   or  (V Existing V) (A1 Registration )  Number.  
+assure : [AM-MOD V A1  | 1]
+purchase : [A1 A0 V AM-TMP  | 1]
+buy : [V A1  | 1, AM-TMP V A1  | 1]
+introduce : [A0 V A1  | 2]
+enable : [A0 V A1  | 4]
+exist : [V A1  | 1]
+validate : [A0 V A1  | 1]
+verify : [A0 V A1  | 1]
+select : [A0 R-AM-TMP A0 V A1  | 1, A0 V A1  | 1]
+show : [A0 V A1 A1 AM-TMP  | 1]
+register : [A0 V A1  | 1, A0 V A1 A3  | 1, A1 V A3  | 3]
+determine : [A0 V A1  | 1]
+assign : [A1 V A2  | 1]

@@ -1,0 +1,131 @@
+From moreda@dlsi.ua.es mi√© sep 24 13:14:19 2008
+Return-Path: <moreda@dlsi.ua.es>
+X-Original-To: lmoreno@dsic.upv.es
+Delivered-To: lmoreno@dsic.upv.es
+Received: from pop.upv.es (deneb.cc.upv.es [158.42.3.51])
+	by batman.dsic.upv.es (Postfix) with ESMTP id 71CFE17801;
+	Wed, 24 Sep 2008 13:14:28 +0200 (CEST)
+Received: from mx.upv.es (mx3.cc.upv.es [158.42.250.32])
+	by pop.upv.es (8.11.3/8.11.3) with ESMTP id m8OBESE06672;
+	Wed, 24 Sep 2008 13:14:28 +0200 (METDST)
+Received: from aitana.cpd.ua.es (aitana.cpd.ua.es [193.145.233.5])
+	by mx.upv.es (8.13.7/8.13.6) with ESMTP id m8OBEMTj027392;
+	Wed, 24 Sep 2008 13:14:27 +0200
+Received: from aitana.cpd.ua.es (aitana.cpd.ua.es [193.145.233.5])
+	by aitana.cpd.ua.es (8.12.11.20060614/8.12.11) with ESMTP id m8OBEMWI008225;
+	Wed, 24 Sep 2008 13:14:22 +0200
+Received: from altea.dlsi.ua.es ([172.25.240.66])
+	by aitana.cpd.ua.es (8.12.11.20060614/8.12.11) with ESMTP id m8OBELKq008218;
+	Wed, 24 Sep 2008 13:14:21 +0200
+Received: from [127.0.0.1] (ppaloma.dlsi.ua.es [172.16.242.93])
+	by altea.dlsi.ua.es (8.13.8/8.13.8/Debian-3) with ESMTP id m8OBEKe2004765;
+	Wed, 24 Sep 2008 13:14:20 +0200
+Message-ID: <48DA210B.7060802@dlsi.ua.es>
+Date: Wed, 24 Sep 2008 13:14:19 +0200
+From: Paloma Moreda Pozo <moreda@dlsi.ua.es>
+User-Agent: Thunderbird 2.0.0.16 (Windows/20080708)
+MIME-Version: 1.0
+To: Lidia Moreno <lmoreno@dsic.upv.es>, Nati Prieto <nprieto@dsic.upv.es>
+Subject: Re: Chica Rol
+References: <48D90AEA.6000304@dlsi.ua.es> <20080924105304.1672537v82ltwx0k@webmail.dsic.upv.es>
+In-Reply-To: <20080924105304.1672537v82ltwx0k@webmail.dsic.upv.es>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+X-Antivirus: avast! (VPS 080812-0, 12/08/2008), Outbound message
+X-Antivirus-Status: Clean
+X-Virus-Scanned: ClamAV version 0.94, clamav-milter version 0.94 on localhost
+X-Virus-Status: Clean
+X-Greylist: IP, sender and recipient auto-whitelisted, not delayed by milter-greylist-3.0 (mx.upv.es [158.42.250.32]); Wed, 24 Sep 2008 13:14:27 +0200 (CEST)
+Status: RO
+X-UID: 101837
+Content-Length: 2840
+X-Keywords:                                                                                                   
+
+Hola Lidia,
+
+Respecto al fichero seguiremos teniendo problemas que no hemos comentado 
+ni solucionado, pero que habÌais recogido ya en un correo de antes de 
+vacaciones. Para no marear aquÌ, os enviarÈ una contestaciÛn a ese 
+correo comentando las cosas que yo veo.
+
+Respecto a los roles con nombres lo primero que necesitamos es un corpus 
+con oraciones anotadas. De momento cogerÈ el nombank y empezarÈ a montar 
+algo.
+
+Respecto a la herramienta para el master por supuesto que la podÈis 
+utilizar. Lo ˙nico es que me digas una fecha para ver el tiempo que 
+tengo por pasaros algo m·s o menos mono.
+
+Adem·s de este que me dices, en la SEPLN comentamos un par de cosillas 
+m·s: buscar analizadores sint·cticos que nos permitieran resolver mejor 
+lo de los constituyentes, y la otra, hacer un modulito de detecciÛn de 
+constituyentes basado en reglas para oraciones sencillas. Para lo 
+primero tengo que quedar con Borja para la semana que viene. Para lo 
+segundo tendrÌamos que hablarlo porque ya tenÌais algo en esa lÌnea, no?
+
+En fin, voy a ver si yo tambiÈn voy cogiendo ya el ritmo que entre la 
+SEPLN y el CLEF llevo dos semanas por el mundo perdida, asÌ que ni te 
+cuento la semanita que llevo ahora......
+
+Un besico. Paloma,
+
+
+
+
+
+
+Cuando hablamos en la SEPLN, si no se me va la bola ahora, apuntamos 
+tres cosas:
+
+1.- la anotaciÛn de nombres
+2.- buscar analizadores sint·cticos que ayuden a la detecciÛn de los 
+constituyentes
+3.- definir un mÛdulo de reglas para oraciones sencillas
+
+
+
+
+Lidia Moreno escribiÛ:
+> Hola Paloma,
+>
+> Si que me acordaba, ahora tendrÈ que animarme a pedir el sexenio. Por 
+> cierto, el servidor me habÌa tirado tu email a una carpeta basura, 
+> supongo que por el asunto SEXenio, tiene gracia.
+>
+> Nati y yo hemos quedado maÒana para continuar trabajando con el 
+> fichero que nos pasaste. A ver que sale de todo esto, te tendrÈ 
+> informada.Ya te has puesto las pilas con lo de intentar los roles para 
+> nombres?. Si se te ocurre alguna cosa interesante nos la cuentas.
+>
+> Otra cosa, me gustarÌa poder plantear a los alumnos de master de este 
+> aÒo trabajos relacionados con el etiquetado de roles. Montarles una 
+> pr·ctica parecida a la que hacen de etiquetado morfosint·ctico. Darles 
+> el corpus etiquetado, y las herramientas necesarias para que entrenen 
+> y eval˙en. øPodrÌan descargarse el tuyo u otros como base?
+>
+> MuchÌsimas gracias,
+>
+> Lidia
+>
+>
+>
+>
+>  Quoting Paloma Moreda Pozo <moreda@dlsi.ua.es>:
+>
+>> Hola Lidia,
+>>
+>> En la SEPLN quedamos en que te enviarÌa el impreso de solicitud tal y 
+>> como lo presentÈ yo este aÒo para el sexenio. Bueno, pues na, aquÌ lo 
+>> tienes.
+>>
+>> Espero que te sirva de algo.
+>>
+>> Un besico. Paloma,
+>>
+>
+>
+>
+> ----------------------------------------------------------------
+> This message was sent using IMP, the Internet Messaging Program.
+>
+

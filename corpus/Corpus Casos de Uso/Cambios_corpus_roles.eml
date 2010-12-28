@@ -1,0 +1,1201 @@
+From lmoreno@dsic.upv.es mar oct 14 11:39:46 2008
+Return-Path: <lmoreno@dsic.upv.es>
+X-Original-To: lmoreno@dsic.upv.es
+Delivered-To: lmoreno@dsic.upv.es
+Received: from localhost (webmailx.dsic.upv.es [158.42.185.112])
+	by batman.dsic.upv.es (Postfix) with ESMTP id D1665177FE;
+	Tue, 14 Oct 2008 11:38:22 +0200 (CEST)
+Received: from helena2.dsic.upv.es (helena2.dsic.upv.es [158.42.185.128])
+	by webmail.dsic.upv.es (Horde Framework) with HTTP; Tue, 14 Oct 2008
+	11:39:46 +0200
+Message-ID: <20081014113946.137029qmjpfoxatc@webmail.dsic.upv.es>
+Date: Tue, 14 Oct 2008 11:39:46 +0200
+From: Lidia Moreno <lmoreno@dsic.upv.es>
+To: Paloma Moreda <moreda@dlsi.ua.es>
+Cc: nprieto@dsic.upv.es, idiaz@dsic.upv.es, lmoreno@dsic.upv.es
+Subject: Mas cosas sobre roles
+References: <48E4BAE1.5030705@dlsi.ua.es>
+In-Reply-To: <48E4BAE1.5030705@dlsi.ua.es>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="=_28km0sp3llwk"
+Content-Transfer-Encoding: 7bit
+User-Agent: Internet Messaging Program (IMP) H3 (4.2-RC1)
+Status: RO
+X-UID: 102097
+Content-Length: 46208
+X-Keywords:                                                                                                   
+
+This message is in MIME format.
+
+--=_28km0sp3llwk
+Content-Type: text/plain;
+	charset=ISO-8859-1;
+	DelSp="Yes";
+	format="flowed"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hola a todas,
+
+despu=E9s de estudiar el fichero del procesado que ha hecho Nati =20
+(agrupaci=F3n por verbos) he hecho dos ficheros:
+
+1) Listado de frases no analizadas a causa de que no reconoce los =20
+verbos request y update. A ver si Paloma puede hacer algo con estas =20
+frases para que los reconozca.
+
+2) El corpus de siempre pero lo he retocado en lo siguiente:
+
+A. Con <NIL>...</NIL> las frases que corresponden a nombres de los =20
+Casos de uso, el INITIATE WHEN, el IF, y el THEN.
+B. He a=F1adido alg=FAn . y : de final de frase que faltaban.
+C. Las opciones y los mensajes los he unido con barra baja, ejem. =20
+select the option Register_Number.
+
+Bueno, con este segundo corpus lo que creo que podriamos hacer es que =20
+vuelva a etiquetarlo Paloma con los roles y se lo pase a Nati para que =20
+vuelva a procesarlo. Y no se como va lo de a=F1adir mas informaci=F3n =20
+(roles, sint=E1xis....) pero si pudi=E9ramos obtener m=E1s informaci=F3n =20
+podr=EDamos ver c=F3mo de =FAtil es para hacer an=E1lisis a nivel de nombres=
+ =20
+mientras no dispongamos de NomBank.
+
+Ah=ED va el fichero del corpus, luego le env=EDo a Paloma el de =20
+request_update.....Lidia
+
+
+
+Quoting Paloma Moreda <moreda@dlsi.ua.es>:
+
+> Hola de nuevo,
+>
+> A=F1ado una cosa al correo del d=EDa 30:
+>
+> 6.- La anotaci=F3n de nombres. He pedido con un chaval una beca de =20
+> colaboraci=F3n. Si la conceden podr=EDa ser un buen trabajo a =20
+> desarrollar. Lo =FAnico malo es que no se cuando se resuelven estas =20
+> becas. Si es urgente, puedo empezar yo y luego ya veremos.
+>
+>
+> Bueno, y s=F3lo una cosa m=E1s. Necesitar=EDa ordenar un poco por tiempos =
+=20
+> lo que tenemos pendiente de hacer no vaya a ponerme justo con lo que =20
+> menos interesa, jaja. Decidme algo cuando pod=E1is, vale?
+>
+> Un besico. Paloma,
+>
+
+
+
+----------------------------------------------------------------
+This message was sent using IMP, the Internet Messaging Program.
+
+--=_28km0sp3llwk
+Content-Type: text/plain;
+	charset=UTF-8;
+	name*0*="utf-8''CorpusCasosDeUso%28EnglishSinNumeraci%C3%B3n%29_con%20NIL.txt"
+Content-Disposition: attachment;
+	filename*0*="utf-8''CorpusCasosDeUso%28EnglishSinNumeraci%C3%B3n%29_con%20NIL";
+	filename*1*=".txt"
+Content-Transfer-Encoding: quoted-printable
+
+
+The system verifies the deadline of the rental contract of each lessee of th=
+e real estate agency.
+The system registers the personal details of the lessee and the address of t=
+he property in the rental contract.
+The system registers the buyer personal details, the salesman commission and=
+ the purchase deadline.
+
+
+
+<NIL>BUY A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Buy_a_Vehicle=
+.
+SAV requests the Administrator the registration number of the vehicle.
+The Administrator introduces the registration number of the vehicle.
+SAV validates the registration number of the vehicle.
+SAV determines the existence of the registration number of the vehicle.
+SAV requests the identification of the responsible for the purchase of the v=
+ehicle.
+The Administrator requests the identification of the responsible for the pur=
+chase of the vehicle.
+SAV requests the purchase date and the cost of the vehicle.
+The Administrator introduces the purchase date and the cost of the vehicle.
+SAV enables the option Register_Purchase.
+
+<NIL>IF</NIL> the Administrator selects the option Register_Purchase <NIL>TH=
+EN</NIL>:
+SAV registers the purchase date and the cost of the vehicle.
+SAV registers the date and hour of the registration of the purchase of the v=
+ehicle.
+SAV registers the responsible for the purchase of the vehicle.
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+SAV enables the option Assure_Vehicle.
+
+Invalid registration number.
+SAV shows the Administrator the message Invalid_or_Existing_Registration_Num=
+ber.
+
+Existing registration number.
+SAV shows the Administrator the message Invalid_or_Existing_Registration_Num=
+ber.
+
+
+<NIL>MODIFY A PURCHASE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_Purcha=
+se.
+SAV shows the registration number of the vehicles.
+The Administrator chooses the registration number of the vehicle.
+SAV obtains the purchase data of the vehicle.
+SAV shows the purchase data of the vehicle.=20
+SAV enables the date, responsible and price of the purchase of the vehicle.=
+=20
+The Administrator introduces the new data of the purchase of the vehicle.
+SAV enables the option Modify_Vehicle.=20
+SAV enables the option Modify.
+
+<NIL>IF</NIL> the Administrator chooses the option Modify <NIL>THEN</NIL>:
+SAV registers the purchase data of the vehicle.
+
+
+<NIL>SELL A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Sell_a _Vehic=
+le.
+SAV shows the registration numbers of the vehicles that do not have the stat=
+e "sold".
+The Administrator chooses a registration number.
+SAV shows the sale date of the vehicle.
+SAV requests the date agreed of delivery and the sale price of the vehicle.
+The Administrator introduces the date agreed of delivery and the sale price =
+of the vehicle.
+SAV requests the identification of the buyer of the vehicle.
+The Administrator introduces the identification of the buyer of the vehicle.
+SAV shows the name of the responsible for the sale.
+SAV requests the observations of the sale.
+The Administrator writes the observations of the sale.
+SAV enables the option Register_Sale.
+
+<NIL>IF</NIL> the Administrator selects the option Register_Sale <NIL>THEN</=
+NIL>:
+SAV keeps the date, the head, the observations, the identification of the bu=
+yer, the date agreed of delivery and the sale price of the vehicle.
+
+<NIL>IF</NIL> the vehicle does not have the state "paymaster" or "for_sale" =
+<NIL>THEN</NIL>:
+SAV assigns to the vehicle the state "sold".
+SAV enables the option Deliver_Vehicle.
+
+
+<NIL>DELIVER A VEHICLE SOLD</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Deliver_a_Veh=
+icle_Sold.
+SAV shows the registration numbers of the vehicles sold.
+The Administrator selects the registration number of the vehicle sold.
+SAV validates the date agreed of delivery of the vehicle.
+SAV obtains the identification of the buyer of the vehicle.
+SAV shows the identification of the buyer of the vehicle.
+SAV requests the identification of the authorized person to collect the vehi=
+cle.
+The Administrator introduces the identification of the authorized person to =
+collect the vehicle.
+SAV enables the option Confirm_Delivery.
+
+<NIL>IF</NIL> the Administrator selects the option Confirm_Delivery <NIL>THE=
+N</NIL>:
+SAV registers the real date of delivery of the vehicle sold.
+SAV registers the identification of the authorized person to collect the veh=
+icle.
+
+Current date is smaller that the delivery date.
+SAV shows the Administrator the message Error_in_Delivery_Date.
+
+
+<NIL>RENT A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Rent_a_Vehicle.
+SAV shows the registration numbers of the enabled vehicles.
+The Employee chooses the registration number of the vehicle that desires to =
+rent.
+SAV obtains the vehicle data.
+SAV shows the vehicle data.
+SAV requests the place of refund of the vehicle.
+The Employee introduces the place of refund of the vehicle.
+SAV enables the option Elect_Extras.
+SAV enables the option Bill.
+SAV enables the option Register_Lease.
+
+<NIL>IF</NIL> the Employee selects the option Register_Lease <NIL>THEN</NIL>=
+:
+SAV disables the option Register_Lease.
+SAV disables the option Elect_Extras.
+SAV disables the option Bill.
+SAV obtains the subtotal by concept of rent, the subtotal by concept of extr=
+as and the total amount of the lease.
+SAV requests the amount of the bail of the lease.
+The Employee introduces the amount of the bail of the lease.
+SAV obtains the identification of the Employee.
+SAV registers the data of the lease.
+
+For each extra of type accessory registered in the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the quantity of units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+SAV assigns to the vehicle the state "rented".=20
+
+
+<NIL>CLOSE A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Close_a_Contract.
+SAV obtains the registration numbers of the vehicles rented.
+SAV shows the registration numbers of the vehicles rented.
+The Employee chooses the registration number of the vehicle.
+SAV recovers the data of the lease of the vehicle.
+SAV shows the data of the lease of the vehicle.
+SAV enables the option Modify_Contract.
+SAV enables the option Bill.
+SAV enables the option Close.
+
+<NIL>IF</NIL> the Employee chooses the option Close <NIL>THEN</NIL>:
+SAV disables the option Modify_Contract.
+SAV disables the option Bill.
+SAV registers the data of closing of the lease.
+
+For each extra of type accessory registered in the closing of the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the quantity of units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+
+
+<NIL>MODIFY A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Modify_a_Contract.
+SAV shows the registration numbers of the vehicles rented.
+The Employee chooses the registration number of a vehicle rented.
+SAV obtains the data of the lease of the vehicle.
+SAV shows the data of the lease of the vehicle.
+SAV enables the option Modify_a_Client.
+SAV enables the option Eliminate_Extras.
+SAV enables the option Elect_Extras.
+The Employee introduces the new data of the lease of the vehicle.
+SAV enables the option Register_Changes.
+
+<NIL>IF</NIL> the Employee selects the option Register_Changes <NIL>THEN</NI=
+L>:
+SAV disables the option Modify_Client.
+SAV disables the option Eliminate_Extras.=20
+SAV disables the option Elect_Extras.
+SAV obtains the identification of the Employee.
+SAV obtains the date and hour of modification of the lease.
+SAV registers the identification of the Employee, the date and hour of modif=
+ication and the data of the lease. =20
+
+For each new extra of registered accessory type in the lease do:
+SAV obtains the code of the accessory.
+SAV obtains the units of the accessory that were rented.
+SAV calculates the available quantity of units of the accessory.
+SAV registers the available quantity of units of the accessory.
+
+
+<NIL>INVOICE THE RENT OF A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Bill.
+SAV obtains the registration number of the vehicle.
+SAV obtains the date of the lease.
+SAV obtains the duration of the lease.=20
+SAV obtains the daily rate of the vehicle.
+SAV obtains the subtotal by concept of extras of the lease.
+SAV calculates the subtotal of the rent.
+
+<NIL>IF</NIL> the client is direct <NIL>THEN</NIL>:
+SAV obtains the discount of the applicable rate to the client.
+SAV calculates the subtotal of the rent with discount.
+
+SAV calculates the total amount without tax of the lease.
+SAV calculates the tax corresponding to the total amount of the lease.
+SAV calculates the total amount with tax of the lease.
+
+<NIL>IF</NIL> amount bail is greater than zero <NIL>THEN</NIL>:
+SAV calculates the total to pay for the client.
+
+SAV shows the subtotal by concept of rent without discount, the subtotal by =
+concept of rent with discount, the subtotal by concept of extras, the total =
+amount of the lease without tax and the total amount of the lease with tax.
+
+
+<NIL>BORROW A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Borrow_a_Vehi=
+cle.
+SAV shows the registration numbers of the enabled vehicles.
+The Administrator selects the registration number of a vehicle.
+SAV requests the identification of the borrower.=20
+The Administrator introduces the identification of the borrower.=20
+SAV validates the identification of the borrower.
+SAV requests the motive of the loan and the estimated date of refund of the =
+vehicle.
+The Administrator introduces the motive of the loan and the estimated date o=
+f refund of the vehicle.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the date and hour of the loan.
+SAV obtains the identification of the Administrator.
+SAV assigns the state "borrowed" to the vehicle.
+SAV registers the information of the loan.
+
+Identification of the invalid borrower.
+SAV shows the Administrator the message Nonexistent_Borrower.
+
+
+<NIL>RETURN A BORROWED VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Return_a_Borrowed_=
+Vehicle.
+SAV shows the registration numbers of the borrowed vehicles.
+The Employee chooses the registration number of a vehicle.
+SAV obtains the information of the loan of the vehicle.
+SAV shows the information of the loan of the vehicle.
+SAV enables the option Return.
+
+<NIL>IF</NIL> the Employee chooses the option Return <NIL>THEN</NIL>:
+SAV obtains the date and hour of the refund.
+SAV obtains the identification of the Employee.
+SAV assigns the state "disabled" to the vehicle.
+SAV registers the information of the refund of the vehicle.
+SAV enables the option Maintenance.
+SAV enables the option Repair.
+
+
+<NIL>REQUEST MAINTENANCE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Operator selects the option Maintenance.
+SAV obtains the registration numbers of the vehicles in state "disabled" or =
+"pending_maintenance".
+SAV shows the registration numbers of the vehicles in state "disabled" or "p=
+ending_maintenance".
+The Operator chooses the registration number of the vehicle.
+
+<NIL>IF</NIL> the state of the vehicle is "pending_maintenance" <NIL>THEN</N=
+IL>:
+SAV obtains the data of the request of maintenance of the vehicle.
+SAV enables the data of the request of maintenance of the vehicle.
+
+<NIL>IF</NIL> the state of the vehicle is "disabled" or "pending_repair" <NI=
+L>THEN</NIL>:
+SAV requests the data of the request of maintenance of the vehicle.
+
+SAV obtains the identification of the Operator.
+SAV shows the identification of the Operator.
+The Operator introduces the data of the request of maintenance.
+SAV enables the option Request.
+
+<NIL>IF</NIL> the Operator chooses the option Request <NIL>THEN</NIL>:
+SAV obtains the date and hour of the request of maintenance.
+SAV assigns to the vehicle the state "pending_maintenance".
+SAV registers the data of the request of maintenance.
+SAV enables the option Repair.
+
+
+<NIL>REGISTER MAINTENANCE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Register_Maintenan=
+ce.
+SAV obtains the registration numbers of the vehicles with state "pending_mai=
+ntenance".
+SAV shows the registration numbers of the vehicles with state "pending_maint=
+enance".
+The Technician selects the registration of the vehicle.
+SAV obtains the data of the request of maintenance.
+SAV shows the data of the request of maintenance.
+SAV enables the option Repair.
+SAV requests the description of the maintenance carried out to the vehicle.
+The Technician introduces the description of the maintenance of the vehicle.
+SAV requests the mileage of the vehicle.
+The Technician introduces the mileage of the vehicle.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Technician chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the place, date and hour of the registration of maintenance of t=
+he vehicle.
+SAV obtains the identification of the Technician.
+SAV disables the option Repair.
+SAV registers the data of the maintenance.
+
+<NIL>IF</NIL> the state of the vehicle is different to "pending_repair" <NIL=
+>THEN</NIL>:
+
+<NIL>IF</NIL> (the insurance expiration date is greater than current date pl=
+us 1 month) and (total rate is greater than 0) and (mileage vehicle is less =
+than 150000) <NIL>THEN</NIL>:
+SAV assigns to the vehicle the state "paymaster".
+
+<NIL>IF</NIL> insurance expiration date is less than current date plus 1 mon=
+th <NIL>THEN</NIL>:
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Renew_Insurance.
+
+<NIL>IF</NIL> total rate is equal to zero <NIL>THEN</NIL>:
+SAV assigns to the vehicle the state "disabled".
+SAV enables the option Assign_Rate.
+
+<NIL>IF</NIL> vehicle mileage is greater or equal than 150000 <NIL>THEN</NIL=
+>:
+SAV assigns to the vehicle the state "for_sale".
+
+
+<NIL>REQUEST REPAIR</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Operator selects the option Request_Repair.
+SAV obtains the registrations of the vehicles with the state "disabled" or "=
+pending_maintenance".
+SAV shows the registrations of the vehicles with the state "disabled" or "pe=
+nding_maintenance".
+The Operator chooses the registration of the vehicle.
+SAV obtains the date and hour of the request of repair.
+SAV obtains the identification of the Operator.
+SAV enables the option External_Garage.
+
+<NIL>IF</NIL> the Operator selects the option External_Garage <NIL>THEN</NIL=
+>:
+SAV obtains the identification of the external garages.
+SAV shows the identification of the external garages.
+The Operator chooses the external garage.
+
+SAV requests the description of the damage that is desired to repair.
+The Operator introduces the description of the damage that is desired to rep=
+air.
+SAV enables the option Request.
+
+<NIL>IF</NIL> the Operator chooses the option Request <NIL>THEN</NIL>:
+SAV assigns to the vehicle the state "pending_repair".
+SAV registers the data of the request of repair.
+
+
+<NIL>REGISTER REPAIR</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Technician selects the option Register_Repair.
+SAV obtains the registrations of the vehicles with the state "pending_repair=
+".
+SAV shows the registrations of the vehicles with the state "pending_repair".
+The Technician selects the registration of the vehicle.
+SAV obtains the data of the request of repair.
+SAV shows the data of the request of repair.
+SAV obtains the place, date and hour of the registration of the request of r=
+epair of the vehicle.
+SAV obtains the identification of the Technician.
+SAV requests the description of the repair carried out to the vehicle.
+The Technician introduces the description of the repair carried out to the v=
+ehicle.
+SAV requests the cost of the repair of the vehicle.
+The Technician introduces the cost of the repair of the vehicle.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Technician chooses the option Register <NIL>THEN</NIL>:
+SAV registers the data of the repair.
+
+
+<NIL>REGISTER AN EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Register_an_Extern=
+al_Garage.=20
+SAV requests the data of the external garage.
+The Employee introduces the data of the external garage.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Employee chooses the option Register <NIL>THEN</NIL>:
+SAV registers the data of the external garage.
+
+External garage existing.
+SAV shows the Employee the message Registered_External_Garage.
+
+
+<NIL>ERASE EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Erase_Externa=
+l_Garage.=20
+SAV obtains the name and the identification of the external garages.
+SAV It shows the name and the identification of the external garages.
+The Employee selects the name of the external garage.
+SAV shows the data of the external garage.
+SAV enables the option Erase.
+
+<NIL>IF</NIL> the Employee selects the option Erase <NIL>THEN</NIL>:
+SAV eliminates the external garage.
+
+<NIL>MODIFY EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Modify_External_Ga=
+rage.
+SAV obtains the name and the identification of the external garages.
+SAV shows the name and the identification of the external garages.
+The Employee selects the name of the external garage.
+SAV shows the data of the external garage.
+The Employee introduces the data of the external garage.
+SAV enables the option Modify.
+
+<NIL>IF</NIL> the Employee selects the option Modify <NIL>THEN</NIL>:
+SAV registers the data of the external garage.
+
+
+<NIL>REGISTER A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Register_Vehi=
+cle.
+SAV requests the Administrator the registration number of the vehicle.
+The Administrator introduces the registration number of the vehicle.
+SAV validates the registration number of the vehicle.
+SAV requests the model, the brand, the year of production, the number of doo=
+rs, the capacity and the mileage of the vehicle.
+The Administrator introduces the model, the brand, the year of production, t=
+he number of doors, the capacity and the mileage of the vehicle.
+SAV determines the existence of the class and the group of the type of vehic=
+le.
+SAV obtains the class and the group of the type of vehicle.
+SAV shows the class and the group of the type of vehicle.
+SAV enables the option Register_Vehicle.=20
+
+<NIL>IF</NIL> the Administrator selects the option Register_Vehicle <NIL>THE=
+N</NIL>:
+SAV obtains the date and hour of the registration of the vehicle.
+SAV registers the date and hour of the registration of the vehicle.=20
+SAV registers the registration number, the model, the brand, the year of pro=
+duction, the number of doors, the capacity, the mileage, the class and the g=
+roup of the vehicle.
+
+Invalid registration number.
+SAV shows the Administrator the message Invalid_Registration_Number.
+
+Existing registration number.
+SAV shows the Administrator the message Existing_Registration_Number.
+
+
+<NIL>MODIFY THE REGISTRATION OF A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_Vehicl=
+e.
+SAV shows the registration numbers of the vehicles.
+The Administrator selects the registration number of a vehicle.
+SAV shows the data of the vehicle.
+SAV enables the model, the brand, the year of production, the number of door=
+s, the capacity and the mileage of the vehicle.
+The Administrator introduces the model, the brand, the year of production, t=
+he number of doors, the capacity and the mileage of the vehicle.
+SAV determines the existence of the class and the group of the type of vehic=
+le.
+SAV obtains the class and the group of the type of vehicle.
+SAV shows the class and the group of the type of vehicle.
+SAV enables the option Modifying_Registration.  =20
+
+<NIL>IF</NIL> the Administrator selects the option Modify_Registration <NIL>=
+THEN</NIL>:
+SAV obtains the date and hour of the registration of the vehicle.
+SAV registers the date and hour of the registration of the vehicle.=20
+SAV registers the model, the brand, the year of production, the number of do=
+ors, the capacity, the mileage, the class and the group of the vehicle.
+
+
+<NIL>REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE</NIL>
+=20
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Register_of_t=
+he_Historic_information_of_a_Vehicle.=20
+SAV shows the registration numbers of the vehicles sold.
+The Administrator chooses the registration number of a vehicle.
+SAV obtains the data of the registration of the vehicle. =20
+SAV obtains the data of the registration of the purchase of the vehicle.
+SAV obtains the data of the registration of the sale of the vehicle.
+SAV enables the option Register_Historic. =20
+
+<NIL>IF</NIL> the Administrator selects the option Register_Historic <NIL>TH=
+EN</NIL>:
+SAV registers the data of the registration of the vehicle in the Historic of=
+ Vehicles.  =20
+SAV eliminates the registration of the vehicle.
+SAV registers the data of the registration of the purchase of the vehicle in=
+ the Historic of Vehicles. =20
+SAV eliminates the registration of the purchase of the vehicle.
+SAV registers the data of the registration of the sale of the vehicle in the=
+ Historic of Vehicles. =20
+SAV eliminates the registration of the sale of the vehicle.
+
+
+
+<NIL>ASSIGN CLASS AND GROUP</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Assign_Class_=
+and_Group.=20
+SAV requests the model, year of production and number of doors of the vehicl=
+e.
+The Administrator introduces the model, year of production and number of doo=
+rs of the vehicle.
+SAV determines the existence of the class and group of the type of vehicle.
+SAV shows the name and the description of the classes of vehicle.
+SAV enables the option Create_Class.
+
+<NIL>IF</NIL> the Administrator selects the name and the description of a cl=
+ass of vehicle <NIL>THEN</NIL>:
+SAV disables the option Create_Class.
+SAV shows the name, the description and the types of vehicle of the groups o=
+f the class of vehicle.
+
+<NIL>IF</NIL> the Administrator selects a group of a class of vehicle <NIL>T=
+HEN</NIL>:
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator selects the option Register <NIL>THEN</NIL>:
+SAV registers the type of vehicle in a group of a class. =20
+
+Class and Group of the Type of Existing Vehicle.
+SAV shows the Administrator the message Class_and_Group_of_the_Type_of_Exist=
+ing_Vehicle. =20
+
+
+<NIL>CREATING A CLASS</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Create_Class.=
+ =20
+SAV requests the name and the description of the new class of vehicle.
+The Administrator introduces the name and the description of the new class o=
+f vehicle.
+SAV determines the existence of the class.
+SAV enables the option Create_Group.
+
+<NIL>IF</NIL> the Administrator selects the option Create_Group <NIL>THEN</N=
+IL>:
+SAV requests the name and the description of the group of the class of vehic=
+le.
+The Administrator introduces the name and the description of the group of th=
+e class of vehicle.
+SAV assigns the value of monetary units zero to the price of the class and t=
+he group of the vehicle types.=20
+SAV enables the option Assign_Price.=20
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator selects the option Register <NIL>THEN</NIL>:
+SAV registers the data of the new class.
+
+Existing class.
+SAV shows the Administrator the message Existing_Class. =20
+
+
+<NIL>ERASE TYPE OF VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Erase_Type. =
+=20
+SAV requests the model, year of production and number of doors of the vehicl=
+e.
+The Administrator introduces the model, year of production and number of doo=
+rs of the vehicle.
+SAV determines the existence of the class and group of the type of vehicle.
+SAV obtains the class and group of the type of vehicle.
+SAV shows the class and group of the type of vehicle.
+SAV enables the option Erase.
+
+<NIL>IF</NIL> the Administrator selects the option Erase <NIL>THEN</NIL>:
+SAV eliminates the type of vehicle of the class and group.
+SAV enables the option Assign_Class_and_Group. =20
+SAV enables the option Create_Class.
+
+Class and nonexistent group.
+SAV shows the Administrator the message the_Type_of_Vehicle_is_not_assigned_=
+to_a_Group.=20
+
+
+<NIL>ASSIGN PRICE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Assign_Price.
+SAV shows the classes of vehicles.
+The Administrator selects a class of vehicle.
+SAV shows the data of the class of vehicle.
+The Administrator selects a group of the class of vehicle.
+SAV shows the data of the group of the class of vehicle.
+SAV shows the price of the class and group of vehicle types.=20
+SAV requests to introduce the daily price of the rent of a class and group o=
+f vehicle types.
+SAV requests to introduce the daily cost of the insurance of the types of ve=
+hicles of a class and group.
+The Administrator introduces the daily price of the rent of a class and grou=
+p vehicles types.
+The Administrator introduces the daily cost of the insurance of the types of=
+ vehicles of a class and group.
+SAV enables the option Register_Price.
+
+<NIL>IF</NIL> the Administrator chooses the option Register_Price <NIL>THEN<=
+/NIL>:
+SAV calculates the total price of the rent of a type of vehicle.
+SAV registers the daily price of the rent of a class and group vehicles type=
+s.
+SAV registers the daily cost of the insurance of the types of vehicles of a =
+class and group.
+SAV registers the total price of the rent of a type of vehicle.
+
+
+<NIL>INSURE A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Insure_a_Vehi=
+cle.
+SAV requests to the Employee the registration number of the vehicle. =20
+The Employee introduces the registration number of the vehicle.=20
+The Employee chooses the registration number of the vehicle.
+SAV determines the existence of an insurance policy of the vehicle.
+SAV enables the option Register_Insurance_Company. =20
+SAV shows the insurance companies.=20
+The Employee selects the insurance company. =20
+SAV requests the data of the insurance policy.
+The Employee introduces the data of the insurance policy.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Employee chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the date and hour of registration of the insurance policy. =20
+SAV obtains the identification of the Employee.
+SAV registers the data of the insurance policy.=20
+SAV encloses to the insurance policy the date and hour of registration and t=
+he identification of the Employee that registered it. =20
+
+Exists an insurance policy of the vehicle.=20
+SAV shows to the Employee the message Exists_Insurance_Policy.  =20
+SAV enables the option Renew_the_Insurance_Policy.
+
+
+<NIL>RENEW THE INSURANCE POLICY</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Renew_the_Insuranc=
+e_Policy.=20
+SAV shows the registration numbers of the vehicles that have insurance polic=
+ies.=20
+The Employee chooses a registration number of a vehicle.=20
+SAV obtains the data of the insurance policy.=20
+SAV shows the data of the insurance policy. =20
+SAV enables the option Register_Insurance_Company.
+The Employee introduces the new data of the insurance policy.=20
+SAV enables the option Renew.
+
+<NIL>IF</NIL> the Employee chooses the option Renew <NIL>THEN</NIL>:
+SAV obtains the date and hour of renewal of the insurance policy.
+SAV obtains the identification of the Employee that carried out the renewal.=
+ =20
+SAV registers the new data of the insurance policy. =20
+SAV enclosed to the insurance policy the date and hour of the renewal and th=
+e identification of the Employee that carried out the renewal.
+
+
+<NIL>REGISTER A INSURANCE COMPANY</NIL>
+=20
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Register a In=
+surance Company.
+SAV requests to the Administrator the data of the Insurance Company.
+The Administrator introduces the data of the Insurance Company.=20
+SAV enables the option Register. =20
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the date and hour of registration of the data of the Insurance C=
+ompany.=20
+SAV obtains the identification of the Administrator that carried out the reg=
+istration. =20
+SAV registers the date and hour of registration of the data of the Insurance=
+ Company.
+SAV registers the identification of the Administrator that carried out the r=
+egistration.
+SAV registers the data of the Insurance Company.=20
+
+
+<NIL>MODIFY AN INSURANCE COMPANY</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_an_Ins=
+urance_Company.
+SAV obtains the names of the Insurance Companies.
+SAV shows the names of the Insurance Companies.=20
+The Administrator chooses an Insurance Company.
+SAV shows the data of the Insurance Company.
+SAV enables the data of the Insurance Company.
+The Administrator introduces the data of the Insurance Company. =20
+SAV enables the option Modify. =20
+
+<NIL>IF</NIL> the Administrator chooses the option Modify <NIL>THEN</NIL>:
+SAV obtains the date and hour of modification of the data of the Insurance C=
+ompany.
+SAV obtains the identification of the Administrator that carried out the mod=
+ification.
+SAV registers the date and hour of modification of the data of the Insurance=
+ Company.
+SAV registers the identification of the Administrator carried out the modifi=
+cation.
+SAV registers the data of the Insurance Company.
+
+
+<NIL>REGISTER A CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Register_a_Client.
+SAV asks to the Employee if the client is direct or if he is an agency. =20
+The Employee tells if the client is direct or if he is an agency. =20
+SAV requests the identifier of the client according to his type.
+SAV determines the existence of the client.
+SAV requests the data of the client according to his type.=20
+The Employee introduces the data of the client.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Employee chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the date and hour of registration of the client.
+SAV obtains the identification of the Employee that carries out the registra=
+tion of the client.
+SAV registers the data of the client. =20
+
+<NIL>IF</NIL> the client is direct <NIL>THEN</NIL>:
+SAV registers the bank details of the direct client.
+
+Existing client.
+SAV shows the Employee the message Existing_Client.=20
+SAV enables the option Modify_Client.
+
+
+<NIL>MODIFY THE DATA OF A CLIENT</NIL>
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Modify_the_Data_of=
+_a_Client.
+SAV asks to the Employee if the client is direct or is an agency.
+The Employee indicates if the client is direct or is an agency.
+SAV obtains the identifiers of the clients according to his type.
+SAV shows the identifiers of the clients according to his type.
+The Employee chooses the identifier of a client. =20
+SAV obtains the data of the client.
+SAV shows the data of the client.
+The Employee introduces the new data of the client.
+
+<NIL>IF</NIL> the client is direct <NIL>THEN</NIL>
+SAV enables the option Register_Bank_Details.=20
+
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Employee chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the date and hour of modification of the client.
+SAV obtains the identification of the Employee that carried out the modifica=
+tion of the client.
+SAV registers the data of the client. =20
+
+<NIL>IF</NIL> the client is direct <NIL>THEN</NIL>:
+SAV registers the bank details of the direct client.
+
+
+<NIL>REGISTER THE BANK DETAILS OF A DIRECT CLIENT</NIL>=20
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Register_the_Bank_=
+Details_of_a_Direct_Client.=20
+SAV obtains the identifiers of the direct clients. =20
+SAV shows the identifiers of the direct clients. =20
+The Employee chooses the identifier of the direct client.
+SAV requests the bank details of the direct client. =20
+The Employee introduces the bank details of the direct client. =20
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Employee chooses the option Register <NIL>THEN</NIL>:
+SAV validates the bank details of the direct client.
+SAV registers the bank details of the direct client.
+
+Invalid bank details.
+SAV shows the Employee the message Invalid_Bank_Details.=20
+SAV enables the option Register_Bank_Details.
+
+
+<NIL>AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Authorize_Dis=
+count_or_Commission_of_a_Client. =20
+SAV asks the Administrator if the client is direct or is an agency.
+The Administrator indicates if the client is direct or is an agency.
+SAV obtains the identifiers of the clients according to its type.
+SAV shows the identifiers of the clients according to its type.
+The Administrator chooses the identifier of the client.
+SAV obtains the data of the client.
+SAV shows the data of the client.
+The Administrator introduces the percentage of discount or the commission of=
+ the client.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV registers the percentage of discount or the commission of the client. =
+=20
+
+
+<NIL>REGISTER EXTRAS</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Register_Extr=
+as.
+SAV requests to the Administrator the data of the extra.
+The Administrator introduces the data of the extra.
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV assigns a code to the extra.
+SAV registers the data of the extra.
+SAV enables the option Register_another_Extra.
+
+
+<NIL>MODIFY AN EXTRA</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_Extras=
+.
+SAV obtains the codes and the generic names of the extras.
+SAV shows to the Administrator the codes and the generic names of the extras=
+.
+The Administrator chooses the code of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+The Administrator introduces the new data of the extra.
+SAV enables the option Modify.
+
+<NIL>IF</NIL> the Administrator chooses the option Modify <NIL>THEN</NIL>:
+SAV registers the new data of the extra.
+SAV enables the option Another_Modification.
+
+
+<NIL>ELECTION OF EXTRAS</NIL>
+
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Election_of_Extras=
+.
+SAV obtains the generic name of the extras.
+SAV shows the generic name of the extras.
+The Employee chooses the generic name of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+
+<NIL>IF</NIL> the extra is of type accessory <NIL>THEN</NIL>:
+SAV determines the available quantity of the accessory.
+SAV requests the quantity of units that are desired to hire.
+The Employee introduces the quantity of units that are desired to hire.
+
+<NIL>IF</NIL> available quantity of the accessory is less than the quantity =
+of units that are desired to hire <NIL>THEN</NIL>:
+SAV shows to the Employee the message Unavailable_Accessory.
+
+SAV enables the option Elect.
+
+<NIL>IF</NIL> the Employee chooses the option Elect <NIL>THEN</NIL>:
+
+SAV obtains the code, generic name, description, limitations, observations a=
+nd price of the extra.
+
+<NIL>IF</NIL> the extra is of type accessory <NIL>THEN</NIL>:
+SAV requests the quantity of days of contracting of the extra.
+The Employee introduces the quantity of days of contracting of the extra.=20
+SAV requests the quantity of units of the accessory that were chosen.
+The Employee introduces the quantity of units of the accessory that were cho=
+sen.
+SAV calculates the total to pay for concept of accessories.
+SAV shows the total to pay for concept of accessories.
+
+<NIL>IF</NIL> the extra is of type service <NIL>THEN</NIL>:
+SAV requests the quantity of days of contracting of the service.
+The Employee introduces the quantity of days of contracting of the service.
+SAV calculates the total to pay for concept of services.
+SAV shows the total to pay for concept of services.
+
+SAV calculates the subtotal by concept of extras.
+SAV shows the subtotal by concept of extras.
+SAV enables the option Another_Extra.
+
+
+<NIL>ELIMINATE AN EXTRA OF A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Employee selects the option Eliminate_an_Extra=
+_of_a_Lease.
+SAV obtains of the lease the code of the extras hired.
+SAV shows the code and generic name of the extras hired.
+The Employee chooses the generic name of an extra.
+SAV obtains the data of the extra.
+SAV shows the data of the extra.
+SAV enables the option Eliminate.
+
+<NIL>IF</NIL> the Employee chooses the option Eliminate <NIL>THEN</NIL>:
+
+<NIL>IF</NIL> the extra is of type accessory <NIL>THEN</NIL>:
+SAV obtains the quantity of days of contracting of the extra.
+SAV obtains the quantity of units of the extra that were rented.
+SAV updates the available quantity of the extra.
+SAV assigns the value of zero to the quantity of days of contracting of the =
+extra.
+SAV calculates the total to discount for concept of accessories.
+SAV shows the total to discount for concept of accessories.
+
+<NIL>IF</NIL> the extra is of type service <NIL>THEN</NIL>:
+SAV obtains the quantity of days of contracting of the extra.
+SAV calculates the total to discount for concept of services.
+SAV shows the total to discount for concept of services.
+
+SAV calculates the subtotal by concept of extras.
+SAV shows the subtotal by concept of extras.
+SAV enables the option Eliminate_Another_Extra.
+
+
+<NIL>OPEN A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Open_a_Labor_=
+Contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines if the data of the employee already are registered.=20
+SAV determines if the employee maintains a labor contract in force or assets=
+ with the company.=20
+
+<NIL>IF</NIL> the employee already is registered <NIL>THEN</NIL>:
+SAV shows the data of the employee.
+SAV enables the option Modify_the_Data_of_an_Employee.
+else:
+SAV shows the data of the employee.
+
+SAV requests the start date, duration and conditions of the labor contract.
+The Administrator introduces the start date, duration and conditions of the =
+labor contract. =20
+SAV enables the option Register_Contract.
+
+<NIL>IF</NIL> the Administrator chooses the option Register_Contract <NIL>TH=
+EN</NIL>:
+SAV obtains the registration date of the labor contract and the identifier o=
+f the Administrator that carries out said registration.
+SAV assigns a code of identification to the labor contract.
+SAV registers the code and the registration date of the labor contract, the =
+identifier of the Administrator that carries out said registration, the iden=
+tity card of the employee, the start date, duration and conditions of the la=
+bor contract.
+
+<NIL>IF</NIL>  registration date is less than start date <NIL>THEN</NIL>:
+SAV assigns to the labor contract the state "active".
+else:
+SAV assigns to the labor contract the state "in_force".
+
+Labor Contract in force or active.
+SAV shows the message Existing_Labor_Contract.=20
+
+
+<NIL>MODIFY THE DATA OF A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_the_Da=
+ta_of_a_Labor_Contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines the existence of the identity card of the employee.
+SAV determines if the employee maintains a labor contract in force or assets=
+ with the business.
+SAV obtains the code of the labor contracts in force and assets of the emplo=
+yee.
+SAV shows the code of the labor contracts in force and assets of the employe=
+e.
+The Administrator chooses the code of a labor contract.
+SAV obtains the data of the labor contract of the employee.
+SAV shows the data of the labor contract of the employee. =20
+The Administrator introduces the new data of the labor contract of the emplo=
+yee.
+SAV enables the option Modify_Contract.
+
+<NIL>IF</NIL> the Administrator chooses the option Register_Contract <NIL>TH=
+EN</NIL>:
+SAV obtains the modification date of the labor contract and the identifier o=
+f the Administrator that carries out said modification.
+SAV registers the data of the labor contract, the modification date and the =
+identifier of the Administrator that carries out said modification.
+SAV updates the state of the labor contract.
+
+Nonexistent employee.
+SAV shows the message Employed_Nonexistent.=20
+
+Nonexistent labor contract or annulled or culminated.
+SAV shows the message Labor_Contract_without_Conditions of_Modification.=20
+
+
+<NIL>CANCEL A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Cancel_a_Labo=
+r_contract.
+SAV requests the identity card of the employee.
+The Administrator introduces the identity card of the employee.
+SAV determines the existence of the identity card of the employee.
+SAV determines if the employee maintains a labor contract in force with the =
+company.
+SAV obtains the data of the labor contract in force that the employee mainta=
+ins with the company.
+SAV shows the data of the labor contract of the employee. =20
+SAV enables the option Cancel_Contract.
+
+<NIL>IF</NIL> the Administrator chooses the option Cancel_Contract <NIL>THEN=
+</NIL>:
+SAV asks the Administrator the reasons of the annulment of the labor contrac=
+t.
+The Administrator introduces the reasons of the annulment of the labor contr=
+act.
+SAV obtains the annulment date of the labor contract and the identifier of t=
+he Administrator that carries out it.
+SAV registers the data of the labor contract, the annulment date and the ide=
+ntifier of the Administrator that carries out it.
+SAV assigns to the labor contract the state "annulled".
+
+Nonexistent employee.
+SAV shows the message Employed_Nonexistent.=20
+
+Nonexistent labor contract or without vigor.
+SAV shows the message Nonexistent_Labor_Contract_or_Labor_Contract_Without_V=
+igor.=20
+
+
+<NIL>REGISTER A NEW EMPLOYEE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Register_a_Ne=
+w_Employee.
+SAV requests the identity card of the new employee.
+SAV determines the existence of the employee.
+SAV requests the data of the employee.
+The Administrator introduces the data of the employee.=20
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the registration date of the employee and the identifier of the =
+Administrator that carries out it.
+SAV registers the data of the employee, the registration date of the employe=
+e and the identifier of the Administrator that carries out it.
+
+Existing employee.
+SAV shows the message Employed_Existing.=20
+
+
+<NIL>MODIFY THE DATA OF AN EMPLOYEE</NIL>
+
+<NIL>INITIATES WHEN</NIL> the Administrator selects the option Modify_the_Da=
+ta_of_an_Employee.
+SAV requests the identity card of the employee.
+SAV determines the existence of the employee.
+SAV obtains the data of the employee.
+SAV shows the data of the employee.
+The Administrator introduces the new data of the employee.=20
+SAV enables the option Register.
+
+<NIL>IF</NIL> the Administrator chooses the option Register <NIL>THEN</NIL>:
+SAV obtains the modification date and the identifier of the Administrator th=
+at carries out it.
+SAV registers the employee data, the modification date and the identifier of=
+ the Administrator that carries out it.
+
+
+Nonexistent employee.
+SAV shows the message Employed_Nonexistent.=20
+
+
+
+
+
+
+
+
+--=_28km0sp3llwk--
+

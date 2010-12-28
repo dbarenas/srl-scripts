@@ -1,0 +1,2255 @@
+﻿<NIL>1.1.1.BUY A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Buy a Vehicle"
+the Administrator selects the option OPT001
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT001]
+SAV requests the Administrator the registration number of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_Administrator DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+The Administrator introduces the registration number of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+SAV validates the registration number of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+SAV determines the existence of the registration number of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+SAV requests the identification of the responsible for the purchase of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_responsible IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+The Administrator requests the identification of the responsible for the purchase of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_responsible IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+SAV requests the purchase date and the cost of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+The Administrator introduces the purchase date and the cost of the vehicle
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+SAV enables the option "Register Purchase".
+SAV enables the option OPT002.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT002]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Register Purchase" 
+the Administrator selects the option OPT002
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT002]
+<NIL>THEN</NIL>
+SAV registers the purchase date and the cost of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_purchase NN_date CC_and DT_the NN_cost IN_of DT_the NN_vehicle]
+SAV registers the date and hour of the registration of the purchase of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+SAV registers the responsible for the purchase of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_responsible] [NP-OBJ-A3 IN_for DT_the NN_purchase IN_of DT_the NN_vehicle]
+SAV assigns to the vehicle the state "disabled"
+SAV assigns to the vehicle the state STA001
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+SAV enables the option "Maintenance".
+SAV enables the option OPT003.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+SAV enables the option "Repair"
+SAV enables the option OPT004
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+SAV enables the option "Assure Vehicle"
+SAV enables the option OPT005
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT005]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+
+<NIL> AP1 </NIL>
+The registration number is invalid.
+[NP-SUJ-A1 DT_the NN_registration NN_number] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+SAV shows the Administrator the message "Invalid or Existing Registration Number".
+SAV shows the Administrator the message MSG001
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+
+<NIL> AP2 </NIL>
+The registration number exists.
+[NP-OBJ-A1 DT_the NN_registration NN_number] [VP VBZ_exists]
+SAV shows the Administrator the message "Invalid or Existing Registration Number".
+SAV shows the Administrator the message MSG001
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+
+<NIL>USE CASE END Buying a Vehicle.</NIL>
+
+<NIL>1.1.2.MODIFY A PURCHASE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify Purchase".
+the Administrator selects the option OPT006
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT006]
+SAV shows the registration number of the vehicles.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NNS_vehicles]
+The Administrator chooses the registration number of the vehicle
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NNS_vehicle]
+SAV obtains the purchase data of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+SAV shows the purchase data of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+SAV enables the date, the responsible and the price of the purchase of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_date Fc_, DT_the JJ_responsible CC_and DT_the NN_price IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+The Administrator introduces the new data of the purchase of the vehicle
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+SAV enables the option "Modify Vehicle".
+SAV enables the option OPT007.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT007]
+SAV enables the option "Modify".
+SAV enables the option OPT008
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Modify"
+the Administrator chooses the option OPT008
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+SAV registers the purchase data of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_purchase NN_data IN_of DT_the NN_vehicle]
+
+<NIL>END IF</NIL> 
+
+<NIL>USE CASE END Modify a Purchase.</NIL>  
+
+<NIL>1.2.1.SELL A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+The Administrator selects the option "Sell a Vehicle".
+The Administrator selects the option OPT009.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT009]
+SAV shows the registration numbers of the vehicles that do not have the state "sold".
+SAV shows the registration numbers of the vehicles that do not have the state STA002
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles [SBAR-SUJ-R_A0 WDT_that] VBP_do [ADVP-MOD-AM_NEG RB_not] [VP VB_have] [NP-OBJ-A1 DT_the NN_state NN_STA002]]
+The Administrator chooses a registration number.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_a NN_registration NN_number] 
+SAV shows the sale date of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_sale NN_date IN_of DT_the NN_vehicle]
+SAV requests the agreed date of delivery and the sale price of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+The Administrator introduces the agreed date of delivery and the sale price of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+SAV requests the identification of the buyer of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+The Administrator introduces the identification of the buyer of the vehicle
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+SAV shows the name of the responsible for the sale
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_responsible IN_for DT_the NN_sale]
+SAV requests the observations of the sale.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NNS_observations IN_of DT_the NN_sale]
+The Administrator writes the observations of the sale
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_writes] [NP-OBJ-A1 DT_the NNS_observations IN_of DT_the NN_sale]
+SAV enables the option "Register Sale".
+SAV enables the option OPT010.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT010]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Register Sale" 
+the Administrator selects the option OPT010
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT010]
+<NIL>THEN</NIL>
+SAV keeps the date, the head, the observations, the identification of the buyer, the agreed date of delivery and the sale price of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_keeps] [NP-OBJ-A1 DT_the NN_date Fc_, DT_the NN_head Fc_, DT_the NNS_observations Fc_, DT_the NN_identification IN_of DT_the NN_buyer Fc_, DT_the JJ_agreed NN_date IN_of NN_delivery CC_and DT_the NN_sale NN_price IN_of DT_the NN_vehicle]
+
+<NIL>IF</NIL> 
+the vehicle does not have the state "paymaster" or "for sale" 
+the vehicle does not have the state STA003 or STA004
+[NP-SUJ-A0 DT_the NNP_vehicle] VBP_does [ADVP-MOD-AM_NEG RB_not] [VP VB_have] [NP-OBJ-A1 DT_the NN_State NN_STA003 CC_or NN_STA004]
+<NIL>THEN</NIL>
+
+<NIL>RETURN TO THE STEP 12.2.</NIL>
+
+<NIL>END IF</NIL> 
+SAV assigns to the vehicle the state "sold".
+SAV assigns to the vehicle the state STA002.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA002]
+SAV enables the option "Deliver Vehicle".
+SAV enables the option OPT011.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT011]
+
+<NIL>END IF</NIL> 
+
+<NIL>USE CASE END Sell a Vehicle.</NIL> 
+
+<NIL>1.2.2.DELIVER A VEHICLE SOLD</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Deliver a Vehicle Sold".
+the Administrator selects the option OPT012.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT012]
+SAV shows the registration numbers of the vehicles sold.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+The Administrator selects the registration number of the vehicle sold.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+SAV validates the agreed date of delivery of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the JJ_agreed NN_date IN_of NN_delivery IN_of DT_the NN_vehicle]
+SAV obtains the identification of the buyer of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+SAV shows the identification of the buyer of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_buyer IN_of DT_the NN_vehicle]
+SAV requests the identification of the authorized person to collect the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+The Administrator introduces the identification of the authorized person to collect the vehicle.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+SAV enables the option "Confirm Delivery".
+SAV enables the option OPT013.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT013]
+
+<NIL>IF</NIL>  
+the Administrator selects the option "Confirm Delivery"
+the Administrator selects the option OPT013
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT013]
+<NIL>THEN</NIL>
+SAV registers the real date of delivery of the vehicle sold.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_real NN_date IN_of NN_delivery IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+SAV registers the identification of the authorized person to collect the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the JJ_authorized NN_person TO_to [VP VB_collect] [NP-OBJ-A1 DT_the NN_vehicle]]
+
+<NIL>INCLUDE Register Historic Information of a Vehicle.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Deliver a Vehicle Sold.</NIL> 
+
+<NIL> AP1 </NIL>
+Current date is smaller than the delivery date.
+[NP-SUJ-A1 JJ_Current NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_smaller IN_than DT_the NN_delivery NN_date]
+SAV shows the Administrator the message "Error in Delivery Date".
+SAV shows the Administrator the message MSG002.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_administrator DT_the NN_message NN_MSG002]
+
+<NIL>1.3.1. RENT A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Rent a Vehicle"
+the Employee selects the option OPT014
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT014]
+SAV shows the registration numbers of the enabled vehicles.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the [VP VBN_enabled] [NP-OBJ-A1 NNS_vehicles]]
+The Employee chooses the registration number of the vehicle that desires to rent
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NN_vehicle [SBAR-OBJ-R_A1 WDT_that] [VP VBZ_desires TO_to VB_rent]]
+SAV obtains the vehicle data.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_vehicle NNS_data]
+SAV shows the vehicle data.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_vehicle NNS_data]
+SAV requests the place of refund of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_place IN_of  NN_refund IN_of DT_the NN_vehicle]
+The Employee introduces the place of refund of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_place IN_of NN_refund IN_of DT_the NN_vehicle]
+SAV enables the option "Elect Extras".
+SAV enables the option OPT015
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+SAV enables the option "Bill".
+SAV enables the option OPT016.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+SAV enables the option "Register Lease"
+SAV enables the option OPT017.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+<NIL>IF</NIL> 
+the Employee selects the option "Register Lease"
+the Employee selects the option OPT017
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+<NIL>THEN</NIL>
+SAV disables the option "Register Lease"
+SAV disables the option OPT017
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT017]
+SAV disables the option "Elect Extras".
+SAV disables the option OPT015.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+SAV disables the option "Bill".
+SAV disables the option OPT016.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+SAV obtains the subtotal by concept of rent, the subtotal by concept of extras and the total amount of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NN_rent DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras CC_and DT_the JJ_total NN_amount IN_of DT_the NN_lease]
+SAV requests the amount of the bail of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_amount IN_of DT_the NN_bail IN_of DT_the NN_lease]
+The Employee introduces the amount of the bail of the lease.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_amount IN_of DT_the NN_bail IN_of DT_the NN_lease]
+SAV obtains the identification of the Employee.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NNP_employee]
+SAV registers the data of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_lease]
+
+<NIL>FOR EACH</NIL> extra of type accessory registered in the lease 
+<NIL>DO</NIL>
+extra of type accessory registered in the lease
+[NP-OBJ-A1 JJ_extra IN_of NN_type JJ_accessory] [VP VBZ_registered] [NP-OBJIND-A2 IN_in DT_the NN_lease]
+SAV obtains the code of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of DT_the JJ_accessory]
+SAV obtains the quantity of units of the accessory that were rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+SAV calculates the available quantity of units of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+SAV registers the available quantity of units of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+
+<NIL>END FOR</NIL>
+SAV assigns to the vehicle the state "rented".
+SAV assigns to the vehicle the state STA005.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJIND-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_state NN_STA005]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Rent a Vehicle.</NIL>
+
+<NIL>1.3.2. CLOSE A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Close a Contract".
+the Employee selects the option OPT018.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT018]
+SAV obtains the registration numbers of the vehicles rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NNS_vehicles] [VP VBN_rented]]
+SAV shows the registration numbers of the vehicles rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of  [NP-OBJ-A1 DT_the NNS_vehicles] [VP VBN_rented]]
+The Employee chooses the registration number of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of  DT_the NN_vehicle]
+SAV recovers the data of the lease of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_recovers] [NP-OBJ-A1 DT_the NNS_data IN_of  DT_the NN_lease IN_of  DT_the NN_vehicle]
+SAV shows the data of the lease of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of  DT_the NN_lease IN_of  DT_the NN_vehicle]
+SAV enables the option "Modify Contract".
+SAV enables the option OPT019.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+SAV enables the option "Bill".
+SAV enables the option OPT016.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+SAV enables the option "Close".
+SAV enables the option OPT020.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT020]
+
+<NIL>IF</NIL>
+the Employee chooses the option "Close"
+the Employee chooses the option OPT020
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT020]
+<NIL>THEN</NIL>
+SAV disables the option "Modify Contract".
+SAV disables the option OPT019.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+SAV disables the option "Bill"
+SAV disables the option OPT016
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+SAV registers the closing data of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_closing NNS_data IN_of DT_the NN_lease]
+
+<NIL>FOR EACH</NIL> extra of type accessory registered in the closing of the lease 
+<NIL>DO</NIL>
+ extra of type accessory registered in the closing of the lease
+[NP-OBJ-A1 JJ_extra IN_of  NN_type JJ_accessory] [VP VBZ_registered] [NP-OBJIND-A2 IN_in DT_the VBG_closing IN_of  DT_the NN_lease]
+SAV obtains the code of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of  DT_the JJ_accessory]
+SAV obtains the quantity of units of the accessory that were rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+SAV calculates the available quantity of units of the accessory.
+ [NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1DT_the  JJ_available NN_quantity IN_of NN_units IN_of DT_the JJ_accessory]
+SAV registers the available quantity of units of the accessory.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NN_units IN_of DT_the JJ_accessory]
+
+<NIL>END FOR</NIL>
+SAV assigns to the vehicle the state "disabled".
+SAV assigns to the vehicle the state STA001.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJIND-A2 TO_to DT_the NN_vehicle DT_the NN_State NN_STA001]
+SAV enables the option "Maintenance".
+SAV enables the option OPT0003.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT0003]
+SAV enables the option "Repair".
+SAV enables the option OPT0004.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT0004]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Close a Lease.</NIL>
+
+<NIL>1.3.3. MODIFY A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Modify a Contract".
+ the Employee selects the option OPT019.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+SAV shows the registration numbers of the vehicles rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-DT_the  NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the  NNS_vehicles] [VP VBN_rented]]
+The Employee chooses the registration number of a vehicle rented.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of  [NP-OBJ-A1 DT_a NN_vehicle] [VP VBN_rented]]
+SAV obtains the data of the lease of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NNS_lease IN_of DT_the NNS_vehicle]
+SAV shows the data of the lease of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NNS_lease IN_of DT_the NNS_vehicle]
+SAV enables the option "Modify a Client".
+SAV enables the option OPT021.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT021]
+SAV enables the option "Eliminate Extras".
+SAV enables the option OPT022.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT022]
+SAV enables the option "Elect Extras".
+SAV enables the option OPT015.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+The Employee introduces the new data of the lease of the vehicle.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of  DT_the NNS_lease IN_of DT_the NNS_vehicle]
+SAV enables the option "Register Changes".
+SAV enables the option OPT023.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT023]
+
+<NIL>IF</NIL> 
+the Employee selects the option "Register Changes"
+the Employee selects the option OPT023
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT023]
+<NIL>THEN</NIL>
+SAV disables the option "Modify Client".
+SAV disables the option OPT024.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT024]
+SAV disables the option "Eliminate Extras".
+SAV disables the option OPT022.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT022]
+SAV disables the option "Elect Extras".
+SAV disables the option OPT015.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT015]
+
+<NIL>INCLUDE Invoicing the Rent of a Vehicle.</NIL>
+SAV obtains the identification of the Employee.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_employee]
+SAV obtains the date and hour of modification of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_lease]
+SAV registers the identification of the Employee, the date and hour of modification and the data of the lease
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_employee DT_the NN_date CC_and NN_hour IN_of NN_modification CC_and DT_the NN_data IN_of DT_the  NN_lease]
+
+<NIL>FOR EACH</NIL> new extra of registered accessory type in the lease 
+<NIL>DO</NIL>
+new extra of registered accessory type in the lease
+[NP-OBJ-A1 JJ_new  JJ_extra IN_of] [VP VBZ_registered] [NP-OBJIND-A2 JJ_Accessory  NN_type IN_in DT_the NN_lease]
+SAV obtains the code of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_code IN_of DT_the  JJ_accessory]
+SAV obtains the units of the accessory that were rented.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+SAV calculates the available quantity of units of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+SAV registers the available quantity of units of the accessory.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  JJ_available NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory]
+
+<NIL>END FOR</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify a Lease.</NIL>
+
+<NIL>1.3.4.INVOICE THE RENT OF A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Bill".
+the Employee selects the option OPT016.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT016]
+SAV obtains the registration number of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_registration NN_number IN_of DT_the NN_vehicle]
+SAV obtains the date of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date IN_of DT_the NN_lease]
+SAV obtains the duration of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_duration IN_of DT_the NN_lease]
+SAV obtains the daily rate of the vehicle
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  JJ_daily NN_rate IN_of DT_the NN_vehicle]
+SAV obtains the subtotal by concept of extras of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_subtotal IN_by NN_concept IN_of NNS_extras IN_of DT_the NN_lease]
+SAV calculates the subtotal of the rent.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_subtotal IN_of DT_the NN_rent]
+
+<NIL>IF</NIL>
+the client is direct
+[NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+SAV obtains the discount of the applicable rate to the client.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_discount IN_of DT_the JJ_applicable] [NP-OBJIND-A2 NN_rate TO_to    DT_the NN_client]
+SAV calculates the subtotal of the rent with discount.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_subtotal IN_of DT_the NN_rent IN_with NN_discount]
+
+<NIL>END IF</NIL>
+SAV calculates the total amount without tax of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total NN_amount IN_without NN_tax IN_of DT_the NN_lease]
+SAV calculates the tax corresponding to the total amount of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  NN_tax JJ_corresponding TO_to DT_the JJ_total NN_amount IN_of DT_the NN_lease]
+SAV calculates the total amount with tax of the lease.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total NN_amount IN_with NN_tax IN_of DT_the NN_lease]
+
+<NIL>IF</NIL>
+bail amount is greater than zero
+[NP-SUJ-A1 NN_bail NN_amount] [VP VBZ_is] [ADJP-ATR-A2 JJR_greater IN_than CD_zero]
+<NIL>THEN</NIL>
+SAV calculates the total to pay for the client.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the  JJ_total TO_to VB_pay IN_for DT_the NN_client]
+
+<NIL>END IF</NIL>
+SAV shows the subtotal by concept of rent without discount, the subtotal by concept of rent with discount, the subtotal by concept of extras, the total amount of the lease without tax and the total amount of the lease with tax.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_subtotal IN_by NN_concept IN_of NN_rent] [AM-MNR IN_without  NN_discount Fc_, DT_the NN_subtotal IN_by NN_concept IN_of NN_rent IN_with NN_discount Fc_, DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras Fc_, DT_the JJ_total NN_amount IN_of DT_the NN_lease in_without NN_tax CC_and DT_the JJ_total NN_amount IN_of DT_the NN_lease in_without NN_tax]
+
+<NIL>USE CASE END Invoice the Rent of a Vehicle.</NIL>
+
+<NIL>1.4.1.BORROW A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Borrow a Vehicle".
+the Administrator selects the option OPT025.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT025]
+SAV shows the registration numbers of the enabled vehicles.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_registration NNS_numbers IN_of DT_the [VP VBN_enabled] [NP-OBJ-A1 NNS_vehicles]]
+The Administrator selects the registration number of a vehicle.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_a NN_vehicle]
+SAV requests the identification of the borrower.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NN_identificationIN_of DT_the NN_borrower]
+The Administrator introduces the identification of the borrower.
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_borrower]
+SAV validates the identification of the borrower.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the  NN_identificationIN_of DT_the NN_borrower]
+SAV requests the motive of the loan and the estimated date of refund of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NN_motive IN_of DT_the NN_loan CC_and DT_the JJ_estimated NN_date IN_of NN_refund IN_of DT_the NN_vehicle]
+The Administrator introduces the motive of the loan and the estimated date of refund of the vehicle.
+[NP-SUJ-A0 DT_the NNP_ADMNISTRATOR] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_motive IN_of DT_the NN_loan CC_and DT_the JJ_estimated NN_date IN_of NN_refund IN_of DT_the NN_vehicle]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL>  
+the Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0 DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of the loan.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_loan]
+SAV obtains the identification of the Administrator.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_Administrator]
+SAV assigns the state "borrowed" to the vehicle.
+SAV assigns the state STA006 to the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_state NN_STA006] [NP-OBJIND-A2 TO_to DT_the NN_vehicle]
+SAV registers the information of the loan.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_information IN_of DT_the NN_loan]
+NIL>END IF</NIL>
+
+<NIL>USE CASE END Borrow a Vehicle</NIL>
+
+<NIL> AP1 </NIL>
+Identification of the borrower is invalid.
+[NP-SUJ-A1 NN_identification IN_of DT_the NN_borrower] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+SAV shows the Administrator the message "Nonexistent Borrower".
+SAV shows the Administrator the message MSG003.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_administrator DT_the NN_message NN_MSG003]
+
+<NIL>USE CASE END Borrow a Vehicle.</NIL>
+
+<NIL>1.4.2.RETURN A BORROWED VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Return a Borrowed Vehicle".
+the Employee selects the option OPT027.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT027]
+SAV shows the registration numbers of the borrowed vehicles.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_registration NNS_numbers IN_of DT_the JJ_borrowed NNS_vehicles]
+The Employee chooses the registration number of a vehicle.
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_a NN_vehicle]
+SAV obtains the information of the loan of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NN_loan IN_of DT_the NN_vehicle]
+SAV shows the information of the loan of the vehicle.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NN_loan IN_of DT_the NN_vehicle]
+SAV enables the option "Return".
+SAV enables the option OPT028.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT028]
+
+<NIL>IF</NIL>  
+the Employee chooses the option "Return"
+the Employee chooses the option OPT028
+[NP-SUJ-A0 DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT028]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of the refund.
+[NP-SUJ-A0 NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_refund]
+SAV obtains the identification of the Employee
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NNP_employee]
+SAV assigns the state "disabled" to the vehicle.
+SAV assigns the state STA001 to the vehicle.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_State NN_STA001] [NP-OBJIND-A2 TO_to DT_the NN_vehicle]
+SAV registers the information of the refund of the vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the  NN_information IN_of DT_the NNP_refund IN_of DT_the NN_vehicle]
+SAV enables the option "Maintenance".
+SAV enables the option OPT003.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+SAV enables the option "Repair".
+SAV enables the option OPT004.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Return a Borrowed Vehicle.</NIL>
+
+<NIL>2.1.1. REQUEST MAINTENANCE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Operator selects the option "Maintenance".
+the Operator selects the option OPT003.
+[NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT003]
+SAV obtains the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+SAV obtains the registration numbers of the vehicles in state STA001 or STA007.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles IN_in NN_STA001 CC_or NN_STA007]
+SAV shows the registration numbers of the vehicles in state "disabled" or "pending maintenance".
+SAV shows the registration numbers of the vehicles in state STA001 or STA007.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles IN_in NN_STA001 CC_or NN_STA007]
+The Operator chooses the registration number of the vehicle.
+[NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+
+<NIL>IF</NIL> 
+the state of the vehicle is "pending maintenance"
+the state of the vehicle is STA007
+[NP-SUJ-A1-Thingregistered DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [NP-ATR-A2 NN_STA007]
+<NIL>THEN</NIL>
+SAV obtains the data of the request of maintenance of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+SAV enables the data of the request of maintenance of the vehicle.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the state of the vehicle is "disabled" or "pending repair"
+the state of the vehicle is STA001 or STA008
+[NP-SUJ-A1 DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [NP-ATR-A2 NN_STA001 CC_or NN_STA008]
+<NIL>THEN</NIL>
+SAV requests the data of the request of maintenance of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the  NNS_data IN_of DT_the NN_request IN_of NN_maintenance IN_of DT_the NN_vehicle]
+
+<NIL>END IF</NIL>
+SAV obtains the identification of the Operator.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_operator]
+SAV shows the identification of the Operator.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_operator]
+The Operator introduces the data of the request of maintenance.
+[NP-SUJ-A0-Starter DT_the NNP_OPERATOR] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_maintenance] 
+SAV enables the option "Request".
+SAV enables the option OPT029.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+
+<NIL>IF</NIL> 
+the Operator chooses the option "Request"
+the Operator chooses the option OPT029
+[NP-SUJ-A0-Pickerd DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of the request of maintenance.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_date CC_and NN_hour IN_of DT_the NN_request IN_of NN_maintenance]
+SAV assigns to the vehicle the state "pending maintenance".
+SAV assigns to the vehicle the state STA007.
+[NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_stateNN_STA007]
+ SAV registers the data of the request of maintenance.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_request IN_of NN_maintenance]
+SAV enables the option "Repair".
+SAV enables the option OPT004.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Request Maintenance.</NIL>
+
+<NIL>2.1.2.REGISTER MAINTENANCE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Register Maintenance".
+the Employee selects the option OPT030.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT030]
+SAV obtains the registration numbers of the vehicles with state "pending maintenance".
+SAV obtains the registration numbers of the vehicles with state STA007.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles IN_with NN_state NN_STA007]
+SAV shows the registration numbers of the vehicles with state "pending maintenance".
+SAV shows the registration numbers of the vehicles with state STA007.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NN_numbers IN_of DT_the NNS_vehicles IN_with NN_state NN_STA007]
+The Technician selects the registration of the vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+SAV obtains the data of the request of maintenance.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_data IN_of DT_the NN_request IN_of NN_maintenance]
+SAV shows the data of the request of maintenance.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the  NN_data IN_of DT_the NN_request IN_of NN_maintenance]
+SAV enables the option "Repair".
+SAV enables the option OPT004.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+SAV requests the description of the maintenance carried out to the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_maintenance] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]]
+The Technician introduces the description of the maintenance of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_maintenance IN_of DT_the NN_vehicle] 
+SAV requests the mileage of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the  NN_mileage IN_of DT_the NN_vehicle]
+The Technician introduces the mileage of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_mileage IN_of DT_the NN_vehicle] 
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Technician chooses the option "Register"
+the Technician chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_TECHNICIAN] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026] 
+<NIL>THEN</NIL>
+SAV obtains the place, date and hour of the registration of maintenance of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_place Fc_, NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of NN_maintenance IN_of DT_the NN_vehicle]
+SAV obtains the identification of the Technician.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the  NN_identification IN_of DT_the NN_technician]
+SAV disables the option "Repair".
+SAV disables the option OPT004.
+[NP-SUJ-A0-Disabler NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT004]
+SAV registers the data of the maintenance.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_maintenance]
+
+<NIL>IF</NIL>
+the state of the vehicle is different to "pending repair"
+the state of the vehicle is different to STA008
+[NP-SUJ-A1 DT_the NN_state IN_of NN_vehicle] [VP VBZ_is] [ADJP-ATR-A2 JJ_different TO_to NN_STA008]
+<NIL>THEN</NIL>
+<NIL>IF</NIL>
+the insurance expiration date is one month greater than current date, and total rate is greater than 0, and mileage vehicle is less than 150000
+[NP-SUJ-A1 DT_the NN_insurance NN_expiration NN_date] [VP VBZ_is] [ADJP-ATR-A2 CD_one NN_month JJ_greater IN_than JJ_current NN_date Fc_,] CC_and [NP-SUJ-A1 JJ_total NN_rate] [VP VBZ_is] [ADJP-ATR-A2 JJR_greater IN_than CC_0 Fc_,] CC_and [NP-SUJ-A1 NN_mileage NN_vehicle] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than CD_150000]
+<NIL>THEN</NIL>
+SAV assigns to the vehicle the state "paymaster".
+SAV assigns to the vehicle the state STA003.
+[NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA003]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> insurance expiration date is less than current date plus 1 month 
+<NIL>THEN</NIL>
+insurance expiration date is less than current date plus 1 month
+[NP-SUJ-A1 NN_insurance NN_expiration NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than JJ_current NN_date IN_plus CD_1 NN_month]
+SAV assigns to the vehicle the state "disabled".
+SAV assigns to the vehicle the state STA001
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+SAV enables the option "Renew Insurance".
+SAV enables the option OPT031.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT031]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL>  
+total rate is equal to zero
+[NP-SUJ-A1 JJ_total NN_rate] [VP VBZ_is] [ADJP-ATR-A2 JJ_equal TO_to CD_zero]
+<NIL>THEN</NIL>
+SAV assigns to the vehicle the state "disabled".
+SAV assigns to the vehicle the state STA001
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA001]
+SAV enables the option "Assign Rate".
+SAV enables the option OPT032.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT032]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL>  
+ vehicle mileage is greater or equal than 150000
+[NP-SUJ-A1 NN_vehicle NN_mileage] [VP VBZ_is] [ADJP-ATR-A2 JJ_greater CC_or JJ_equal IN_than CD_150000]
+<NIL>THEN</NIL>
+SAV assigns to the vehicle the state "for sale".
+SAV assigns to the vehicle the state STA004.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA004]
+
+<NIL>END IF</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register Maintenance.</NIL>
+
+<NIL>2.2.1. REQUEST REPAIR</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Operator selects the option "Request Repair".
+the Operator selects the option OPT033.
+[NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT033]
+SAV obtains the registrations of the vehicles with the state "disabled" or "pending maintenance".
+SAV obtains the registrations of the vehicles with the state STA001 or STA007.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NNS_vehicles IN_with DT_the NN_STA001 CC_or NN_STA007]
+SAV shows the registrations of the vehicles with the state "disabled" or "pending maintenance".
+SAV shows the registrations of the vehicles with the STA001 or STA007.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NNS_vehicles IN_with DT_the NN_STA001 CC_or NN_STA007]
+The Operator chooses the registration of the vehicle.
+[NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle]
+SAV obtains the date and hour of the request of repair.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_request IN_of NN_repair]
+SAV obtains the identification of the Operator.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification of DT_the NN_operator]
+SAV enables the option "External Garage".
+SAV enables the option OPT034.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT034]
+
+<NIL>IF</NIL> 
+the Operator selects the option "External Garage"
+the Operator selects the option OPT034-
+[NP-SUJ-A0-Selector DT_the NNP_OPERATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT034]
+<NIL>THEN</NIL>
+SAV obtains the identification of the external garages.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification of DT_the JJ_external NNS_garages]
+SAV shows the identification of the external garages.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_identification of DT_the JJ_external NNS_garages]
+The Operator chooses the external garage.
+[NP-SUJ-A0-Picker DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_external NNS_garage]
+
+<NIL>END IF</NIL>
+SAV requests the description of the damage that must be repaired.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_damage [SBAR-SUJ-R_A1 WDT_that] [VP MD_must VB_be VBN_repaired]] 
+The Operator introduces the description of the damage that must be repaired.
+[NP-SUJ-A0-Starter DT_the NNP_OPERATOR] [VP VBZ_intoduces] [NP-OBJ-A1 DT_the NN_description IN_of DT_the NN_damage [SBAR-SUJ-R_A1 WDT_that] [VP MD_must VB_be VBN_repaired]] 
+SAV enables the option "Request".
+SAV enables the option OPT029.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+
+<NIL>IF</NIL>
+the Operator chooses the option "Request"
+the Operator chooses the option OPT029
+[NP-SUJ-A0-Pickerd DT_the NNP_OPERATOR] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT029]
+<NIL>THEN</NIL>
+SAV assigns to the vehicle the state "pending repair".
+SAV assigns to the vehicle the state STA008.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_vehicle] [NP-OBJ-A1 DT_the NN_State NN_STA008]
+SAV registers the data of the request of repair.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Request Repair.</NIL>
+
+<NIL>2.2.2.REGISTER REPAIR</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Technician selects the option "Register Repair".
+the Technician selects the option OPT035.
+[NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT035]
+SAV obtains the registrations of the vehicles with the state "pending repair".
+SAV obtains the registrations of the vehicles with the state STA008.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registrations IN_of DT_the NNS_vehicles IN_with DT_the NN_State NN_STA008]
+SAV shows the registrations of the vehicles with the state "pending repair".
+SAV shows the registrations of the vehicles with the state STA008.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registrations IN_of DT_the NNS_vehicles IN_with DT_the NN_State NN_STA008]
+The Technician selects the registration of the vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_TECHNICIAN] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+SAV obtains the data of the request of repair.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+SAV shows the data of the request of repair.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_request IN_of NN_repair]
+SAV obtains the place, date and hour of the registration of the request of repair of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_place Fc_, NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of NN_repair IN_of DT_the NN_vehicle]
+SAV obtains the identification of the Technician.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_technician]
+SAV requests the description of the repair carried out to the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_repair] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]]
+The Technician introduces the description of the repair carried out to the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_description IN_of [NP-SUJ-A1 DT_the NN_repair] [VP VBD_carried RP_out] [PP-OBJ-AM_DIR TO_to DT_the NN_vehicle]] 
+SAV requests the cost of the repair of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_cost IN_of DT_the NN_repair IN_of DT_the NN_vehicle]
+The Technician introduces the cost of the repair of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_TECHNICIAN] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_cost IN_of DT_the NN_repair IN_of DT_the NN_vehicle] 
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Technician chooses the option "Register"
+the Technician chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_TECHNICIAN] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026] 
+<NIL>THEN</NIL>
+SAV registers the data of the repair.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_repair]
+
+<NIL>INCLUDE Request Maintenance.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register Repair.</NIL>
+
+<NIL>2.3.1.REGISTER AN EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Register an External Garage".
+the Employee selects the option OPT036.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT036]
+SAV requests the data of the external garage.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+The Employee introduces the data of the external garage.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage] 
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL>  
+the Employee chooses the option "Register"
+the Employee chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV registers the data of the external garage.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register an External garage.</NIL>
+
+<NIL> AP1 </NIL>
+The external garage exists.
+[NP-OBJ-A1 DT_the NN_external NN_garage] [VP VBZ_exists]
+SAV shows the Employee the message "Registered External Garage".
+SAV shows the Employee the message MSG003.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 DT_the NNP_employee DT_the NN_message NN_MSG003]
+
+<NIL>USE CASE END Register an External garage.</NIL>
+
+<NIL>2.3.2.ERASE EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Erase External Garage".
+the Administrator selects the option OPT037.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT037]
+SAV obtains the name and the identification of the external garages.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+SAV It shows the name and the identification of the external garages.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+The Employee selects the name of the external garage.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_external NN_garage] 
+SAV shows the data of the external garage.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+SAV enables the option "Erase".
+SAV enables the option OPT038.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+
+<NIL>IF</NIL> 
+the Employee selects the option "Erase"
+the Employee selects the option OPT038
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>THEN</NIL>
+SAV eliminates the external garage.
+[NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the JJ_external NN_garage]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Erase External Garage.</NIL>
+
+<NIL>2.3.3.MODIFY EXTERNAL GARAGE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Modify External Garage".
+the Employee selects the option OPT039.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT039]
+SAV obtains the name and the identification of the external garages.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+SAV shows the name and the identification of the external garages.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_identification IN_of DT_the JJ_external NNS_garages]
+The Employee selects the name of the external garage.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name IN_of DT_the JJ_external NN_garage] 
+SAV shows the data of the external garage.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+The Employee introduces the data of the external garage.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage] 
+SAV enables the option "Modify".
+SAV enables the option OPT008.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+
+<NIL>IF</NIL> 
+the Employee selects the option "Modify"
+the Employee selects the option OPT008.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+SAV registers the data of the external garage.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_external NN_garage]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify External Garage.</NIL>
+
+<NIL>3.1. REGISTER A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Register Vehicle".
+the Administrator selects the option OPT040.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+SAV requests the Administrator the registration number of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_Administrator DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+The Administrator introduces the registration number of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+SAV validates the registration number of the vehicle.
+[NP-SUJ-A0-Causer NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_Registration NN_number IN_of DT_the NN_vehicle]
+SAV requests the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+SAV determines the existence of the class and the group of the type of vehicle.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV obtains the class and the group of the type of vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+SAV shows the class and the group of the type of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+SAV enables the option "Register Vehicle".
+SAV enables the option OPT040.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Register Vehicle"
+the Administrator selects the option OPT040
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT040]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of the registration of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+SAV registers the date an hour of the registration of the vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+SAV registers the registration number, the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_registration NN_number Fc_, DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity Fc_, DT_the NN_mileage Fc_, DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_vehicle]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+The registration number is invalid.
+[NP-SUJ-A1 DT_the NN_registration NN_number] [VP VBZ_is] [ADJP-ATR-A2 JJ_invalid]
+SAV shows the Administrator the message "Invalid Registration Number".
+SAV shows the Administrator the message MSG001
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNP_administrator DT_the NN_message NN_MSG001]
+<NIL>USE CASE END Register a Vehicle.</NIL>
+<NIL> AP2 </NIL>
+The registration number exists.
+[NP-OBJ-A1 DT_the NN_registration NN_number] [VP VBZ_exists]
+SAV shows the Administrator the message "Existing Registration Number".
+SAV shows the Administrator the message MSG006.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG006]
+<NIL>USE CASE END Register a Vehicle.</NIL>
+
+<NIL>3.2. MODIFY THE REGISTRATION OF A VEHICLE</NIL>
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify Vehicle".
+the Administrator selects the option OPT007.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT007]
+SAV shows the registration numbers of the vehicles.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles]
+The Administrator selects the registration number of a vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_a NN_vehicle]
+SAV shows the data of the vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNS_vehicle]
+SAV enables the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+The Administrator introduces the model, the brand, the year of production, the number of doors, the capacity and the mileage of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity CC_and DT_the NN_mileage IN_of DT_the NN_vehicle]
+SAV determines the existence of the class and the group of the type of vehicle.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV obtains the class and the group of the type of vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+SAV shows the class and the group of the type of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and DT_the NN_group N_of DT_the NN_type IN_of NN_vehicle]
+SAV enables the option "Modifying Registration". 
+SAV enables the option OPT041. 
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT041]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Modify Registration"
+the Administrator selects the option OPT042
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT042]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of the registration of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+SAV registers the date and hour of the registration of the vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of DT_the NN_registration IN_of DT_the NN_vehicle]
+SAV registers the model, the brand, the year of production, the number of doors, the capacity, the mileage, the class and the group of the vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_model Fc_, DT_the NN_brand Fc_, DT_the NN_year IN_of NN_production Fc_, DT_the NN_number IN_of NNS_doors Fc_, DT_the NN_capacity Fc_, DT_the NN_mileage Fc_, DT_the NN_class CC_and DT_the NN_group IN_of DT_the NN_vehicle]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify the Registration of a Vehicle.</NIL>
+
+<NIL>3.3.REGISTER OF THE HISTORIC INFORMATION OF A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Register of the Historic information" of a Vehicle.
+the Administrator selects the option OPT043 of a Vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT043 IN_of DT_a NN_vehicle]
+SAV shows the registration numbers of the vehicles sold.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of [NP-OBJ-A1 DT_the NN_vehicle] [VP VBN_sold]]
+The Administrator chooses the registration number of a vehicle.
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_a NN_vehicle]
+SAV obtains the data of the registration of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NNS_vehicle]
+SAV obtains the data of the registration of the purchase of the vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle]
+SAV obtains the data of the registration of the sale of the vehicle.
+ [NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle]
+SAV enables the option "Register Historic". 
+SAV enables the option OPT044. 
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT044]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Register Historic"
+the Administrator selects the option OPT044
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT044]
+<NIL>THEN</NIL>
+SAV registers the data of the registration of the vehicle in the Historic of Vehicles. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles]
+SAV eliminates the registration of the vehicle.
+[NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_vehicle] 
+SAV registers the data of the registration of the purchase of the vehicle in the Historic of Vehicles. 
+[NP-SUJ-A0-Entity registering DT_the NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles] 
+SAV eliminates the registration of the purchase of the vehicle.
+[NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_purchase IN_of DT_the NN_vehicle] 
+SAV registers the data of the registration of the sale of the vehicle in the Historic of Vehicles. 
+[NP-SUJ-A0-Entity registering DT_the NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle IN_IN DT_the JJ_historic IN_of DT_the NNS_vehicles]
+SAV eliminates the registration of the sale of the vehicle. 
+[NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_sale IN_of DT_the NN_vehicle] 
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register of the Historic Information of a Vehicle.</NIL>
+
+<NIL>3.4. ASSIGN CLASS AND GROUP</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Assign Class and Group".
+the Administrator selects the option OPT045
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT045]
+SAV requests the model, year of production and number of doors of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+The Administrator introduces the model, year of production and number of doors of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+SAV determines the existence of the class and group of the type of vehicle.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existenceIN_of DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV shows the name and the description of the classes of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NNS_classes IN_of NN_vehicle]
+SAV enables the option "Create Class".
+SAV enables the option OPT046.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+
+<NIL>IF</NIL> 
+the Administrator selects the name and the description of a class of vehicle
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_a NN_class IN_of NN_vehicle]
+<NIL>THEN</NIL>
+SAV disables the option "Create Class".
+SAV disables the option OPT046.
+[NP-SUJ-A0-Disabler NNP_SAV] [VP VBZ_disables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+SAV shows the name, the description and the types of vehicle of the groups of the class of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_name Fc_, DT_the NN_description CC_and DT_the NN_types IN_of NN_vehicle IN_of DT_the NNS_groups IN_of DT_the NN_class IN_of NN_vehicle]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Administrator selects a group of a class of vehicle
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_group IN_of DT_a NN_class IN_of NN_vehicle]
+<NIL>THEN</NIL>
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Register" 
+the Administrator selects the option OPT026
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV registers the type of vehicle in a group of a class. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_type IN_of NN_vehicle IN_in DT_a NN_group IN_of DT_a NN_class]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Assign Class and Group.</NIL>
+<NIL> AP1 </NIL>
+Class and group of the type of vehicle exists.
+[NP-OBJ-A1 NN_Class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle] [VP VBZ_exists].
+SAV shows the Administrator the message "Class and Group of the Type of Existing Vehicle". 
+SAV shows the Administrator the message MSG007.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A2 DT_the NN_administrator DT_the NN_message NN_MSG007]
+
+<NIL>USE CASE END Assign Class and Group.</NIL>
+
+<NIL>3.5.CREATING A CLASS</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Create Class". 
+the Administrator selects the option OPT046. 
+[NP-SUJ-A0-Selector DT_the NNP_ADMISNITRATOR] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+SAV requests the name and the description of the new class of vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the JJ_new NN_class IN_of NN_vehicle]
+The Administrator introduces the name and the description of the new class of vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the JJ_new NN_class IN_of NN_vehicle]
+SAV determines the existence of the class.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_class]
+SAV enables the option "Create Group".
+SAV enables the option OPT047.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT047]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Create Group"
+the Administrator selects the option OPT047
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT047]
+<NIL>THEN</NIL>
+SAV requests the name and the description of the group of the class of vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+The Administrator introduces the name and the description of the group of the class of vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_name CC_and DT_the NN_description IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+SAV assigns the value of monetary units zero to the price of the class and the group of the vehicle types.
+[NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_value IN_of JJ_monetary NNS_units] [NP-OBJIND-A2 CD_zero TO_to DT_the NN_price IN_of DT_the NN_class CC_and IN_of NN_vehicle DT_the NN_group IN_of DT_the NN_vehicle NNS_types]
+SAV enables the option "Assign Price".
+SAV enables the option OPT048.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT048]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>RETURN TO THE STEP 3.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL>  
+the Administrator selects the option "Register"
+the Administrator selects the option OPT026
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV registers the data of the new class.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_new NN_class]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Creating a Class.</NIL>
+<NIL> AP1 </NIL>
+The class exists.
+[NP-OBJ-A1 DT_the NN_class] [VP VBZ_exists].
+SAV shows the Administrator the message "Existing Class". 
+SAV shows the Administrator the message MSG008. 
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG008]
+
+<NIL>USE CASE END Creating a Class.</NIL>
+
+<NIL>3.6.ERASE TYPE OF VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Erase Type". 
+the Administrator selects the option OPT049. 
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT049]
+SAV requests the model, year of production and number of doors of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+The Administrator introduces the model, year of production and number of doors of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_model Fc_, NN_year IN_of NN_production CC_and NN_number IN_of NNS_doors IN_of DT_the NN_vehicle]
+SAV determines the existence of the class and group of the type of vehicle.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existenceIN_of DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV obtains the class and group of the type of vehicle.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV shows the class and group of the type of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_class CC_and NN_group IN_of DT_the NN_type IN_of NN_vehicle]
+SAV enables the option "Erase".
+SAV enables the option OPT038.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+
+<NIL>IF</NIL> 
+the Administrator selects the option "Erase"
+the Administrator selects the option OPT038
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT038]
+<NIL>THEN</NIL>
+SAV eliminates the type of vehicle of the class and group.
+[NP-SUJ-A0-Entity removing NNP_SAV] [VP VBZ_eliminates] [NP-OBJ-A1 DT_the NN_type IN_of NN_vehicle IN_of DT_the NN_class CC_and NN_group]
+SAV enables the option "Assign Class and Group".
+SAV enables the option OPT045.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT045]
+SAV enables the option "Create Class".
+SAV enables the option OPT046.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT046]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+<NIL> AP1 </NIL>
+The class and group do not exist.
+[NP-OBJ-A1 DT_the NN_class CC_and NN_group] do_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+SAV shows the Administrator the message "the Type of Vehicle is not assigned to a Group".
+SAV shows the Administrator the message MSG009.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_administrator DT_the NN_message NN_MSG009]
+
+<NIL>USE CASE END Erase Type of Vehicle.</NIL>
+
+<NIL>3.7.ASSIGN PRICE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Assign Price".
+the Administrator selects the option OPT048.
+[NP-SUJ-A0- Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT048]
+SAV shows the classes of vehicles.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_classes IN_of NNS_vehicles]
+The Administrator selects a class of vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_class IN_of NN_vehicle]
+SAV shows the data of the class of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_class IN_of NN_vehicle]
+The Administrator selects a group of the class of vehicle.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_a NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+SAV shows the data of the group of the class of vehicle.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_group IN_of DT_the NN_class IN_of NN_vehicle]
+SAV shows the price of the class and group of vehicle types.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_priceIN_of DT_the NN_class CC_and NN_group IN_of NN_vehicle NNS_types]
+SAV requests to introduce the daily price of the rent of a class and group of vehicle types.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to VB_introduce DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of DT_a NN_class CC_and NN_group IN_of NN_vehicle NNS_types]
+SAV requests to introduce the daily cost of the insurance of the types of vehicles of a class and group.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to VB_introduce DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+The Administrator introduces the daily price of the rent of a class and group vehicles types.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of TO_a NN_class CC_and NN_group NNS_vehicles NNS_types]
+Administrator introduces the daily cost of the insurance of the types of vehicles of a class and group.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+SAV enables the option "Register Price".
+SAV enables the option OPT050.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT050]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register Price"
+the Administrator chooses the option OPT050.
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT050]
+<NIL>THEN</NIL>
+SAV calculates the total price of the rent of a type of vehicle.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total NN_price IN_of DT_the NN_rent IN_of DT_a NN_type IN_of NN_vehicle]
+SAV registers the daily price of the rent of a class and group vehicles types.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_daily NN_price IN_of DT_the NN_rent IN_of TO_a NN_class CC_and NN_group NNS_vehicles NNS_types]
+SAV registers the daily cost of the insurance of the types of vehicles of a class and group.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_daily NN_cost IN_of DT_the NN_insurance IN_of DT_the NNS_types IN_of NNS_vehicles IN_of DT_a NN_class CC_and NN_group]
+SAV registers the total price of the rent of a type of vehicle.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_total NN_price IN_of DT_the NN_rent IN_of DT_a NN_type IN_of NN_vehicle]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Assign Price.</NIL>
+
+<NIL>4.1.1. INSURE A VEHICLE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Insure a Vehicle".
+the Administrator selects the option OPT051.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT051]
+SAV requests to the Employee the registration number of the vehicle.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+The Employee introduces the registration number of the vehicle.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+The Employee chooses the registration number of the vehicle.
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_registration NN_number IN_of DT_the NN_vehicle]
+SAV determines the existence of an insurance policy of the vehicle.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_an NN_insurance NN_policy IN_of DT_the NN_vehicle]
+SAV enables the option "Register Insurance Company". 
+SAV enables the option OPT052. 
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+SAV shows the insurance companies.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_insurance NNS_companies]
+The Employee selects the insurance company. 
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_insurance NN_company]
+SAV requests the data of the insurance policy.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+The Employee introduces the data of the insurance policy.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Register"
+the Employee chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of registration of the insurance policy. 
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_insurance NN_policy]
+SAV obtains the identification of the Employee.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NNP_employee]
+SAV registers the data of the insurance policy.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+SAV encloses to the insurance policy the date and hour of registration and the identification of the Employee that registered it. 
+[NP-SUJ-A0-Causative agent NNP_SAV] [VP VBZ_encloses] [NP-OBJIND-A2 TO_to DT_the NN_insurance NN_policy] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration CC_and DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_registered] [NP-OBJ-A1 PRP_it]]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+<NIL> AP1 </NIL>
+Exists an insurance policy of the vehicle.
+[VP VBZ_exists][NP-OBJ-A1 DT_an NN_insurance NN_policy IN_of DT_the NN_vehicle]
+SAV shows to the Employee the message "Exists Insurance Policy". 
+SAV shows to the Employee the message MSG010. 
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG010]
+SAV enables the option "Renew the Insurance Policy".
+SAV enables the option OPT053.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT053]
+
+<NIL>USE CASE END Insure a Vehicle.</NIL>
+
+<NIL>4.1.2.RENEW THE INSURANCE POLICY</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Renew the Insurance Policy".
+the Employee selects the option OPT053.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT053]
+SAV shows the registration numbers of the vehicles that have insurance policies.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_registration NNS_numbers IN_of DT_the NNS_vehicles [SBAR-SUJ-R_A0 WDT_that] [VP VBP_have] [NP-OBJ-A1 NN_insurance NNS_policies]]
+The Employee chooses a registration number of a vehicle.
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 TO_to NN_registration NN_number IN_of DT_a NN_vehicle]
+SAV obtains the data of the insurance policy.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+SAV shows the data of the insurance policy.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_insurance NN_policy]
+SAV enables the option "Register Insurance Company".
+SAV enables the option OPT052. 
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+The Employee introduces the new data of the insurance policy.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_new NN_data IN_of DT_the NN_insurance NN_policy]
+SAV enables the option "Renew".
+SAV enables the option OPT054.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT054]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Renew"
+the Employee chooses the option OPT054
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT054]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of renewal of the insurance policy.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data CC_and NN_hour IN_of NN_renewal IN_of DT_the NN_insurance NN_policy]
+SAV obtains the identification of the Employee that carried out the renewal.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_renewal]]
+SAV registers the new data of the insurance policy. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of NN_insurance NN_policy]
+SAV enclosed to the insurance policy the date and hour of the renewal and the identification of the Employee that carried out the renewal.
+[NP-OBJ- A1-Thing surrounding NNP_SAV] [VP VBZ_enclosed] [NP-OBJIND-A2 TO_to DT_the NN_insurance NN_policy DT_the NN_date CC_and NN_hour IN_of NN_renewal CC_and DT_the NN_identification IN_of NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_renewal]]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Renew the Insurance Policy.</NIL>
+
+<NIL>4.2.1. REGISTER AN INSURANCE COMPANY</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Register a Insurance Company".
+the Administrator selects the option OPT052.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT052]
+SAV requests to the Administrator the data of the Insurance Company.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 TO_to DT_the NN_administrator DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+The Administrator introduces the data of the Insurance Company.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV enables the option "Register". 
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+The Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of registration of the data of the Insurance Company.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV obtains the identification of the Administrator that carried out the registration. 
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_registration]]
+SAV registers the date and hour of registration of the data of the Insurance Company.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV registers the identification of the Administrator that carried out the registration.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-OBJ-A1 DT_the NN_registration]]
+SAV registers the data of the Insurance Company.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register an Insurance Company.</NIL>
+
+<NIL>4.2.2.MODIFY AN INSURANCE COMPANY</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify an Insurance Company".
+the Administrator selects the option OPT055.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT055]
+SAV obtains the names of the Insurance Companies.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_names IN_of DT_the NNP_insurance NNPS_companies]
+SAV shows the names of the Insurance Companies.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_names IN_of DT_the NNP_insurance NNPS_companies]
+The Administrator chooses an Insurance Company
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_an NNP_insurance NNP_company]
+SAV shows the data of the Insurance Company.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV enables the data of the Insurance Company.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+The Administrator introduces the data of the Insurance Company.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+ SAV enables the option "Modify". 
+SAV enables the option OPT008.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Modify"
+the Administrator chooses the option OPT008
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of modification of the data of the Insurance Company.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV obtains the identification of the Administrator that carried out the modification.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-SUJ-A1 DT_the NN_modification]]
+SAV registers the date and hour of modification of the data of the Insurance Company.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+SAV registers the identification of the Administrator carried out the modification.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBD_carried RP_out] [NP-SUJ-A1 DT_the NN_modification]]
+SAV registers the data of the Insurance Company.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NNP_insurance NNP_company]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify an Insurance Company.</NIL>
+
+<NIL>5.1.REGISTER A CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Register a Client".
+the Employee selects the option OPT056.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT056]
+SAV asks to the Employee if the client is direct or if he is an agency. 
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [PP-OBJIND-A2 TO_to DT_the NN_employee] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+The Employee tells if the client is direct or if he is an agency. 
+[NP-SUJ-A0-Speaker DT_the NNP_Employee] [VP VBZ_tells] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+SAV requests the identifier of the client according to his type.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the NN_client IN_according_to TO_to PRP_his NN_type]
+SAV determines the existence of the client.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_client]
+SAV requests the data of the client according to his type.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_request] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+The Employee introduces the data of the client.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+
+<NIL>IF</NIL>
+the client is direct 
+[NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+
+
+<NIL>INCLUDE Register the Bank Details of a Direct Client.</NIL>
+
+<NIL>END IF</NIL> 
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Register"
+the Employee chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of registration of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_registration IN_of DT_the NN_client]
+SAV obtains the identification of the Employee that carries out the registration of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the NN_registration IN_of DT_the NN_client]]
+SAV registers the data of the client. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+
+<NIL>IF</NIL> 
+the client is direct 
+[NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+SAV registers the bank details of the direct client.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+
+<NIL>END IF</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register a Client.</NIL>
+<NIL> AP1 </NIL>
+The client exists.
+[NP-OBJ-A1 DT_the NN_client] [VP VBZ_exists]
+<NIL>Existing client.</NIL>
+SAV shows the Employee the message "Existing Client". 
+SAV shows the Employee the message MSG011. 
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG011]
+SAV enables the option "Modify Client".
+SAV enables the option OPT057.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT057]
+
+<NIL>USE CASE END Register a Client.</NIL>
+
+<NIL>5.2.MODIFY THE DATA OF A CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Modify the Data of a Client".
+the Employee selects the option OPT058.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT058]
+SAV asks to the Employee if the client is direct or if he is an agency.
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 TO_to DT_the NN_employee] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+The Employee indicates if the client is direct or if he is an agency.
+[NP-SUJ-A0-Indicator DT_the NNP_Employee] [VP VBZ_indicates] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct] CC_or IN_if [NP-SUJ-A1 PRP_he] [VP VBZ_is] [NP-ATR-A2 DT_an NN_agency]]
+SAV obtains the identifiers of the client according to his type.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+SAV shows the identifiers of the clients according to his type.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to PRP_his NN_type]
+The Employee chooses the identifier of a client. 
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_a NN_client]
+SAV obtains the data of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+SAV shows the data of the client.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+The Employee introduces the new data of the client.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_client]
+
+<NIL>IF</NIL> 
+the client is direct 
+[NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+SAV enables the option "Register Bank Details".
+SAV enables the option OPT059.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT059]
+
+<NIL>END IF</NIL>
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Register"
+the Employee chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the date and hour of modification of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_date CC_and NN_hour IN_of NN_modification IN_of DT_the NN_client]
+SAV obtains the identification of the Employee that carried out the modification of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_identification IN_of DT_the NN_employee [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carried RP_out] [NP-OBJ-A1 DT_the NN_modification IN_of DT_the NN_client]]
+SAV registers the data of the client. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+
+<NIL>IF</NIL> 
+the client is direct
+[NP-SUJ-A1 DT_the NNP_Client] [VP VBZ_is] [ADJP-ATR-A2 JJ_direct]
+<NIL>THEN</NIL>
+SAV registers the bank details of the direct client.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+
+<NIL>END IF</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify the Data of a Client.</NIL>
+
+<NIL>5.3.REGISTER THE BANK DETAILS OF A DIRECT CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Register the Bank Details of a Direct Client".
+the Employee selects the option OPT060.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT060]
+SAV obtains the identifiers of the direct clients. 
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the JJ_direct NNS_clients]
+SAV shows the identifiers of the direct clients.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the JJ_direct NNS_clients]
+The Employee chooses the identifier of the direct client.
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the JJ_direct NN_client]
+SAV requests the bank details of the direct client.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+The Employee introduces the bank details of the direct client. 
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Register"
+the Employee chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV validates the bank details of the direct client.
+[NP-SUJ-A0-Causer NNP_SAV] [VP VBZ_validates] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+AV registers the bank details of the direct client.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_bank NNS_details IN_of DT_the JJ_direct NN_client]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+
+<NIL> AP1 </NIL>
+The bank details are invalid.
+[NP-SUJ-A1 DT_the NN_bank NN_details] [VP VBZ_are] [ADJP-ATR-A2 JJ_invalid]
+SAV shows the Employee the message "Invalid Bank Details".
+SAV shows the Employee the message MSG012.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG012]
+SAV enables the option "Register Bank Details".
+SAV enables the option OPT059.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT059]
+
+<NIL>USE CASE END Register the Bank Details of a Direct Client.</NIL>
+
+<NIL>5.4.AUTHORIZE DISCOUNT OR COMMISSION OF A CLIENT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Authorize Discount or Commission of a Client". 
+the Administrator selects the option OPT061. 
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT061]
+SAV asks the Administrator if the client is direct or an agency.
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 DT_the NNP_administrator] [NP-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [UCP-ATR-A2 JJ_direct CC_or DT_an NN_agency]]
+The Administrator indicates if the client is direct or an agency.
+[NP-SUJ-A0-Indicator DT_the NNP_Administrator] [VP VBZ_indicates] [NP-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NN_client] [VP VBZ_is] [UCP-ATR-A2 JJ_direct CC_or DT_an NN_agency]]
+SAV obtains the identifiers of the clients according to its type.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_identifiers IN_of DT_the NN_client IN_according_to TO_to PRP_its NN_type]
+SAV shows the identifiers of the clients according to its type.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 IN_of DT_the NNS_clients IN_according_to PRP_its NN_type]
+The Administrator chooses the identifier of the client.
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_identifier IN_of DT_the NN_client]
+SAV obtains the data of the client.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+SAV shows the data of the client.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_client]
+The Administrator introduces the percentage of discount or the commission of the client.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_percentage IN_of NN_discount CC_or DT_the NN_commission IN_of DT_the NN_client]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV registers the percentage of discount or the commission of the client. 
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_percentage IN_of NN_discount CC_or DT_the NN_commission IN_of DT_the NN_client]
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Authorize Discount or Commission of a Client. </NIL>
+
+<NIL>6.1.REGISTER EXTRAS</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Register Extras".
+the Administrator selects the option OPT062.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT062]
+SAV requests to the Administrator the data of the extra.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 TO_to DT_the NNP_administrator DT_the NN_data IN_of DT_the JJ_extra]
+The Administrator introduces the data of the extra.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_extra]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV assigns a code to the extra.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_a NN_code] [NP-OBJ-A2 TO_to DT_the JJ_extra]
+SAV registers the data of the extra.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the JJ_extra]
+SAV enables the option "Register Another Extra".
+SAV enables the option OPT063.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT063]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register Another Extra"
+the Administrator chooses the option OPT063
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT063]
+<NIL>THEN</NIL>
+
+<NIL>RETURN TO THE STEP 1.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register Extras.</NIL>
+
+<NIL>6.2.MODIFY AN EXTRA</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify Extras".
+the Administrator selects the option OPT064.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT064]
+SAV obtains the codes and the generic names of the extras.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_codes CC_and DT_the JJ_generic NNS_names IN_of DT_the NNS_extras]
+SAV shows to the Administrator the codes and the generic names of the extras.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJIND-A2 TO_to DT_the NNP_administrator][NP-OBJ-A1 DT_the NNS_codes CC_and DT_the JJ_generic NNS_names IN_of DT_the NNS_extras]
+The Administrator chooses the code of an extra.
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_code IN_of DT_a JJ_extra]
+SAV obtains the data of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+SAV shows the data of the extra.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+The Administrator introduces the new data of the extra.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of DT_the JJ_extra]
+SAV enables the option "Modify".
+SAV enables the option OPT008
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+
+<NIL>IF</NIL>  
+the Administrator chooses the option "Modify"
+the Administrator chooses the option OPT008
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT008]
+<NIL>THEN</NIL>
+SAV registers the new data of the extra.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the JJ_new NNS_data IN_of DT_the JJ_extra]
+SAV enables the option "Another Modification".
+SAV enables the option OPT065.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT065]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Another Modification" 
+the Administrator chooses the option OPT065
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT065]
+<NIL>THEN</NIL>
+
+<NIL>RETURN TO THE STEP 1.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify Extras.</NIL>
+
+<NIL>6.3.ELECTION OF EXTRAS</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Election of Extras".
+the Employee selects the option OPT066.
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT066]
+SAV obtains the generic name of the extras.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_the NNS_extras]
+SAV shows the generic name of the extras.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_the NNS_extras]
+The Employee chooses the generic name of an extra.
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_a JJ_extra]
+SAV obtains the data of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+SAV shows the data of the extra.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+
+<NIL>IF</NIL>
+the extra is accessory type
+[NP-SUJ-A1 DT_the NNP_extra] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+SAV determines the available quantity of the accessory.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of DT_the JJ_accessory]
+SAV requests the quantity of units that are desired to hire.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units [SBAR-SUJ-R_A1 WDT_that] [VP VBZ_are VBN_desired TO_to VB_hire]]
+The Employee introduces the quantity of units that are desired to hire.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units [SBAR-SUJ-R_A1 WDT_that] [VP VBZ_are VBN_desired TO_to VB_hire]]
+
+<NIL>IF</NIL> 
+available quantity of the accessory is less than the quantity of units to be hired
+[NP-SUJ-A1 JJ_available NN_quantity IN_of DT_the JJ_accessory][VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than DT_the NN_quantity IN_of [NP-SUJ-A1 NNS_units] [VP TO_to VB_be VBN_hired]]
+<NIL>THEN</NIL>
+SAV shows to the Employee the message "Unavailable Accessory".
+SAV shows to the Employee the message MSG013
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 TO_to DT_the NN_employee DT_the NN_message NN_MSG013]
+
+<NIL>RETURN TO THE STEP 1.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>END IF</NIL>
+SAV enables the option "Elect".
+SAV enables the option OPT067.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT067]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Elect"
+the Employee chooses the option OPT067
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT067]
+<NIL>THEN</NIL>
+SAV obtains the code, generic name, description, limitations, observations and price of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code Fc_, JJ_generic NN_name Fc_, NN_description Fc_, NNS_limitations Fc_, NNS_observations CC_and NN_price IN_of DT_the JJ_extra]
+
+<NIL>IF</NIL> 
+the extra is accessory type
+[NP-SUJ-A1 DT_the NNP_EXTRA] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+SAV requests the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+The Employee introduces the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+SAV requests the quantity of units of the accessory that were chosen.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+The Employee introduces the quantity of units of the accessory that were chosen.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+The Employee introduces the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+SAV requests the quantity of units of the accessory that were chosen.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+The Employee introduces the quantity of units of the accessory that were chosen.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_accessory [SBAR-SUJ-R_A1 WDT_that] [VP VB_were VBN_chosen]]
+SAV calculates the total to pay for concept of accessories.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_accessories]
+SAV shows the total to pay for concept of accessories.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_accessories]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the extra is service type
+[NP-SUJ-A1 DT_the JJ_extra] [VP VBZ_is] [NP-ATR-A2 NN_service NN_type]
+<NIL>THEN</NIL>
+SAV requests the quantity of days of contracting of the service.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the NN_service]
+The Employee introduces the quantity of days of contracting of the service.
+[NP-SUJ-A0-Starter DT_the NNP_Employee] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the NN_service]
+SAV calculates the total to pay for concept of services.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_services]
+SAV shows the total to pay for concept of services.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_pay IN_for NN_concept IN_of NNS_services]
+
+<NIL>END IF</NIL> 
+SAV calculates the subtotal by concept of extras.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+SAV shows the subtotal by concept of extras.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+SAV enables the option "Another Extra".
+SAV enables the option OPT068.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT068]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Another Extra"
+the Employee chooses the option OPT068
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT068]
+<NIL>THEN</NIL>
+
+<NIL>RETURN TO THE STEP 1.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Election of Extras.</NIL>
+
+<NIL>6.4.ELIMINATE AN EXTRA OF A LEASE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Employee selects the option "Eliminate an Extra of a Lease".
+the Employee selects the option OPT069
+[NP-SUJ-A0-Selector DT_the NNP_Employee] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT069]
+SAV obtains of the lease the code of the extras hired.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 IN_of DT_the NN_lease DT_the NN_code IN_of DT_the NNS_extras VBN_hired]
+SAV shows the code and generic name of the extras hired.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_code CC_and JJ_generic NN_name IN_of DT_the NNS_extras VBN_hired]
+The Employee chooses the generic name of an extra.
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the JJ_generic NN_name IN_of DT_a JJ_extra]
+SAV obtains the data of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+SAV shows the data of the extra.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the JJ_extra]
+SAV enables the option "Eliminate".
+SAV enables the option OPT070.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT070]
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Eliminate"
+the Employee chooses the option OPT070
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT070]
+<NIL>THEN</NIL>
+
+<NIL>IF</NIL> 
+the extra is accessory type
+[NP-SUJ-A1 DT_the NNP_extra] [VP VBZ_is] [NP-ATR-A2 JJ_accessory NN_type]
+<NIL>THEN</NIL>
+SAV obtains the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+SAV obtains the quantity of units of the extra that were rented.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_units IN_of DT_the JJ_extra [SBAR-SUJ-R_A1 WDT_that] VBP_were [VP VBN_rented]]
+SAV updates the available quantity of the extra
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_updates] [NP-OBJ-A1 DT_the JJ_available NN_quantity IN_of DT_the JJ_extra]
+SAV assigns the value of zero to the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_the NN_value IN_of CD_zero] [NP-OBJ-A2 TO_to DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+SAV calculates the total to discount for concept of accessories.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_accessories]
+SAV shows the total to discount for concept of accessories.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_accessories]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the extra is service type
+[NP-SUJ-A1 DT_the JJ_extra] [VP VBZ_is] [NP-ATR-A2 NN_service NN_type]
+<NIL>THEN</NIL>
+SAV obtains the quantity of days of contracting of the extra.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_quantity IN_of NNS_days IN_of NN_contracting IN_of DT_the JJ_extra]
+SAV calculates the total to discount for concept of services.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_services]
+SAV shows the total to discount for concept of services.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_total TO_to VB_discount IN_for NN_concept IN_of NNS_services]
+
+<NIL>END IF</NIL>
+SAV calculates the subtotal by concept of extras.
+[NP-SUJ-A0-Thinker NNP_SAV] [VP VBZ_calculates] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+SAV shows the subtotal by concept of extras.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_subtotal IN_by NN_concept IN_of NNS_extras]
+SAV enables the option "Eliminate Another Extra".
+SAV enables the option OPT071.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT071]
+
+<NIL>END IF</NIL>
+
+<NIL>IF</NIL> 
+the Employee chooses the option "Eliminate Another Extra"
+the Employee chooses the option OPT071
+[NP-SUJ-A0-Picker DT_the NNP_Employee] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT071]
+<NIL>THEN</NIL>
+
+<NIL>RETURN TO THE STEP 1.</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Eliminate an Extra of a Lease.</NIL>
+
+<NIL>7.1.OPEN A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Open a Labor ContrNN_optionact".
+the Administrator selects the option OPT072.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT072]
+SAV requests the identity card of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+The Administrator introduces the identity card of the employee.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines if the data of the employee are already registered.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [SBAR-OBJ-A1 IN_if [NP-SUJ-A1 DT_the NNS_data IN_of DT_the NN_employee] [VP VBZ_are [ADVP-Termporal-AM_TMP RB_already] JJ_registered]]
+SAV determines if the employee maintains a labor contract in force or assets with the company.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [SBAR-OBJ-A1 IN_if [NP-SUJ-AO DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force CC_or NNS_assets IN_with DT_the NN_company]]
+
+<NIL>IF</NIL> 
+the employee is already registered
+[NP-SUJ-A1 DT_the NN_Employee] [VP VBZ_is [ADVP-Termporal-AM_TMP RB_already] VBN_registered] 
+<NIL>THEN</NIL>
+SAV shows the data of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+SAV enables the option "Modify the Data of an Employee".
+SAV enables the option OPT073.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT073]
+
+<NIL>ELSE</NIL>
+
+<NIL>INCLUDE Register Employee.</NIL>
+SAV shows the data of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+
+<NIL>END IF</NIL>
+SAV requests the start date, duration and conditions of the labor contract.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_start NN_date Fc_, NN_duration CC_and NNS_conditions IN_of DT_the NN_labor NN_contract]
+The Administrator introduces the start date, duration and conditions of the labor contract.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_start NN_date Fc_, NN_duration CC_and NNS_conditions IN_of DT_the NN_labor NN_contract]
+SAV enables the option "Register Contract".
+SAV enables the option OPT074.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+
+<NIL>IF</NIL>  
+the Administrator chooses the option "Register Contract"
+the Administrator chooses the option OPT074
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+<NIL>THEN</NIL>
+SAV obtains the registration date of the labor contract and the identifier of the Administrator that carries out the above mentioned registration.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the RB_above VBN_mentioned NN_registration]]
+SAV assigns a code of identification to the labor contract.
+[NP-SUJ-A0-Agent NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A1 DT_a NN_code IN_of NN_identification] [NP-OBJIND-A2 TO_to DT_the NN_labor NN_contract]
+SAV registers the code and the registration date of the labor contract, the identifier of the Administrator that carries out the registration, the identity card of the employee, the start date, duration and conditions of the labor contract.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_code CC_and DT_the NN_registration NN_date IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_the NN_registration] Fc_, DT_the NN_identity NN_card IN_of DT_the NN_employee Fc_, DT_the NN_start NN_date Fc_, NN_duration CC_and NN_conditions IN_of DT_the NN_labor NN_contract]
+
+<NIL>IF</NIL>  
+Registration date is less than start date
+[NP-SUJ-A1 NN_registration NN_date] [VP VBZ_is] [ADJP-ATR-A2 JJR_less IN_than NN_start NN_date]
+<NIL>THEN</NIL>
+SAV assigns to the labor contract the state "active".
+SAV assigns to the labor contract the state STA009.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA009]
+
+<NIL>ELSE</NIL>
+SAV assigns to the labor contract the state "in force".
+SAV assigns to the labor contract the state STA010.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA010]
+
+<NIL>END IF</NIL>
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+
+<NIL> AP1 </NIL>
+The labor contract is in force or active.
+[NP-SUJ-A1 DT_the NN_labor NN_contract] [VP VBZ_is] [UCP-ATR-A2 IN_in NN_force CC_or NN_active]
+SAV shows the message "Existing Labor Contract". 
+SAV shows the message MSG014. 
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG014]
+
+<NIL>USE CASE END Open a Labor Contract.</NIL>
+
+<NIL>7.2.MODIFY THE DATA OF A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify the Data of a Labor Contract".
+the Administrator selects the option OPT075.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT075]
+SAV requests the identity card of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+The Administrator introduces the identity card of the employee.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines the existence of the identity card of the employee.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines if the employee maintains a labor contract in force or assets with the business.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 IN_if [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force CC_or NNS_assets IN_with DT_the NN_business]]
+SAV obtains the code of the labor contracts in force and assets of the employee.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_code IN_of DT_the NN_labor NNS_contracts IN_in NN_force CC_and NNS_assets IN_of DT_the NN_employee]
+ SAV shows the code of the labor contracts in force and assets of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_code IN_of DT_the NN_labor NNS_contracts IN_in NN_force CC_and NNS_assets IN_of DT_the NN_employee]
+The Administrator chooses the code of a labor contract.
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_code IN_of DT_a NN_labor NN_contract]
+SAV obtains the data of the labor contract of the employee.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+SAV shows the data of the labor contract of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+The Administrator introduces the new data of the labor contract of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+SAV enables the option "Modify Contract".
+SAV enables the option OPT019.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT019]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register Contract"
+the Administrator chooses the option OPT074
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT074]
+<NIL>THEN</NIL>
+SAV obtains the modification date of the labor contract and the identifier of the Administrator that carries out this modification.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_modification NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 DT_this NN_modification]]
+SAV registers the data of the labor contract, the modification date and the identifier of the Administrator that carries out said modification.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] VBZ_carries RP_out VBN_said NN_modification]
+SAV updates the state of the labor contract.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_updates] [NP-OBJ-A1 DT_the NN_state IN_of DT_the NN_labor NN_contract]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+
+<NIL> AP1 </NIL>
+The employee does not exist.
+[NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+SAV shows the message "Employed Nonexistent".
+SAV shows the message MSG015.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+
+<NIL> AP2 </NIL>
+The labor contract does not exist or it is annulled or it is culminated.
+[NP-SUJ-A1 DT_the NN_labor NN_contract] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist] CC_or [NP-SUJ-A1 PRP_it] [VPZ_is VBN_annulled] CC_or [NP-SUJ-A1 PRP_it] [VP VBZ_is VBN_culminated].
+SAV shows the message "Labor Contract without Conditions of Modification".
+SAV shows the message MSG016.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG016]
+
+<NIL>USE CASE END Modify the Data of a Labor Contract.</NIL>
+
+<NIL>7.3.CANCEL A LABOR CONTRACT</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Cancel a Labor contract".
+the Administrator selects the option OPT076.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT076]
+SAV requests the identity card of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+The Administrator introduces the identity card of the employee.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines the existence of the identity card of the employee.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines if the employee maintains a labor contract in force with the company.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 IN_if [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [NP-OBJ-A1 DT_a NN_labor NN_contract IN_in NN_force IN_with DT_the NN_company]]
+SAV obtains the data of the labor contract in force that the employee maintains with the company.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_in NN_force [SBAR-OBJ-R_A1 WDT_that] [NP-SUJ-A0 DT_the NN_employee] [VP VBZ_maintains] [PP-MOD-AM_MNR IN_with DT_the NN_company]]
+SAV shows the data of the labor contract of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_labor NN_contract IN_of DT_the NN_employee]
+SAV enables the option "Cancel Contract".
+SAV enables the option OPT077.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT077]
+
+<NIL>IF</nil> 
+the Administrator chooses the option "Cancel Contract"
+the Administrator chooses the option OPT077
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT077]
+<NIL>THEN</NIL>
+SAV asks the Administrator the reasons of the annulment of the labor contract.
+[NP-SUJ-A0-Asker NNP_SAV] [VP VBZ_asks] [NP-OBJIND-A2 DT_the NNP_administrator] [NP-OBJ-A1 DT_the NNS_reasons IN_of DT_the NN_annulment IN_of DT_the NN_labor NN_contract]
+The Administrator introduces the reasons of the annulment of the labor contract.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NNS_reasons IN_of DT_the NN_annulment IN_of DT_the NN_labor NN_contract]
+SAV obtains the annulment date of the labor contract and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_annulment NN_date IN_of DT_the NN_labor NN_contract CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+SAV registers the data of the labor contract, the annulment date and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_labor NN_contract Fc_, DT_the NN_annulment NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+SAV assigns to the labor contract the state "annulled".
+SAV assigns to the labor contract the state STA011.
+[NP-SUJ-A0-Agent assigner NNP_SAV] [VP VBZ_assigns] [NP-OBJ-A2 TO_to DT_the NN_labor NN_contract] [NP-OBJ-A1 DT_the NN_State NN_STA011]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+
+<NIL> AP1 </NIL>
+The employee does not exist.
+[NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+SAV shows the message "Employed Nonexistent".
+SAV shows the message MSG015.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+
+<NIL> AP2 </NIL>
+The labor contract does not exist or it is without vigor.
+[NP-SUJ-A1 DT_the NN_labor NN_contract] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist] CC_or [NP-SUJ-A1 PRP_it] [VP VBZ_is][PP-MOD-AM_MNR IN_without NN_vigor] .
+<NIL>Nonexistent labor contract or without vigor.</NIL>
+SAV shows the message "Nonexistent Labor Contract or Labor Contract Without Vigor".
+SAV shows the message MSG017.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG017]
+
+<NIL>USE CASE END Cancel a Labor Contract.</NIL>
+
+<NIL>7.4.REGISTER A NEW EMPLOYEE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Register a New Employee".
+the Administrator selects the option OPT078.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT078]
+SAV requests the identity card of the new employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the JJ _new NN_employee]
+SAV determines the existence of the employee.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_employee]
+SAV requests the data of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_employee]
+The Administrator introduces the data of the employee.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the NN_data IN_of DT_the NN_employee]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the registration date of the employee and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_registration NN_date IN_of DT_the NN_employee CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+SAV registers the data of the employee, the registration date of the employee and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee Fc_, DT_the NN_registration NN_date IN_of DT_the NN_employee CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Register a New Employee. </NIL>
+
+<NIL> AP1 </NIL>
+The employee exists.
+[NP-OBJ-A1 DT_the NN_employee] [VP VBZ_exists].
+SAV shows the message "Employed Existing".
+SAV shows the message MSG018.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG018]
+
+<NIL>USE CASE END Register a New Employee. </NIL>
+
+<NIL>7.5.MODIFY THE DATA OF AN EMPLOYEE</NIL>
+
+<NIL>INITIATES WHEN</NIL>
+the Administrator selects the option "Modify the Data of an Employee".
+the Administrator selects the option OPT079.
+[NP-SUJ-A0-Selector DT_the NNP_Administrator] [VP VBZ_selects] [NP-OBJ-A1 DT_the NN_option NN_OPT079]
+SAV requests the identity card of the employee.
+[NP-SUJ-A0-Starter NNP_SAV] [VP VBZ_requests] [NP-OBJ-A1 DT_the NN_identity NN_card IN_of DT_the NN_employee]
+SAV determines the existence of the employee.
+[NP-SUJ-A0-Decider NNP_SAV] [VP VBZ_determines] [NP-OBJ-A1 DT_the NN_existence IN_of DT_the NN_employee]
+SAV obtains the data of the employee.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+SAV shows the data of the employee.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NNS_data IN_of DT_the NN_employee]
+The Administrator introduces the new data of the employee.
+[NP-SUJ-A0-Starter DT_the NNP_Administrator] [VP VBZ_introduces] [NP-OBJ-A1 DT_the JJ_new NN_data IN_of DT_the NN_employee]
+SAV enables the option "Register".
+SAV enables the option OPT026.
+[NP-SUJ-A0-Allower NNP_SAV] [VP VBZ_enables] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+
+<NIL>IF</NIL> 
+the Administrator chooses the option "Register"
+the Administrator chooses the option OPT026
+[NP-SUJ-A0-Picker DT_the NNP_Administrator] [VP VBZ_chooses] [NP-OBJ-A1 DT_the NN_option NN_OPT026]
+<NIL>THEN</NIL>
+SAV obtains the modification date and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Receiver NNP_SAV] [VP VBZ_obtains] [NP-OBJ-A1 DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+SAV registers the employee data, the modification date and the identifier of the Administrator that carries out it.
+[NP-SUJ-A0-Entity registering NNP_SAV] [VP VBZ_registers] [NP-OBJ-A1 DT_the NN_employee NNS_data Fc_, DT_the NN_modification NN_date CC_and DT_the NN_identifier IN_of DT_the NN_administrator [SBAR-SUJ-R_A0 WDT_that] [VP VBZ_carries RP_out] [NP-OBJ-A1 PRP_it]]
+
+<NIL>END IF</NIL>
+
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>
+
+<NIL> AP1 </NIL>
+The employee does not exist.
+[NP-OBJ-A1 DT_the NN_employee] does_VBP [ADVP-MOD-AM_NEG RB_not] [VP VB_exist].
+SAV shows the message "Employed Nonexistent".
+SAV shows the message MSG015.
+[NP-SUJ-A0-Shower NNP_SAV] [VP VBZ_shows] [NP-OBJ-A1 DT_the NN_message NN_MSG015]
+
+<NIL>USE CASE END Modify the Data of an Employee. </NIL>
+

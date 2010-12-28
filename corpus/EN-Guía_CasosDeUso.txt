@@ -1,0 +1,2784 @@
+﻿Version 26/08/2004 - 11:22 11:22
+GF1.              Transaction Management
+              GF1.1.              Acquisition                                          
+              1.1.1.              Buy a Car              
+              1.1.2.              Modifying a Purchase              
+              GF1.2.              Sale                                          
+1.2.1. Sell a Car
+1.2.2. Submit a Vehicle Sold              
+              GF1.3.              Parking                                          
+1.3.1.              Rent a Vehicle
+1.3.2. Closing a Lease
+1.3.3. Modify a Lease 
+1.3.4. Bill Rent a Vehicle              
+              GF1.4.              Loan                                          
+1.4.1. Provide a Vehicle
+1.4.2. Returning a Borrowed Car
+ 
+GF2.              Operations Management
+              GF2.1.              Follow up                                          
+              2.1.1.              Maintenance Request              
+              2.1.2.              Maintenance Record              
+              GF2.2.              Repair                                          
+2.2.1. Repair Request
+2.2.2. Register Repair              
+              GF2.3.              External Workshops                                          
+2.3.1.              Registering an External Workshop
+2.3.2.              Deleting an External Workshop
+2.3.3.              Edit External Workshop               
+ 
+GF3.              Vehicle Management
+3.1.Register a Vehicle
+3.2.Change a Vehicle Registration
+3.3.Register Historic Vehicle Information
+3.4.Class & Group Assign
+3.5Create a Class
+3.6.Remove Vehicle Type
+3.7. Assign Rate
+                                          
+GF4.              Insurance Management
+              GF4.1.              Policies                             
+              4.1.1.              Secure Vehicle              
+              4.1.2.              Renew Insurance Policy              
+              GF4.2.              Insurance                                          
+4.2.1. Register an Insurance Company
+4.2.2. Modify an Insurance Company
+ 
+GF5.              Client management.
+5.1.Register Client
+5.2.Modify a Customer Data
+5.3.   Registering a Customer Data Direct Banking
+5.4.   Discount or Commission to authorize a Customer
+ 
+ 
+ 
+GF6.              Ancillary Services Management
+6.1.   Register Extras
+6.2.   Modify an Extra
+6.3.   Choice Extras
+6.4.   Delete an Extra in a Lease
+ 
+GF7.              Employee Management
+7.1.   Opening a Labor Contract
+7.2.   Changing Labor Contract Data
+7.3.   Terminating a Labor Contract 
+7.4.   Register a New Employee
+7.5.   Edit Employee Data
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.1.1. Buy a Car
+Reference
+GF1. Transaction Management 
+GF1.1. Acquisition 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Possible to record information on the purchase of a vehicle. To this must have previously registered vehicle data. After the purchase is registered, SAV assigned to the status of disabled vehicle until he made the maintenance and repair where necessary.
+Precondition
+No 
+Extend A
+None
+ 
+Basic Path
+START WHEN Manager select Purchase.
+ 
+1. SAV Manager requests the vehicle registration.
+2.The Administrator introduced the registration of the vehicle.
+3.SAV valid vehicle registration.
+4.SAV determines the existence of vehicle registration.
+5.INCLUDE Register a Vehicle.
+6.SAV requested identification responsible for the purchase of the vehicle.
+7.The Administrator seeks to identify the person responsible for vehicle purchase.
+8.SAV requested purchase date and cost of the vehicle.
+9.The Administrator introduced the date of purchase and the cost of the vehicle.
+10.SAV activated the Log Shop.
+11.IF you select the Log Manager THEN Purchase
+11.1SAV records the date of purchase and the cost of the vehicle.
+11.2.                      SAV records the date and time of registration of the vehicle purchase.
+11.3.                      SAV logged responsible for the purchase of the vehicle.
+11.4SAV vehicle assigned to the "disabled" state.
+11.5SAV Maintenance option activated.
+11.6.                      SAV Repair option activated.
+11.7.                      Ensure active SAV vehicle choice.
+END IF
+END USE CASE Buy a Vehicle.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Invalid registration.
+1.1.                    SAV Manager shows the message Invalid or Existing Registration.
+END USE CASE Buy a Vehicle.
+ 
+AP2.              Existing registration.
+2.1SAV Manager shows the message Invalid or Existing Registration.
+END USE CASE Buy a Vehicle.
+ 
+ 
+ 
+Postcondition
+·     There has been the purchase of a vehicle.
+Observations
+·     Data from the purchase of a vehicle are: tuition, purchase date, cost, date and time of registration of purchase and the identification of the person responsible for this transaction.
+·     The identification of the responsible for the purchase consists of: the identity card or passport, name and title of the person in the company.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.1.2. Modifying a Purchase 
+Reference
+GF1. Transaction Management
+GF1.1. Acquisition 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Modify data in the purchase of a vehicle. You can change the following information: date of purchase and charge the same price of the vehicle. It also allows access to functionality that allows the modification of the purchased vehicle information.
+Precondition
+·     SAV has recorded the purchase of at least one vehicle.
+Extend A
+None
+ 
+Basic Path
+START WHEN Manager Purchase select Modify.
+1.SAV shows the vehicle registration numbers.
+2.The Administrator selects the vehicle registration.
+3.SAV gets the data from the purchase of the vehicle.
+4.SAV data shows vehicle purchase. 
+5.SAV date active, responsible and purchase price of the vehicle.
+6.The Administrator introduced the new data from the vehicle purchase.
+7.SAV Change Vehicle activate the option. 
+8.Modify active SAV.
+9.If the Administrator chooses the Modify THEN
+9.1.               SAV data recorded vehicle purchase.
+END IF
+END USE CASE Modify a purchase.
+ 
+ 
+Postcondition
+·     Changed the registration of the vehicle purchase.
+Observations
+·     Data from the purchase of a vehicle are: tuition, purchase date, cost, date and time of registration of purchase and the identification of the person responsible for this transaction.
+·     The identification of the responsible for the purchase consists of: the identity card or passport, name and title of the person in the company.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.2.1. Sell a Car
+Reference
+GF1. Transaction Management 
+GF1.2. Sale 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Log into the system allows information regarding the sale of a vehicle.The sale is recorded in SAV only if, for the moment, the vehicle is "enabled" or "sale." In this case, SAV then assigned a status of "sold." Thus the vehicle can not be rented or borrowed. The delivery of the vehicle to its new owner can be registered in SAV after the sale has been entered.
+Precondition
+·     At least one registered vehicle whose status is not "sold."
+Extend A
+None
+ 
+Basic Path
+START WHEN select Manager Selling Vehicle.
+ 
+1.SAV shows the vehicle registration numbers have not been "sold."
+2.The Administrator chooses a license plate.
+3.SAV shows the date of sale of the vehicle.
+4.SAV requests the agreed date of delivery and the price of the vehicle.
+5.The Administrator introduced the agreed date of delivery and the price of the vehicle.
+6.SAV buyer requests vehicle identification.
+7.The Administrator introduced the identification of the purchaser of the vehicle.
+8.SAV displays the name of the person responsible for the sale.
+9.SAV requested comments from the sale.
+10.Manager writes the comments of the sale.
+11.Activates the Log SAV Sale.
+12.IF you select the Log Manager THEN Sale
+12.1SAV save the date, the manager, comments, identification of the purchaser, the agreed delivery date and price of the vehicle.
+12.2.                      If the vehicle has been "enabled" or "sale" THEN
+12.2.1. RETURN TO STEP 12.2.
+END IF
+12.3.                      SAV state vehicle assigned to "sold."
+12.4.                      SAV active delivery vehicle option.
+END IF
+ 
+END USE CASE Sell a Vehicle.
+ 
+Postcondition
+·     Has the sale of a vehicle.
+·     The condition of a vehicle is "sold."
+Observations
+·     Data entry of a sale are: vehicle registration, date and price, agreed delivery date, actual delivery date, person authorized for delivery, identification of the purchaser and responsible for the sale (the Administrator to perform the record of the sale).
+·     The identification of the purchaser is formed by the number of your ID or passport and full name of it.
+·     It has been decided to assign the status of "sold" the car that has been the subject of this transaction as opposed to "disabled" as indicated in the initial requirements specification.
+Used Cases
+1.2.2. Submit a Vehicle Sold
+Reference
+GF1. Transaction Management 
+GF1.2. Sale 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Once registered SAV selling a vehicle, it can be delivered to its new owner. This event is recorded in SAV on the agreed date for this or any other date, provided that it is later than the first. Vehicle information has been sold and delivered to its new owner is stored in an archive. The registration of the vehicle is removed.
+Precondition
+·     At least one vehicle "sold."
+Extend A
+Sell a vehicle when the manager choose the delivery vehicle AFTER STEP 12.4.
+ 
+Basic Path
+START WHEN Manager, select the delivery vehicle.
+ 
+1.SAV shows the registration numbers of vehicles sold.
+2.The Administrator selects the vehicle license plate sold.
+3.SAV validates the agreed date of delivery of the vehicle.
+4.SAV buyer gets the vehicle identification.
+5.SAV is important to identify the purchaser of the vehicle.
+6.SAV requested identification of the person authorized to collect the vehicle.
+7.The Administrator introduced the identification of the person authorized to collect the vehicle.
+8.SAV activates the Confirm Delivery.
+9.If the Administrator selects the Confirm Delivery THEN
+9.1.   SAV records the actual date of delivery of the vehicle sold.
+9.2.   SAV records the identification of the person authorized to collect the vehicle.
+9.3.   Historical information includes recording a Vehicle.
+END IF
+ 
+END USE CASE Submit a vehicle sold.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Current date is less than the delivery date.
+1.1.                    SAV Manager shows error message Delivery Date.
+END USE CASE Submit a vehicle sold.
+ 
+Postcondition
+·     There is a new historical record in the vehicle.
+·     Has the delivery of a vehicle sold.
+·     It has removed a vehicle registration in the state "sold."
+Observations
+·     The log data delivery of the vehicle are sold vehicle registration, real time delivery and identification of the authorized person.
+·     The identification of the person authorized to give the vehicle sold is your identity card or passport and your full name.By default, these data are the new owner.
+ 
+ 
+Used Cases
+1.3.1. Rent a Vehicle
+Reference
+GF1. Transaction Management
+GF1.3. Parking 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Possible to record information on renting a car or, equivalently, enables the development of a lease. For a vehicle to be leased must be "enabled." 
+Precondition
+·     At least one vehicle registered with the "enabled".
+Extend A
+None
+ 
+Basic Path
+START WHEN Employee Vehicle Renting select.
+ 
+1.SAV shows the enrollment of eligible vehicles.
+2.The employee chooses the license plate number you wish to hire.
+3.SAV gets data from the vehicle.
+4.SAV shows vehicle data.
+5.Register a Customer INCLUDE.
+6.SAV sought instead of returning the car.
+7.Employee enters the vehicle drop off location.
+8.SAV activates the Choose Extras.
+9.Active VAS Billing option.
+10.Active SAV Lease Option Register.
+11.If the Employee selects the Log THEN Lease
+11.1Register uncheck SAV Lease.
+11.2.    SAV off the Choose Extras.
+11.3.    Billing option disables SAV.
+11.4Bill INCLUDE Rent a Car.
+11.5SAV get the subtotal for rental, the subtotal by way of extras and the total amount of the lease.
+11.6.    SAV requested bail amount of the lease.
+11.7.    Employee enters the amount of the deposit of the rental agreement.
+11.8.    SAV get the Employee ID.
+11.9.    SAV data recorded lease.
+11.10.                  FOR EACH extra accessory type recorded in the lease THEN
+11.10.1.                 SAV get the code attachment.
+11.10.2.                 SAV gets the number of accessory units were rented.
+11.10.3.                 SAV calculates the amount of available accessory units (FORMULA 1).
+11.10.4.                 SAV records the amount of available accessory units.
+END FOR
+11.11.                  SAV state vehicle assigned to the "rent." 
+END IF
+ 
+END USE CASE Rent a Vehicle.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Postcondition
+·     There has been a new lease.
+·     There are at least a state vehicle "rented".
+Formula (s)
+·     FORMULA 1:
+Unidades_Disponibles_Accesorio = Unidades_Disponibles - Unidades_Alquiladas 
+Observations
+·     The client type is: direct (person requesting the rental of a vehicle) or indirect (agency that serves as an intermediary for the rental).
+·     The identification number of a customer depends on its type.If you are a direct customer identification is the number of your passport. If it is an indirect customer, their identification is a code assigned for that purpose. 
+·     The data from a client depend on its type.If you are a direct customer data are: identification number, name, address, telephone number, driver's license and applicable discount. If it is an indirect customer, the data are: code, name, address, telephone, Tax, applicable discount and commission contact person. 
+·     The vehicle data are: registration, make, model, capacity, number of doors, year of manufacture, group, class and rate.
+·     The information of a lease is comprised of: customer data (including discounts or commissions), vehicle data (including fees) and transaction-specific data: date and time of signing the contract, which was held office , identifying the employee who registered, the lease duration, estimated date of completion of the contract, hired extra data, units of each type of extra hire (only if optional), number of trading days of the extra Instead of returning the car, paid bail, subtotal of rent by way of extras subtotal and total (with and without VAT).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.3.2. Closing a Lease
+Reference
+GF1. Transaction Management 
+GF1.3. Parking 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Enables you to record the closing of a lease of a vehicle. This implies the return of the vehicle, updating the inventory of extras, the recalculation of the bill for rent and total cancellation by the customer. After recording the end of the lease, the vehicle is disabled so he made the maintenance and / or repairs deemed necessary.
+Precondition
+·     There are at least one vehicle "rented".
+Extend A
+None
+ 
+Basic Path
+Begins when the employee selects the Close option contract.
+ 
+1.SAV get the plates on leased vehicles.
+2.SAV shows the rented vehicle registration numbers.
+3.The employee chooses the vehicle registration.
+4.SAV retrieves data from the lease of the vehicle.
+5.SAV data shows the vehicle lease.
+6.Modify active SAV Agreement.
+7.Active VAS Billing option.
+12.SAV Close option enabled.
+13.If the employee chooses the option THEN Close
+13.1.                      SAV off Modify Agreement.
+13.2.                      Billing option disables SAV.
+13.3.                      Bill INCLUDE Rent a Car.
+13.4.                      SAV data records end of the lease.
+13.5.                      FOR EACH extra fixture type in the closure of the lease THEN
+13.5.1.   SAV get the code attachment.
+13.5.2.   SAV gets the number of accessory units were rented.
+13.5.3.   SAV calculates the amount of available accessory units (FORMULA 1).
+13.5.4.   SAV records the amount of available accessory units.
+END FOR
+13.6.                      SAV vehicle assigned to the "disabled" state.
+13.7.                      SAV Maintenance option activated.
+13.8.                      SAV Repair option activated.
+END IF
+ 
+END USE CASE Closing a Rental Agreement.
+ 
+Postcondition
+·     There has been the closure of a lease.
+·     There is a car "disabled" state.
+Formula (s)
+·     FORMULA 1:
+Unidades_Disponibles_Accesorio = Unidades_Disponibles + Unidades_Alquiladas
+Observations
+·                                       The data from the end of a lease includes the lease data and data from the end (date and time of closing, employee ID records that, instead of returning the car, office where he was, actual duration of lease, rent subtotal, subtotal by way of extras, tax, total amount and payment).
+Used Cases
+1.3.3. Modify a Lease
+Reference
+GF1. Transaction Management 
+GF1.3. Parking 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows you to modify the following information from a lease: The date and place of return of the vehicle and add or change extras. You can also change the discount (in the case of a direct customer) or commission (if it is an indirect customer) to apply only on the total amount of a customer's lease. 
+Precondition
+·     There are at least a rental vehicle.
+Extend A
+·     Closing a Lease When the employee chooses the Modify option contract after step 6.
+ 
+Basic Path
+Starts when you select Edit Employee Agreement.
+ 
+1.SAV shows the rented vehicle registration numbers.
+2.The employee chooses the registration of a rental vehicle.
+3.SAV gets data from the lease of the vehicle.
+4.SAV data shows the vehicle lease.
+5.Modify active SAV Client.
+6.Delete active SAV Extras.
+7.SAV activates the Choose Extras.
+8.Employee data introduces new vehicle lease.
+9.SAV active option is unchanged.
+10.If the Employee selects the Log Changes THEN
+10.1.         Modify disables SAV Client.
+10.2.         Delete disables SAV Extras. 
+10.3.         SAV off the Choose Extras.
+10.4.         Bill INCLUDE Rent a Car.
+10.5SAV get the Employee ID.
+10.6SAV gets the date and time of modification of the lease.
+10.7.         SAV Employee records identifying the date and time data modification and lease.  
+10.8.                      For each new extra accessory type recorded in the lease THEN
+10.8.1.                  SAV get the code attachment.
+10.8.2.                  SAV gets accessory units were rented.
+10.8.3.                  SAV calculates the amount of available accessory units (FORMULA 1).
+10.8.4.                  SAV records the amount of available accessory units.
+END FOR
+END IF
+ 
+END USE CASE Modify Lease.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Postcondition
+·     Has the change in the particulars of a lease.
+Formula (s)
+·     FORMULA 1:
+Unidades_Disponibles_Accesorio = Unidades_Disponibles - Unidades_Alquiladas
+Observations
+·     The information of a lease is comprised of: customer data (including discounts or commissions), vehicle data (including price) and the data pertaining to the transaction (date and time of signing the contract, office where he conducted , identifying the employee who registered, the lease duration, estimated date of completion of the contract, hired extra data, instead of returning the car, paid bail, subtotal of rent supplements subtotal and total including VAT) .
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.3.4. Bill Rent a Vehicle
+Reference
+GF1. Transaction Management
+GF1.3. Parking 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+It allows to calculate partial and total amounts of each of the concepts covered in the contract of renting a vehicle. These concepts are: the subtotal of the lease (with and without the application of discount, in the case of direct customers), the subtotal for the hiring of extras and the total (with and without tax). 
+Precondition
+·     At least one vehicle registered with the "enabled".
+Extend A
+·     Renting a car when the employee chooses the option Bill after step 9.
+·     Closing a Lease When employees choose the invoice after the STEP 7.
+ 
+Basic Path
+START WHEN select Employee Turnover.
+ 
+1.SAV get the license plate number.
+2.SAV gets the date of the lease.
+3.SAV gives you the length of the lease (FORMULA 1). 
+4.SAV get the daily rate of the vehicle.
+5.SAV get the subtotal by way of extras of the lease.
+6.SAV Rental subtotal (FORMULA 2).
+7.IF THEN the customer is direct
+7.1.                             SAV get the discount rate applicable to the client.
+7.2.                             SAV subtotal rental discount (FORMULA 3).
+END IF
+8.SAV calculates the total amount of tax-free lease (FORMULA 4).
+9.SAV calculates the tax for the full amount of the lease (FORMULA 5).
+10.SAV calculates the total amount of the lease tax (FORMULA 6).
+11.SI importe_fianza> 0 THEN
+11.1SAV calculates the amount payable by the client (FORMULA 7).
+END IF
+12.SAV shows the subtotal for rental without discount, the subtotal for rental discount, the subtotal by way of extras, the total amount of the lease without tax and total amount of lease with tax.
+13.SI importe_fianza> 0 THEN
+13.1.                                       SAV shows the amount payable by the customer.
+END IF
+ 
+END USE CASE Bill the rental of a vehicle.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Postcondition
+·     It has been billed for the lease of a vehicle.
+Formula (s)
+·     FORMULA 1:
+Duración_Contrato = Fecha_Devolución - Fecha_Contrato_Alquiler
+·     FORMULA 2:
+Subtotal_Alquiler Duración_Contrato x Rate = 
+·     FORMULA 3:
+Subtotal_Alquiler_Directo_Descuento = Subtotal_Alquiler - (Discount Rate x 0.01 x))
+·     FORMULA 4:
+Importe_Total_Sin_IVA = Subtotal_Alquiler + Subtotal_Complementos   
+·     FORMULA 5:
+Tax = Importe_Total_ Sin_IVA Constante_IVA x 0.01 x   
+·     FORMULA 6:
+Importe_Total_Con_IVA = Importe_Total_Sin_IVA + Tax 
+·     FORMULA 7:
+Monto_A_Pagar_Cliente = Importe_Total_Con_IVA - Importe_Fianza
+Observations
+·     The information of a lease is comprised of: customer data (including discounts or commissions), vehicle data (including price) and the data pertaining to the transaction (date and time of signing the contract, office where he conducted , identifying the employee who registered, the lease duration, estimated date of completion of the contract, hired extra data, instead of returning the car, paid bail, subtotal of rent supplements subtotal and total including VAT) .
+·     By default, the subtotal estimated by way of supplements is 0.
+·     By default, the discount on the rental rate is 0 (only applicable to direct customers).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+1.4.1. Provide a Vehicle
+Reference
+GF1. Transaction Management 
+GF1.4. Loan 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows recording data of a vehicle loan. A vehicle can be provided only to the staff of the company. 
+Precondition
+·     At least one vehicle "enabled."
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Provide Vehicle.
+ 
+1.SAV shows the enrollment of eligible vehicles.
+2.The Administrator selects the license plates.
+3.SAV requested identification from the borrower. 
+4.The Administrator introduced the identification of the borrower. 
+5.SAV validates the identification of the borrower.
+6.SAV asked the reason for the loan and the estimated date of return of the vehicle.
+7.The Administrator introduces the subject of the loan and the estimated date of return of the vehicle.
+8.SAV activated the Log.
+9.IF you choose the Log Manager THEN
+9.1.   SAV gets the date and time of the loan.
+9.2.   SAV obtained the identification of the Administrator.
+9.3.   SAV assigns the state "borrowed" the vehicle.
+9.4.   SAV loan records information.
+END IF
+ 
+END USE CASE Provide a Vehicle
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Borrower id invalid.
+1.1.                    SAV Manager shows the message "Borrower Nonexistent."
+END USE CASE Provide a Vehicle.
+ 
+ 
+Postcondition
+·     There has been the loan of a vehicle.
+·     At least one vehicle in "borrow."
+Observations
+·     The loan information of a vehicle consists of the following: vehicle registration, registration date and time of the loan, the borrower's identification (ID and name), estimated date of return of the vehicle, purpose of loan and identification (ID and name) the Administrator recorded the loan.
+ 
+ 
+ 
+ 
+Used Cases
+1.4.2. Returning a Borrowed Car
+Reference
+GF1. Transaction Management 
+GF1.4. Loan 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Detecting the return of a borrowed vehicle. The vehicle is then disabled so that it will perform the maintenance and repair required.
+Precondition
+·     There are at least a car "borrowed."
+Extend A
+None
+ 
+Basic Path
+Employee starts when you select Return Vehicle.
+ 
+1.SAV shows the vehicle registration numbers provided.
+2.The employee chooses the license plates.
+3.SAV get the auto loan information.
+4.SAV shows the auto loan information.
+5.Return option active SAV.
+6.If the employee chooses the option Return THEN
+6.1.   SAV gets the date and time of return.
+6.2.   SAV get the Employee ID.
+6.3.   SAV assigned the status "disabled" vehicle.
+6.4.   SAV records information for the return of the vehicle.
+6.5.   SAV Maintenance option activated.
+6.6.   SAV Repair option activated.
+END IF
+ 
+END USE CASE Return a Borrowed Car.
+ 
+Postcondition
+·     There has been the return of a borrowed vehicle.
+·     At least one vehicle registered in state "disabled."
+Observations
+·     The loan information of a vehicle consists of the following: vehicle registration, registration date and time of the loan, the borrower's identification (ID and name), estimated date of return of the vehicle, purpose of loan and identification (ID and name) the Administrator recorded the loan.
+·     The information in the return of the vehicle provided consists of the following: vehicle registration, date and time of return and identification (ID and name) of the Employee who made the record.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.1.1. Maintenance Request
+Reference
+GF2. Operations Management 
+GF2.1. Follow up 
+Entity
+SAV
+Principal Actor
+Operator 
+Summary
+Allowed to apply for a vehicle maintenance (cleaning, tuning, identification of faults or damage, etc..) So that it is prepared for subsequent rental or sale. This application may be made at the end of a lease or loan, when you buy or sell a car or after it has undergone repairs. In case of a previous application for vehicle maintenance, SAV allows you to modify the description of the work you want done.
+Precondition
+·     At least one vehicle "disabled" or at least one vehicle is "pending maintenance."
+Extend A
+·     Buying a vehicle when the manager chooses the option AFTER STEP Maintenance 14.6.
+·     Closing a Lease When the employee chooses the option AFTER STEP Maintenance 27.5.
+·     WHEN Return Borrowed Vehicle Manager choose the Maintenance AFTER STEP 6.5.
+ 
+Basic Path
+Operator starts when you select Maintenance.
+ 
+1.SAV get the registration numbers of vehicles in state "disabled" or "pending maintenance."
+2.SAV shows the registration numbers of vehicles in state "disabled" or "pending maintenance."
+3.The operator selects the vehicle registration.
+4.IF the status of the vehicle is "pending maintenance" THEN
+4.1.SAV gets the data from the request for vehicle maintenance.
+4.2.SAV active data request for vehicle maintenance.
+END IF
+5.IF the vehicle's condition is "disabled" or "pending repair" THEN
+5.1.SAV requests data from the request for vehicle maintenance.
+END IF
+6.SAV gets Operator identification.
+7.SAV is important to identify the worker.
+8.The operator enters the data maintenance application.
+9.Select the option Request SAV.
+10.If the operator chooses the option Request THEN
+10.1.           SAV gets the date and time of application maintenance.
+10.2.           SAV assigned to the vehicle "pending maintenance."
+10.3.           SAV data records request for maintenance.
+10.4.           SAV Repair option activated.
+END IF
+ 
+END USE CASE Order Maintenance.
+ 
+ 
+ 
+ 
+Postcondition
+·     At least one vehicle with "pending maintenance."
+·     There has been a maintenance request.
+Observations
+·     The data maintenance application are: registration, date and time of request, identification of the operator (employee or technician) who requested and a description of maintenance to be performed.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.1.2. Maintenance Record
+Reference
+GF2. Operations Management 
+GF2.1. Follow up 
+Entity
+SAV
+Principal Actor
+Technical
+Summary
+Possible to record information about maintenance work done to a vehicle. When this record is made, provided that the vehicle has no outstanding repair work, SAV assigned the status "enabled." 
+Precondition
+·     At least one vehicle "pending maintenance."
+Extend A
+None
+ 
+Basic Path
+Begins when the employee selects the Log Maintenance.
+ 
+1.SAV get the registration numbers of vehicles with "pending maintenance."
+2.SAV shows the registration numbers of vehicles with "pending maintenance."
+3.The technician selects the vehicle registration.
+4.SAV gets the data from the application of maintenance.
+5.SAV shows data maintenance application.
+6.SAV Repair option activated.
+7.SAV requested a description of maintenance performed on this vehicle.
+8.The technician enters the description of vehicle maintenance.
+9.SAV vehicle mileage claims.
+10.The technician enters the mileage of the vehicle.
+11.SAV activated the Log.
+12.Technical IF THEN choose the Record
+12.1SAV gets the place, date and time of registration of vehicle maintenance.
+12.2.           SAV Technical obtained identification.
+12.3.           Repair option disables SAV.
+12.4.           SAV maintenance records data.
+12.5IF the vehicle's condition is different from "pending repair" THEN
+12.5.1.              IF (fecha_vencimiento_seguro> fecha_actual + 1 month) and (tarifa_total> 0) and (kilometraje_vehículo <150000) THEN
+12.5.1.1. SAV state vehicle assigned to "enabled."
+END IF
+12.5.2.              IF (fecha_vencimiento_seguro <fecha_actual + 1 month) THEN
+14.3.2.1. SAV vehicle assigned to the "disabled" state.
+14.3.2.2. SAV Renew Insurance activate the option.
+END IF
+12.5.3.              IF (tarifa_total = 0) THEN
+14.3.3.1. SAV vehicle assigned to the "disabled" state.
+14.3.3.2. Assign active SAV rate option.
+END IF
+12.5.4.              IF (kilometraje_vehículo> = 150000) THEN
+14.3.4.1. SAV vehicle assigned to the state "for sale".
+END IF
+END IF
+ 
+END USE CASE Record Maintenance.
+ 
+ 
+Postcondition
+·     At least one vehicle "enabled" or at least one vehicle is "pending repair" or at least one vehicle "disabled.
+·     Has the information of vehicle maintenance.
+Observations
+·     The data of maintaining a vehicle are: tuition, location, date and time of registration, identification of mechanical and description did maintenance work to be performed.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.2.1. Repair Request
+Reference
+GF2. Operations Management 
+GF2.2. Repair 
+Entity
+SAV
+Principal Actor
+Operator
+Summary
+Allows you to request reparations for the damage of a vehicle. Repairs may be carried out in a garage or workshop outside of the company. 
+Precondition
+·     At least one vehicle "disabled" or at least one vehicle is "pending maintenance."
+Extend A
+·     Buy a vehicle the Administrator choose the Repair AFTER STEP 10.6.
+·     Closing a Lease When the employee chooses the option Repair After Step 27.6.
+·     Returning a Borrowed Car When employees choose the Repair option AFTER STEP 6.6.
+·     Record Maintenance Technician WHEN choose Repair option after step 6.
+ 
+Basic Path
+Operator starts when you select Repair.
+ 
+1.SAV get the registration numbers of vehicles with the status "disabled" or "pending maintenance."
+2.SAV shows the registration numbers of vehicles with the status "disabled" or "pending maintenance."
+3.The operator selects the vehicle registration.
+4.SAV gets the date and time of the request for relief.
+5.SAV gets Operator identification.
+6.SAV Workshop External activate the option.
+7.If the operator you select External Workshop THEN
+7.1.   SAV obtained the identification of external workshops.
+7.2.   SAV shows the identification of external workshops.
+7.3.   The worker chooses the external workshop.
+END IF
+8.SAV requested a description of the damage to be repaired.
+9.The operator enters the description of damage to be repaired.
+10.Select the option Request SAV.
+11.If the operator chooses the option Request THEN
+11.1SAV assigned to the vehicle "pending repair."
+11.2.                                       SAV recorded data repair request.
+END IF
+ 
+END USE CASE seek redress.
+ 
+Postcondition
+·     There has been a request for repair of a vehicle.
+·     At least one vehicle with "pending repair."
+Observations
+·     Data from a repair request are: registration, date and time of request, identification of the operator who requested, identification of external workshop where they repair the damage and description of it.
+·     The identification of external workshop consists of: a number that distinguishes it from the other workshops (NIF), name, address, telephone number and contact person.
+Used Cases
+2.2.2. Register Repair
+Reference
+GF2. Operations Management
+GF2.2. Repair 
+Entity
+SAV
+Principal Actor
+Technical
+Summary
+Possible to record information on the repair of a vehicle. After recording this information, the technician must make a request to maintain the vehicle so that it is prepared for subsequent rental or sale. 
+Precondition
+·     At least one vehicle "pending repair."
+Extend A
+None
+ 
+Basic Path
+Technical starts when you select the Repair option.
+ 
+1.SAV get the registration numbers of vehicles with "pending repair."
+2.SAV shows the registration numbers of vehicles with "pending repair."
+3.The technician selects the vehicle registration.
+4.SAV gets the data from seeking redress.
+5.SAV data shows the request for relief.
+6.SAV gets the place, date and time of registration of the application of repairing the vehicle.
+7.SAV Technical obtained identification.
+8.SAV requested a description of the repairs made to the vehicle.
+9.The Coach introduces the description of the repairs made to the vehicle.
+10.SAV requested the cost of repairing the vehicle.
+11.The technician enters the cost of repairing the vehicle.
+12.SAV activated the Log.
+13.Technical IF THEN choose the Record
+13.1.                      SAV data records of the repair.
+13.2.                      Maintenance Request INCLUDE.
+END IF
+ 
+END USE CASE Register Repair.
+ 
+Postcondition
+·     Has the information on the repair of a vehicle.
+Observations
+·     Data for the repair of a vehicle: registration and vehicle, date and time of the request for relief, identifying the operator that the requested date and time of registration of the repair technician identification did, cost and description of the repairs that were made.
+·     Data from a repair request are: registration, date and time of request, identification of the operator who requested, identification of external workshop where they repair the damage (if any) and description of it.
+·     The identification of external workshop consists of: a number that distinguishes it from other shops, name, address and telephone.
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.3.1. Registering an External Workshop
+Reference
+GF2. Operations Management 
+GF2.3. External Workshops 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows recording data from an external workshop. These workshops will repair the damage of the vehicles when requested.
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Employee starts when you select Record Workshop.
+ 
+1.SAV workshop requests external data.
+2.Employee workshop introduces external data.
+3.SAV activated the Log.
+4.If the employee chooses the Log THEN
+4.1.SAV workshop data recorded content.
+END IF
+ 
+END USE CASE External Workshop Registrar.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Existing NIF.
+1.1.                    Employee SAV shows the message size registered.
+END USE CASE Buy a Vehicle.
+ 
+ 
+Postcondition
+·     Has the information in a workshop outside.
+Observations
+·     Data from an external workshop are: a number that distinguishes it from other workshops (NIF), name, address, telephone number and contact person.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.3.2. Remove External Workshop
+Reference
+GF2. Operations Management 
+GF2.3. External Workshops 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Remove a previously registered external workshop. 
+Precondition
+·     At least one external workshop registration.
+Extend A
+None
+ 
+Basic Path
+Starts when you select Delete Administrator Workshop. 
+ 
+1.SAV gets the name and tax identification number of external workshops.
+2.SAV shows the name and tax identification number of external workshops.
+3.The employee selects the name of the workshop content.
+4.SAV data shows external workshop.
+5.SAV activates the Delete option.
+6.Employee IF THEN select the Delete option
+6.1.   SAV eliminates external workshop.
+END IF
+ 
+END USE CASE Remove External Workshop.
+ 
+Postcondition
+·     The information in an external workshop has been deleted.
+Observations
+·     Data from an external workshop are: a number that distinguishes it from other workshops (NIF), name, address, telephone number and contact person.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+2.3.3. Edit External Workshop
+Reference
+GF2. Operations Management 
+GF2.3. External Workshops 
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Modify data from a previously reported external workshop. 
+Precondition
+·     At least one external workshop registration.
+Extend A
+None
+ 
+Basic Path
+Employee starts when you select Edit Workshop.
+ 
+1.SAV gets the name and tax identification number of external workshops.
+2.SAV shows the name and tax identification number of external workshops.
+3.The employee selects the name of the workshop content.
+4.SAV data shows external workshop.
+5.Employee workshop introduces external data.
+6.Modify active SAV.
+7.Employee IF THEN select Modify
+7.1.   SAV workshop data recorded content.
+END IF
+ 
+END USE CASE Modify External Workshop.
+ 
+Postcondition
+·     Has the change in the particulars of an external workshop.
+Observations
+·     Data from an external workshop are: a number that distinguishes it from other workshops (NIF), name, address, telephone number and contact person.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+3.1. Register a Vehicle
+Reference
+GF3. Vehicle Management 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows recording data from a vehicle that has been purchased.
+Precondition
+No 
+Extend A
+·                    Buying a vehicle when the active the Log Manager Vehicle AFTER STEP 4.1.
+ 
+Basic Path
+START WHEN Manager, select the Vehicle Register.
+1.SAV Manager requests the vehicle registration.
+2.The Administrator introduced the registration of the vehicle.
+3.SAV valid vehicle registration.
+4.SAV requested the model, make, model year, the number of doors, capacity and vehicle mileage.
+5.The Administrator introduces the model, make, model year, the number of doors, capacity and vehicle mileage.
+6.SAV determines the existence of the class and type of vehicle group.
+7.SAV gets the class and type of vehicle group.
+8.SAV shows the class and type of vehicle group.
+9.SAV Vehicle Record check the option. 
+10.IF you select the Log Manager Vehicle THEN
+10.1.                      SAV gets the date and time of vehicle registration.
+10.2.                      SAV records the date and time of vehicle registration. 
+10.3.                      SAV registration records, model, make, model year, the number of doors, capacity, mileage, class, and the vehicle group.
+END IF
+END USE CASE Register a Vehicle.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Invalid registration.
+1.1.                    SAV Manager shows the message Invalid Registration.
+END USE CASE Register a Vehicle.
+ 
+AP2.              Existing registration.
+2.1SAV sample Existing Registration Manager message.
+END USE CASE Register a Vehicle.
+ 
+Postcondition
+·     There have been a vehicle data.
+Observations
+·     Data from a vehicle are: enrollment, model, make, model year, the number of doors, capacity, mileage, class, and the vehicle group.
+·     The vehicle type is determined by its model, year of manufacture and number of doors.
+ 
+Used Cases
+3.2. Change a Vehicle Registration
+Reference
+GF3. Vehicle Management 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows you to modify the information in a vehicle that has been previously registered. You can change all data except the number plate. 
+Precondition
+No 
+Extend A
+·                    Modify a purchase when activated Manager Modify vehicle after step 7.
+ 
+Basic Path
+START WHEN Manager Vehicle select Modify.
+1.SAV shows the vehicle registration numbers.
+2.The Administrator selects the license plates.
+3.SAV shows vehicle data.
+4.Active SAV model, make, model year, the number of doors, capacity and vehicle mileage.
+5.The Administrator introduces the model, make, model year, the number of doors, capacity and vehicle mileage.
+6.SAV determines the existence of the class and type of vehicle group.
+7.SAV gets the class and type of vehicle group.
+8.SAV shows the class and type of vehicle group.
+9.Active SAV Modify registry. 
+10.If the Administrator selects the Modify Record THEN
+10.1.                                                                               SAV gets the date and time of vehicle registration.
+10.2.                                                                               SAV records the date and time of vehicle registration. 
+10.3.                                                                               SAV logs the model, make, model year, the number of doors, capacity, mileage, class, and the vehicle group.
+END IF
+END USE CASE Modify Vehicle Registration.
+ 
+Postcondition
+·     Changed the registration of a vehicle.
+Observations
+·     Data from a vehicle are: enrollment, model, make, model year, the number of doors, capacity, mileage, class, and the vehicle group.
+·     The vehicle type is determined by its model, year of manufacture and number of doors.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+3.3. Register Historic Vehicle Information
+Reference
+GF3. Vehicle Management 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Registers information of the life cycle of a company car. Registration is done when, once sold, is delivered to its new owner. This information includes data from both the vehicle and its purchase and sale.
+Precondition
+No 
+Extend A
+None
+ 
+Basic Path
+START WHEN Manager select Register Historic Vehicle Information.
+1.SAV shows the registration numbers of vehicles sold.
+2.The Administrator chooses the license plates.
+3.SAV gets data from the vehicle registration.
+4.SAV data obtained registration of the vehicle purchase.
+5.SAV registration data obtained from the sale of the vehicle.
+6.Activate the option SAV Historic Register. 
+7.If the Administrator selects the option THEN Historic Register
+7.1.                                                                                   SAV data records of vehicle registration in Historical Vehicles. 
+7.2.                                                                                   SAV removes the registration of the vehicle.
+7.3.                                                                                   SAV data recorded record of the purchase of the vehicle in the Vehicle History.
+7.4.                                                                                   SAV removes the registration of the vehicle purchase.
+7.5.                                                                                   SAV records the log data to sell the vehicle at the Historic Vehicle.
+7.6.                                                                                   SAV removes the record of the sale of the vehicle.
+END IF
+END USE CASE Register a Vehicle Historical Information.
+ 
+Postcondition
+·     It has registered a vehicle registration, registration of purchase and sale record in the Archives of Vehicles.
+Observations
+·     The data of registration of a vehicle are: enrollment, model, make, model year, the number of doors, capacity, mileage, class, and the vehicle group.
+·     Data from the purchase of a vehicle: the vehicle registration, date of purchase, cost, date and time of registration of purchase and the identification of the person responsible for this transaction.
+·     Data entry of a sale are: vehicle registration, date and price, agreed delivery date, actual delivery date, person authorized for delivery, identification of the purchaser and responsible for the sale.
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+3.4. Class & Group Assign 
+Reference
+GF3. Vehicle Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows you to assign a class and existing group to a type of vehicle that has not been previously registered in the system.  
+Precondition
+·     There are at least one class of vehicles registered in SAV.
+Extend A
+·     Registering a vehicle class and group of the type of vehicle does not exist after step 6.
+ 
+Basic Path
+Manager starts when you select the Assign Class and Group. 
+ 
+1.SAV requested the model, year of manufacture and number of vehicle doors.
+2.The Administrator introduces the model, year of manufacture and number of vehicle doors.
+3.SAV determines the existence of the class and type of vehicle group.
+4.SAV displays the name and description of the classes of vehicle.
+5.SAV activates the Create Class.
+6.If the Administrator selects the name and description of a vehicle class THEN
+6.1.   SAV off the Create Class.
+6.2.   SAV shows the name, description and types of vehicle groups in the class of vehicle.
+END IF
+7.If the Administrator selects a group of a vehicle class THEN
+7.1.   SAV activated the Log.
+END IF
+8.IF you select the Log Manager THEN
+8.1.   SAV records the type of vehicle in a class group.
+END IF
+ 
+END USE CASE Assigning Class and Group.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Group class and existing vehicle type.
+1.1.                    SAV message displays the Administrator Class and Vehicle Type Group exists.
+END USE CASE Assigning Class and Group.
+ 
+Postcondition
+·     Is assigned a class and a group to a type of vehicle.
+Observations
+·     The class of a vehicle has a name, description and one or more groups.
+·     A group of a class of vehicle has a name, a description, one or more types of vehicle and a fee (daily rental price per day over insurance costs.)
+·     The vehicle type is determined by its model, year of manufacture and number of doors.
+·     By default, the rate of a class and group of vehicle types is 0 monetary units.
+Used Cases
+3.5 Create a Class
+Reference
+GF3. Vehicle Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Create a class of vehicle and the vehicle type groups of this kind. A class must have at least one group. 
+Precondition
+No
+Extend A
+·     Assigning Class and Group Manager WHEN select the Create Class after step 5.
+ 
+Basic Path
+Manager starts when you select Create Class. 
+ 
+1.SAV requests the name and description of the new class of vehicle.
+2.The Administrator introduced the name and description of the new class of vehicle.
+3.SAV determines the existence of the class.
+4.SAV activates the Create Group.
+5.SI Manager select the Create Group THEN
+5.1.SAV requests the name and the group's description of the class of vehicle.
+5.2.The Administrator introduced the name and description of the group of the class of vehicle.
+5.3.   SAV assigned zero monetary units at the rate of class and group of vehicle types. 
+5.4.   Assign active SAV rate option. 
+5.5.   SAV activated the Log.
+5.6.   RETURN TO STEP 3.
+END IF
+6.IF you select the Log Manager THEN
+6.1.                          SAV records the data of the new class.
+END IF
+ 
+END USE CASE Create a Class.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Existing class.
+1.1.                    SAV Manager displays the message to existing class.
+END USE CASE Create a Class.
+ 
+Postcondition
+·     It has created a class of vehicle with at least one group of vehicle types.
+Observations
+·     The class of a vehicle has a name, description and one or more groups.
+·     A group of a class of vehicle has a name, a description, one or more types of vehicle and a fee (daily rental price per day over insurance costs.)
+·     The vehicle type is determined by its model, year of manufacture and number of doors.
+·     By default, the rate of a class and group of vehicle types is 0 monetary units.
+ 
+Used Cases
+3.6. Remove Vehicle Type 
+Reference
+GF3. Vehicle Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+To erase a vehicle type and class of a group. The vehicle type is determined by its model, year of manufacture and number of doors. A type of vehicle belonging to a group of a class of vehicles.
+Precondition
+·                                                                             There are at least one type of vehicle belonging to a class and a group.
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Clear Type. 
+ 
+1.SAV requested the model, year of manufacture and number of vehicle doors.
+2.The Administrator introduces the model, year of manufacture and number of vehicle doors.
+3.SAV determines the existence of the class and type of vehicle group.
+4.SAV group gets the class and type of vehicle.
+5.SAV class and group shows the type of vehicle.
+6.SAV activates the Delete option.
+7.SI Manager THEN select the Delete option
+7.1.                          SAV eliminates the type of vehicle class and group.
+7.2.                          Select the option Assign SAV Class and Group.
+7.3.                          SAV activates the Create Class.
+END IF
+ 
+END USE CASE Remove Type of Vehicle.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Class and non-existent group.
+1.1.                    SAV Manager shows the message type vehicle is not already assigned to a group. 
+END USE CASE Remove Type Vehicle.
+ 
+Postcondition
+·     Has deleted a group type of vehicle of a class of vehicles.
+Observations
+·     The class of a vehicle has a name, description and one or more groups.
+·     A group of a class of vehicle has a name, a description, one or more types of vehicle and a fee (daily rental price per day over insurance costs.)
+·     The vehicle type is determined by its model, year of manufacture and number of doors.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+3.7. Assign Rate
+Reference
+GF3. Vehicle Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Assign a rate to a class and group of vehicle types. When you create a new class and vehicle type group is assigned a default rate of 0 units of money.With this functionality, SAV can change this amount or one previously assigned. The rate is the total amount (in monetary units) charged by the daily rental of a vehicle (without taxation). Is obtained by adding the full amount of the daily cost of vehicle insurance and income amount for the same day. 
+Precondition
+·     There are at least one class and a group registered in SAV.
+Extend A
+·     Create a class when the manager chooses the option to allocate rate after STEP 5.3.
+ 
+Basic Path
+Manager starts when you select Assign Tarifa.
+ 
+1.SAV shows the classes of vehicles.
+2.The Administrator selects a class of vehicle.
+3.SAV data shows the kind of vehicle.
+4.The Administrator selects a group of the class of vehicle.
+5.SAV group data shows the kind of vehicle.
+6.SAD shows the rate of class and group of vehicle types. 
+7.SAV prompted to enter the daily price of renting a classroom and group of vehicle types.
+8.SAV prompted to enter the daily cost of certain types of vehicles in a class and group.
+9.The Administrator introduced the daily price of renting a classroom and group of vehicle types.
+10.The Administrator introduced the daily cost of insurance of the types of vehicles in a class and group.
+11.SAV activated the Log Rate.
+12.If the Administrator selects the Log Rate THEN
+12.1SAV calculates the total price of renting a vehicle type (FORMULA 7).
+12.2.                      SAV records the daily price of renting a classroom and group of vehicle types.
+12.3.                      SAV records the daily cost of insurance of the types of vehicles in a class and group.
+12.4.                      SAV records the total rental fee of one type of vehicle.
+END IF
+  
+END USE CASE Assign Tarifa.
+ 
+Postcondition
+·     Rate is assigned to a class and group of vehicle types.
+Formula (s)
+·     FORMULA 7:
+  Rate _Total = Costo_Diario_Seguro + Precio_Diario_Alquiler
+Observations
+·     Each class and vehicle type group has a total rate assigned.
+·     The allocation fee also allows the modification of it, if you have registered previously.
+·     The class of a vehicle has a name, description and one or more groups.A group of a class of vehicle has a name, a description, one or more types of vehicle and a fee (daily rental price per day over insurance costs.)
+Used Cases
+4.1.1. Secure Vehicle
+Reference
+GF4. Insurance Management
+GF4.1. Policies 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Detecting the most relevant information from the insurance of a vehicle such as: data from the insurance company, date of commencement and expiry of the insurance policy and its price. All company vehicles must be covered by an insurance policy. A vehicle can only have an insurance policy in force.  
+Precondition
+·     At least one disabled vehicle.
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Secure Vehicle.
+ 
+1.SAV Manager requests the vehicle registration.
+2.The Administrator introduced the registration of the vehicle.
+3.The Administrator selects the vehicle registration.
+4.SAV determines the existence of a policy of insurance.
+5.SAV activated the Log Insurer. 
+6.SAV shows insurance companies.
+7.The Administrator selects the insurance company.
+8.SAV requests data from the insurance policy.
+9.The Administrator introduces the details of the policy of insurance.
+10.SAV activated the Log.
+11.IF you choose the Log Manager THEN
+11.1SAV gets the date and time of registration of the insurance policy.
+11.2.         SAV get the Employee ID.
+11.3.         SAV data recorded insurance.
+11.4SAV attached to the insurance policy the date and time of registration and identification of the registered manager.
+END IF
+ 
+END USE CASE insure a vehicle.
+ 
+ 
+Path (s) Alternate (s)
+ 
+AP1.              There is vehicle insurance policy.
+1.1.                    SAV Manager displays the message to existing insurance policies. 
+1.2Renew option active SAV Policy.
+ 
+END USE CASE Ensuring a Vehicle.
+ 
+Postcondition
+·     There has been data insurance policy vehicle.
+Observations
+·     The recorded data of the insurance policy of a vehicle: the vehicle registration, the insurance company, the start date, expiration date, cost and insurance coverage.
+ 
+ 
+Used Cases
+4.1.2. Renew Insurance Policy
+Reference
+GF4. Insurance Management
+GF4.1. Policies 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows recording data from the renewal of the insurance policy of a vehicle. The renovation cost to modify the lapse of time, coverage of the insurance policy and vehicle information from the insurance company that issued it. 
+Precondition
+·     At least one registered vehicle policy.
+Extend A
+·     To ensure a vehicle the employee select Renew STEP AFTER AP1.1.2 Policy.
+ 
+Basic Path
+Manager starts when you select Refresh Policy.
+ 
+1.SAV shows the registration numbers of vehicles that have insurance.
+2.The manager chooses a license plates.
+3.SAV gets the data from the insurance policy.
+4.SAV data shows the insurance policy.
+5.SAV activated the Log Insurer.
+6.The Administrator introduced the new data from the insurance policy.
+7.Active SAV Renew option.
+8.SI Manager THEN choose the Renew
+8.1.   SAV gets the date and time of renewal of insurance policy.
+8.2.   SAV obtained Employee ID that performed the renovation.
+8.3.   SAV data records the new insurance policy.
+8.4.   SAV attached to the insurance policy the date and time of renewal and the identification of the work done by the renovation.
+END IF
+ 
+END USE CASE Renew Insurance Policy.
+ 
+ 
+Postcondition
+·     There have been new data on the insurance of a vehicle.
+Observations
+·     The recorded data of the insurance policy of a vehicle: the vehicle registration, the insurance company, the start date, expiration date, cost and insurance coverage, the date and time of registration of insurance and identification of the Administrator.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+4.2.1. Register an Insurance Company
+Reference
+GF4. Insurance Management
+GF4.2. Insurance 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Record information allows insurance companies with which the company says its fleet vehicles.
+Precondition
+No
+Extend A
+·     To ensure a vehicle when you select Manager Log Insurer after step 5.
+·     Renew an insurance policy when the Administrator Register select Insurer after step 5.
+ 
+Basic Path
+Starts when you select Manager Log Insurer.
+ 
+1.SAV data requests to the Administrator of the Insurance Company.
+2.The Administrator enters the data of the Society of Insurance.
+3.SAV activated the Log.
+4.IF you choose the Log Manager THEN
+4.1.SAV gets the date and time of data recording Insurance Company.
+4.2.SAV obtained identification work done by the registry.
+4.3.SAV records the date and time of recording information of the Society of Insurance.
+4.4.SAV Manager records the identification of that record
+4.5.SAV data recorded Insurance Company.
+END IF
+ 
+END USE CASE Insurance Company Registrar.
+ 
+ 
+Postcondition
+·     It has registered an insurance company.
+Observations
+·     Data from an insurance company are: name, ID number, address, phone number and name of contact person.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+4.2.2. Modify an Insurance Company
+Reference
+GF4. Insurance Management
+GF4.2. Insurance 
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Modify data from an insurance company who have been registered in the system.
+Precondition
+·     At least one registered Insurance Company.
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Modify Insurer.
+ 
+1.SAV gets the names of the Insurance Companies.
+2.SAV shows the names of the Insurance Companies.
+3.The Administrator choose an insurance company.
+4.SAV data shows the Insurance Company.
+5.SAV data active insurance company.
+6.The Administrator enters the data of the Society of Insurance.
+7.Modify active SAV.
+8.If the Administrator chooses the Modify entoces
+8.1.      SAV gets the date and time of modification of data by the Insurance Company.
+8.2.      SAV obtained the identification of the Administrator made the change.
+8.3.      SAV records the date and time of modification of data by the Insurance Company.
+8.4.      SAV records the identification of the Administrator made the change.
+8.5.      SAV data recorded Insurance Company.
+END IF
+ 
+END USE CASE Modify an Insurance Company.
+ 
+Postcondition
+·     There has been new data from an insurance company.
+Observations
+·     Data from an insurance company are: name, ID number, address, phone number and name of contact person.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+5.1. Register Client
+Reference
+GF5. Client management.
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows recording data from a client who wants to rent a car company. Customers can be of two types: direct or agency. Direct customer is fixed or occasional one that is covered by the tariff under the lease, but can also enjoy a special discount previously approved by the Administrator. The client agency type is a company that acts as an intermediary for the rental of vehicles. In this case, we consider the possibility of agreeing a fee for each agency to conduct lease. Information on the agency commission can be registered by the Administrator. 
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Begins when the employee selects the Log Client.
+ 
+1.Employee SAV question whether the customer is direct or an agency.
+2.Employee indicates whether the client is directly or an agency.
+3.SAV client requests the identifier according to type.
+4.SAV determines the existence of the client.
+5.SAV client requests data by type.
+6.The employee enters the customer data.
+7.IF THEN the customer is direct
+7.1.   Register INCLUDE Data Direct Banking Client.
+END IF
+8.SAV activated the Log.
+9.If the employee chooses the Log THEN
+9.1.   SAV gets the date and time of customer registration.
+9.2.   Employee ID SAV gets done by the customer registration.
+9.3.   SAV client data records.
+9.4.   IF THEN the customer is direct
+9.4.1. SAV records the customer's bank details directly.
+            END IF
+END IF
+ 
+END USE CASE Client Register.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Existing customer identifier.
+1.1.                    Employee SAV message shows existing customers. 
+1.2Modify active SAV Client.
+ 
+END USE CASE Register a Customer.
+ 
+ 
+ 
+ 
+Postcondition
+·     It has registered a business client.
+Observations
+·     Data from a direct client are: ID (identity card or passport), nationality, full name, home address, telephone number (s) Driving Licence ID, date and time of registration data and the registered employee.The discount is applicable to the direct client, by default, zero. Only the Administrator is authorized to change this value.  
+·     The data bank is a direct client: name of the credit card (VISA, MasterCard, etc..) Number, date of issue and expiry and cardholder name (as appears on credit card).
+·     The data type of a client agency are: ID (TIN), name, address, telephone number (s), contact person, committee, date and time of registration data and the registered employee.The profit commission of an agency is, by default, zero. Only the Administrator is authorized to change this value.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+5.2. Modify a Customer Data
+Reference
+GF5. Client management.
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+To make changes to information previously registered for a client of the firm. The Employee may change any data, except for special discount assigned to direct customers and agency commissions. This can only be made by the Administrator.
+Precondition
+No
+Extend A
+·     Register a client when the employee selects the Modify Client after step 5.
+ 
+Basic Path
+Employee starts when you select Edit Client.
+ 
+1.Employee SAV question whether the customer is direct or an agency.
+2.Employee indicates whether the client is directly or an agency.
+3.SAV get the IDs of the customers according to their type.
+4.SAV shows the IDs of the customers according to their type.
+5.Employee ID of the customer chooses.
+6.SAV gets data from the client.
+7.SAV shows customer data.
+8.Employee introduces new customer data.
+9.IF THEN the customer is direct
+9.1.   SAV activated the Log Data Bank.
+END IF
+10.SAV activated the Log.
+11.If the employee chooses the Log THEN
+11.1SAV gets the date and time of changing the client.
+11.2. Employee ID SAV obtained performing the modification of the client.
+11.3. SAV client data records.
+11.4IF THEN the customer is direct
+  11.4.1. SAV records the customer's bank details directly.
+               END IF
+END IF
+ 
+END USE CASE Modify a Customer Data.
+ 
+Postcondition
+·     There has been changes to the data from a client of the firm.
+Observations
+·     Data from a direct client are: ID (identity card or passport), nationality, full name, home address, telephone number (s) Driving Licence ID, date and time of registration data and the registered employee.The discount applies to direct client is, by default, 0%. Only the Administrator is authorized to change this value. 
+·     The data bank is a direct client: name of the credit card (VISA, MasterCard, etc..) Number, date of issue and expiry and name of cardholder (as it appears on credit card).
+·     The data type of a client agency are: ID (TIN), name, address, telephone number (s), contact person, committee, date and time of registration data and the registered employee.The profit commission of an agency is, by default, 0%. Only the Administrator is authorized to change this value.  
+Used Cases
+5.3. Registering a Customer Data Direct Banking
+Reference
+GF5. Client management.
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows you to register and validate the information on the credit card with which the direct customer will pay the rental of a vehicle. 
+Precondition
+No
+Extend A
+·     Modify a Customer Data When the employee selects the Log Data Bank AFTER STEP 9.1.
+ 
+Basic Path
+Begins when the employee selects the Log Data Bank.
+ 
+1.SAV IDs obtained direct customers.
+2.SAV shows direct customer identifiers.
+3.The employee chooses the direct customer identifier.
+4.SAV requesting the customer's bank details directly.
+5.The employee enters the customer's bank details directly.
+6.SAV activated the Log.
+7.If the employee chooses the Log THEN
+7.1.      SAV validates the customer's bank details directly.
+END IF
+ 
+END USE CASE Register a Customer Data Direct Banking.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Invalid bank details.
+1.1.                    Employee SAV displays the message Invalid Data Bank. 
+1.2SAV activated the Log Data Bank.
+ 
+END USE CASE Register a Customer Data Direct Banking.
+ 
+ 
+Postcondition
+·     It has registered bank a direct customer of the company.
+Observations
+·     Data from a direct client are: ID (identity card or passport), nationality, full name, home address, telephone number (s) Driving Licence ID, date and time of registration data and the registered employee.The discount is applicable to the direct client, by default, zero. Only the Administrator is authorized to change this value.  
+·     The data bank is a direct client: name of the credit card (VISA, MasterCard, etc..) Number, date of issue and expiry and name of cardholder (as it appears on credit card).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+5.4. Discount or Commission to authorize a Customer
+Reference
+GF5. Client management.
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows the Administrator to set the discount applicable to the total amount to be paid a direct client at closing of the lease of a vehicle. You can also set the percentage gain (commission) of an agency on the total amount of a lease that has been managed by it. 
+Precondition
+·     At least one registered client.
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Authorize Discount or Commission.
+ 
+1.SAV asked the Administrator if the customer is direct or an agency.
+2.The Administrator indicates whether the client is directly or an agency.
+3.SAV get the IDs of the customers according to their type.
+4.SAV shows the IDs of the customers according to their type.
+5.The Administrator selects the customer identifier.
+6.SAV gets data from the client.
+7.SAV shows customer data.
+8.The Administrator introduced the percentage of discount or commission of the customer.
+9.SAV activated the Log.
+10.IF you choose the Log Manager THEN
+10.1. SAV records the percentage of discount or commission of the customer.
+END IF
+ 
+END USE CASE Discount or Commission authorize a client.
+ 
+ 
+Postcondition
+·     We recorded the percentage of discount or commission from a client.
+Observations
+·     Data from a direct client are: ID (identity card or passport), nationality, full name, home address, telephone number (s) Driving Licence ID, date and time of registration data and the registered employee.The discount is applicable to the direct client, by default, zero. Only the Administrator is authorized to change this value.  
+·     The data type of a client agency are: ID (TIN), name, address, telephone number (s), contact person, committee, date and time of registration data and the registered employee.The profit commission of an agency is, by default, zero. Only the Administrator is authorized to change this value.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+6.1. Register Extras 
+Reference
+GF6. Ancillary Services Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+SAV allows recording in the extra features that will be available to customers who wish to rent a car from the company. When a customer rents a vehicle may employ additional services called "extras" such as: delivery or pickup of the vehicle at the airport, fuel allocation, loan accessories (rack, telephone, etc.).. Each additional service is a fee that is considered when calculating the total amount of the rental vehicle concept. The extra cost is independent of the vehicle or the client. 
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Starts when you select Manager Log Extras.
+ 
+1.SAV Manager requests the extra data.
+2.The Administrator introduces extra data.
+3.SAV activated the Log.
+4.IF you choose the Log Manager THEN
+4.1.SAV extra assigned a code.
+4.2.SAV extra data records.
+4.3.SAV Register Another option activates the Extra.
+END IF
+5.IF you choose the Log Manager Other Extra THEN 
+5.1.RETURN TO STEP 1.
+END IF
+ 
+END USE CASE Register Extras.
+ 
+ 
+Postcondition
+·     There has been one or more services or extras.
+Observations
+·     The extra data are: code (assigned by SAV), type (service or option), extra description, quantity in stock (in the case of the accessories), available quantity (in the case of accessories) limitations, comments and rate (in the case of accessories specified daily price per unit).The amount of accessories available indicates the number of those who are not hired. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+6.2. Modify an Extra 
+Reference
+GF6. Ancillary Services Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows changes in the data pool. 
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select Modify Extras.
+ 
+1.SAV codes and get the generic names of extras.
+2.SAV codes shown to the Administrator and the generic names of extras.
+3.The Administrator selects the extra code.
+4.SAV get the extra data.
+5.SAV data shows extra.
+6.The Administrator introduced the new extra data.
+7.Modify active SAV.
+8.If the Administrator chooses the Modify THEN
+8.1.      SAV records the new extra data.
+8.2.      Another option active SAV Amendment.
+END IF
+9.If the administrator chooses the option Another modification THEN
+9.1.      RETURN TO STEP 1.
+END IF
+ 
+END USE CASE Modify an Extra.
+ 
+ 
+Postcondition
+·     There has been a service changes or extra accessory.
+Observations
+·     The extra data are: code (assigned by SAV), type (service or accessory), generic name, description, quantity in stock (in the case of the accessories), available quantity (in the case of the accessories) , constraints, comments and rate (in the case of accessories specified daily price per unit).The amount of accessories available indicates the number of those who are not hired.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+6.3. Choice Extras 
+Reference
+GF6. Ancillary Services Management
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows the employee to select one or more extra for a vehicle you wish to hire a client. Information on the selected pool is shown as part of the contract of hire vehicle and its rate accounted for when calculating the total amount thereof. When the lease of the vehicle is registered or is closed, the extra amount available is updated (if it is an accessory). 
+Precondition
+No
+Extend A
+·     Renting a car when the employee selects the Choose Extras after step 8.
+·     Modify a Lease When the employee selects the Choose Extras after step 7.
+ 
+Basic Path
+Employee starts when you select the Choose Extras.
+ 
+1.SAV get the generic name of extras.
+2.SAV shows the generic name of extras.
+3.The employee chooses the generic name of a bonus.
+4.SAV get the extra data.
+5.SAV data shows extra.
+6.SI is the extra accessory type THEN
+6.1.   SAV determines the amount of available accessories.
+6.2.   SAV requests the amount of units to hire.
+6.3.   The employee enters the number of units to hire.
+6.4.   SI attachment available quantity <number of units to recruit THEN
+6.4.1.         Employee SAV displays the message "Accessory Not Available."
+6.4.2.         RETURN TO STEP 1.
+END IF
+END IF
+7.Choose the option active SAV.
+8.If the employee chooses the Choose THEN
+8.1.      SAV get the code, class name, description, restrictions, observations and extra fee.
+8.2.      SI is the extra accessory type THEN
+7.1.1.         SAV requests the amount of trading days of the extra.
+7.1.2.         The employee enters the number of trading days of the extra. 
+7.1.3.         SAV asked how many units were chosen fixture.
+7.1.4.         The employee enters the number of fixture units were chosen.
+7.1.5.         SAV calculates the amount to be paid for accessories (FORMULA 1).
+7.1.6.         SAV shows the amount payable by way of accessories.
+END IF
+8.3.      IF the service type is extra THEN
+8.3.1.         SAV requests the amount of trading days of the service.
+8.3.2.         The employee enters the number of trading days of the service.
+8.3.3.         SAV calculates the amount to pay for services (FORMULA 2).
+8.3.4.         SAV shows the amount to pay for services.
+END IF
+ 
+8.4.      SAV subtotal by way of extras (FORMULA 3).
+8.5.      SAV shows the subtotal by way of extras.
+8.6.      Another option active SAV Extra.
+END IF
+9.If the employee chooses the option Other Extra THEN
+9.1.   RETURN TO STEP 1.
+END IF
+ 
+END USE CASE Choice Extras.
+ 
+Postcondition
+·     It has obtained the information from one or more extras.
+Formula (s)
+·     FORMULA 1:
+Monto_Accesorio Duración_Contrato_Accesorio x = x Unidades_Alquiladas Tarifa_Extra
+·     FORMULA 2:
+Monto_Servicio = Duración_Contrato_Servicio x Tarifa_Extra 
+·     FORMULA 3:
+Subtotal_Extras = Subtotal_Extras + + Monto_Servicio Monto_Accesorio
+Observations
+·     The extra data are: code (assigned by SAV), type (service or option), extra description, quantity in stock (in the case of the accessories), available quantity (in the case of accessories) limitations, comments and rate (in the case of accessories specified daily price per unit).The amount of accessories available indicates the number of those who are not hired.
+·     The amount payable by way of accessories or services and the subtotal by way of extras is, by default, 0.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+6.4. Delete an Extra in a Lease
+Reference
+GF6. Ancillary Services Management
+Entity
+SAV
+Principal Actor
+Employee
+Summary
+Allows the employee to delete one or more extras hired for the rental of a vehicle. 
+Precondition
+No
+Extend A
+·     Modify a Lease When the employee selects the Delete option Extras after step 6.
+ 
+Basic Path
+Employee starts when you select Delete Extras.
+ 
+1.SAV lease obtained from the code of the extras hired.
+2.SAV shows the code and generic name of the extras hired.
+3.The employee chooses the generic name of a bonus.
+4.SAV get the extra data.
+5.SAV data shows extra.
+6.SAV activates the Delete option.
+7.If the employee chooses the Delete THEN
+7.1.      SI is the extra accessory type THEN
+7.1.1.         SAV gets the number of trading days of the extra.
+7.1.2.         SAV get the amount of extra units were rented.
+7.1.3.         SAV updates the available quantity of extra (FORMULA 1).
+7.1.4.         SAV assigned a value of zero to the number of trading days of the extra.
+7.1.5.         SAV calculates the amount to be deducted by way of accessories (FORMULA 2).
+7.1.6.         SAV shows the amount to be deducted by way of accessories.
+END IF
+7.2.      IF the service type is extra THEN
+7.2.1.         SAV gets the number of trading days of the extra.
+7.2.2.         SAV calculates the amount to be deducted for services (FORMULA 3).
+7.2.3.         SAV shows the amount to be deducted for services.
+END IF
+7.3.      SAV subtotal by way of extras (FORMULA 4).
+7.4.      SAV shows the subtotal by way of extras.
+7.5.      Delete active SAV Another Extra.
+END IF
+8.If the employee chooses the Delete Another Extra THEN
+8.1.                             RETURN TO STEP 1.
+END IF
+ 
+END USE CASE Remove an Extra in a Rental Agreement.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Postcondition
+·     It has obtained the information from one or more extras.
+Formula (s)
+·     FORMULA 1:
+Unidades_Disponibles_Accesorio = Unidades_Disponibles_Accesorio + Unidades_Alquiladas
+·     FORMULA 2:
+Monto_Descontar_Accesorio = Duración_Contrato_Accesorio x Tarifa_Extra
+·     FORMULA 3:
+Monto_Descontar_Servicio = Duración_Contrato_Servicio x Tarifa_Extra 
+·     FORMULA 4:
+Subtotal_Extras = Subtotal_Extras + (Monto_Accesorio - Monto_Descontar_Accesorio) + 
+                              (Monto_Servicio - Monto_Descontar_Servicio)
+Observations
+·     The extra data are: code (assigned by SAV), type (service or option), extra description, quantity in stock (in the case of the accessories), available quantity (in the case of accessories) limitations, comments and rate (in the case of accessories specified daily price per unit).The amount of accessories available indicates the number of those who are not hired.
+·     The amount payable by way of accessories or services and the subtotal by way of extras is, by default, 0.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+7.1. Opening a Labor Contract
+Reference
+GF7. Employee Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Can log the information from a contract established between the employer and employee. This information includes details and conditions of the contract. In addition, if the Administrator's request, also makes possible the recording of employee information. An employee can have only current or active employment contract with the company.
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Starts when you select Open Administrator Employment Contract.
+ 
+1.SAV requesting the ID of the employee.
+2.The Administrator introduced the ID of the employee.
+3.SAV determines whether the employee data are already registered. 
+4.SAV determines whether the employee has an existing contract with the company or asset. 
+5.If the employee is already registered THEN
+5.1.SAV shows employee data.
+5.2.Modify active SAV Employee Data.
+BUT
+5.3.   Employee Record INCLUDE.
+5.4.   SAV shows employee data.
+END IF
+6.SAV requested start date, duration and conditions of employment.
+7.The Administrator introduced the start date, duration and conditions of employment.  
+8.SAV activated the Log Agreement.
+9.IF you choose the Log Manager Contract THEN
+9.1.   SAV gets the date of registration of contract and the ID of the Administrator to perform such registration.
+9.2.   SAV assigned an identification code to the employment contract.
+9.3.   SAV code and records the registration date of the contract, the ID of the Administrator to perform the registration, employee ID, date of onset, duration and conditions of employment.
+9.4.   SI registration date <THEN start date
+9.4.1.         SAV contract assigned to the "active" status.
+BUT
+9.4.2.         SAV assigned to the state contract "in force."
+END IF
+END IF
+ 
+END USE CASE Opening a labor contract.
+ 
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Current or active employment contract.
+1.1.                    SAV shows "existing labor contracts." 
+ 
+END USE CASE Opening of an employment contract.
+ 
+Postcondition
+·     There is a current or active employment contract of an employee.
+Observations
+·     Data from a contract are: identification code, status, date of registration, the Administrator ID that made this record, the ID of the employee who prepared the contract, start date, duration and conditions of employment.
+·     An employment contract is one of the following states: "current" if the date is earlier than the current completion date is later than the current, "active" if the record date is prior to the start date; "completed" if the completion date is earlier than the present, "void" when the administrator terminates the contract.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+7.2. Changing Labor Contract Data
+Reference
+GF7. Employee Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows you to modify the information in a formal contract between the company and one of its employees. Such modification will be effective only if the contract is valid or active. 
+Precondition
+No
+Extend A
+None
+ 
+Basic Path
+Manager starts when you select the Modify option contract.
+ 
+1.SAV requesting the ID of the employee.
+2.The Administrator introduced the ID of the employee.
+3.SAV determines the existence of the ID of the employee.
+4.SAV determines whether the employee has an existing contract with the company or asset.
+5.SAV get the code for existing labor contracts and assets of the employee.
+6.SAV shows the code of existing labor contracts and assets of the employee.
+7.The Administrator selects the code for a work contract.
+8.SAV gets data from the employee's employment contract.
+9.SAV data shows the employee's employment contract.  
+10.The Administrator introduces new data from the employee's employment contract.
+11.Modify active SAV Agreement.
+12.IF you choose the Log Manager Contract THEN
+12.1SAV get the modified date of the contract and the ID of the Administrator to perform this modification.
+12.2.                      SAV data records of the employment contract, the modification date and the ID of Administrator to perform this modification.
+12.3.                      SAV updates the status of employment.
+END IF
+ 
+END USE CASE Modify a Labor Contract Data.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Employee non-existent.
+1.1.                    SAV displays "non-existent jobs." 
+ 
+END USE CASE Changing Labor Contract Data.
+ 
+AP2.              Formal contract annulled or non-existent or expired.
+2.1SAV displays "Unconditional Labor Contract Modification." 
+ 
+END USE CASE Changing Labor Contract Data.
+ 
+ 
+ 
+ 
+ 
+ 
+Postcondition
+·     Data has changed the employment contract of an employee.
+Observations
+·     Data from a contract are: identification code, status, date of registration, the Administrator ID that made this record, the ID of the employee who prepared the contract, start date, duration and conditions of employment.
+·     An employment contract is one of the following states: "current" if the date is earlier than the current completion date is later than the current, "active" if the record date is prior to the start date; "completed" if the completion date is earlier than the present, "void" when the administrator terminates the contract.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+7.3. Terminating a Labor Contract
+Reference
+GF7. Employee Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Detecting the dissolution of the contractual relationship established between an employee and the company.  
+Precondition
+·     At least one current labor contract.
+Extend A
+None
+ 
+Basic Path
+Starts when the administrator selects the option to terminate a labor contract.
+ 
+1.SAV requesting the ID of the employee.
+2.The Administrator introduced the ID of the employee.
+3.SAV determines the existence of the ID of the employee.
+4.SAV determines whether the employee has an existing contract with the company.
+5.SAV gets data from existing labor contract that the employee has with the company.
+6.SAV data shows the employee's employment contract.  
+7.SAV activates the Override Agreement.
+8.If the Administrator chooses the Override Agreement THEN
+8.1.   SAV ask the Manager the reasons for the cancellation of the contract.
+8.2.   The Administrator introduced the reasons for the cancellation of the contract.
+8.3.   SAV gets the date of cancellation of the contract and the ID of the manager who does it.
+8.4.   SAV data records of the employment contract, the date of cancellation and the Administrator ID is performed.
+8.5.   SAV assigned to the state contract "void."
+END IF
+ 
+END USE CASE rescind an employment contract.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Employee non-existent.
+1.1.                    SAV displays "non-existent jobs." 
+ 
+END USE CASE Terminate a labor contract.
+AP2.              Employment contract does not exist or no effect.
+2.1SAV displays the message "Non-existent labor contract" or "labor contract without force." 
+ 
+END USE CASE Terminate a labor contract.
+ 
+Postcondition
+·     Has terminated an employment contract.
+Observations
+·     Data from a contract are: identification code, status, date of registration, the Administrator ID that made this record, the ID of the employee who prepared the contract, start date, duration and conditions of employment.
+·     An employment contract is one of the following states: "current" if the date is earlier than the current completion date is later than the current, "active" if the record date is prior to the start date; "completed" if the completion date is earlier than the present, "void" when the administrator terminates the contract.
+Used Cases
+7.4. Register a New Employee
+Reference
+GF7. Employee Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows recording data from an employee of the company. A person shall be considered an employee during the period in which that person and the company remain in force a contract.
+Precondition
+No
+Extend A
+None
+ 
+Basic Path 
+Manager starts when you select the Employee Record
+ 
+1.SAV requesting the ID of the new employee.
+2.SAV determines the existence of the employee.
+3.SAV employee data requested.
+4.The Administrator enters the employee data. 
+5.SAV activated the Log.
+6.IF you choose the Log Manager THEN
+6.1.                        SAV get the record date of the employee and the Administrator ID is performed.
+6.2.                        SAV employee data records, the record date of the employee and the Administrator ID is performed.
+END IF
+ 
+END USE CASE Register a New Employee.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Existing employee.
+1.1.                    SAV shows "Existing Employee." 
+ 
+END USE CASE Register a New Employee.
+ 
+Postcondition
+·     There has been an employee data.
+Observations
+·     The employee data are: ID (or passport), full name, home address, telephone number (s), date of admission, observation, record date and identifier of the Administrator held that record.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Used Cases
+7.5. Edit Employee Data
+Reference
+GF7. Employee Management
+Entity
+SAV
+Principal Actor
+Manager
+Summary
+Allows you to change the recorded data of an employee of the company.
+Precondition
+·     There are at least one employee registered.
+Extend A
+·     Opening a Labor Contract Manager WHEN select Edit Employee Data NEXT STEP 5.2.
+ 
+Basic Path 
+Manager starts when you select Edit Employee Data.
+ 
+1.SAV requesting the ID of the employee.
+2.SAV determines the existence of the employee.
+3.SAV gets data from the employee.
+4.SAV shows employee data.
+5.The Administrator introduced the new employee data. 
+6.SAV activated the Log.
+7.IF you choose the Log Manager THEN
+7.1.                        SAV gets the date of modification and the Administrator ID is performed.
+7.2.                        SAV employee records data, date of modification and the Administrator ID is performed.
+END IF
+ 
+END USE CASE Modify an Employee Data.
+ 
+Path (s) Alternate (s)
+ 
+AP1.              Non-existent jobs.
+1.1.                    SAV displays "non-existent jobs." 
+ 
+END USE CASE Edit Employee Data.
+ 
+Postcondition
+·     Has modified the data of an employee.
+Observations
+·     The employee data are: ID (or passport), full name, home address, telephone number (s), date of admission, observation, record date and identifier of the Administrator held that record.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1
+ 
