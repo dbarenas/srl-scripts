@@ -1,0 +1,19 @@
+# $1 Archivo con las frases
+# $2 directorio para la salida de el archivo taggeado para morposintacticamente, dispuesto para pasar al parser
+# $3 archivo de salida parser Salida Parser
+NOW=$(pwd)
+EXT="/home/darenas/TESIS/tools/POS/CollinsParser/COLLINS-PARSER"
+tagged="corpus/sav.tagged"
+parsed="corpus/sav.parsed"
+semantic="corpus/sav.semantic"
+python Morpho.py $1  | sed 's\[^0-9a-zA-Z.": ]\ \g' | sed 's\    \ \g'  | sed 's\   \ \g' > $tagged
+date
+
+./Sintactic.sh | grep "(TOP" | sed 's\(\,\g' | sed 's\)\\g' | sed 's\~\-\g' > $parsed
+date
+./Semantic $1 | grep elements | grep -rv charniak | sed 's\  \ \g' | sed 's\elements : \\g' | sed 's\:\\g' | sed 's\ srl[0-9]   \ \g' > $semantic
+date
+
+cat corpus/sav.* 
+
+python AllFormatToXML.py
